@@ -1,0 +1,8 @@
+uuid: 6dbcf9a9-2708-4255-899e-3486886e9859
+langcode: en
+status: true
+dependencies: {  }
+id: policies-menu
+label: 'Policies menu'
+description: ''
+locked: false

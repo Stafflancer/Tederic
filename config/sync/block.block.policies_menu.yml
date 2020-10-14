@@ -1,0 +1,25 @@
+uuid: 333fd0c3-59dd-4998-8158-731bc04c2ff0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.policies-menu
+  module:
+    - system
+  theme:
+    - tederic
+id: policies_menu
+theme: tederic
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:policies-menu'
+settings:
+  id: 'system_menu_block:policies-menu'
+  label: 'Policies menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

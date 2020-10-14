@@ -1,0 +1,8 @@
+uuid: 70bd0e1d-11ca-4480-ba84-bbc81eee9a48
+langcode: en
+status: true
+dependencies: {  }
+id: social-media-menu
+label: 'Social media menu'
+description: ''
+locked: false

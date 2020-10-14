@@ -1,0 +1,20 @@
+uuid: a37fa30a-9d4c-4491-a9c0-3bad21d9d13c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tederic
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: tederic_local_actions
+theme: tederic
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

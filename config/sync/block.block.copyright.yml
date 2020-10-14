@@ -1,0 +1,25 @@
+uuid: 87698c34-432f-4097-b164-9fe67d1c1b0f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3d5bcbbd-999a-4132-a1bd-58971d05b266'
+  module:
+    - block_content
+  theme:
+    - tederic
+id: copyright
+theme: tederic
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:3d5bcbbd-999a-4132-a1bd-58971d05b266'
+settings:
+  id: 'block_content:3d5bcbbd-999a-4132-a1bd-58971d05b266'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

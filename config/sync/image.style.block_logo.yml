@@ -1,0 +1,15 @@
+uuid: f00c6525-dccc-44f4-a0f4-80991fc35894
+langcode: en
+status: true
+dependencies: {  }
+name: block_logo
+label: 'Block Logo'
+effects:
+  025365de-a5a9-4c5c-83c6-ac02030034f5:
+    uuid: 025365de-a5a9-4c5c-83c6-ac02030034f5
+    id: image_scale
+    weight: 1
+    data:
+      width: 170
+      height: null
+      upscale: false
