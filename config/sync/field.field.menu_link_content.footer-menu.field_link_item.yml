@@ -1,0 +1,25 @@
+uuid: d796f0ee-85e5-4eb1-9209-ea73b97e900e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_link_item
+    - system.menu.footer-menu
+  module:
+    - entity_reference_revisions
+id: menu_link_content.footer-menu.field_link_item
+field_name: field_link_item
+entity_type: menu_link_content
+bundle: footer-menu
+label: 'Link Item'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+field_type: entity_reference_revisions

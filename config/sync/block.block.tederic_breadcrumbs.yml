@@ -1,0 +1,22 @@
+uuid: 15dd982c-303a-4a80-a4dc-efb7f58d4f39
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tederic
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: tederic_breadcrumbs
+theme: tederic
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,33 @@
+uuid: b5ba3087-68de-486b-82c5-f55dcee6a890
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.block_logo
+    - field.field.media.image.field_media_image
+    - image.style.block_logo
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.block_logo
+targetEntityType: media
+bundle: image
+mode: block_logo
+content:
+  field_media_image:
+    label: hidden
+    settings:
+      image_style: block_logo
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

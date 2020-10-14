@@ -1,0 +1,25 @@
+uuid: b5c645fb-9a76-4903-8ef7-93c6fe766050
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-menu
+  module:
+    - system
+  theme:
+    - tederic
+id: top_menu
+theme: tederic
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:top-menu'
+settings:
+  id: 'system_menu_block:top-menu'
+  label: 'Top menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: b101fe44-ecdf-423e-a793-e07b2b039bb8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.block_logo
+label: 'Block Logo'
+targetEntityType: media
+cache: true
