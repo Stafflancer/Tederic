@@ -20,6 +20,12 @@
 %}
 {% if content %}
   <section{{ attributes.addClass(classes) }}>
-    {{ content }}
+    <div class="row">
+      <div class="small-12 column">
+        <div class="region-wrapper">
+          {{ content }}
+        </div>
+      </div>
+    </div>
   </section>
 {% endif %}
