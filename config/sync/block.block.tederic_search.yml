@@ -11,7 +11,7 @@ _core:
 id: tederic_search
 theme: tederic
 region: header
-weight: -2
+weight: -4
 provider: null
 plugin: search_form_block
 settings:

@@ -8,8 +8,8 @@ dependencies:
     - tederic
 id: languageswitcher
 theme: tederic
-region: header
-weight: -4
+region: header_top
+weight: -5
 provider: null
 plugin: 'language_block:language_interface'
 settings:

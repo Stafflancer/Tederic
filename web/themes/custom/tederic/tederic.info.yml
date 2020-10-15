@@ -9,6 +9,7 @@ libraries:
   - yodlee/global-styling
 
 regions:
+  header_top: 'Header Top'
   header: Header
   highlighted: Highlighted
   breadcrumb: Breadcrumb
