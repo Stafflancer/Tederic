@@ -1,0 +1,242 @@
+$font_name: 'Ubuntu';
+
+// colors
+$dark_blue: #0F283D;
+$white: #FFFFFF;
+$red: #e9412d;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font_name;
+}
+
+.row {
+  max-width: 1470px;
+}
+.site-slogan, input, select, textarea, a, button {
+  transition: .3s all ease;
+}
+
+.region-header-top {
+  background-color: $dark_blue;
+
+  .region-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &:after {
+      content: '';
+      background-color: #3f5263;
+      height: 1px;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  #block-top-menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: block;
+          color: $white;
+          font-family: $font_name;
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 20px;
+          border-bottom: 1px solid transparent;
+          padding: 15px 0;
+          position: relative;
+          z-index: 1;
+
+          &:hover {
+            border-color: $red;
+          }
+        }
+      }
+
+      li + li {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .links {
+    margin: 0 0 0 40px;
+    padding: 0;
+    list-style-type: none;
+
+    li + li {
+      display: none;
+    }
+
+    a {
+      display: block;
+      color: $white;
+      font-family: $font_name;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 20px;
+      text-transform: uppercase;
+      padding: 15px 0;
+    }
+  }
+}
+
+.region-header {
+  background-color: $dark_blue;
+  padding: 15px 0 20px;
+
+  .region-wrapper {
+    display: flex;
+  }
+
+  #block-tederic-branding {
+    flex: 1;
+  }
+
+  #block-tederic-main-menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: block;
+          color: $white;
+          font-family: $font_name;
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 20px;
+          position: relative;
+          overflow: hidden;
+          padding: 6px 0;
+
+          &:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: $red;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: .3s all ease;
+          }
+
+          &:hover:after {
+            bottom: 3px;
+          }
+        }
+      }
+
+      li + li {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  #block-tederic-search {
+    .show-search {
+      width: 32px;
+      height: 32px;
+      background: url('../images/icons/search.svg') no-repeat;
+      margin-left: 24px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    #search-block-form {
+      display: none;
+    }
+  }
+}
+// END Header
+
+// Footer
+.region-footer-second {
+  background-color: $dark_blue;
+  padding: 37px 0 45px;
+
+  .region-wrapper {
+    display: flex;
+  }
+
+  #block-copyright {
+    flex: 1;
+    color: $white;
+    margin: 0;
+    font-family: $font_name;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 21px;
+    p {
+      color: $white;
+      margin: 0;
+      font-family: $font_name;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 21px;
+    }
+  }
+
+  #block-policies-menu {
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        a {
+          display: block;
+          color: $white;
+          font-family: $font_name;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0;
+          line-height: 21px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      li + li {
+        padding-left: 12px;
+
+        &:before {
+          content: '';
+          height: 5px;
+          width: 5px;
+          background-color: #E8412D;
+          border-radius: 50%;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+}

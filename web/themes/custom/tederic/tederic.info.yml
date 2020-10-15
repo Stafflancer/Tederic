@@ -6,7 +6,7 @@ package: Custom
 core: 8.x
 
 libraries:
-  - yodlee/global-styling
+  - tederic/global-styling
 
 regions:
   header_top: 'Header Top'
