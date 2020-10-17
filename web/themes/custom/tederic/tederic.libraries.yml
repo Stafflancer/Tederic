@@ -5,3 +5,10 @@ global-styling:
       css/foundation-flex.min.css: {}
       css/main.css: {}
       css/custom.css: {}
+  js:
+    js/slick.min.js: {}
+    js/script.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupal.dialog.ajax

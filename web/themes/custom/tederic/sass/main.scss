@@ -1,9 +1,14 @@
+@import 'slick';
+
 $font_name: 'Ubuntu';
 
 // colors
 $dark_blue: #0F283D;
+$dark_blue_text: #0B2434;
 $white: #FFFFFF;
 $red: #e9412d;
+$gray: #F1F1F3;
+$gray_text: #5A616C;
 
 * {
   margin: 0;
@@ -13,13 +18,29 @@ body {
   font-family: $font_name;
 }
 
-.row {
-  max-width: 1470px;
+.row,
+#block-tederic-local-tasks .custom-row,
+.region-header-top > .custom-row,
+.region-footer-first > .custom-row,
+.region-footer-second > .custom-row {
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column,
+.columns,
+#block-tederic-local-tasks .custom-column,
+.region-header-top > .custom-row > .custom-column,
+.region-footer-first > .custom-row > .custom-column,
+.region-footer-second > .custom-row > .custom-column {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .site-slogan, input, select, textarea, a, button {
   transition: .3s all ease;
 }
 
+// Header
 .region-header-top {
   background-color: $dark_blue;
 
@@ -131,7 +152,7 @@ body {
             content: '';
             width: 100%;
             height: 1px;
-            background-color: $red;
+            background-color: $white;
             position: absolute;
             left: 0;
             bottom: -5px;
@@ -231,12 +252,379 @@ body {
           content: '';
           height: 5px;
           width: 5px;
-          background-color: #E8412D;
+          background-color: $red;
           border-radius: 50%;
           margin-right: 12px;
         }
       }
     }
   }
+}
+// END Footer
 
+#block-tederic-local-tasks {
+  .block-wrapper {
+    > ul {
+      margin: 20px 0;
+
+      li {
+        display: inline-block;
+
+        a {
+          background-color: $dark_blue;
+          padding: 3px 6px;
+          color: $white;
+          display: block;
+
+          &:hover,
+          &.is-active {
+            background-color: $red;
+          }
+        }
+      }
+
+      li {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+// Slider
+.slick-slide {
+  outline: none;
+}
+// END Slider
+
+// Main Slider
+.slider-section {
+  position: relative;
+
+  .main-slick-arrows {
+    display: flex;
+
+    .slick-arrow {
+      background-image: url('../images/icons/s-arrow-right.png');
+      width: 31px;
+      height: 31px;
+      cursor: pointer;
+
+      &.main-arrow-prev {
+        transform: rotate(-180deg);
+        margin-right: 66px;
+      }
+
+      &.slick-disabled {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .slick-pagination {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    width: 100%;
+    color: $white;
+    font-family: $font_name;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 21px;
+    letter-spacing: 4px;
+    transform: translateX(-50%);
+    padding-right: 20px;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .numbers {
+      position: absolute;
+      right: 62px;
+    }
+  }
+}
+.main-slider-img {
+  img {
+    width: 100%;
+  }
+}
+.main-slider-text {
+  background-color: $dark_blue;
+  padding: 47px 0;
+
+  .field--name-field-text {
+    max-width: 1090px;
+  }
+
+  .field--name-field-text,
+  .field--name-field-text p {
+    margin: 0;
+    color: $white;
+    font-family: $font_name;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -0.44px;
+    line-height: 56px;
+  }
+
+  .field--name-field-link {
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: $white;
+      font-family: $font_name;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 21px;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding-bottom: 4px;
+      text-transform: uppercase;
+
+      &:after {
+        content: '';
+        background: url('../images/icons/arrow-right.svg') no-repeat center/contain;
+        width: 10px;
+        height: 18px;
+        margin-left: 17px;
+      }
+
+      &:before {
+        content: '';
+        width: calc(100% - 27px);
+        height: 2px;
+        background-color: $red;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: .3s all ease;
+        opacity: 1;
+      }
+
+      &:hover:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+// END Main Slider
+
+.text-l-block-r {
+  padding: 130px 0 80px;
+
+  .paragraph-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .text-left {
+    flex: 0 0 450px;
+    padding-right: 5%;
+  }
+  .img-right {
+    flex: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .field--name-field-title,
+  .field--name-field-title p {
+    color: $dark_blue_text;
+    font-family: $font_name;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 46px;
+    margin: 0;
+  }
+  .field--name-field-title {
+    margin-bottom: 40px;
+  }
+
+  .field--name-field-subtitle,
+  .field--name-field-subtitle p {
+    color: $dark_blue_text;
+    font-family: $font_name;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 34px;
+    margin: 0;
+  }
+  .field--name-field-subtitle {
+    margin-bottom: 6px;
+  }
+
+  .field--name-field-text,
+  .field--name-field-text p {
+    color: $dark_blue_text;
+    font-family: $font_name;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 29px;
+    margin: 0;
+  }
+  .field--name-field-text {
+    margin-bottom: 6px;
+  }
+
+  .field--name-field-link {
+    a {
+      color: $dark_blue_text;
+      font-family: $font_name;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 21px;
+      display: inline-flex;
+      align-items: center;
+      padding-bottom: 4px;
+      text-transform: uppercase;
+      position: relative;
+      margin: 40px 0 35px;
+
+      &:after {
+        content: '';
+        background: url('../images/icons/arrow-right.svg') no-repeat center/contain;
+        background-size: contain;
+        width: 10px;
+        height: 18px;
+        margin-left: 17px;
+      }
+
+      &:before {
+        content: '';
+        width: calc(100% - 27px);
+        height: 2px;
+        background-color: $red;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: .3s all ease;
+        opacity: 1;
+      }
+
+      &:hover:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.icons-section {
+  padding: 80px 0 120px;
+  background-color: $gray;
+  text-align: center;
+
+  .field--name-field-title,
+  .field--name-field-title p {
+    color: $gray_text;
+    font-family: $font_name;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0;
+  }
+  .field--name-field-title {
+    margin-bottom: 30px;
+  }
+
+  .field--name-field-text,
+  .field--name-field-text p {
+    color: $dark_blue_text;
+    font-family: $font_name;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 46px;
+    margin: 0;
+  }
+  .field--name-field-text {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+  }
+
+  .field--name-field-media-image {
+    img {
+      margin: 0 auto 15px;
+    }
+  }
+
+  .field--name-field-icons-sliders {
+    max-width: 1220px;
+    margin: 0 auto;
+
+    .icons-slider {
+      padding: 25px 10px 0;
+    }
+
+    .field--name-field-title,
+    .field--name-field-title p {
+      color: $dark_blue;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 32px;
+    }
+    .field--name-field-title {
+      margin-bottom: 20px;
+    }
+
+    .field--name-field-text,
+    .field--name-field-text p {
+      color: $dark_blue;
+      font-family: $font_name;
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 30px;
+      margin: 0;
+    }
+    .field--name-field-text {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .slick-arrow {
+      background: url('../images/icons/arrow-right.svg') no-repeat center/contain;
+      height: 42px;
+      width: 24px;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      font-size: 0;
+      position: absolute;
+      right: -100px;
+      top: 50%;
+      margin-top: 21px;
+      cursor: pointer;
+
+      &.slick-prev {
+        right: auto;
+        left: -100px;
+        transform: rotate(-180deg);
+      }
+
+      &.slick-disabled {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .slick-slide {
+    padding: 0 45px;
+  }
 }
