@@ -1,0 +1,5 @@
+name: Tederic Common module
+type: module
+description: Tederic Common module.
+core: 8.x
+package: Custom

@@ -1,0 +1,12 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ content.field_icon }}
+  {{ content.field_image }}
+  {{ content.field_text }}
+  {{ content.field_text_2 }}
+</div>

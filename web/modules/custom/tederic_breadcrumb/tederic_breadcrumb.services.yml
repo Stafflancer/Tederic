@@ -1,0 +1,6 @@
+services:
+  tederic_breadcrumb.tederic_breadcrumb:
+    class: Drupal\tederic_breadcrumb\TedericBreadcrumbBuilder
+    arguments: []
+    tags:
+      - { name: breadcrumb_builder, priority: 10 }

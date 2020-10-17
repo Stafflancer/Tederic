@@ -1,0 +1,10 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ drupal_entity('block', 'tederic_breadcrumbs') }}
+</div>
