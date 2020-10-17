@@ -1,0 +1,111 @@
+uuid: 6eae5814-54ad-41ab-b5bd-7f89481ebfa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_section.field_icon
+    - field.field.paragraph.contact_section.field_image
+    - field.field.paragraph.contact_section.field_text
+    - field.field.paragraph.contact_section.field_text_2
+    - paragraphs.paragraphs_type.contact_section
+  module:
+    - field_group
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_1st_column
+        - group_2nd_column
+        - group_3rd_column
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_1st_column:
+      children:
+        - field_image
+        - field_icon
+      parent_name: group_tabs
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: '1st column'
+    group_2nd_column:
+      children:
+        - field_text
+      parent_name: group_tabs
+      weight: 8
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: '2nd column'
+    group_3rd_column:
+      children:
+        - field_text_2
+      parent_name: group_tabs
+      weight: 9
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: '3rd column'
+id: paragraph.contact_section.default
+targetEntityType: paragraph
+bundle: contact_section
+mode: default
+content:
+  field_icon:
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text_2:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,50 @@
+uuid: 94546808-ec1a-4221-8875-f6190b915c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.social-media-menu.field_link_item
+    - system.menu.social-media-menu
+  module:
+    - link
+    - menu_item_extras
+    - paragraphs
+id: menu_link_content.social-media-menu.default
+targetEntityType: menu_link_content
+bundle: social-media-menu
+mode: default
+content:
+  field_link_item:
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

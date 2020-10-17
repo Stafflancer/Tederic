@@ -1,0 +1,10 @@
+uuid: af7a1931-ed1c-4500-b625-5b8247ecabe0
+langcode: en
+status: true
+dependencies: {  }
+id: slider_section
+label: 'Slider Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

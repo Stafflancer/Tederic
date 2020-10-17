@@ -1,0 +1,21 @@
+uuid: 786a6386-86cd-4e90-993b-b5f727644c60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.icons_section
+  module:
+    - text
+id: paragraph.icons_section.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: icons_section
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

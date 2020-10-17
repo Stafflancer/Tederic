@@ -1,0 +1,10 @@
+uuid: 389ba4e3-9567-4301-8a56-3ef7a0c334d2
+langcode: en
+status: true
+dependencies: {  }
+id: breadcrumb
+label: Breadcrumb
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

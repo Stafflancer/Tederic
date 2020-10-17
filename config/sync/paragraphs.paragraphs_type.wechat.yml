@@ -1,0 +1,10 @@
+uuid: 62c91489-71bf-43c7-a4c8-f67cd5302219
+langcode: en
+status: true
+dependencies: {  }
+id: wechat
+label: WeChat
+icon_uuid: null
+icon_default: null
+description: 'For Social media menu.'
+behavior_plugins: {  }

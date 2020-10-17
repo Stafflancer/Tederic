@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.general_media.field_icon
-    - field.field.paragraph.general_media.field_url
+    - field.field.paragraph.general_media.field_link
     - paragraphs.paragraphs_type.general_media
   module:
     - link
@@ -21,7 +21,7 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
-  field_url:
+  field_link:
     weight: 1
     settings:
       placeholder_url: ''

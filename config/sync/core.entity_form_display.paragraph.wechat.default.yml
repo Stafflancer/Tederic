@@ -1,0 +1,35 @@
+uuid: 67672dda-0dcd-4058-993b-21fabc53ab9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wechat.field_icon
+    - field.field.paragraph.wechat.field_qr_code
+    - paragraphs.paragraphs_type.wechat
+  module:
+    - media_library
+id: paragraph.wechat.default
+targetEntityType: paragraph
+bundle: wechat
+mode: default
+content:
+  field_icon:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_qr_code:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

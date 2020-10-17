@@ -1,0 +1,35 @@
+uuid: 463d56f4-4b65-4c78-9684-53f75c6dbd3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_section.field_link
+    - field.field.paragraph.news_section.field_title
+    - paragraphs.paragraphs_type.news_section
+  module:
+    - link
+    - text
+id: paragraph.news_section.default
+targetEntityType: paragraph
+bundle: news_section
+mode: default
+content:
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

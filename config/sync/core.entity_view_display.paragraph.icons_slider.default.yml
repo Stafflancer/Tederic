@@ -1,0 +1,40 @@
+uuid: 2c4353c3-fcab-4e28-8eec-65ad8447d5b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icons_slider.field_icon
+    - field.field.paragraph.icons_slider.field_text
+    - field.field.paragraph.icons_slider.field_title
+    - paragraphs.paragraphs_type.icons_slider
+  module:
+    - text
+id: paragraph.icons_slider.default
+targetEntityType: paragraph
+bundle: icons_slider
+mode: default
+content:
+  field_icon:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

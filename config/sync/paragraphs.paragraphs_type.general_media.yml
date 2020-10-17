@@ -6,5 +6,5 @@ id: general_media
 label: 'General Media'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'For Social media menu.'
 behavior_plugins: {  }

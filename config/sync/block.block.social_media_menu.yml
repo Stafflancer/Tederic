@@ -1,0 +1,25 @@
+uuid: eec8a27a-cbc7-4adc-ac8d-5263677dad6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media-menu
+  module:
+    - system
+  theme:
+    - tederic
+id: social_media_menu
+theme: tederic
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-media-menu'
+settings:
+  id: 'system_menu_block:social-media-menu'
+  label: 'Social media menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

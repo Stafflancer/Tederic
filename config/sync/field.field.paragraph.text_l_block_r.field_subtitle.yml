@@ -1,0 +1,21 @@
+uuid: e62d2a1e-1ad9-4c53-a06f-be8239bb8f17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.text_l_block_r
+  module:
+    - text
+id: paragraph.text_l_block_r.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: text_l_block_r
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

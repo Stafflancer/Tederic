@@ -1,0 +1,20 @@
+uuid: 35d8687f-99db-4961-a33d-3d12a40c2c63
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_qr_code
+field_name: field_qr_code
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

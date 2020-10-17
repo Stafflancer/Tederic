@@ -3,8 +3,8 @@ name: Tederic
 mail: info@tederic.loc
 slogan: ''
 page:
-  403: ''
-  404: ''
+  403: /node/2
+  404: /node/3
   front: /node/1
 admin_compact_mode: false
 weight_select_max: 100

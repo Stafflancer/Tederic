@@ -1,0 +1,23 @@
+uuid: b3ed11a2-5e18-49d5-a081-5fe6afacceac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.products_section
+  module:
+    - link
+id: paragraph.products_section.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: products_section
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

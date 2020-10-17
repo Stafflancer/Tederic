@@ -1,0 +1,25 @@
+uuid: 0cab55c4-e720-4f16-808a-03ae416bec5b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:logo:77cb03de-15e3-4785-8166-d0ab74b7cae6'
+  module:
+    - block_content
+  theme:
+    - tederic
+id: footerlogo
+theme: tederic
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:77cb03de-15e3-4785-8166-d0ab74b7cae6'
+settings:
+  id: 'block_content:77cb03de-15e3-4785-8166-d0ab74b7cae6'
+  label: 'Footer Logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

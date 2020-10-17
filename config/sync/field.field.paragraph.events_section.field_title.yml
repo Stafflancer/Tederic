@@ -1,0 +1,21 @@
+uuid: da4b49b7-568d-4cd6-9c6c-e58ef5650df2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.events_section
+  module:
+    - text
+id: paragraph.events_section.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: events_section
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

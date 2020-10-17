@@ -1,0 +1,10 @@
+uuid: e46d4153-e80c-43ad-bc59-4a73acec044a
+langcode: en
+status: true
+dependencies: {  }
+id: newsletter_sign_up_block
+label: 'Newsletter sign up block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

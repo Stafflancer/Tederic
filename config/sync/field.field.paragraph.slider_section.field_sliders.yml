@@ -1,0 +1,40 @@
+uuid: e663764d-7e65-4e6b-b72f-03ca0d1092c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sliders
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.slider_section
+  module:
+    - entity_reference_revisions
+id: paragraph.slider_section.field_sliders
+field_name: field_sliders
+entity_type: paragraph
+bundle: slider_section
+label: Sliders
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slider: slider
+    target_bundles_drag_drop:
+      general_media:
+        weight: 4
+        enabled: false
+      slider:
+        enabled: true
+        weight: 6
+      slider_section:
+        weight: 5
+        enabled: false
+      wechat:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

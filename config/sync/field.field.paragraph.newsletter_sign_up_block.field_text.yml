@@ -1,0 +1,21 @@
+uuid: 02be6402-fa4d-4f73-9a18-0f874d79a4dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.newsletter_sign_up_block
+  module:
+    - text
+id: paragraph.newsletter_sign_up_block.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: newsletter_sign_up_block
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
