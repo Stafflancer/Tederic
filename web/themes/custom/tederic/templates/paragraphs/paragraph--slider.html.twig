@@ -5,6 +5,18 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {{ content.field_text }}
-  {{ content.field_link }}
+
+  <div class="main-slider-img">
+    <img src="/themes/custom/tederic/images/slider.png">
+  </div>
+
+  <div class="main-slider-text">
+    <div class="row">
+      <div class="small-12 column">
+        {{ content.field_text }}
+        {{ content.field_link }}
+      </div>
+    </div>
+  </div>
+
 </div>
