@@ -1,0 +1,26 @@
+uuid: c0cfe671-cca9-432f-b835-8e27a2cf784a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.social-media-menu.field_link_item
+    - system.menu.social-media-menu
+  module:
+    - entity_reference_revisions
+id: menu_link_content.social-media-menu.default
+targetEntityType: menu_link_content
+bundle: social-media-menu
+mode: default
+content:
+  field_link_item:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  children: true
+  langcode: true

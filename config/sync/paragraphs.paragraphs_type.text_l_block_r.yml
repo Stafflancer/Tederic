@@ -1,0 +1,10 @@
+uuid: 5611880d-8fa8-436a-98c2-2c0bcc642911
+langcode: en
+status: true
+dependencies: {  }
+id: text_l_block_r
+label: 'Text L / Block R'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

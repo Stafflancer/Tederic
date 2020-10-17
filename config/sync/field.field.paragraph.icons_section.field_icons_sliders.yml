@@ -1,0 +1,49 @@
+uuid: a3e5aef4-3cfa-406d-bfc4-5bea008f4928
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icons_sliders
+    - paragraphs.paragraphs_type.icons_section
+    - paragraphs.paragraphs_type.icons_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.icons_section.field_icons_sliders
+field_name: field_icons_sliders
+entity_type: paragraph
+bundle: icons_section
+label: 'Icons Sliders'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icons_slider: icons_slider
+    target_bundles_drag_drop:
+      general_media:
+        weight: 8
+        enabled: false
+      icons_section:
+        weight: 9
+        enabled: false
+      icons_slider:
+        enabled: true
+        weight: 10
+      slider:
+        weight: 11
+        enabled: false
+      slider_section:
+        weight: 12
+        enabled: false
+      text_l_block_r:
+        weight: 13
+        enabled: false
+      wechat:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 7eee7530-78ce-434c-b05d-f3916878da86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.news_section
+  module:
+    - text
+id: paragraph.news_section.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: news_section
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

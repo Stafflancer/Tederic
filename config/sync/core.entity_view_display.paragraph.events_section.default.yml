@@ -1,0 +1,22 @@
+uuid: 99b2bfec-a171-465c-b1ac-d8ca0702a156
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events_section.field_title
+    - paragraphs.paragraphs_type.events_section
+  module:
+    - text
+id: paragraph.events_section.default
+targetEntityType: paragraph
+bundle: events_section
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

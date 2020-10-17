@@ -1,0 +1,28 @@
+uuid: 48115412-d54d-4cae-934b-3808a7335e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_crop
+    - media.type.image_with_crop
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_image_crop
+field_name: field_image_crop
+entity_type: paragraph
+bundle: slider
+label: 'Image Crop'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image_with_crop: image_with_crop
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

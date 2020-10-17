@@ -1,0 +1,23 @@
+uuid: 6e97af70-2946-40ca-a288-37ac0059024e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.news_section
+  module:
+    - link
+id: paragraph.news_section.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: news_section
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

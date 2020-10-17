@@ -1,0 +1,21 @@
+uuid: 479a2a01-a071-4b59-a090-86bc21340bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.icons_slider
+  module:
+    - text
+id: paragraph.icons_slider.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: icons_slider
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

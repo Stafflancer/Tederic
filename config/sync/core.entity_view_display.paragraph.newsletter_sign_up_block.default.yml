@@ -1,0 +1,30 @@
+uuid: f8e31f50-9b01-4e58-88b5-95cdf05b4b05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.newsletter_sign_up_block.field_text
+    - field.field.paragraph.newsletter_sign_up_block.field_title
+    - paragraphs.paragraphs_type.newsletter_sign_up_block
+  module:
+    - text
+id: paragraph.newsletter_sign_up_block.default
+targetEntityType: paragraph
+bundle: newsletter_sign_up_block
+mode: default
+content:
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

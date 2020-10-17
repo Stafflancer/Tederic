@@ -1,0 +1,10 @@
+uuid: e3f19da3-175e-45a9-adc8-9fc2b0d79f73
+langcode: en
+status: true
+dependencies: {  }
+id: products_section
+label: 'Products Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

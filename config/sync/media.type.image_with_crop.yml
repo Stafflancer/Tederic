@@ -1,0 +1,14 @@
+uuid: 8d21f957-4744-43d2-9426-1475eb3f1067
+langcode: en
+status: true
+dependencies: {  }
+id: image_with_crop
+label: 'Image with Crop'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map:
+  name: name

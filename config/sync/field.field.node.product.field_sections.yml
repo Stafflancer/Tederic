@@ -1,0 +1,67 @@
+uuid: 93951632-507b-4182-ae9d-0c899500782f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.product
+    - paragraphs.paragraphs_type.breadcrumb
+  module:
+    - entity_reference_revisions
+id: node.product.field_sections
+field_name: field_sections
+entity_type: node
+bundle: product
+label: Sections
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      breadcrumb: breadcrumb
+    target_bundles_drag_drop:
+      breadcrumb:
+        enabled: true
+        weight: 14
+      contact_section:
+        weight: 15
+        enabled: false
+      events_section:
+        weight: 16
+        enabled: false
+      general_media:
+        weight: 17
+        enabled: false
+      icons_section:
+        weight: 18
+        enabled: false
+      icons_slider:
+        weight: 19
+        enabled: false
+      news_section:
+        weight: 21
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 20
+        enabled: false
+      products_section:
+        weight: 22
+        enabled: false
+      slider:
+        weight: 23
+        enabled: false
+      slider_section:
+        weight: 24
+        enabled: false
+      text_l_block_r:
+        weight: 25
+        enabled: false
+      wechat:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions
