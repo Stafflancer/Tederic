@@ -1,0 +1,23 @@
+uuid: 572ba792-071d-4860-b90a-0863b3a5607f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_big_card
+    - node.type.news
+id: node.news.field_big_card
+field_name: field_big_card
+entity_type: node
+bundle: news
+label: 'Big Card'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
