@@ -10,3 +10,10 @@ function tederic_common_form_alter(&$form, FormStateInterface $form_state, $form
     // to do...
   }
 }
+
+/**
+ * Implements hook_preprocess_links().
+ */
+function tederic_common_preprocess_links(&$variables) {
+  $variables['language_id'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+}
