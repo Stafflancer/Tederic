@@ -1,0 +1,48 @@
+{% set bigCard = ("On" in content.field_big_card.0) ? 'big-card' : '' %}
+{% set specialLabel = content.field_special_label.0 ? 'special-label' : '' %}
+
+<article{{ attributes.addClass(bigCard).addClass(specialLabel) }}>
+  <a href="{{ url }}" rel="bookmark">
+    <h2>{{ label }}</h2>
+
+    {% if content.field_date_range.0 %}
+      {% 
+        set event_start_date = 
+        (content.field_date_range.0.start_date["#attributes"]["datetime"] is empty) ?
+        content.field_date_range.0["#attributes"]["datetime"] :
+        content.field_date_range.0.start_date["#attributes"]["datetime"]
+      %}
+      {% 
+        set event_end_date = 
+        (content.field_date_range.0.end_date["#attributes"]["datetime"] is empty) ?
+        content.field_date_range.0["#attributes"]["datetime"] :
+        content.field_date_range.0.end_date["#attributes"]["datetime"]
+      %}
+
+      {% if event_start_date | date('U') | format_date('custom', 'd') == event_end_date | date('U') | format_date('custom', 'd') %}
+        {# Check for and render a single day date. #}
+        <div class="date">
+          {{ event_start_date | date('U') | format_date('custom', 'd F, Y') }}
+        </div>
+      {# If the start date month and end date month match. #}
+      {% elseif event_start_date | date('U') | format_date('custom', 'F') == event_end_date | date('U') | format_date('custom', 'F') %}
+        <div class="date">
+          {{ event_start_date | date('U') | format_date('custom', 'd - ') }}
+          {{ event_end_date | date('U') | format_date('custom', 'd F, Y') }}
+        </div>
+      {# If the start date month and end date month DO NOT match. #}
+      {% elseif event_start_date | date('U') | format_date('custom', 'F') != event_end_date | date('U') | format_date('custom', 'F') %}
+        <div class="date">
+          {{ event_start_date | date('U') | format_date('custom', 'd F - ') }}
+          {{ event_end_date | date('U') | format_date('custom', 'd F, Y') }}
+        </div>
+      {% endif %}
+    {% endif %}
+
+    {{ content.field_visitors }}
+
+    {{ content.field_special_label }}
+
+    {{ content|without('field_date_range', 'field_visitors', 'field_special_label', 'field_big_card') }}
+  </a>
+</article>
