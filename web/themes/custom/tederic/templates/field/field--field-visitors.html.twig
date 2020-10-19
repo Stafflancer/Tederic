@@ -1,0 +1,10 @@
+{% set classes = [
+  field_name|clean_class,
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {% for item in items %}
+    {{ item.content }}
+    {{ 'Visitors'|t }}
+  {% endfor %}
+</div>
