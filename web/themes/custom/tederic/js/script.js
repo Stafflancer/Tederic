@@ -37,7 +37,11 @@
   Drupal.behaviors.script = {
     attach: function (context, settings) {
 
-      
+      // Show / Hide language
+      $('.language-toggle').unbind('click').bind('click', function() {
+        $(this).toggleClass('l-active');
+        $(this).next().toggleClass('l-show');
+      });
 
     }
   }
