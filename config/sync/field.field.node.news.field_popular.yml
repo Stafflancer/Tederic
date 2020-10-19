@@ -1,0 +1,23 @@
+uuid: 744ce098-db6a-47c4-a1a6-99ecc1fc054c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_popular
+    - node.type.news
+id: node.news.field_popular
+field_name: field_popular
+entity_type: node
+bundle: news
+label: Popular
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

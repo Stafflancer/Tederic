@@ -14,6 +14,7 @@ module:
   crop: 0
   ctools: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
@@ -58,6 +59,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  twig_xdebug: 0
   update: 0
   user: 0
   views_ui: 0

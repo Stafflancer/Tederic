@@ -1,0 +1,19 @@
+uuid: b1c5eb6d-0987-4e52-be20-d610d4eb44cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visitors
+    - node.type.event
+id: node.event.field_visitors
+field_name: field_visitors
+entity_type: node
+bundle: event
+label: Visitors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

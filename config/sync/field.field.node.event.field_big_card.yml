@@ -1,0 +1,23 @@
+uuid: 1af94afe-8b53-4e1c-a0fe-6d58bdaebbf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_big_card
+    - node.type.event
+id: node.event.field_big_card
+field_name: field_big_card
+entity_type: node
+bundle: event
+label: 'Big Card'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

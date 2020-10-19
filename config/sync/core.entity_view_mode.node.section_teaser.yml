@@ -1,0 +1,10 @@
+uuid: 835b0265-7813-4455-bc34-1a5b348684d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.section_teaser
+label: 'Section Teaser'
+targetEntityType: node
+cache: true
