@@ -6,9 +6,16 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  {{ 'our products'|t }}
-  {{ content.field_title }}
-  {{ content.field_subtitle }}
-  {{ content.field_text }}
-  {{ content.field_link }}
+  <div class="row">
+    <div class="large-4 column">
+      <div class="sup-title">{{ 'our products'|t }}</div>
+      <div class="title">{{ content.field_title }}</div>
+      <div class="sub-title">{{ content.field_subtitle }}</div>
+      <div class="text">{{ content.field_text }}</div>
+      <div class="link">{{ content.field_link }}</div>
+    </div>
+    <div class="large-8 column">
+      123
+    </div>
+  </div>
 </div>
