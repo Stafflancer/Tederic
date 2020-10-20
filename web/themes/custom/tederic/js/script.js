@@ -3,7 +3,7 @@
 
     // Main slider
     var $status = $('.slick-pagination .numbers');
-    var $slickElement = $('.slider-section .field--name-field-sliders');
+    var $slickElement = $('.slider-section .field-sliders');
 
     $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
@@ -25,7 +25,7 @@
     });
 
     // Slider for icons (Home page)
-    $('.icons-section .field--name-field-icons-sliders').not('.slick-initialized').slick({
+    $('.icons-section .field-icons-sliders').not('.slick-initialized').slick({
       arrows: true,
       infinite: false,
       slidesToShow: 3,
@@ -37,10 +37,18 @@
   Drupal.behaviors.script = {
     attach: function (context, settings) {
 
-      // Show / Hide language
+      // Show / Hide Language
       $('.language-toggle').unbind('click').bind('click', function() {
         $(this).toggleClass('l-active');
         $(this).next().toggleClass('l-show');
+      });
+
+      // Show / Hide Search
+      $('.show-search').unbind('click').bind('click', function() {
+        $('#block-tederic-search').addClass('open-search');
+      });
+      $('.close-search').unbind('click').bind('click', function() {
+        $('#block-tederic-search').removeClass('open-search');
       });
 
     }
