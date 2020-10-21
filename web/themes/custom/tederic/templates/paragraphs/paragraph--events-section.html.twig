@@ -6,6 +6,10 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  {{ content }}
-  {{ drupal_view('events', 'section_block') }}
+  <div class="row">
+    <div class="small-12 column">
+      {{ content }}
+      {{ drupal_view('events', 'section_block') }}
+    </div>
+  </div>
 </div>

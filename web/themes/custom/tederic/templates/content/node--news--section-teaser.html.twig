@@ -1,9 +1,12 @@
 {% set specialLabel = content.field_special_label.0 ? 'special-label' : '' %}
 
 <article{{ attributes.addClass(specialLabel) }}>
-  <a href="{{ url }}" rel="bookmark">
-    <h2>{{ label }}</h2>
-    {{ content.field_special_label }}
-    {{ content.field_date }}
+  <a href="{{ url }}" class="news-item" rel="bookmark" style="background-color: #fff;">
+    <h2 class="node-title">{{ label }}</h2>
+
+    <div class="news-bottom">
+      {{ content.field_special_label }}
+      {{ content.field_date }}
+    </div>
   </a>
 </article>
