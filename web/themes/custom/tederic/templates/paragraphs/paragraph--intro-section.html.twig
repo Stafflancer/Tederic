@@ -7,10 +7,14 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  {% if "On" in content.field_breadcrumbs.0 %}
-    {{ drupal_entity('block', 'tederic_breadcrumbs') }}
-  {% endif %}
-  
-  {{ content|without('field_breadcrumbs') }}
+  <div class="row">
+    <div class="small-12 column">
+      {% if "On" in content.field_breadcrumbs.0 %}
+        {{ drupal_entity('block', 'tederic_breadcrumbs') }}
+      {% endif %}
+
+      {{ content|without('field_breadcrumbs') }}
+    </div>
+  </div>
 </div>
 
