@@ -1,16 +1,26 @@
 {% set bigCard = ("On" in content.field_big_card.0) ? 'big-card' : '' %}
 {% set specialLabel = content.field_special_label.0 ? 'special-label' : '' %}
+{%
+  set imageStyle = {
+    '#theme':      'image_style',
+    '#style_name': ("On" in content.field_big_card.0) ? 'event_big_crop' : 'event_medium_crop',
+    '#uri':        node.field_image_crop[0].entity.uri.value,
+    '#alt':        node.field_image_crop[0].alt
+  }
+%}
 
 <article{{ attributes.addClass(bigCard).addClass(specialLabel) }}>
   <a href="{{ url }}" class="event-item" rel="bookmark">
 
     <div class="event-img">
-      <img src="/themes/custom/tederic/images/slider.png">
+      {# <img src="/themes/custom/tederic/images/slider.png"> #}
+      {# {{ content.field_image_crop }} #}
+      {{ imageStyle }}
     </div>
     <div class="event-text">
       <h2 class="node-title">{{ label }}</h2>
 
-      {{ content|without('field_date_range', 'field_visitors', 'field_special_label', 'field_big_card') }}
+      {{ content|without('field_date_range', 'field_visitors', 'field_special_label', 'field_big_card', 'field_image_crop') }}
 
       <div class="event-bottom">
         {% if content.field_date_range.0 %}

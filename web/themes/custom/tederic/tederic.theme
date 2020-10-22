@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Tederic custom theme.
+ */
+
+/**
+ * Implements theme_preprocess_breadcrumb().
+ */
+function tederic_preprocess_breadcrumb(&$variables) {
+  $variables['#cache']['contexts'][] = 'url';
+}
