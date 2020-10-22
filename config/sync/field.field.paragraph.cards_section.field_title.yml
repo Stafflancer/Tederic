@@ -1,0 +1,21 @@
+uuid: 882fc733-239d-4474-b12a-8ae8572d2e75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.cards_section
+  module:
+    - text
+id: paragraph.cards_section.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: cards_section
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

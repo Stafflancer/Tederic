@@ -1,0 +1,30 @@
+uuid: 39cc8686-8290-4d1f-a0b6-bbb8d9c3ae13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mission_section.field_text
+    - field.field.paragraph.mission_section.field_text_2
+    - paragraphs.paragraphs_type.mission_section
+  module:
+    - text
+id: paragraph.mission_section.default
+targetEntityType: paragraph
+bundle: mission_section
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_2:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

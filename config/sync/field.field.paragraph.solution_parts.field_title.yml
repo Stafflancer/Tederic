@@ -1,0 +1,21 @@
+uuid: d550e147-471e-49e8-be6c-938320097a12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.solution_parts
+  module:
+    - text
+id: paragraph.solution_parts.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: solution_parts
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

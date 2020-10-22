@@ -1,0 +1,17 @@
+uuid: aa8cd247-7da0-4c9a-b49a-fcc99aa512ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Worldwide
+type: worldwide
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

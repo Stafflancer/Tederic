@@ -1,0 +1,22 @@
+uuid: 9ba3638f-b06b-468e-a0dd-c60e79ed5736
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blue_background_text_section.field_text
+    - paragraphs.paragraphs_type.blue_background_text_section
+  module:
+    - text
+id: paragraph.blue_background_text_section.default
+targetEntityType: paragraph
+bundle: blue_background_text_section
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

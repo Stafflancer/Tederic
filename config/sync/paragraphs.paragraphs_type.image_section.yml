@@ -1,0 +1,10 @@
+uuid: cfd8af56-d2d2-4f56-bbb0-950a48848e2e
+langcode: en
+status: true
+dependencies: {  }
+id: image_section
+label: 'Image section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,76 @@
+uuid: 37aa4ff9-e6c8-46e9-9d99-03c64074404b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro
+    - node.type.solution
+    - paragraphs.paragraphs_type.intro_section
+  module:
+    - entity_reference_revisions
+id: node.solution.field_intro
+field_name: field_intro
+entity_type: node
+bundle: solution
+label: Intro
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      intro_section: intro_section
+    target_bundles_drag_drop:
+      breadcrumb:
+        weight: 17
+        enabled: false
+      contact_section:
+        weight: 18
+        enabled: false
+      events_section:
+        weight: 19
+        enabled: false
+      general_media:
+        weight: 20
+        enabled: false
+      icons_section:
+        weight: 21
+        enabled: false
+      icons_slider:
+        weight: 22
+        enabled: false
+      intro_section:
+        enabled: true
+        weight: 23
+      news_section:
+        weight: 25
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 24
+        enabled: false
+      products_section:
+        weight: 26
+        enabled: false
+      slider:
+        weight: 27
+        enabled: false
+      slider_section:
+        weight: 28
+        enabled: false
+      solution_part:
+        weight: 29
+        enabled: false
+      solution_parts:
+        weight: 30
+        enabled: false
+      text_l_block_r:
+        weight: 31
+        enabled: false
+      wechat:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

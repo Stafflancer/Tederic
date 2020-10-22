@@ -26,8 +26,9 @@ class TedericBreadcrumbBuilder implements BreadcrumbBuilderInterface {
    * {@inheritdoc}
    */
   public function applies(RouteMatchInterface $route_match) {
-    $node = $route_match->getParameter('node');
-    return $node instanceof NodeInterface;
+    return FALSE;
+    // $node = $route_match->getParameter('node');
+    // return $node instanceof NodeInterface;
   }
 
   /**

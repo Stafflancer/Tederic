@@ -1,0 +1,19 @@
+uuid: 26faf3d7-315d-4edc-9141-2e4421406645
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_plain
+    - paragraphs.paragraphs_type.history_year
+id: paragraph.history_year.field_text_plain
+field_name: field_text_plain
+entity_type: paragraph
+bundle: history_year
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

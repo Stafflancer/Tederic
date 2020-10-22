@@ -1,0 +1,10 @@
+uuid: fe5cf028-803e-4684-a508-f5a919abbf58
+langcode: en
+status: true
+dependencies: {  }
+id: history_block
+label: 'History block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

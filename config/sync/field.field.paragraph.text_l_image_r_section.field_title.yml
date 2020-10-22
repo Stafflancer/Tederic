@@ -1,0 +1,21 @@
+uuid: f3196ff6-e86a-43da-9922-a3b56729f541
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.text_l_image_r_section
+  module:
+    - text
+id: paragraph.text_l_image_r_section.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: text_l_image_r_section
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

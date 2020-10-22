@@ -1,0 +1,10 @@
+uuid: f857c90d-a6c1-4e48-85ef-49d8ba594fb4
+langcode: en
+status: true
+dependencies: {  }
+id: intro_section
+label: 'Intro section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

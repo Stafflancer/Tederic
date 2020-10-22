@@ -1,0 +1,94 @@
+uuid: b1830c0f-882b-4924-8ab4-7edd5d46197a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro
+    - node.type.page
+    - paragraphs.paragraphs_type.intro_section
+  module:
+    - entity_reference_revisions
+id: node.page.field_intro
+field_name: field_intro
+entity_type: node
+bundle: page
+label: Intro
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      intro_section: intro_section
+    target_bundles_drag_drop:
+      breadcrumb:
+        weight: 23
+        enabled: false
+      contact_section:
+        weight: 24
+        enabled: false
+      events_section:
+        weight: 25
+        enabled: false
+      general_media:
+        weight: 26
+        enabled: false
+      icons_section:
+        weight: 27
+        enabled: false
+      icons_slider:
+        weight: 28
+        enabled: false
+      image_section:
+        weight: 29
+        enabled: false
+      intro_section:
+        enabled: true
+        weight: 30
+      location:
+        weight: 31
+        enabled: false
+      location_column:
+        weight: 33
+        enabled: false
+      location_part:
+        weight: 34
+        enabled: false
+      locations_section:
+        weight: 32
+        enabled: false
+      news_section:
+        weight: 36
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 35
+        enabled: false
+      products_section:
+        weight: 37
+        enabled: false
+      slider:
+        weight: 38
+        enabled: false
+      slider_section:
+        weight: 39
+        enabled: false
+      solution_part:
+        weight: 40
+        enabled: false
+      solution_parts:
+        weight: 41
+        enabled: false
+      text_l_block_r:
+        weight: 42
+        enabled: false
+      text_section:
+        weight: 43
+        enabled: false
+      wechat:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

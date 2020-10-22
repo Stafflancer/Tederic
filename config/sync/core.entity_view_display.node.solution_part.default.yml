@@ -1,0 +1,39 @@
+uuid: 02c5c3e8-b2fa-4f2f-8ae6-8ffacac51181
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.solution_part.body
+    - field.field.node.solution_part.field_solution
+    - node.type.solution_part
+  module:
+    - text
+    - user
+id: node.solution_part.default
+targetEntityType: node
+bundle: solution_part
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_solution:
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: solution_part
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

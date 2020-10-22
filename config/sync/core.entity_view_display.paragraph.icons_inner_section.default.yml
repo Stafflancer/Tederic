@@ -1,0 +1,33 @@
+uuid: 02bc5fed-6a16-4d0d-8b0e-98be8f1f8b48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icons_inner_section.field_icons
+    - field.field.paragraph.icons_inner_section.field_title_plain
+    - paragraphs.paragraphs_type.icons_inner_section
+  module:
+    - entity_reference_revisions
+id: paragraph.icons_inner_section.default
+targetEntityType: paragraph
+bundle: icons_inner_section
+mode: default
+content:
+  field_icons:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title_plain:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
