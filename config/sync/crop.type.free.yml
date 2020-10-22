@@ -1,0 +1,12 @@
+uuid: 3e8552fd-88f9-4e55-806e-495b9f0b86b6
+langcode: en
+status: true
+dependencies: {  }
+id: free
+label: Free
+description: ''
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

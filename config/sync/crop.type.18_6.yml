@@ -1,0 +1,12 @@
+uuid: 787142d4-30df-49ce-9ceb-0c193099197a
+langcode: en
+status: true
+dependencies: {  }
+id: '18_6'
+label: '18:6'
+description: ''
+aspect_ratio: '18:6'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

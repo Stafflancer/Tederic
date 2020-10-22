@@ -1,0 +1,17 @@
+uuid: c23bcc41-1810-4b11-9518-659b221cde12
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.event_medium
+  module:
+    - crop
+name: event_medium_crop
+label: 'Event Medium Crop'
+effects:
+  02d7b1ac-d562-4066-a42b-a9158b827934:
+    uuid: 02d7b1ac-d562-4066-a42b-a9158b827934
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: event_medium

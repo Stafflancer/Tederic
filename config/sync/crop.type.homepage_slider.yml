@@ -1,0 +1,12 @@
+uuid: 7b42931a-7b8e-42af-b4ac-a105f5a97dfd
+langcode: en
+status: true
+dependencies: {  }
+id: homepage_slider
+label: 'Homepage Slider'
+description: ''
+aspect_ratio: '1680:545'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_sections
     - node.type.page
     - paragraphs.paragraphs_type.blue_background_text_section
+    - paragraphs.paragraphs_type.cards_section
     - paragraphs.paragraphs_type.history_block
     - paragraphs.paragraphs_type.icon_cards_section
     - paragraphs.paragraphs_type.icons_inner_section
@@ -32,6 +33,7 @@ settings:
     negate: 0
     target_bundles:
       blue_background_text_section: blue_background_text_section
+      cards_section: cards_section
       history_block: history_block
       icons_inner_section: icons_inner_section
       icon_cards_section: icon_cards_section
@@ -48,8 +50,8 @@ settings:
         weight: 23
         enabled: false
       cards_section:
+        enabled: true
         weight: 39
-        enabled: false
       cards_section_row:
         weight: 40
         enabled: false

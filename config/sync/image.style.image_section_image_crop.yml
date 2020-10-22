@@ -1,0 +1,17 @@
+uuid: 939dc6ca-e3d8-4fd7-a47f-03e9baa47015
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.image_section_image
+  module:
+    - crop
+name: image_section_image_crop
+label: 'Image Section Image Crop'
+effects:
+  0fdf0bdc-8c1a-4c02-96cf-d9e79bf332cf:
+    uuid: 0fdf0bdc-8c1a-4c02-96cf-d9e79bf332cf
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: image_section_image

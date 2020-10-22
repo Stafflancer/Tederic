@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: cards_section_row_cards
-label: 'Cards (cards section row)'
+label: 'Card (cards section row)'
 icon_uuid: null
 icon_default: null
 description: ''

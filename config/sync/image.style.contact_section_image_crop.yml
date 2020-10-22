@@ -1,0 +1,17 @@
+uuid: 5d0d4d78-0294-49aa-8bce-3ecb412f13f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.contact_section_image
+  module:
+    - crop
+name: contact_section_image_crop
+label: 'Contact Section Image Crop'
+effects:
+  6618c67b-10e6-491d-bd79-fe819e3a1a40:
+    uuid: 6618c67b-10e6-491d-bd79-fe819e3a1a40
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: contact_section_image

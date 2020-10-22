@@ -1,0 +1,12 @@
+uuid: 2619a045-0cea-4604-8a38-aa4ea727ffba
+langcode: en
+status: true
+dependencies: {  }
+id: image_section_image
+label: 'Image Section Image'
+description: ''
+aspect_ratio: '1680:440'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

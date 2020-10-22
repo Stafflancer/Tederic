@@ -1,17 +1,27 @@
-uuid: 3ac38f6a-c27a-4bc8-999f-a20fb6247f78
+uuid: 64137551-9270-4b6a-b595-f127bb7afe09
 langcode: en
 status: true
 dependencies:
   module:
-    - media
+    - file
+    - image
     - paragraphs
 id: paragraph.field_image_crop
 field_name: field_image_crop
 entity_type: paragraph
-type: entity_reference
+type: image
 settings:
-  target_type: media
-module: core
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
 locked: false
 cardinality: 1
 translatable: true

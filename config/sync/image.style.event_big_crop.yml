@@ -1,0 +1,17 @@
+uuid: f37d5b5f-8139-4358-ab96-cb1d452fcac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.event_big
+  module:
+    - crop
+name: event_big_crop
+label: 'Event Big Crop'
+effects:
+  58ec2b70-83ab-48d9-9af5-f5be8aba66b3:
+    uuid: 58ec2b70-83ab-48d9-9af5-f5be8aba66b3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: event_big

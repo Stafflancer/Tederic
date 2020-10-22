@@ -1,0 +1,17 @@
+uuid: 00676483-05cd-4e24-8006-d0dc1990afcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.homepage_slider
+  module:
+    - crop
+name: homepage_slider_crop
+label: 'Homepage Slider Crop'
+effects:
+  b2093d12-869b-4d6a-b0bf-3122f486b09d:
+    uuid: b2093d12-869b-4d6a-b0bf-3122f486b09d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: homepage_slider

@@ -1,0 +1,29 @@
+uuid: 16e917cc-986c-4933-8fbb-72c22dc81515
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_section.field_image_crop
+    - image.style.image_section_image_crop
+    - paragraphs.paragraphs_type.image_section
+  module:
+    - svg_image
+id: paragraph.image_section.default
+targetEntityType: paragraph
+bundle: image_section
+mode: default
+content:
+  field_image_crop:
+    weight: 0
+    label: above
+    settings:
+      image_style: image_section_image_crop
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }
