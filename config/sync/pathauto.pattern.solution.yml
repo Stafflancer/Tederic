@@ -1,0 +1,22 @@
+uuid: 749f1a76-edb3-4ef7-9065-46694747280f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: solution
+label: Solution
+type: 'canonical_entities:node'
+pattern: 'solutions/[node:title]'
+selection_criteria:
+  2752f285-9726-4866-8944-6096031e10d2:
+    id: node_type
+    bundles:
+      solution: solution
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2752f285-9726-4866-8944-6096031e10d2
+selection_logic: and
+weight: -10
+relationships: {  }

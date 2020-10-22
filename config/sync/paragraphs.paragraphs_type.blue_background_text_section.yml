@@ -1,0 +1,10 @@
+uuid: 15f2cf20-12e3-4a49-860a-376266c9b141
+langcode: en
+status: true
+dependencies: {  }
+id: blue_background_text_section
+label: 'Blue background text section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: icons_section
-label: 'Icons Section'
+label: 'Icons Section (slider)'
 icon_uuid: null
 icon_default: null
 description: ''

@@ -1,0 +1,19 @@
+uuid: 25eb96a8-14f4-4f0d-b48f-a738d48654a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_country_name
+    - paragraphs.paragraphs_type.location
+id: paragraph.location.field_country_name
+field_name: field_country_name
+entity_type: paragraph
+bundle: location
+label: 'Country name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

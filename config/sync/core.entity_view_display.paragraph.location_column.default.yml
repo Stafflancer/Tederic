@@ -1,0 +1,33 @@
+uuid: 51b9257e-316a-4568-94ff-3464ad545c45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.location_column.field_location
+    - field.field.paragraph.location_column.field_title
+    - paragraphs.paragraphs_type.location_column
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.location_column.default
+targetEntityType: paragraph
+bundle: location_column
+mode: default
+content:
+  field_location:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

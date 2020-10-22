@@ -1,0 +1,36 @@
+uuid: 78604042-c56d-42c2-8fd4-41537b439665
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards_section_row.field_cards_section_row_cards
+    - field.field.paragraph.cards_section_row.field_layout
+    - paragraphs.paragraphs_type.cards_section_row
+  module:
+    - paragraphs
+id: paragraph.cards_section_row.default
+targetEntityType: paragraph
+bundle: cards_section_row
+mode: default
+content:
+  field_cards_section_row_cards:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_layout:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

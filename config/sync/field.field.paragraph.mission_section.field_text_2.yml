@@ -1,0 +1,21 @@
+uuid: dbf6b8bf-c7d0-4925-919e-c5417432717b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_2
+    - paragraphs.paragraphs_type.mission_section
+  module:
+    - text
+id: paragraph.mission_section.field_text_2
+field_name: field_text_2
+entity_type: paragraph
+bundle: mission_section
+label: 'Text (grey background)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

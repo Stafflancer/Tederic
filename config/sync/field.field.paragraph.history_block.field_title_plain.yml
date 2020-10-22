@@ -1,0 +1,19 @@
+uuid: ab53a961-57b6-409a-95ce-1bcd52588503
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_plain
+    - paragraphs.paragraphs_type.history_block
+id: paragraph.history_block.field_title_plain
+field_name: field_title_plain
+entity_type: paragraph
+bundle: history_block
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

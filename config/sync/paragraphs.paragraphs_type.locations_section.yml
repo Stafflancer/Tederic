@@ -1,0 +1,10 @@
+uuid: 8e7b9889-1731-461a-a77f-7246222aadea
+langcode: en
+status: true
+dependencies: {  }
+id: locations_section
+label: 'Locations section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

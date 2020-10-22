@@ -1,0 +1,10 @@
+uuid: 5bbc2ea6-6a13-4dea-bcac-74ef25c6ec11
+langcode: en
+status: true
+dependencies: {  }
+id: icons_inner_section
+label: 'Icons section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

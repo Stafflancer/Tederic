@@ -1,0 +1,39 @@
+uuid: f4517f2f-6b04-4c86-8b9b-d7f0958f18d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solution_parts.field_solution_parts
+    - field.field.paragraph.solution_parts.field_title
+    - paragraphs.paragraphs_type.solution_parts
+  module:
+    - paragraphs
+    - text
+id: paragraph.solution_parts.default
+targetEntityType: paragraph
+bundle: solution_parts
+mode: default
+content:
+  field_solution_parts:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
