@@ -1,0 +1,10 @@
+uuid: 82aadf0f-b3ff-4abf-b802-5c992597af3f
+langcode: en
+status: true
+dependencies: {  }
+id: solution_parts
+label: 'Solution parts'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

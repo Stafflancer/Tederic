@@ -1,0 +1,10 @@
+uuid: 8a93e15f-49b3-486c-b1d6-927ad23a0109
+langcode: en
+status: true
+dependencies: {  }
+id: mission_section
+label: 'Mission section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

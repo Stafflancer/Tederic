@@ -1,0 +1,33 @@
+uuid: fff8d071-89ac-448a-8625-6403d39dcfc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.solution.body
+    - field.field.node.solution.field_intro
+    - field.field.node.solution.field_media_icon
+    - field.field.node.solution.field_solution_parts
+    - node.type.solution
+  module:
+    - user
+id: node.solution.teaser
+targetEntityType: node
+bundle: solution
+mode: teaser
+content:
+  field_media_icon:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_intro: true
+  field_solution_parts: true
+  langcode: true
+  links: true

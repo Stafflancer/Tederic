@@ -1,0 +1,32 @@
+uuid: 24256741-1ad8-4c2d-bebe-e937161305ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.history_year.field_text_plain
+    - field.field.paragraph.history_year.field_year
+    - paragraphs.paragraphs_type.history_year
+id: paragraph.history_year.default
+targetEntityType: paragraph
+bundle: history_year
+mode: default
+content:
+  field_text_plain:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_year:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

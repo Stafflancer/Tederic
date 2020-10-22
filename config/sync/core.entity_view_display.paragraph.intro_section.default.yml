@@ -1,0 +1,33 @@
+uuid: d00b1f08-5905-4f64-b8ea-6d8abba8a8c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.intro_section.field_breadcrumbs
+    - field.field.paragraph.intro_section.field_text
+    - paragraphs.paragraphs_type.intro_section
+  module:
+    - text
+id: paragraph.intro_section.default
+targetEntityType: paragraph
+bundle: intro_section
+mode: default
+content:
+  field_breadcrumbs:
+    weight: 0
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

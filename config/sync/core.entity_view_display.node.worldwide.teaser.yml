@@ -1,0 +1,25 @@
+uuid: 297b3bf7-d6a9-45c8-b6be-98a8e914caf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.worldwide.field_intro
+    - field.field.node.worldwide.field_sections
+    - node.type.worldwide
+  module:
+    - user
+id: node.worldwide.teaser
+targetEntityType: node
+bundle: worldwide
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_intro: true
+  field_sections: true
+  langcode: true

@@ -1,0 +1,10 @@
+uuid: 2b7bbd27-a5cb-4c76-9cb5-67601ac26aea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.solution_part
+label: 'Solution part'
+targetEntityType: node
+cache: true

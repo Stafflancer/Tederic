@@ -1,0 +1,103 @@
+uuid: 06208c4a-3ebb-4ce5-a2ae-e9cabbf24abc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icons
+    - paragraphs.paragraphs_type.icon
+    - paragraphs.paragraphs_type.icons_inner_section
+  module:
+    - entity_reference_revisions
+id: paragraph.icons_inner_section.field_icons
+field_name: field_icons
+entity_type: paragraph
+bundle: icons_inner_section
+label: Icons
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon: icon
+    target_bundles_drag_drop:
+      breadcrumb:
+        weight: 26
+        enabled: false
+      contact_section:
+        weight: 27
+        enabled: false
+      events_section:
+        weight: 28
+        enabled: false
+      general_media:
+        weight: 29
+        enabled: false
+      icon:
+        enabled: true
+        weight: 30
+      icons_inner_section:
+        weight: 25
+        enabled: false
+      icons_section:
+        weight: 30
+        enabled: false
+      icons_slider:
+        weight: 31
+        enabled: false
+      image_section:
+        weight: 32
+        enabled: false
+      intro_section:
+        weight: 33
+        enabled: false
+      location:
+        weight: 34
+        enabled: false
+      location_column:
+        weight: 35
+        enabled: false
+      location_part:
+        weight: 36
+        enabled: false
+      locations_section:
+        weight: 37
+        enabled: false
+      news_section:
+        weight: 38
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 39
+        enabled: false
+      products_section:
+        weight: 40
+        enabled: false
+      slider:
+        weight: 41
+        enabled: false
+      slider_section:
+        weight: 42
+        enabled: false
+      solution_part:
+        weight: 43
+        enabled: false
+      solution_parts:
+        weight: 44
+        enabled: false
+      text_l_block_r:
+        weight: 45
+        enabled: false
+      text_l_image_r_section:
+        weight: 46
+        enabled: false
+      text_section:
+        weight: 47
+        enabled: false
+      wechat:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,33 @@
+uuid: a92d9ace-d08d-41f3-a79d-64c9b2e5ad8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.history_block.field_title_plain
+    - field.field.paragraph.history_block.field_years
+    - paragraphs.paragraphs_type.history_block
+  module:
+    - entity_reference_revisions
+id: paragraph.history_block.default
+targetEntityType: paragraph
+bundle: history_block
+mode: default
+content:
+  field_title_plain:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_years:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

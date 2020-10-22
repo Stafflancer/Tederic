@@ -1,0 +1,10 @@
+uuid: bbc419d1-a8c3-4e2d-bcf2-085c2ade2e29
+langcode: en
+status: true
+dependencies: {  }
+id: text_section
+label: 'Text section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: fa0ddd20-8c87-4171-bff5-458178bfc3b4
+langcode: en
+status: true
+dependencies: {  }
+id: solution_part
+label: 'Solution part'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

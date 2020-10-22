@@ -1,0 +1,10 @@
+uuid: 1b0b0da3-e525-4534-8e67-96babe2cf92e
+langcode: en
+status: true
+dependencies: {  }
+id: location_column
+label: 'Location column'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

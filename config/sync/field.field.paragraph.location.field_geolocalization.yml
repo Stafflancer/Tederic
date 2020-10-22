@@ -1,0 +1,23 @@
+uuid: 3ef0015b-1054-4ac3-95a2-479bac640b45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_geolocalization
+    - paragraphs.paragraphs_type.location
+  module:
+    - link
+id: paragraph.location.field_geolocalization
+field_name: field_geolocalization
+entity_type: paragraph
+bundle: location
+label: Geolocalization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

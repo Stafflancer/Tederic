@@ -1,0 +1,56 @@
+uuid: 7e3c0448-95bf-42a5-8c45-2da9bab870cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.solution.body
+    - field.field.node.solution.field_intro
+    - field.field.node.solution.field_media_icon
+    - field.field.node.solution.field_solution_parts
+    - node.type.solution
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.solution.default
+targetEntityType: node
+bundle: solution
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_intro:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_media_icon:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_solution_parts:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  links: true
