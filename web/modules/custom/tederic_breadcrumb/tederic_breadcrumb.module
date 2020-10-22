@@ -10,24 +10,27 @@ use Drupal\Core\Link;
 function tederic_breadcrumb_system_breadcrumb_alter(Breadcrumb &$breadcrumb, RouteMatchInterface $route_match, array $context) {
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node instanceof \Drupal\node\NodeInterface) {
-    $links = $breadcrumb->getLinks();
+    $active_theme = \Drupal::theme()->getActiveTheme()->getName();
+    if (!empty($node->getType()) && $active_theme == 'tederic') {
+      $links = $breadcrumb->getLinks();
 
-    switch ($node->getType()) {
-      case 'solution':
-      case 'solution_part':
-        $links[0] = Link::createFromRoute(t('Solutions'), '<nolink>');
-        break;
-      case 'product':
-        $links[0] = Link::createFromRoute(t('Products'), '<front>');
-        break;
-      case 'worldwide':
-        $links[0] = Link::createFromRoute(t('Company'), '<nolink>');
-        break;
+      switch ($node->getType()) {
+        case 'solution':
+        case 'solution_part':
+          $links[0] = Link::createFromRoute(t('Solutions'), '<nolink>');
+          break;
+        case 'product':
+          $links[0] = Link::createFromRoute(t('Products'), '<front>');
+          break;
+        case 'worldwide':
+          $links[0] = Link::createFromRoute(t('Company'), '<nolink>');
+          break;
+      }
+
+      $links[] = Link::createFromRoute($node->getTitle(), '<nolink>');
+
+      $breadcrumb = new Breadcrumb();
+      $breadcrumb->setLinks($links);
     }
-
-    $breadcrumb = new Breadcrumb();
-    $breadcrumb->setLinks($links);
-
-    $breadcrumb->addLink(Link::createFromRoute($node->getTitle(), '<nolink>'));
   }
 }
