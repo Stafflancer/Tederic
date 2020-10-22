@@ -2,13 +2,30 @@
   
   {{ content.field_intro }}
 
-  {{ content.field_media_icon }}
-  {{ label }}
+  <div class="section-media-icon section-margin">
+    <div class="row align-center">
+      <div class="large-6 column">
+        <div class="title d-flex align-center justify-start">
+          {{ content.field_media_icon }}
+          {{ label }}
+        </div>
+        {{ content.body }}
+      </div>
+      <div class="large-6 column">
+        <img src="/themes/custom/tederic/images/slider.png">
+      </div>
+    </div>
+  </div>
 
-  {{ content.body }}
 
   {{ content.field_solution_parts }}
 
-  <h2>{{ 'Explore our other solutions'|t }}</h2>
-  {{ drupal_view('solutions', 'explore_other_solutions_block') }}
+  <div class="other-solutions-block">
+    <div class="row">
+      <div class="small-12 column">
+        <h2 class="title">{{ 'Explore our other solutions'|t }}</h2>
+        {{ drupal_view('solutions', 'explore_other_solutions_block') }}
+      </div>
+    </div>
+  </div>
 </article>
