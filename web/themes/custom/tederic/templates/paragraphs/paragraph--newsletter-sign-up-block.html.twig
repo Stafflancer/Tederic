@@ -13,10 +13,17 @@
     </div>
 
     <div class="large-7 column">
-      {{ content.field_text }}
+      <div class="sup-title">{{ content.field_text }}</div>
+
       <form action="/">
-        <input type="text" placeholder="Email address" name="mail" required>
-        <input type="submit" value="Get Started">
+        <div class="form-item js-form-type-text">
+          <input type="text" placeholder="Email address" name="mail" required>
+        </div>
+        <div class="form-item form-actions">
+          <div class="link">
+            <a class="#">Get Started</a>
+          </div>
+        </div>
       </form>
     </div>
 
