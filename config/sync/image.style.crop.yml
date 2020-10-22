@@ -3,15 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - crop.type.16_9
+    - crop.type.free
   module:
     - crop
 name: crop
-label: Crop
+label: 'Crop (free)'
 effects:
-  fb7f6cc5-bb31-48c7-805f-d326f5154b22:
-    uuid: fb7f6cc5-bb31-48c7-805f-d326f5154b22
+  6f60b735-3472-4285-92e8-6993dc39153c:
+    uuid: 6f60b735-3472-4285-92e8-6993dc39153c
     id: crop_crop
     weight: 1
     data:
-      crop_type: '16_9'
+      crop_type: free

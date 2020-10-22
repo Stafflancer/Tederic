@@ -1,0 +1,12 @@
+uuid: ff8ae6fa-0ad9-4428-b56e-79447ad31ddb
+langcode: en
+status: true
+dependencies: {  }
+id: contact_section_image
+label: 'Contact Section Image'
+description: ''
+aspect_ratio: '700:325'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

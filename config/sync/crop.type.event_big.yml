@@ -1,0 +1,12 @@
+uuid: 03e6d4b3-c05c-4162-bb67-32982bcc129d
+langcode: en
+status: true
+dependencies: {  }
+id: event_big
+label: 'Event Big'
+description: ''
+aspect_ratio: '990:256'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,12 @@
+uuid: 540e4bcd-aa46-4614-a10a-520369e84279
+langcode: en
+status: true
+dependencies: {  }
+id: solution_part_section
+label: 'Solution Part Section'
+description: ''
+aspect_ratio: '485:250'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 485
+hard_limit_height: 250

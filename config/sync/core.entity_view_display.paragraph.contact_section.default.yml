@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.contact_section.field_icon
-    - field.field.paragraph.contact_section.field_image
+    - field.field.paragraph.contact_section.field_image_crop
     - field.field.paragraph.contact_section.field_text
     - field.field.paragraph.contact_section.field_text_2
+    - image.style.contact_section_image_crop
     - paragraphs.paragraphs_type.contact_section
   module:
+    - svg_image
     - text
 id: paragraph.contact_section.default
 targetEntityType: paragraph
@@ -24,14 +26,18 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_image:
-    weight: 0
-    label: hidden
+  field_image_crop:
+    weight: 4
+    label: above
     settings:
-      link: true
-      view_mode: default
+      image_style: contact_section_image_crop
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: image
     region: content
   field_text:
     weight: 2

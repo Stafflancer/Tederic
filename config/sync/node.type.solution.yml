@@ -6,8 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:97995a0f-98b8-4c69-ac87-68b22b89317f'
 name: Solution
 type: solution
 description: ''

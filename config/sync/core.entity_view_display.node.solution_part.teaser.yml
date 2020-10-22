@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.solution_part.body
+    - field.field.node.solution_part.field_images
     - field.field.node.solution_part.field_solution
     - node.type.solution_part
   module:
@@ -29,5 +30,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_images: true
   field_solution: true
   langcode: true

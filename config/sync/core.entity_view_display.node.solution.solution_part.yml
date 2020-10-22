@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.solution_part
     - field.field.node.solution.body
+    - field.field.node.solution.field_image_crop
     - field.field.node.solution.field_intro
     - field.field.node.solution.field_media_icon
     - field.field.node.solution.field_solution_parts
@@ -27,6 +28,7 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_image_crop: true
   field_intro: true
   field_solution_parts: true
   langcode: true

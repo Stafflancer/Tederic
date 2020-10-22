@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.page.field_sections
     - node.type.page
   module:
-    - entity_reference_revisions
     - paragraphs
     - path
 _core:
@@ -38,12 +37,14 @@ content:
   field_sections:
     weight: 122
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs
     region: content
   langcode:
     type: language_select
@@ -86,6 +87,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

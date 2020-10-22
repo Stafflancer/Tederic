@@ -1,0 +1,25 @@
+uuid: 8642d997-6bbf-43bf-9f7c-b8c1788ce82b
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.solution_part_section
+  module:
+    - crop
+name: solution_part_section_crop
+label: 'Solution Part Section Crop'
+effects:
+  62d3c06e-a067-4506-b0f1-8e3cd20ccca4:
+    uuid: 62d3c06e-a067-4506-b0f1-8e3cd20ccca4
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: solution_part_section
+  539a3f23-9d83-4027-ac24-489c3d7a3cc3:
+    uuid: 539a3f23-9d83-4027-ac24-489c3d7a3cc3
+    id: image_scale
+    weight: 2
+    data:
+      width: 485
+      height: null
+      upscale: false

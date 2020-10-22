@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.solution.body
+    - field.field.node.solution.field_image_crop
     - field.field.node.solution.field_intro
     - field.field.node.solution.field_media_icon
     - field.field.node.solution.field_solution_parts
+    - image.style.thumbnail
     - node.type.solution
   module:
     - field_group
+    - image_widget_crop
     - media_library
     - paragraphs
     - path
@@ -46,7 +49,8 @@ third_party_settings:
         required_fields: true
       label: 'Left side'
     group_right_side:
-      children: {  }
+      children:
+        - field_image_crop
       parent_name: group_solution_description
       weight: 12
       format_type: tab
@@ -79,6 +83,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image_crop:
+    weight: 29
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - free
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
   field_intro:
     type: entity_reference_paragraphs
     weight: 1

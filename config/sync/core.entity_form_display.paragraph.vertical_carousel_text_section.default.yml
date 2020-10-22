@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.vertical_carousel_text_section.field_images
     - field.field.paragraph.vertical_carousel_text_section.field_text
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.vertical_carousel_text_section
   module:
     - field_group
+    - image_widget_crop
     - text
 third_party_settings:
   field_group:
@@ -24,7 +27,8 @@ third_party_settings:
         direction: horizontal
       label: Tabs
     group_left_side:
-      children: {  }
+      children:
+        - field_images
       parent_name: group_tabs
       weight: 4
       format_type: tab
@@ -55,6 +59,21 @@ targetEntityType: paragraph
 bundle: vertical_carousel_text_section
 mode: default
 content:
+  field_images:
+    weight: 6
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - free
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
   field_text:
     weight: 1
     settings:

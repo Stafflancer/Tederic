@@ -1,0 +1,17 @@
+uuid: 252bf6b4-86db-415c-bcbd-74869ba0d950
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.solution_part_image
+  module:
+    - crop
+name: solution_part_image_crop
+label: 'Solution Part Image Crop'
+effects:
+  b0a520e1-8b07-4b3a-88d7-94cc1d766d48:
+    uuid: b0a520e1-8b07-4b3a-88d7-94cc1d766d48
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: solution_part_image

@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.contact_section.field_icon
-    - field.field.paragraph.contact_section.field_image
+    - field.field.paragraph.contact_section.field_image_crop
     - field.field.paragraph.contact_section.field_text
     - field.field.paragraph.contact_section.field_text_2
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.contact_section
   module:
     - field_group
+    - image_widget_crop
     - media_library
     - text
 third_party_settings:
@@ -30,8 +32,8 @@ third_party_settings:
       label: Tabs
     group_1st_column:
       children:
-        - field_image
         - field_icon
+        - field_image_crop
       parent_name: group_tabs
       weight: 7
       format_type: tab
@@ -83,12 +85,21 @@ content:
     third_party_settings: {  }
     type: media_library_widget
     region: content
-  field_image:
-    weight: 1
+  field_image_crop:
+    weight: 3
     settings:
-      media_types: {  }
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - contact_section_image
+      crop_types_required:
+        - contact_section_image
+      progress_indicator: throbber
+      show_crop_area: false
     third_party_settings: {  }
-    type: media_library_widget
+    type: image_widget_crop
     region: content
   field_text:
     weight: 3

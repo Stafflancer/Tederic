@@ -8,11 +8,13 @@ dependencies:
     - field.field.node.event.field_address
     - field.field.node.event.field_big_card
     - field.field.node.event.field_date_range
+    - field.field.node.event.field_image_crop
     - field.field.node.event.field_special_label
     - field.field.node.event.field_visitors
     - node.type.event
   module:
     - datetime_range
+    - svg_image
     - text
     - user
 id: node.event.teaser
@@ -47,6 +49,19 @@ content:
       timezone_override: ''
       separator: '-'
       format_type: medium
+    third_party_settings: {  }
+  field_image_crop:
+    type: image
+    weight: 5
+    region: content
+    label: above
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
   field_special_label:
     type: string

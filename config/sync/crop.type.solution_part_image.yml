@@ -1,0 +1,12 @@
+uuid: 14710a9a-3197-43bf-9176-5f8e5d5bf8df
+langcode: en
+status: true
+dependencies: {  }
+id: solution_part_image
+label: 'Solution Part Image'
+description: ''
+aspect_ratio: '360:400'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
