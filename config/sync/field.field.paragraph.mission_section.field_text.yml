@@ -1,0 +1,21 @@
+uuid: 0a490e9a-5382-485d-a670-603c63091fea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.mission_section
+  module:
+    - text
+id: paragraph.mission_section.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: mission_section
+label: 'Text (blue background)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

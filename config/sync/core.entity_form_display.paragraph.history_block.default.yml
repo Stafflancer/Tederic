@@ -1,0 +1,38 @@
+uuid: 26558405-9ac8-43e7-bcec-af2b1c8ebb1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.history_block.field_title_plain
+    - field.field.paragraph.history_block.field_years
+    - paragraphs.paragraphs_type.history_block
+  module:
+    - paragraphs
+id: paragraph.history_block.default
+targetEntityType: paragraph
+bundle: history_block
+mode: default
+content:
+  field_title_plain:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_years:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,10 @@
+uuid: 2528100c-a381-4d25-b638-e9a5da5b7c69
+langcode: en
+status: true
+dependencies: {  }
+id: location_part
+label: 'Location part'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

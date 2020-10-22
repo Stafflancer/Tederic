@@ -1,0 +1,21 @@
+uuid: 9bf51bc6-18f9-43ee-8d94-2c4c22284bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.cards_section_row
+  module:
+    - options
+id: paragraph.cards_section_row.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: cards_section_row
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

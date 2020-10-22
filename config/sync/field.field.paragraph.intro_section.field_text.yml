@@ -1,0 +1,21 @@
+uuid: 745f25fd-ff6e-4573-b6ef-ca2563fd2d17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.intro_section
+  module:
+    - text
+id: paragraph.intro_section.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: intro_section
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

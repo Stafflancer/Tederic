@@ -1,0 +1,38 @@
+uuid: da526df8-1054-4637-903e-023e18e7e37e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_l_image_r_section.field_subtitle
+    - field.field.paragraph.text_l_image_r_section.field_text
+    - field.field.paragraph.text_l_image_r_section.field_title
+    - paragraphs.paragraphs_type.text_l_image_r_section
+  module:
+    - text
+id: paragraph.text_l_image_r_section.default
+targetEntityType: paragraph
+bundle: text_l_image_r_section
+mode: default
+content:
+  field_subtitle:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

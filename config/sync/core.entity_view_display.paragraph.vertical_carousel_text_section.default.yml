@@ -1,0 +1,22 @@
+uuid: 52af5da6-b072-4113-9fd0-ca42ddf92919
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.vertical_carousel_text_section.field_text
+    - paragraphs.paragraphs_type.vertical_carousel_text_section
+  module:
+    - text
+id: paragraph.vertical_carousel_text_section.default
+targetEntityType: paragraph
+bundle: vertical_carousel_text_section
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

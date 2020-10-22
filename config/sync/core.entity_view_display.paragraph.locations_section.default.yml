@@ -1,0 +1,24 @@
+uuid: 6b3f9d3a-ae0d-4cc6-a9e8-21a2cff5a0b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.locations_section.field_parts
+    - paragraphs.paragraphs_type.locations_section
+  module:
+    - entity_reference_revisions
+id: paragraph.locations_section.default
+targetEntityType: paragraph
+bundle: locations_section
+mode: default
+content:
+  field_parts:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

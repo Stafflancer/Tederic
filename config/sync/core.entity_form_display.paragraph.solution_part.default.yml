@@ -1,0 +1,44 @@
+uuid: 67bf90a4-1327-4219-a656-dc46072f821f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solution_part.field_link
+    - field.field.paragraph.solution_part.field_text
+    - field.field.paragraph.solution_part.field_title
+    - paragraphs.paragraphs_type.solution_part
+  module:
+    - link
+    - text
+id: paragraph.solution_part.default
+targetEntityType: paragraph
+bundle: solution_part
+mode: default
+content:
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

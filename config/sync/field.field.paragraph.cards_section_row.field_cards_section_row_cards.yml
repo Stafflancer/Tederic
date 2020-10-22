@@ -1,0 +1,124 @@
+uuid: 7ccc4760-1740-4c5b-a558-94e80a6d6e4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards_section_row_cards
+    - paragraphs.paragraphs_type.cards_section_row
+    - paragraphs.paragraphs_type.cards_section_row_cards
+  module:
+    - entity_reference_revisions
+id: paragraph.cards_section_row.field_cards_section_row_cards
+field_name: field_cards_section_row_cards
+entity_type: paragraph
+bundle: cards_section_row
+label: 'Cards (cards section row)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cards_section_row_cards: cards_section_row_cards
+    target_bundles_drag_drop:
+      blue_background_text_section:
+        weight: 33
+        enabled: false
+      breadcrumb:
+        weight: 34
+        enabled: false
+      cards_section:
+        weight: 35
+        enabled: false
+      cards_section_row:
+        weight: 36
+        enabled: false
+      cards_section_row_cards:
+        enabled: true
+        weight: 37
+      contact_section:
+        weight: 38
+        enabled: false
+      events_section:
+        weight: 39
+        enabled: false
+      general_media:
+        weight: 40
+        enabled: false
+      history_block:
+        weight: 41
+        enabled: false
+      history_year:
+        weight: 42
+        enabled: false
+      icon:
+        weight: 43
+        enabled: false
+      icons_inner_section:
+        weight: 44
+        enabled: false
+      icons_section:
+        weight: 45
+        enabled: false
+      icons_slider:
+        weight: 46
+        enabled: false
+      image_section:
+        weight: 47
+        enabled: false
+      intro_section:
+        weight: 48
+        enabled: false
+      location:
+        weight: 49
+        enabled: false
+      location_column:
+        weight: 51
+        enabled: false
+      location_part:
+        weight: 52
+        enabled: false
+      locations_section:
+        weight: 50
+        enabled: false
+      news_section:
+        weight: 54
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 53
+        enabled: false
+      products_section:
+        weight: 55
+        enabled: false
+      slider:
+        weight: 56
+        enabled: false
+      slider_section:
+        weight: 57
+        enabled: false
+      solution_part:
+        weight: 58
+        enabled: false
+      solution_parts:
+        weight: 59
+        enabled: false
+      text_l_block_r:
+        weight: 60
+        enabled: false
+      text_l_image_r_section:
+        weight: 61
+        enabled: false
+      text_section:
+        weight: 62
+        enabled: false
+      vertical_carousel_text_section:
+        weight: 63
+        enabled: false
+      wechat:
+        weight: 64
+        enabled: false
+field_type: entity_reference_revisions

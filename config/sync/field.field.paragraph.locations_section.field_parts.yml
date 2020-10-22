@@ -1,0 +1,94 @@
+uuid: a1d1d073-e8ee-44f9-bd15-038feb8b0636
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parts
+    - paragraphs.paragraphs_type.location_part
+    - paragraphs.paragraphs_type.locations_section
+  module:
+    - entity_reference_revisions
+id: paragraph.locations_section.field_parts
+field_name: field_parts
+entity_type: paragraph
+bundle: locations_section
+label: Parts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      location_part: location_part
+    target_bundles_drag_drop:
+      breadcrumb:
+        weight: 20
+        enabled: false
+      contact_section:
+        weight: 21
+        enabled: false
+      events_section:
+        weight: 22
+        enabled: false
+      general_media:
+        weight: 23
+        enabled: false
+      icons_section:
+        weight: 24
+        enabled: false
+      icons_slider:
+        weight: 25
+        enabled: false
+      image_section:
+        weight: 26
+        enabled: false
+      intro_section:
+        weight: 27
+        enabled: false
+      location:
+        weight: 32
+        enabled: false
+      location_column:
+        weight: 33
+        enabled: false
+      location_part:
+        enabled: true
+        weight: 23
+      locations_section:
+        weight: 28
+        enabled: false
+      news_section:
+        weight: 30
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 29
+        enabled: false
+      products_section:
+        weight: 31
+        enabled: false
+      slider:
+        weight: 32
+        enabled: false
+      slider_section:
+        weight: 33
+        enabled: false
+      solution_part:
+        weight: 34
+        enabled: false
+      solution_parts:
+        weight: 35
+        enabled: false
+      text_l_block_r:
+        weight: 36
+        enabled: false
+      text_section:
+        weight: 37
+        enabled: false
+      wechat:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

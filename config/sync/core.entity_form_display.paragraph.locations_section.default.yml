@@ -1,0 +1,29 @@
+uuid: 7d08c26d-fef6-46d6-a4f5-f11f8cf43c57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.locations_section.field_parts
+    - paragraphs.paragraphs_type.locations_section
+  module:
+    - paragraphs
+id: paragraph.locations_section.default
+targetEntityType: paragraph
+bundle: locations_section
+mode: default
+content:
+  field_parts:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

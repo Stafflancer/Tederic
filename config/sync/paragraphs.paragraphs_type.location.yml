@@ -1,0 +1,10 @@
+uuid: bc50ac57-73a4-4280-8cc2-1637a1919c69
+langcode: en
+status: true
+dependencies: {  }
+id: location
+label: Location
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

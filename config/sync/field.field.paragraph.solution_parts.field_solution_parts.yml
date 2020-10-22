@@ -1,0 +1,73 @@
+uuid: f368753c-5ea1-4dee-b2f1-b580357a0531
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_solution_parts
+    - paragraphs.paragraphs_type.solution_part
+    - paragraphs.paragraphs_type.solution_parts
+  module:
+    - entity_reference_revisions
+id: paragraph.solution_parts.field_solution_parts
+field_name: field_solution_parts
+entity_type: paragraph
+bundle: solution_parts
+label: 'Solution parts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      solution_part: solution_part
+    target_bundles_drag_drop:
+      breadcrumb:
+        weight: 16
+        enabled: false
+      contact_section:
+        weight: 17
+        enabled: false
+      events_section:
+        weight: 18
+        enabled: false
+      general_media:
+        weight: 19
+        enabled: false
+      icons_section:
+        weight: 20
+        enabled: false
+      icons_slider:
+        weight: 21
+        enabled: false
+      news_section:
+        weight: 23
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 22
+        enabled: false
+      products_section:
+        weight: 24
+        enabled: false
+      slider:
+        weight: 25
+        enabled: false
+      slider_section:
+        weight: 26
+        enabled: false
+      solution_part:
+        enabled: true
+        weight: 27
+      solution_parts:
+        weight: 28
+        enabled: false
+      text_l_block_r:
+        weight: 29
+        enabled: false
+      wechat:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

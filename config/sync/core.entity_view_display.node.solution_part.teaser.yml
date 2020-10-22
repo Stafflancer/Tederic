@@ -1,0 +1,33 @@
+uuid: 28d5957c-1cad-4d21-836e-5fc04f04862e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.solution_part.body
+    - field.field.node.solution_part.field_solution
+    - node.type.solution_part
+  module:
+    - text
+    - user
+id: node.solution_part.teaser
+targetEntityType: node
+bundle: solution_part
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_solution: true
+  langcode: true

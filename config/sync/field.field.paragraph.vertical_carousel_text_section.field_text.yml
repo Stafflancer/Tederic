@@ -1,0 +1,21 @@
+uuid: f4ac8458-adc7-42e8-97a7-bac563543e47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.vertical_carousel_text_section
+  module:
+    - text
+id: paragraph.vertical_carousel_text_section.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: vertical_carousel_text_section
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

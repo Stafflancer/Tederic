@@ -1,0 +1,17 @@
+uuid: e329cb8b-9885-4db7-be07-beaa374a8a15
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Solution Part'
+type: solution_part
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
