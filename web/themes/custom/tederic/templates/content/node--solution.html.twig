@@ -1,0 +1,14 @@
+<article{{ attributes }}>
+  
+  {{ content.field_intro }}
+
+  {{ content.field_media_icon }}
+  {{ label }}
+
+  {{ content.body }}
+
+  {{ content.field_solution_parts }}
+
+  <h2>{{ 'Explore our other solutions'|t }}</h2>
+  {{ drupal_view('solutions', 'explore_other_solutions_block') }}
+</article>
