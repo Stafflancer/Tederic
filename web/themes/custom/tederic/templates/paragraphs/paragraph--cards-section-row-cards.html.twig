@@ -1,0 +1,12 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="card-item">
+    {{ content }}
+  </div>
+</div>

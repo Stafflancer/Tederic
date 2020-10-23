@@ -9,8 +9,9 @@
 <div{{ attributes.addClass(classes) }}>
   <div class="row">
     <div class="small-12 column">
-      <div class="title">{{ content.field_title }}</div>
-      {{ content.field_text }}
+      <div class="paragraph-wrapper">
+        {{ content }}
+      </div>
     </div>
   </div>
 </div>

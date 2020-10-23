@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="bg-dark-blue section-margin">
+    {{ content.field_text }}
+  </div>
+
+  {{ content.field_image_crop }}
+
+  <div class="bg-gray section-margin">
+    {{ content.field_text_2 }}
+  </div>
+</div>

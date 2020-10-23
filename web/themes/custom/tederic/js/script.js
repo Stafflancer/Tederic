@@ -47,8 +47,6 @@
       });
     }
 
-    console.log($('.solutions-part .field-images').length > 0);
-
     // Slider for icons (Home page)
     $('.icons-section .field-icons-sliders').not('.slick-initialized').slick({
       arrows: true,
@@ -56,6 +54,17 @@
       slidesToShow: 3,
       slidesToScroll: 1,
       adaptiveHeight: true,
+    });
+
+    // Slider for icons (Home page)
+    $('.vertical-carousel-text-section .field-images').not('.slick-initialized').slick({
+      arrows: false,
+      infinite: false,
+      slidesToShow: 2,
+        centerMode: true,
+      slidesToScroll: 1,
+      vertical: true,
+      // verticalSwiping: true,
     });
 
   });
