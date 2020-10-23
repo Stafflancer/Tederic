@@ -1760,3 +1760,148 @@ input[type="search"] {
     }
   }
 }
+
+/* Regular Page */
+.text-section {
+
+  .title {
+    text-align: center;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .field-text {
+    color: $gray_text;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 32px;
+    max-width: 935px;
+    margin: 0 auto;
+  }
+}
+
+.locations-section {
+  .field-columns {
+    display: flex;
+    margin: -40px -15px 0;
+
+    .location-column {
+      flex: 0 0 33.333%;
+      padding: 40px 15px 0;
+    }
+  }
+
+  .field-title,
+  .field-title p {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+  .field-title {
+    margin-bottom: 30px;
+  }
+
+  .field-country-name,
+  .field-country-name p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+  .field-country-name {
+    margin-bottom: 8px;
+  }
+
+  .field-company-name,
+  .field-company-name p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+  .field-company-name {
+    margin-bottom: 15px;
+  }
+
+  .field-address,
+  .field-address p {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+  .field-address {
+    margin-bottom: 6px;
+  }
+
+  .field-geolocalization {
+    margin-bottom: 15px;
+
+    a {
+      width: 22px;
+      height: 22px;
+      background: url('../images/icons/map.svg') no-repeat center;
+      font-size: 0px;
+      color: transparent;
+      position: relative;
+      display: flex;
+
+      &:after {
+        content: '';
+        height: 20px;
+        width: 11px;
+        background: url('../images/icons/arrow-right.svg') no-repeat center/contain;
+        position: absolute;
+        top: 0;
+        right: -19px;
+      }
+    }
+  }
+
+  .field-phone-number,
+  .field-email-address {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+
+  .location {
+    // min-height: 250px;
+    padding-bottom: 40px;
+  }
+
+  .location-part {
+    &:not(:first-child) {
+      .location-column {
+        * {
+          color: $gray_text;
+        }
+        .field-title,
+        .field-title p {
+          color: $dark_blue;
+        }
+      }
+    }
+  }
+
+  .location-part {
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray_text;
+      margin-bottom: 40px;
+    }
+
+    .field-text,
+    .field-text p {
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 32px;
+    }
+
+    .field-text {
+      margin-bottom: 30px;
+    }
+  }
+}
+/* END Regular Page */
