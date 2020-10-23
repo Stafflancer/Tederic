@@ -34,12 +34,12 @@
 
       $slickElement.not('.slick-initialized').slick({
         arrows: true,
-        infinite: true,
+        infinite: false,
         slidesToShow: 2,
         adaptiveHeight: true,
         autoplay: true,
         pauseOnHover: true,
-        centerMode: true,
+        // centerMode: true,
         autoplaySpeed: 5000,
         appendArrows: $('.slick-pagination'),
         prevArrow: '<div class="main-arrow-prev" aria-hidden="true"></div>',
