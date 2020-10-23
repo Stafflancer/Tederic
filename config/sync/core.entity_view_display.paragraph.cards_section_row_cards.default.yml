@@ -17,7 +17,7 @@ bundle: cards_section_row_cards
 mode: default
 content:
   field_label:
-    weight: 2
+    weight: 1
     label: above
     settings:
       link_to_entity: false
@@ -25,21 +25,21 @@ content:
     type: string
     region: content
   field_text:
-    weight: 1
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_text_2:
-    weight: 3
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_text_3:
-    weight: 4
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
