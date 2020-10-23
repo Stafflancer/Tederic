@@ -159,7 +159,7 @@ input[type="search"] {
 .d-flex {
   display: flex;
 }
-.align-center {
+.align-items-center {
   align-items: center;
 }
 .justify-start {
@@ -1381,7 +1381,9 @@ input[type="search"] {
       display: flex;
       flex-wrap: wrap;
 
-      li {
+      li,
+      a {
+        color: $dark_blue;
         font-size: 24px;
         font-weight: 300;
         letter-spacing: 0;
@@ -1407,6 +1409,11 @@ input[type="search"] {
     margin: 0 0 20px;
     .custom-column {
       padding: 0;
+    }
+
+    li,
+    a {
+      color: $white;
     }
   }
 }
@@ -1466,7 +1473,7 @@ input[type="search"] {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
-  
+
     .solution-part {
       padding: 40px 10px 0;
       flex: 0 0 33.333%;
