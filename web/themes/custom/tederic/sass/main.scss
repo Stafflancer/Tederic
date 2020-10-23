@@ -1491,10 +1491,11 @@ input[type="search"] {
 
 /* Solutions Page */
 .section-media-icon {
+  margin-right: 20px;
+
   .field-media-image {
     img {
-      max-width: 64px;
-      margin-right: 20px;
+      width: 64px;
     }
   }
 
@@ -1669,6 +1670,12 @@ input[type="search"] {
   .slick-pagination {
     margin-top: 25px;
 
+    > .numbers {
+      &:first-child {
+        display: none;
+      }
+    }
+
     .slick-arrow {
       background-image: url('../images/icons/s-arrow-right.png');
       width: 31px;
@@ -1686,6 +1693,11 @@ input[type="search"] {
       letter-spacing: 0;
       line-height: 21px;
       margin: 0 10px;
+    }
+
+    .slick-disabled {
+      visibility: hidden;
+      opacity: 0;
     }
   }
 
