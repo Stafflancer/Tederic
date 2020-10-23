@@ -15,3 +15,11 @@ effects:
     weight: 1
     data:
       crop_type: event_medium
+  963cf5a5-ba8d-4cd2-bb5b-d73f228a9874:
+    uuid: 963cf5a5-ba8d-4cd2-bb5b-d73f228a9874
+    id: image_scale
+    weight: 2
+    data:
+      width: 475
+      height: null
+      upscale: false
