@@ -1,0 +1,25 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="row align-items-center">
+
+    <div class="large-6 column">
+      {{ content.field_image_crop }}
+    </div>
+
+    <div class="large-6 column">
+      <div class="l-text">
+        <div class="sup-title">{{ content.field_title }}</div>
+        <div class="title">{{ content.field_subtitle }}</div>
+        {{ content.field_text }}
+        <div class="link">{{ content.field_link }}</div>
+      </div>
+    </div>
+
+  </div>
+</div>
