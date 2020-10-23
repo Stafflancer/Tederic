@@ -1,8 +1,32 @@
 <article{{ attributes }}>
-  
+
   {{ drupal_entity('block', 'tederic_breadcrumbs') }}
 
-  {{ label }}
-  {{ content }}
-  
+  <div class="solutions-part">
+    <div class="solutions-part-content">
+      <div class="row">
+
+        <div class="large-5 column">
+          <div class="title">{{ label }}</div>
+          {{ content.body }}
+        </div>
+
+        <div class="large-7 column">
+          {{ content.field_images }}
+          <div class="slick-pagination d-flex align-items-center justify-end">
+            <div class="numbers"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="large-12 column">
+      <div class="link-right">
+        {{ content.field_solution }}
+      </div>
+    </div>
+
+  </div>
+
 </article>
