@@ -7,6 +7,8 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
+  <div class="line line-1"></div>
+
   <div class="row">
     <div class="small-12 column">
       {% if "On" in content.field_breadcrumbs.0 %}
@@ -14,6 +16,9 @@
       {% endif %}
 
       {{ content|without('field_breadcrumbs') }}
+
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
     </div>
   </div>
 </div>

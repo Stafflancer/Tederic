@@ -230,6 +230,23 @@ input[type="search"] {
 }
 /* END Text syles */
 
+.button-up {
+  width: 60px;
+  height: 60px;
+  border: 2px solid $dark_blue;
+  border-radius: 8px;
+  background: $white url('../images/icons/arrow-up.svg') no-repeat center;
+  position: fixed;
+  right: 20px;
+  bottom: -65px;
+  z-index: 500;
+  cursor: pointer;
+  transition: .3s all ease;
+
+  &.show-btn {
+    bottom: 20px;
+  }
+}
 .row,
 #block-tederic-breadcrumbs .custom-row,
 #block-tederic-local-tasks .custom-row,
@@ -601,10 +618,59 @@ input[type="search"] {
 // Footer
 .region-footer-first {
   background-color: $dark_blue;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    width: 144px;
+    transform: rotate(-45deg);
+    bottom: 35px;
+    right: -22px;
+    z-index: 1;
+  }
+  // .line {
+  //   content: '';
+  //   height: 2px;
+  //   background-color: $red;
+  //   position: absolute;
+  // }
+  // .line-1 {
+  //   width: 150px;
+  //   transform: rotate(-45deg);
+  //   left: -35px;
+  //   bottom: -50px;
+  // }
+  // .line-2 {
+  //   width: 180px;
+  //   transform: rotate(45deg);
+  //   top: 40px;
+  //   left: 365px;
+  // }
+  // .line-3 {
+  //   width: 280px;
+  //   transform: rotate(-45deg);
+  //   top: 190px;
+  //   right: -45px;
+  // }
 
   .region-wrapper {
-    padding: 60px 0;
+    padding-top: 60px;
     display: flex;
+    position: relative;
+
+    &:after {
+      content: '';
+      height: 2px;
+      background-color: $red;
+      position: absolute;
+      width: 150px;
+      transform: rotate(45deg);
+      top: 53px;
+      left: 240px;
+    }
   }
 
   #block-footerlogo {
@@ -677,6 +743,20 @@ input[type="search"] {
 }
 .region-footer-second {
   background-color: $dark_blue;
+  padding-top: 60px;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    width: 150px;
+    transform: rotate(-45deg);
+    left: -35px;
+    top: 70px;
+  }
 
   .region-wrapper {
     padding: 37px 0 45px;
@@ -1047,6 +1127,28 @@ input[type="search"] {
 
 .products-section {
   padding: 100px 0 80px;
+  position: relative;
+
+  &:before {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    width: 230px;
+    transform: rotate(45deg);
+    top: 20px;
+    left: -40px;
+  }
+  &:after {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    width: 190px;
+    transform: rotate(-45deg);
+    bottom: 80px;
+    right: -35px;
+  }
 
   .products-wrapper {
     > ul {
@@ -1174,7 +1276,7 @@ input[type="search"] {
 
     img {
       border-radius: 8px 8px 0 0;
-      max-height: 255px;
+      max-height: 244px;
     }
   }
 
@@ -1262,7 +1364,7 @@ input[type="search"] {
 
   .item-list {
     > ul {
-      margin: -20px -10px 0;
+      margin: 0 -10px 0;
       padding: 0;
       list-style-type: none;
       display: flex;
@@ -1324,6 +1426,28 @@ input[type="search"] {
   padding: 115px 0;
   background-color: $dark_blue;
   color: $white;
+  position: relative;
+
+  &:before {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    width: 150px;
+    transform: rotate(45deg);
+    top: 52px;
+    left: -23px;
+  }
+  &:after {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    width: 80px;
+    transform: rotate(45deg);
+    bottom: 65px;
+    right: -15px;
+  }
 
   .field-title {
     padding-left: 40px;
@@ -1411,6 +1535,12 @@ input[type="search"] {
     .row {
       margin-left: 0;
       margin-right: 0;
+    }
+  }
+
+  .field-image-crop {
+    img {
+      width: 100%;
     }
   }
 
@@ -1521,7 +1651,38 @@ input[type="search"] {
 .intro-section {
   background-color: $dark_blue;
   color: $white;
-  padding: 110px 0 150px;
+  position: relative;
+  overflow: hidden;
+
+  > .row {
+    padding: 110px 0 150px;
+    position: relative;
+  }
+
+  .line {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+  }
+  .line-1 {
+    width: 280px;
+    transform: rotate(-45deg);
+    top: 190px;
+    right: -45px;
+  }
+  .line-2 {
+    width: 180px;
+    transform: rotate(45deg);
+    top: 40px;
+    left: 365px;
+  }
+  .line-3 {
+    width: 500px;
+    transform: rotate(-45deg);
+    top: 560px;
+    left: -300px;
+  }
 
   .field-text,
   .field-text p {
@@ -1530,6 +1691,15 @@ input[type="search"] {
     letter-spacing: -0.44px;
     line-height: 56px;
     max-width: 1300px;
+  }
+  .field-text {
+    padding-top: 30px;
+  }
+
+  #block-tederic-breadcrumbs {
+    + .field-text {
+      padding-top: 0;
+    }
   }
 }
 /* Intro section */
@@ -2019,6 +2189,8 @@ input[type="search"] {
   background-color: $dark_blue;
   color: $white;
   padding: 80px 0;
+  position: relative;
+  overflow: hidden;
 
   .field-text,
   .field-text p {
@@ -2028,6 +2200,27 @@ input[type="search"] {
     letter-spacing: 0;
     line-height: 46px;
     margin: 0 auto;
+  }
+
+  &:before {
+    content: '';
+    height: 3px;
+    background-color: $red;
+    position: absolute;
+    width: 200px;
+    transform: rotate(45deg);
+    top: 50%;
+    left: -60px;
+  }
+  &:after {
+    content: '';
+    height: 3px;
+    background-color: $red;
+    position: absolute;
+    width: 300px;
+    transform: rotate(-45deg);
+    top: 65px;
+    right: -35px;
   }
 }
 
@@ -2143,6 +2336,29 @@ input[type="search"] {
   background-color: $dark_blue;
   padding: 35px 20px 80px;
   margin-bottom: 80px !important;
+  position: relative;
+  &:before {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    width: 200px;
+    transform: rotate(45deg);
+    top: -15px;
+    left: -35px;
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    width: 130px;
+    transform: rotate(45deg);
+    bottom: 115px;
+    right: -25px;
+    z-index: 1;
+  }
 
   .field-text {
     width: 1105px;
@@ -2236,6 +2452,30 @@ input[type="search"] {
 
   .bg-dark-blue {
     background-color: $dark_blue;
+    position: relative;
+
+    &:before {
+      content: '';
+      height: 3px;
+      background-color: $red;
+      position: absolute;
+      width: 200px;
+      transform: rotate(45deg);
+      top: 100px;
+      left: -35px;
+      z-index: 1;
+    }
+    &:after {
+      content: '';
+      height: 3px;
+      background-color: $red;
+      position: absolute;
+      width: 180px;
+      transform: rotate(45deg);
+      bottom: 130px;
+      right: -35px;
+      z-index: 1;
+    }
   }
 
   .bg-gray {
@@ -2301,6 +2541,37 @@ input[type="search"] {
 
   .field-image-crop {
     text-align: left;
+  }
+}
+.history-block {
+  padding-top: 80px;
+
+  .field-title-plain {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 46px;
+    margin-bottom: 12px;
+  }
+
+  .field-year {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 46px;
+    margin-bottom: 10px;
+  }
+
+  .field-text-plain {
+    color: $gray_text;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 29px;
+  }
+
+  .history-year {
+    width: 225px;
   }
 }
 /* END Regular Page */
