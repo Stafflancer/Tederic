@@ -7,6 +7,8 @@
 /web/profiles/contrib/
 /web/libraries/
 /web/themes/custom/tederic/node_modules
+/web/themes/custom/tederic/css/main.css
+/web/themes/custom/tederic/package-lock.json
 
 # Ignore sensitive information
 /web/sites/*/settings.php
