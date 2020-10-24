@@ -1,6 +1,18 @@
 (function($, Drupal) {
   $(document).ready(function() {
 
+    // Button Up
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 700) {
+        $('.button-up').addClass('show-btn');
+      } else {
+        $('.button-up').removeClass('show-btn');
+      }
+    });
+    $('.button-up').click(function() {
+      $('body,html').animate({scrollTop:0},700);
+    });
+
     // Main slider
     var $status = $('.slick-pagination .numbers');
 
@@ -56,7 +68,7 @@
       adaptiveHeight: true,
     });
 
-    // Slider for icons (Home page)
+    // Vertical Slider
     $('.vertical-carousel-text-section .field-images').not('.slick-initialized').slick({
       arrows: false,
       infinite: false,
