@@ -1,9 +1,19 @@
-{{ page.header_top }}
-{{ page.header }}
-{{ page.highlighted }}
-{{ page.breadcrumb }}
-{{ page.content }}
-{{ page.footer_first }}
-{{ page.footer_second }}
+{{ attach_library('tederic/load-page') }}
+
+<div class="load-page">
+  <img src="/themes/custom/tederic/logo.svg" alt="Tederic">
+</div>
+
+<div class="header-fixed">
+  {{ page.header_top }}
+  {{ page.header }}
+</div>
+<div class="content-wrapper">
+  {{ page.highlighted }}
+  {{ page.breadcrumb }}
+  {{ page.content }}
+  {{ page.footer_first }}
+  {{ page.footer_second }}
+</div>
 
 <div class="button-up"></div>
