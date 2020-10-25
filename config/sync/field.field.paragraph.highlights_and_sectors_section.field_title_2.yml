@@ -1,0 +1,21 @@
+uuid: 7c1a3f48-ddd2-4921-a3fc-b8c0b1431acc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_2
+    - paragraphs.paragraphs_type.highlights_and_sectors_section
+  module:
+    - text
+id: paragraph.highlights_and_sectors_section.field_title_2
+field_name: field_title_2
+entity_type: paragraph
+bundle: highlights_and_sectors_section
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

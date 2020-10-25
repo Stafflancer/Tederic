@@ -1,0 +1,18 @@
+uuid: 6b0e77ba-7861-4829-875f-093fcb3fe7e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.history_year
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.history_year
+target_entity_type_id: paragraph
+target_bundle: history_year
+default_langcode: site_default
+language_alterable: false

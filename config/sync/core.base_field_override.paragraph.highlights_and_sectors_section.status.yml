@@ -1,0 +1,22 @@
+uuid: 00012a41-4d5d-4a49-bdae-8598539e158c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.highlights_and_sectors_section
+id: paragraph.highlights_and_sectors_section.status
+field_name: status
+entity_type: paragraph
+bundle: highlights_and_sectors_section
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

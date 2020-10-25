@@ -3,24 +3,71 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.product.body
+    - field.field.node.product.field_categories
+    - field.field.node.product.field_document
     - field.field.node.product.field_sections
+    - field.field.node.product.field_series_sub_category
+    - field.field.node.product.field_small_blocks
     - node.type.product
   module:
     - entity_reference_revisions
+    - text
     - user
 id: node.product.default
 targetEntityType: node
 bundle: product
 mode: default
 content:
-  field_sections:
+  body:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_categories:
     weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_document:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_sections:
+    weight: 5
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+    region: content
+  field_series_sub_category:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_small_blocks:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
 hidden:
   langcode: true

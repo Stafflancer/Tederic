@@ -1,0 +1,18 @@
+uuid: 55c9ee45-5bf8-49eb-bf2b-5c4355556ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image_with_crop
+id: media.image_with_crop.changed
+field_name: changed
+entity_type: media
+bundle: image_with_crop
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

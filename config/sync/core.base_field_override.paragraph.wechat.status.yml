@@ -1,0 +1,22 @@
+uuid: 4a32f5dc-7c0c-4477-a336-a344c41b4436
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.wechat
+id: paragraph.wechat.status
+field_name: status
+entity_type: paragraph
+bundle: wechat
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

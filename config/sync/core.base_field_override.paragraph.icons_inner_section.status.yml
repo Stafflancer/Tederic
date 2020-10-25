@@ -1,0 +1,22 @@
+uuid: c71bbea5-ba40-4b1c-a45b-3dcc2413e59f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.icons_inner_section
+id: paragraph.icons_inner_section.status
+field_name: status
+entity_type: paragraph
+bundle: icons_inner_section
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

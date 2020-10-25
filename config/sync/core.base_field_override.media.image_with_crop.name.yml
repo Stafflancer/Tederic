@@ -1,0 +1,20 @@
+uuid: bb325c3f-12a8-4b7e-a89c-b540d858bf46
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image_with_crop
+id: media.image_with_crop.name
+field_name: name
+entity_type: media
+bundle: image_with_crop
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

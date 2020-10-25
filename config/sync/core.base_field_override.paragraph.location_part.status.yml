@@ -1,0 +1,22 @@
+uuid: cc705a4a-9b15-47bc-a389-86641f71f807
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.location_part
+id: paragraph.location_part.status
+field_name: status
+entity_type: paragraph
+bundle: location_part
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,10 @@
+uuid: 4fd5ab7e-f24f-4ea8-adf9-cb2f53efe057
+langcode: en
+status: true
+dependencies: {  }
+id: image_carousel_section
+label: 'Image carousel section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

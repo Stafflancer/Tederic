@@ -1,0 +1,16 @@
+uuid: 062acff9-beba-4049-aee1-56c00a376d64
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.series_category
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.series_category
+target_entity_type_id: taxonomy_term
+target_bundle: series_category
+default_langcode: site_default
+language_alterable: true

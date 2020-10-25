@@ -1,0 +1,22 @@
+uuid: 62132410-a6a0-4254-88bb-460e03f852e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.icon_simple
+id: paragraph.icon_simple.status
+field_name: status
+entity_type: paragraph
+bundle: icon_simple
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

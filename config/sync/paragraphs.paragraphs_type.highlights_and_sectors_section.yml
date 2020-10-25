@@ -1,0 +1,10 @@
+uuid: 14db27d4-c80a-4be4-b83f-f4bee81e8031
+langcode: en
+status: true
+dependencies: {  }
+id: highlights_and_sectors_section
+label: 'Highlights and Sectors section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

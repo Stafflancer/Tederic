@@ -1,0 +1,22 @@
+uuid: fd880205-870e-41a1-92f3-bd4a6017254b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.icons_slider
+id: paragraph.icons_slider.status
+field_name: status
+entity_type: paragraph
+bundle: icons_slider
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,11 @@
+uuid: f52fb329-2c5f-4cad-9a45-8c026b03c601
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.homepage_slider
+id: crop.homepage_slider
+target_entity_type_id: crop
+target_bundle: homepage_slider
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,33 @@
+uuid: 193c838a-750a-4d08-bae4-becd2e76b1e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_simple.field_icon
+    - field.field.paragraph.icon_simple.field_title_plain
+    - paragraphs.paragraphs_type.icon_simple
+  module:
+    - media_library
+id: paragraph.icon_simple.default
+targetEntityType: paragraph
+bundle: icon_simple
+mode: default
+content:
+  field_icon:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_title_plain:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

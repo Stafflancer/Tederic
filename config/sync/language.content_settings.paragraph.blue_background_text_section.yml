@@ -1,0 +1,18 @@
+uuid: 47a321df-f7c6-4f56-ade1-e8f13d696356
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.blue_background_text_section
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.blue_background_text_section
+target_entity_type_id: paragraph
+target_bundle: blue_background_text_section
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,18 @@
+uuid: 78df43e0-a872-4f00-9454-1ae73fdfecc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-menu
+id: menu_link_content.top-menu.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: top-menu
+label: 'View mode'
+description: 'Per item view mode selector.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

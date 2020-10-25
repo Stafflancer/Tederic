@@ -1,0 +1,8 @@
+uuid: f21b45de-a165-4c2b-9770-c8373a2ba659
+langcode: en
+status: true
+dependencies: {  }
+name: 'Series Sub Category'
+vid: series_sub_category
+description: ''
+weight: 0

@@ -1,0 +1,22 @@
+uuid: fca95ba9-c084-4792-9d46-b20a6fbc056f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.events_section
+id: paragraph.events_section.status
+field_name: status
+entity_type: paragraph
+bundle: events_section
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,10 @@
+uuid: bc8db67a-c5ac-4768-a353-0caa35348524
+langcode: en
+status: true
+dependencies: {  }
+id: product_small_block
+label: 'Product Small Block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

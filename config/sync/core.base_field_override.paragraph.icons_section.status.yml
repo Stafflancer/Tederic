@@ -1,0 +1,22 @@
+uuid: 854a2aab-3cc4-4978-9018-0e25436fdadb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.icons_section
+id: paragraph.icons_section.status
+field_name: status
+entity_type: paragraph
+bundle: icons_section
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

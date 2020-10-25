@@ -3,24 +3,116 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.product.body
+    - field.field.node.product.field_categories
+    - field.field.node.product.field_document
     - field.field.node.product.field_sections
+    - field.field.node.product.field_series_sub_category
+    - field.field.node.product.field_small_blocks
     - node.type.product
   module:
+    - field_group
+    - media_library
     - paragraphs
     - path
+    - text
+third_party_settings:
+  field_group:
+    group_product_description:
+      children:
+        - group_tabs
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: true
+      label: 'Product description'
+    group_tabs:
+      children:
+        - group_left_side
+        - group_right_side
+      parent_name: group_product_description
+      weight: 20
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_left_side:
+      children:
+        - title
+        - field_categories
+        - field_series_sub_category
+        - body
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Left side'
+    group_right_side:
+      children:
+        - field_document
+        - field_small_blocks
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Right side'
 id: node.product.default
 targetEntityType: node
 bundle: product
 mode: default
 content:
+  body:
+    weight: 5
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_categories:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_document:
+    type: media_library_widget
+    weight: 26
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_sections:
-    weight: 121
+    weight: 9
     settings:
       title: Section
       title_plural: Sections
@@ -31,16 +123,34 @@ content:
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
+  field_series_sub_category:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_small_blocks:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -48,26 +158,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 2
     region: content
     settings:
       size: 60
@@ -75,7 +185,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
