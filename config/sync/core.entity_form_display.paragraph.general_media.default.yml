@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.general_media.field_link
     - paragraphs.paragraphs_type.general_media
   module:
-    - link
+    - link_attributes
     - media_library
 id: paragraph.general_media.default
 targetEntityType: paragraph
@@ -26,8 +26,15 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      enabled_attributes:
+        id: false
+        name: false
+        target: true
+        rel: true
+        class: true
+        accesskey: false
     third_party_settings: {  }
-    type: link_default
+    type: link_attributes
     region: content
 hidden:
   created: true
