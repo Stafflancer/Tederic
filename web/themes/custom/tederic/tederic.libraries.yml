@@ -12,3 +12,19 @@ global-styling:
     - core/drupal
     - core/jquery
     - core/drupal.dialog.ajax
+
+# Hide preloader
+load-page:
+  version: 1.0
+  js:
+    js/load-page.js: {}
+
+# Timeline
+timeline:
+  version: 1.0
+  css:
+    base:
+      css/timeline.min.css: {}
+  js:
+    js/timeline.min.js: {}
+    js/initialization-timeline.js: {}

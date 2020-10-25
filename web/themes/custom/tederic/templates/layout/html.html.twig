@@ -30,6 +30,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
+    <style>
+      .load-page {
+        background-color: #0F283D;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 501;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s all ease;
+      }
+      .load-page.hide-load-page {
+        opacity: 0;
+        z-index: -5;
+      }
+      .load-page img {
+        max-width: 167px;
+      }
+    </style>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>

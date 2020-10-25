@@ -72,11 +72,28 @@
     $('.vertical-carousel-text-section .field-images').not('.slick-initialized').slick({
       arrows: false,
       infinite: false,
-      slidesToShow: 2,
-        centerMode: true,
+      slidesToShow: 1,
+      centerMode: true,
       slidesToScroll: 1,
+      // adaptiveHeight: true,
       vertical: true,
       // verticalSwiping: true,
+    });
+    var maxHeight = -1;
+    $('.slick-slide').each(function() {
+      if ($(this).height() > maxHeight) {
+        maxHeight = $(this).height();
+      }
+    });
+    $('.slick-slide').each(function() {
+      if ($(this).height() < maxHeight) {
+        $(this).css('margin', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
+      }
+    });
+
+    // Show QR code
+    $('.wechat .field-icon').click(function() {
+      $('.field-qr-code').slideToggle();
     });
 
   });
