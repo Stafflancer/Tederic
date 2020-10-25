@@ -1,0 +1,18 @@
+uuid: 744ac94a-f93b-49e1-82ac-e20b6c496cf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.policies-menu
+id: menu_link_content.policies-menu.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: policies-menu
+label: Changed
+description: 'The time that the menu link was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

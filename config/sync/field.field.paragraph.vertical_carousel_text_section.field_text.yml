@@ -14,7 +14,7 @@ bundle: vertical_carousel_text_section
 label: Text
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

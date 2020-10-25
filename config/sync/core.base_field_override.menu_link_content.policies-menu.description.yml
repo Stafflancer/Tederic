@@ -1,0 +1,18 @@
+uuid: 83e0e201-75aa-4e40-a1c7-b004de286b6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.policies-menu
+id: menu_link_content.policies-menu.description
+field_name: description
+entity_type: menu_link_content
+bundle: policies-menu
+label: Description
+description: 'Shown when hovering over the menu link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

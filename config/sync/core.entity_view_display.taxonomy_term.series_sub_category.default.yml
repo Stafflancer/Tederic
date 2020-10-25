@@ -1,0 +1,31 @@
+uuid: edcbfd38-b041-454c-98d9-c344e43a7d7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.series_sub_category.field_parent_category
+    - taxonomy.vocabulary.series_sub_category
+  module:
+    - text
+id: taxonomy_term.series_sub_category.default
+targetEntityType: taxonomy_term
+bundle: series_sub_category
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_parent_category:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true

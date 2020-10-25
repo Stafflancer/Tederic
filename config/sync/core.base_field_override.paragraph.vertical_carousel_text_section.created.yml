@@ -1,0 +1,18 @@
+uuid: 7305fbcd-48fd-48d2-82f9-8e02fea3379d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.vertical_carousel_text_section
+id: paragraph.vertical_carousel_text_section.created
+field_name: created
+entity_type: paragraph
+bundle: vertical_carousel_text_section
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,31 @@
+uuid: da866d92-2729-441e-980e-508c35e2362f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_simple.field_icon
+    - field.field.paragraph.icon_simple.field_title_plain
+    - paragraphs.paragraphs_type.icon_simple
+id: paragraph.icon_simple.default
+targetEntityType: paragraph
+bundle: icon_simple
+mode: default
+content:
+  field_icon:
+    weight: 0
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title_plain:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

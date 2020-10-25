@@ -1,0 +1,22 @@
+uuid: 9fad4779-f4fe-4b26-95c5-522ab75fae62
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cards_section_row_cards
+id: paragraph.cards_section_row_cards.status
+field_name: status
+entity_type: paragraph
+bundle: cards_section_row_cards
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

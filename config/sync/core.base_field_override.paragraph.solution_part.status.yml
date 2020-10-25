@@ -1,0 +1,22 @@
+uuid: feecf48f-cf70-413e-8404-4a3375ec91b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solution_part
+id: paragraph.solution_part.status
+field_name: status
+entity_type: paragraph
+bundle: solution_part
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

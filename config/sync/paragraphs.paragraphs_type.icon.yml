@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: icon
-label: Icon
+label: 'Icon (with subtitle)'
 icon_uuid: null
 icon_default: null
 description: ''

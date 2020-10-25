@@ -1,0 +1,49 @@
+uuid: bf3243cc-f811-49d9-81af-c6284eefa67f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlights_and_sectors_section.field_icons
+    - field.field.paragraph.highlights_and_sectors_section.field_text
+    - field.field.paragraph.highlights_and_sectors_section.field_title
+    - field.field.paragraph.highlights_and_sectors_section.field_title_2
+    - paragraphs.paragraphs_type.highlights_and_sectors_section
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.highlights_and_sectors_section.default
+targetEntityType: paragraph
+bundle: highlights_and_sectors_section
+mode: default
+content:
+  field_icons:
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title_2:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 1a59f6a3-8e50-4728-bf32-7560db72aa7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.icons_slider
+id: paragraph.icons_slider.created
+field_name: created
+entity_type: paragraph
+bundle: icons_slider
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

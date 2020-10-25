@@ -1,0 +1,12 @@
+uuid: 305dbd16-c0ef-4b0c-b84a-b75c2c52159c
+langcode: en
+status: true
+dependencies: {  }
+id: image_carousel_section_image
+label: 'Image Carousel Section Image'
+description: ''
+aspect_ratio: '700:375'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

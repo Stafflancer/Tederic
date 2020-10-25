@@ -1,0 +1,18 @@
+uuid: f6828b6b-41ed-4dcb-aa68-7bb80e71ba1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media-menu
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.social-media-menu
+target_entity_type_id: menu_link_content
+target_bundle: social-media-menu
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,32 @@
+uuid: 3a80d07f-0f24-44fc-99bd-d108b807684b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_small_block.field_subtitle_plain
+    - field.field.paragraph.product_small_block.field_text_plain
+    - paragraphs.paragraphs_type.product_small_block
+id: paragraph.product_small_block.default
+targetEntityType: paragraph
+bundle: product_small_block
+mode: default
+content:
+  field_subtitle_plain:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_plain:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

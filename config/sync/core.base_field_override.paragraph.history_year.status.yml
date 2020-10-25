@@ -1,0 +1,22 @@
+uuid: f87d1635-5b08-4f6b-ad81-6fae2afe52f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.history_year
+id: paragraph.history_year.status
+field_name: status
+entity_type: paragraph
+bundle: history_year
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: ac73c44f-7e5b-4463-b8c6-0b247f753af5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.intro_section
+id: paragraph.intro_section.status
+field_name: status
+entity_type: paragraph
+bundle: intro_section
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

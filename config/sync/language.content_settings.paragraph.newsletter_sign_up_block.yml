@@ -1,0 +1,18 @@
+uuid: b567d8b5-e047-4022-9504-8e1a2f8382c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.newsletter_sign_up_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.newsletter_sign_up_block
+target_entity_type_id: paragraph
+target_bundle: newsletter_sign_up_block
+default_langcode: site_default
+language_alterable: true

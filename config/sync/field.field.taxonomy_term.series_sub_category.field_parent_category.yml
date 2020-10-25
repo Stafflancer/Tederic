@@ -1,0 +1,29 @@
+uuid: f5b99f8b-0423-4a3d-a0c1-6bb75e5aac69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_parent_category
+    - taxonomy.vocabulary.series_category
+    - taxonomy.vocabulary.series_sub_category
+id: taxonomy_term.series_sub_category.field_parent_category
+field_name: field_parent_category
+entity_type: taxonomy_term
+bundle: series_sub_category
+label: 'Parent Category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      series_category: series_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: 0e63ca93-f4d2-4e77-9191-4399d149e526
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.image_carousel_section_image
+  module:
+    - crop
+name: image_carousel_section_image_crop
+label: 'Image Carousel Section Image Crop'
+effects:
+  2c74ee7b-f7b5-4418-9f8c-727c5e9167bd:
+    uuid: 2c74ee7b-f7b5-4418-9f8c-727c5e9167bd
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: image_carousel_section_image
+  349feedc-9d0a-4a84-b7b9-b7e3a707d4ee:
+    uuid: 349feedc-9d0a-4a84-b7b9-b7e3a707d4ee
+    id: image_scale
+    weight: 2
+    data:
+      width: 700
+      height: null
+      upscale: false

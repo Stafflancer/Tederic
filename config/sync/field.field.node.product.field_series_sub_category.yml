@@ -1,0 +1,29 @@
+uuid: 661d8f12-cadb-4757-b16a-61a2c7d45f38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_series_sub_category
+    - node.type.product
+    - taxonomy.vocabulary.series_sub_category
+id: node.product.field_series_sub_category
+field_name: field_series_sub_category
+entity_type: node
+bundle: product
+label: 'Series Sub Category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      series_sub_category: series_sub_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

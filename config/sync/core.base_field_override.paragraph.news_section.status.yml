@@ -1,0 +1,22 @@
+uuid: eaa3e615-a425-49d4-8490-dccc47ef521e
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.news_section
+id: paragraph.news_section.status
+field_name: status
+entity_type: paragraph
+bundle: news_section
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

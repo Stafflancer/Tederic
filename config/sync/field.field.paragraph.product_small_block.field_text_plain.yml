@@ -1,0 +1,19 @@
+uuid: 5f8bbd4f-c386-4e2f-a368-70337e20fc6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_plain
+    - paragraphs.paragraphs_type.product_small_block
+id: paragraph.product_small_block.field_text_plain
+field_name: field_text_plain
+entity_type: paragraph
+bundle: product_small_block
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
