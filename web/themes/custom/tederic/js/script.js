@@ -64,7 +64,7 @@
       arrows: true,
       infinite: false,
       slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       adaptiveHeight: true,
     });
 
@@ -79,17 +79,19 @@
       vertical: true,
       // verticalSwiping: true,
     });
-    var maxHeight = -1;
-    $('.slick-slide').each(function() {
-      if ($(this).height() > maxHeight) {
-        maxHeight = $(this).height();
-      }
-    });
-    $('.slick-slide').each(function() {
-      if ($(this).height() < maxHeight) {
-        $(this).css('margin', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
-      }
-    });
+    if ($('.vertical-carousel-text-section .field-images').length > 0) {
+      var maxHeight = -1;
+      $('.slick-slide').each(function() {
+        if ($(this).height() > maxHeight) {
+          maxHeight = $(this).height();
+        }
+      });
+      $('.slick-slide').each(function() {
+        if ($(this).height() < maxHeight) {
+          $(this).css('margin', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
+        }
+      });
+    }
 
     // Show QR code
     $('.wechat .field-icon').click(function() {

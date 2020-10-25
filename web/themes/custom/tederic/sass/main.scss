@@ -1751,7 +1751,9 @@ input[type="search"] {
 
 /* Solutions Page */
 .section-media-icon {
-  margin-right: 20px;
+  .field-media-icon {
+    margin-right: 20px;
+  }
 
   .field-media-image {
     img {
