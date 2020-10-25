@@ -6,9 +6,26 @@ dependencies:
     - field.field.menu_link_content.social-media-menu.field_link_item
     - system.menu.social-media-menu
   module:
+    - field_group
     - link
     - menu_item_extras
     - paragraphs
+third_party_settings:
+  field_group:
+    group_details:
+      children:
+        - field_link_item
+      parent_name: ''
+      weight: 4
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Details
 id: menu_link_content.social-media-menu.default
 targetEntityType: menu_link_content
 bundle: social-media-menu

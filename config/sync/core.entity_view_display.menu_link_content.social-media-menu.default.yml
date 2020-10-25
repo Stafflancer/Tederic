@@ -12,15 +12,19 @@ targetEntityType: menu_link_content
 bundle: social-media-menu
 mode: default
 content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_link_item:
+    type: entity_reference_revisions_entity_view
     weight: 0
-    label: hidden
+    region: content
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
 hidden:
-  children: true
   langcode: true
