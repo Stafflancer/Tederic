@@ -31,12 +31,12 @@ module:
   jquery_ui: 0
   language: 0
   link: 0
+  link_attributes: 0
   locale: 0
   media: 0
   media_library: 0
   menu_firstchild: 0
   menu_item_extras: 0
-  menu_link_attributes: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
