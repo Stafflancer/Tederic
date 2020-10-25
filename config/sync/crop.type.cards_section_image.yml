@@ -1,11 +1,11 @@
-uuid: 7bcee5c7-eeee-446f-abd3-7a99ad4dbb44
+uuid: f9e423ea-5dc4-4445-aed6-4a3e1fb611cd
 langcode: en
 status: true
 dependencies: {  }
-id: '16_9'
-label: '16:9'
+id: cards_section_image
+label: 'Cards Section Image'
 description: ''
-aspect_ratio: '16:9'
+aspect_ratio: '556:350'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: null

@@ -20,10 +20,15 @@ settings:
             - Bold
             - Italic
             - Strike
+            - Underline
             - Superscript
             - Subscript
             - '-'
             - RemoveFormat
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
         -
           name: Linking
           items:

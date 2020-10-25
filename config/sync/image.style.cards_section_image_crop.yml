@@ -1,0 +1,25 @@
+uuid: dc3b78f4-1e23-42b2-9e5d-4a14558b672e
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.cards_section_image
+  module:
+    - crop
+name: cards_section_image_crop
+label: 'Cards Section Image Crop'
+effects:
+  0e59c33b-c9f6-4156-96a8-5dc131a1f608:
+    uuid: 0e59c33b-c9f6-4156-96a8-5dc131a1f608
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: cards_section_image
+  26a78a1d-3100-4770-9233-e5b13d82946b:
+    uuid: 26a78a1d-3100-4770-9233-e5b13d82946b
+    id: image_scale
+    weight: 2
+    data:
+      width: 556
+      height: null
+      upscale: false
