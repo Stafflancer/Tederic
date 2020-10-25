@@ -22,6 +22,7 @@ function tederic_breadcrumb_system_breadcrumb_alter(Breadcrumb &$breadcrumb, Rou
         case 'product':
           $links[0] = Link::createFromRoute(t('Products'), '<front>');
           break;
+        case 'page':
         case 'worldwide':
           $links[0] = Link::createFromRoute(t('Company'), '<nolink>');
           break;
