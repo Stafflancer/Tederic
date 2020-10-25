@@ -1,0 +1,11 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    ('layout-' ~ content.field_layout['#items'].getString())|clean_class
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ content|without('field_layout') }}
+</div>
