@@ -1,0 +1,21 @@
+uuid: c9aacd87-c7f5-48ce-a76e-df9531d0450d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_webform
+    - paragraphs.paragraphs_type.contact_us_section
+id: paragraph.contact_us_section.field_webform
+field_name: field_webform
+entity_type: paragraph
+bundle: contact_us_section
+label: Webform
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings: {  }
+field_type: entity_reference
