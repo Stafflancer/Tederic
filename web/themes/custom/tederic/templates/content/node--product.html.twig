@@ -3,7 +3,28 @@
   {{ drupal_entity('block', 'tederic_breadcrumbs') }}
 
   <div{{ content_attributes }}>
-    {{ content }}
+
+  <div class="row">
+    <div class="small-12 column">
+      <div class="product-wrapper">
+        <div class="product-text-left">
+          <h1 class="title">{{ label }}</h1>
+          {{ content.field_categories }}
+          {{ content.body }}
+        </div>
+        <div class="product-items-right">
+          <div class="document-wrapper d-flex align-items-center justify-space-between">
+            <span>{{ 'Download Brochure'|t }}</span>
+            {{ content.field_document }}
+          </div>
+          {{ content.field_small_blocks }}
+          {# {{ content.field_series_sub_category }} #}
+        </div>
+      </div>
+    </div>
   </div>
 
+  {{ content.field_sections }}
+
+  </div>
 </article>

@@ -1,0 +1,17 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'section-margin'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="row">
+    <div class="small-12 column">
+      <div class="section-margin">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
