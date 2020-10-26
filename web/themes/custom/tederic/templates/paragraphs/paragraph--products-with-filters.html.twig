@@ -1,0 +1,10 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ drupal_view('products', 'products_block') }}
+</div>
