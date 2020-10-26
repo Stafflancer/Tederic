@@ -19,16 +19,26 @@ settings:
           items:
             - Bold
             - Italic
-            - Strike
             - Underline
-            - Superscript
-            - Subscript
-            - '-'
-            - RemoveFormat
+            - Strike
             - JustifyLeft
             - JustifyCenter
             - JustifyRight
             - JustifyBlock
+            - Outdent
+            - Indent
+            - Superscript
+            - Subscript
+            - '-'
+            - RemoveFormat
+            - SpecialChar
+            - Paste
+            - PasteText
+            - PasteFromWord
+            - Copy
+            - Cut
+            - Redo
+            - Undo
         -
           name: Linking
           items:
@@ -51,11 +61,13 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
             - ShowBlocks
             - Source
+            - Maximize
   plugins:
     language:
       language_list: un

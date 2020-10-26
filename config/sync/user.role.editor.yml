@@ -15,4 +15,5 @@ permissions:
   - 'delete content translations'
   - 'translate any entity'
   - 'update content translations'
+  - 'use text format full_html'
   - 'view the administration theme'

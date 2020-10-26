@@ -1,0 +1,96 @@
+uuid: 414f3cc0-f330-4221-b02a-1e5354e6801b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_us_section.field_image_crop
+    - field.field.paragraph.contact_us_section.field_text
+    - field.field.paragraph.contact_us_section.field_webform
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.contact_us_section
+  module:
+    - field_group
+    - image_widget_crop
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_left_side
+        - group_right_side
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_left_side:
+      children:
+        - field_image_crop
+      parent_name: group_tabs
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Left side'
+    group_right_side:
+      children:
+        - field_text
+        - field_webform
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Right side'
+id: paragraph.contact_us_section.default
+targetEntityType: paragraph
+bundle: contact_us_section
+mode: default
+content:
+  field_image_crop:
+    weight: 1
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - contact_us_section_image
+      crop_types_required:
+        - contact_us_section_image
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_webform:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
