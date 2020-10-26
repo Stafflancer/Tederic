@@ -35,6 +35,7 @@
         "drupal/taxonomy_manager": "^2.0",
         "drupal/twig_tweak": "^2.8",
         "drupal/twig_xdebug": "^1.2",
+        "drupal/webform": "^5.22",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",

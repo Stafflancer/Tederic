@@ -11,7 +11,6 @@
  * @ingroup themeable
  */
 #}
-{{ breakpoint() }}
 
 {% if q is not empty %}
   {#
@@ -20,11 +19,9 @@
   #}
 {{ q }}
 {% endif %}
-{# {{ form }} #}
 
 {{ form.series_sub_category }}
 {{ form.actions }}
-{{ form.categories_collapsible }}
+{{ form.categories }}
 
-
-{{ form|without('categories_collapsible', 'series_sub_category', 'actions') }}
+{{ form|without('categories', 'series_sub_category', 'actions') }}

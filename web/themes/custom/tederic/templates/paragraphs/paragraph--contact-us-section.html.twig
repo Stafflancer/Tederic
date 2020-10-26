@@ -1,0 +1,25 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{{ breakpoint() }}
+{{ attach_library('core/drupal.dialog.ajax') }}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ content|without('field_webform') }}
+  
+  {% if content.field_webform.0 %}
+    {{ 
+      link(
+        'Contact us'|t, 
+        'internal:' ~ path('entity.webform.canonical', {'webform': content.field_webform.0['#plain_text']}), 
+        { 
+          'class': ['use-ajax'],
+          'data-dialog-type': 'modal'
+        }
+      )
+    }}
+  {% endif %}
+</div>
