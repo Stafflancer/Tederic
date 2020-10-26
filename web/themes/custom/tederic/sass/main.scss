@@ -1025,6 +1025,27 @@ input[type="search"] {
     }
   }
 }
+.animation-text {
+  // position: relative;
+  // transition: .5s all ease;
+  // position: relative;
+  // opacity: 0;
+}
+.slick-active {
+  .animation-text {
+    // animation: slide-text 1s 1s;
+  }
+}
+// @keyframes slide-text {
+//   0% {
+//     right: -800px;
+//     opacity: 0;
+//   }
+//   100% {
+//     right: 0;
+//     opacity: 1;
+//   }
+// }
 // END Main Slider
 
 .text-l-block-r {
