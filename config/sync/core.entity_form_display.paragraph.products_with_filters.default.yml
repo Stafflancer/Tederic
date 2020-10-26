@@ -1,0 +1,20 @@
+uuid: 6a5ce0f2-9cd1-449d-9415-e0632c4fbb46
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.products_with_filters
+id: paragraph.products_with_filters.default
+targetEntityType: paragraph
+bundle: products_with_filters
+mode: default
+content:
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
