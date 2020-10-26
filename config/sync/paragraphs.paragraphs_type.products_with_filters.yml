@@ -1,0 +1,10 @@
+uuid: dbf168c0-ee7d-492a-8da9-8d07a58fe19f
+langcode: en
+status: true
+dependencies: {  }
+id: products_with_filters
+label: 'Products with Filters'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
