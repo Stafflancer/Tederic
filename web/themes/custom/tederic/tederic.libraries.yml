@@ -28,3 +28,9 @@ timeline:
   js:
     js/timeline.min.js: {}
     js/initialization-timeline.js: {}
+
+# Series
+series:
+  version: 1.0
+  js:
+    js/series-dots.js: {}

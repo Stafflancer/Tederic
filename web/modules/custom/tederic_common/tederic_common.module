@@ -11,8 +11,21 @@ function tederic_common_form_alter(&$form, FormStateInterface $form_state, $form
     $form['keys']['#suffix'] = '<div class="close-search"></div>';
   }
 
-  if ($form_id == 'menu_link_content_social-media-menu_form') {
-    // to do...
+  // Exposed form.
+  if ($form_id == 'views_exposed_form') {
+    // Check view id.
+    $view_ids = ['products'];
+    $view = $form_state->getStorage('view');
+    if (in_array($view['view']->id(), $view_ids)) {
+      // Check view display.
+      $display = $view['display']['id'];
+      if ($display == 'products_block') {
+        // Add Series library.
+        $form['#attached']['library'][] = 'tederic/series';
+        // Change All option label.
+        $form['series_sub_category']['#options']['All'] = t('All');
+      }
+    }
   }
 }
 

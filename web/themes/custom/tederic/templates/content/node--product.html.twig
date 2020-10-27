@@ -13,10 +13,12 @@
           {{ content.body }}
         </div>
         <div class="product-items-right">
-          <div class="document-wrapper d-flex align-items-center justify-space-between">
-            <span>{{ 'Download Brochure'|t }}</span>
-            {{ content.field_document }}
-          </div>
+          {% if content.field_document.0 %}
+            <div class="document-wrapper d-flex align-items-center justify-space-between">
+              <span>{{ 'Download Brochure'|t }}</span>
+              {{ content.field_document }}
+            </div>
+          {% endif %}
           {{ content.field_small_blocks }}
           {# {{ content.field_series_sub_category }} #}
         </div>

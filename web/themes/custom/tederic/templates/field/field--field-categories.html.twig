@@ -1,0 +1,13 @@
+{%
+  set classes = [
+    field_name|clean_class,
+  ]
+%}
+
+<div{{ attributes.addClass(classes, 'field__items') }}>
+  {% for item in items %}
+    <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+  {% endfor %}
+</div>
+
+
