@@ -1,0 +1,41 @@
+uuid: 3b373fe6-f97c-433a-b9e7-a087508aa374
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.related_section
+    - field.field.node.solution.body
+    - field.field.node.solution.field_image_crop
+    - field.field.node.solution.field_intro
+    - field.field.node.solution.field_media_icon
+    - field.field.node.solution.field_solution_parts
+    - image.style.solution_related_section
+    - node.type.solution
+  module:
+    - svg_image
+    - user
+id: node.solution.related_section
+targetEntityType: node
+bundle: solution
+mode: related_section
+content:
+  field_image_crop:
+    weight: 0
+    label: above
+    settings:
+      image_style: solution_related_section
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  field_intro: true
+  field_media_icon: true
+  field_solution_parts: true
+  langcode: true
+  links: true

@@ -1,0 +1,22 @@
+uuid: bc96afa0-b426-4192-9db7-566bef594f05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_section.field_solutions
+    - paragraphs.paragraphs_type.related_section
+id: paragraph.related_section.default
+targetEntityType: paragraph
+bundle: related_section
+mode: default
+content:
+  field_solutions:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: related_section
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

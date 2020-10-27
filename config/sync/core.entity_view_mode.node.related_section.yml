@@ -1,0 +1,10 @@
+uuid: 6bfb3704-5c06-4b16-a0b7-0a0cb290447f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.related_section
+label: 'Related Section'
+targetEntityType: node
+cache: true

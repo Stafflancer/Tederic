@@ -4,17 +4,22 @@ status: true
 dependencies:
   config:
     - field.field.node.product.body
+    - field.field.node.product.field_background_color
     - field.field.node.product.field_categories
     - field.field.node.product.field_document
+    - field.field.node.product.field_image_crop
     - field.field.node.product.field_sections
     - field.field.node.product.field_series_sub_category
     - field.field.node.product.field_small_blocks
+    - image.style.thumbnail
     - node.type.product
   module:
+    - color_field
     - field_group
     - media_library
     - paragraphs
     - path
+    - svg_image
     - text
 third_party_settings:
   field_group:
@@ -94,10 +99,16 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_background_color:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: color_field_widget_html5
+    region: content
   field_categories:
     weight: 3
     settings: {  }
@@ -111,8 +122,16 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
+  field_image_crop:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_sections:
-    weight: 9
+    weight: 10
     settings:
       title: Section
       title_plural: Sections
@@ -138,7 +157,7 @@ content:
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: _none
     third_party_settings: {  }
     region: content
   langcode:
@@ -150,7 +169,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -158,21 +177,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -183,9 +202,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60

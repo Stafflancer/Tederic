@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.product.body
+    - field.field.node.product.field_background_color
     - field.field.node.product.field_categories
     - field.field.node.product.field_document
+    - field.field.node.product.field_image_crop
     - field.field.node.product.field_sections
     - field.field.node.product.field_series_sub_category
     - field.field.node.product.field_small_blocks
@@ -25,8 +27,10 @@ content:
     region: content
 hidden:
   body: true
+  field_background_color: true
   field_categories: true
   field_document: true
+  field_image_crop: true
   field_sections: true
   field_series_sub_category: true
   field_small_blocks: true

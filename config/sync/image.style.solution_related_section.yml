@@ -1,0 +1,15 @@
+uuid: 1cdcbfc7-7849-4b07-bba8-a55cd264a556
+langcode: en
+status: true
+dependencies: {  }
+name: solution_related_section
+label: 'Solution Related Section'
+effects:
+  ad0e87a5-4aa7-4a49-9a2d-6e771dc3e5f3:
+    uuid: ad0e87a5-4aa7-4a49-9a2d-6e771dc3e5f3
+    id: image_scale
+    weight: 1
+    data:
+      width: 460
+      height: 180
+      upscale: false

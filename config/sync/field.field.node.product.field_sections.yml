@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.contact_us_section
     - paragraphs.paragraphs_type.highlights_and_sectors_section
     - paragraphs.paragraphs_type.image_carousel_section
+    - paragraphs.paragraphs_type.related_section
   module:
     - entity_reference_revisions
 id: node.product.field_sections
@@ -28,6 +29,7 @@ settings:
       highlights_and_sectors_section: highlights_and_sectors_section
       contact_us_section: contact_us_section
       image_carousel_section: image_carousel_section
+      related_section: related_section
     target_bundles_drag_drop:
       blue_background_text_section:
         weight: 40
@@ -128,6 +130,9 @@ settings:
       quote_section:
         weight: 67
         enabled: false
+      related_section:
+        enabled: true
+        weight: 77
       slider:
         weight: 23
         enabled: false
