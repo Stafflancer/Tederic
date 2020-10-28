@@ -21,6 +21,8 @@ settings:
             - Italic
             - Underline
             - Strike
+            - TextColor
+            - BGColor
             - JustifyLeft
             - JustifyCenter
             - JustifyRight
@@ -62,6 +64,7 @@ settings:
           items:
             - Format
             - Styles
+            - FontSize
         -
           name: Tools
           items:
@@ -73,6 +76,13 @@ settings:
       language_list: un
     stylescombo:
       styles: ''
+    customconfig:
+      ckeditor_custom_config: 'colorButton_enableMore = true'
+    font:
+      font_names: ''
+      font_sizes: ''
+    colorbutton:
+      colors: ''
 image_upload:
   status: true
   scheme: public
