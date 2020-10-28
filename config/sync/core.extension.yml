@@ -8,8 +8,12 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  ckeditor_config: 0
+  ckeditor_font: 0
   color: 0
   color_field: 0
+  colorbutton: 0
+  colordialog: 0
   config: 0
   contextual: 0
   crop: 0
@@ -46,6 +50,7 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  panelbutton: 0
   path: 0
   path_alias: 0
   quickedit: 0
