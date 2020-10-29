@@ -43,7 +43,8 @@
         prevArrow: '<div class="main-arrow-prev" aria-hidden="true"></div>',
         nextArrow: '<div class="main-arrow-next" aria-hidden="true"></div>',
       });
-    } else if ($('.solutions-part .field-images').length > 0) {
+    }
+    if ($('.solutions-part .field-images').length > 0) {
       var $slickElement = $('.solutions-part .field-images');
       slickCount($slickElement);
 
@@ -52,6 +53,23 @@
         infinite: false,
         slidesToShow: 2,
         adaptiveHeight: true,
+        autoplay: true,
+        pauseOnHover: true,
+        // centerMode: true,
+        autoplaySpeed: 5000,
+        appendArrows: $('.slick-pagination'),
+        prevArrow: '<div class="main-arrow-prev" aria-hidden="true"></div>',
+        nextArrow: '<div class="main-arrow-next" aria-hidden="true"></div>',
+      });
+    }
+    if ($('.image-carousel-section .field-images').length > 0) {
+      var $slickElement = $('.image-carousel-section .field-images');
+      slickCount($slickElement);
+
+      $slickElement.not('.slick-initialized').slick({
+        arrows: true,
+        infinite: false,
+        slidesToShow: 2,
         autoplay: true,
         pauseOnHover: true,
         // centerMode: true,
