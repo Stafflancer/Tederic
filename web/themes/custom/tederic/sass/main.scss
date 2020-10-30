@@ -3245,6 +3245,7 @@ input[type="search"] {
         text-align: center;
         padding: 30px;
         margin-bottom: 30px;
+        border-radius: 8px;
       }
     }
 
@@ -3412,8 +3413,10 @@ input[type="search"] {
         text-transform: uppercase;
         padding: 7px 19px;
         border: 2px solid transparent;
+        transition: .3s all ease;
       }
 
+      label:hover,
       input:checked + label {
         border: 2px solid #0F283D;
         border-radius: 20px;
@@ -3466,8 +3469,10 @@ input[type="search"] {
               border-radius: 20px;
               background-color: $gray;
               border: 2px solid $gray;
+              transition: .3s all ease;
             }
 
+            label:hover,
             input:checked + label {
               border-color: $dark_blue;
               border-radius: 20px;
