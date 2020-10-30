@@ -119,15 +119,15 @@
       $('.field-qr-code').slideToggle();
     });
 
-    // Show filters
-    $('.show-more-filters').click(function() {
-      $(this).toggleClass('active');
-      $('.views-exposed-form > .fieldgroup:last-child').slideToggle();
-    });
-
   });
   Drupal.behaviors.script = {
     attach: function (context, settings) {
+
+      // Show filters
+      $('.show-more-filters').unbind('click').bind('click', function() {
+        $(this).toggleClass('active');
+        $('.show-more-filters + .fieldgroup').slideToggle();
+      });
 
       // Show / Hide Language
       $('.language-toggle').unbind('click').bind('click', function() {

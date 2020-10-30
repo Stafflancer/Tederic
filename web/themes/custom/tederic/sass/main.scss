@@ -392,6 +392,7 @@ input[type="search"] {
       opacity: 0;
       z-index: -999;
       transition: .3s all ease;
+      visibility: hidden;
       @media screen and (max-width: 1700px) {
         left: auto;
         right: 0;
@@ -400,6 +401,7 @@ input[type="search"] {
       &.l-show {
         opacity: 1;
         z-index: 500;
+        visibility: visible;
       }
 
       a {
@@ -3239,9 +3241,11 @@ input[type="search"] {
     position: relative;
 
     .views-field-field-image-crop {
-      text-align: center;
-      padding: 30px;
-      margin-bottom: 30px;
+      [class*="product-image"] {
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 30px;
+      }
     }
 
     .views-field-title {
@@ -3261,7 +3265,7 @@ input[type="search"] {
           left: 0;
           width: 100%;
           height: 100%;
-          z-index: -2;
+          z-index: 2;
         }
       }
     }
@@ -3299,6 +3303,8 @@ input[type="search"] {
 
 .views-exposed-form {
   padding-top: 80px;
+  padding-bottom: 40px;
+  margin-bottom: -80px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -3319,13 +3325,26 @@ input[type="search"] {
 
   > .fieldgroup {
     &:last-child {
+      position: relative;
       flex: 0 0 100%;
       max-width: 100%;
       display: none;
+      padding-bottom: 20px;
+
+      &:after {
+        content: '';
+        width: calc(100% + 120px);
+        height: 1px;
+        background-color: #979797;
+        position: absolute;
+        bottom: 0;
+        left: -60px;
+      }
+
     }
   }
 
-  [id="edit-reset"] {
+  [id*="edit-reset"] {
     color: $dark_blue_text;
     font-size: 18px;
     letter-spacing: 0;
@@ -3404,7 +3423,8 @@ input[type="search"] {
   }
 
   .form-checkboxes {
-    margin-top: 40px;
+    margin-top: 20px;
+
     > ul {
       display: flex;
       flex-wrap: wrap;
@@ -3420,6 +3440,39 @@ input[type="search"] {
             letter-spacing: 0;
             line-height: 24px;
             margin-bottom: 20px;
+            margin-top: 20px;
+          }
+        }
+
+        li {
+          display: inline-block;
+
+          .js-form-type-checkbox {
+            position: relative;
+
+            input {
+              opacity: 0;
+              position: absolute;
+              z-index: -1;
+            }
+
+            label {
+              margin: 0 20px 20px 0;
+              color: $dark_blue_text;
+              font-size: 18px;
+              letter-spacing: 0;
+              line-height: 21px;
+              padding: 9px 20px;
+              border-radius: 20px;
+              background-color: $gray;
+              border: 2px solid $gray;
+            }
+
+            input:checked + label {
+              border-color: $dark_blue;
+              border-radius: 20px;
+              background-color: $white;
+            }
           }
         }
       }
