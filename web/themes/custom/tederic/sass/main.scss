@@ -2915,30 +2915,37 @@ input[type="search"] {
     flex: 0 0 480px;
 
     .document-wrapper {
-      border-radius: 8px;
-      background-color: rgba(202,206,208,0.3);
-      padding: 23px 40px 23px 20px;
       margin-bottom: 20px;
 
-      > span {
+      > a {
+        border-radius: 8px;
+        background-color: rgba(202,206,208,0.3);
+        padding: 23px 40px 23px 20px;
+        width: 100%;
+        color: $dark_blue_text;
         text-transform: uppercase;
         font-size: 18px;
         letter-spacing: 0;
         line-height: 21px;
-      }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-      .field-media-document {
-        a {
-          display: block;
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:after {
+          content: '';
           background: url('../images/icons/arrow-down.svg') no-repeat center/contain;
           width: 43px;
           height: 43px;
           font-size: 0px;
           color: transparent;
+        }
 
-          &:hover {
-            opacity: 0.8;
-          }
+        &:hover::after {
+          opacity: 0.8;
         }
       }
     }
@@ -3051,7 +3058,6 @@ input[type="search"] {
 
     img {
       border-radius: 8px;
-      width: 100%;
     }
   }
 
@@ -3081,6 +3087,51 @@ input[type="search"] {
     .slick-disabled {
       visibility: hidden;
       opacity: 0;
+    }
+  }
+}
+
+.contact-us-section {
+  .field-image-crop {
+    img {
+      width: 100%;
+    }
+  }
+
+  .bg-blue {
+    background-color: $dark_blue;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 70px;
+    flex-wrap: wrap;
+
+    > div {
+      flex: auto;
+    }
+
+    .field-text,
+    .field-text p {
+      font-size: 36px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 46px;
+      color: $white;
+    }
+    h2 {
+      color: $red;
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 46px;
+      margin-bottom: 6px;
+    }
+
+    .link {
+      a {
+        color: $white;
+        font-weight: 400;
+      }
     }
   }
 }

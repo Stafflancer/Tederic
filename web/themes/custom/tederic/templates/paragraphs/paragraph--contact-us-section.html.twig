@@ -8,18 +8,35 @@
 {{ attach_library('core/drupal.dialog.ajax') }}
 
 <div{{ attributes.addClass(classes) }}>
-  {{ content|without('field_webform') }}
-  
-  {% if content.field_webform.0 %}
-    {{ 
-      link(
-        'Contact us'|t, 
-        'internal:' ~ path('entity.webform.canonical', {'webform': content.field_webform.0['#plain_text']}), 
-        { 
-          'class': ['use-ajax'],
-          'data-dialog-type': 'modal'
-        }
-      )
-    }}
-  {% endif %}
+
+  <div class="row expanded">
+    <div class="large-6">
+      {{ content.field_image_crop }}
+    </div>
+
+    <div class="large-6">
+      <div class="bg-blue">
+        <div class="contact-text">
+          {{ content|without('field_webform', 'field_image_crop') }}
+        </div>
+
+          {% if content.field_webform.0 %}
+            <div class="contact-right">
+              <div class="link">
+                {{
+                  link(
+                    'Contact us'|t,
+                    'internal:' ~ path('entity.webform.canonical', {'webform': content.field_webform.0['#plain_text']}),
+                    {
+                      'class': ['use-ajax'],
+                      'data-dialog-type': 'modal'
+                    }
+                  )
+                }}
+              </div>
+            </div>
+          {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
