@@ -14,14 +14,12 @@
         </div>
         <div class="product-items-right">
           {% if content.field_document.0 %}
-            <div class="document-wrapper d-flex align-items-center justify-space-between">
-              <span>{{ 'Download Brochure'|t }}</span>
-              {{ content.field_document }}
-              {{ 
+            <div class="document-wrapper">
+              {{
                 link(
-                  content.field_document_link_title.0, 
-                  'internal:/' ~ node.field_document|file_url, 
-                  { 
+                  content.field_document_link_title.0,
+                  'internal:/' ~ node.field_document|file_url,
+                  {
                     'class': ['document-link'],
                     'download': TRUE
                   }
