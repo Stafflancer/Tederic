@@ -6,13 +6,23 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  {% if content.field_technologies.0 %}
-    <h3>{{ 'Related technologies'|t }}</h3>
-    {{ content.field_technologies }}
-  {% endif %}
+  <div class="row">
+    <div class="small-12 column">
 
-  {% if content.field_solutions.0 %}
-    <h3>{{ 'Related Applications & solutions'|t }}</h3>
-    {{ content.field_solutions }}
-  {% endif %}
+      {% if content.field_technologies.0 %}
+        <div class="section-margin">
+          <h3 class="sup-title">{{ 'Related technologies'|t }}</h3>
+          {{ content.field_technologies }}
+        </div>
+      {% endif %}
+
+      {% if content.field_solutions.0 %}
+        <div class="section-margin">
+          <h3 class="sup-title">{{ 'Related Applications & solutions'|t }}</h3>
+          {{ content.field_solutions }}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
 </div>

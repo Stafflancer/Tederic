@@ -3135,3 +3135,65 @@ input[type="search"] {
     }
   }
 }
+
+.related-section {
+  background-color: $gray;
+
+  .sup-title {
+    margin-bottom: 30px;
+  }
+
+  .field-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px -15px 0;
+
+    .technologies-item {
+      padding: 30px 15px 0;
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+
+      > a {
+        display: block;
+        background-color: $white;
+        border-radius: 8px;
+        padding-top: 6px;
+        text-align: center;
+
+        .sub-title {
+          display: block;
+          padding: 30px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .field-solutions {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px -15px 0;
+
+    .solutions-item {
+      padding: 30px 15px 0;
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+
+      > a {
+        display: block;
+        background-color: $white;
+        border-radius: 8px;
+
+        img {
+          border-radius: 8px 8px 0 0;
+          width: 100%;
+        }
+
+        .sub-title {
+          display: block;
+          padding: 30px;
+        }
+      }
+    }
+  }
+}
