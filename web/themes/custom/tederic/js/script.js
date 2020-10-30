@@ -127,6 +127,7 @@
       $('.show-more-filters').unbind('click').bind('click', function() {
         $(this).toggleClass('active');
         $('.show-more-filters + .fieldgroup').slideToggle();
+        $(this).closest('.views-exposed-form').toggleClass('open');
       });
 
       // Show / Hide Language
