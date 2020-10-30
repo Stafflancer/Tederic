@@ -1,7 +1,16 @@
 <article{{ attributes }}>
-  <div{{ content_attributes }}>
-    {{ content.field_images.0 }}
-    <h2>{{ label }}</h2>
-    {{ content|without('field_images') }}
+  <div class="row">
+
+    <div class="medium-6">
+      {{ content.field_images.0 }}
+    </div>
+
+    <div class="medium-6">
+      <div class="technologie-content">
+        <h2 class="title">{{ label }}</h2>
+        {{ content|without('field_images') }}
+      </div>
+    </div>
+
   </div>
 </article>

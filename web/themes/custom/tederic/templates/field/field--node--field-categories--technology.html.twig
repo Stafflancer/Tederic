@@ -1,0 +1,15 @@
+{% set classes = [
+  field_name|clean_class,
+] %}
+
+<div class="field-categories-technology section-margin">
+  <div class="row">
+    <div class="small-12 column">
+      <div{{ attributes.addClass(classes) }}>
+        {% for item in items %}
+          {{ item.content }}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

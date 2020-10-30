@@ -79,6 +79,19 @@
         nextArrow: '<div class="main-arrow-next" aria-hidden="true"></div>',
       });
     }
+    if ($('.technology-node .field-images').length > 0) {
+      var $slickElement = $('.technology-node .field-images');
+      slickCount($slickElement);
+
+      $slickElement.not('.slick-initialized').slick({
+        arrows: true,
+        infinite: false,
+        slidesToShow: 1,
+        appendArrows: $('.slick-pagination'),
+        prevArrow: '<div class="main-arrow-prev" aria-hidden="true"></div>',
+        nextArrow: '<div class="main-arrow-next" aria-hidden="true"></div>',
+      });
+    }
 
     // Slider for icons (Home page)
     $('.icons-section .field-icons-sliders').not('.slick-initialized').slick({

@@ -4,22 +4,42 @@
 
   <div{{ content_attributes }}>
 {{ breakpoint() }}
-  <div class="row">
-    <div class="small-12 column">
-      {{ 
-        link(
-          content.field_document_link_title.0, 
-          'internal:/' ~ node.field_document|file_url, 
-          { 
-            'class': ['document-link'],
-            'download': TRUE
-          }
-        )
-      }}
 
-      {{ content|without('field_document', 'field_document_link_title') }}
+    <div class="technology-node">
+      <div class="row">
+        <div class="medium-6 column">
+          <div class="large-title">{{ label }}</div>
+          {{ content.body }}
+
+          <div class="download-document-wrapper">
+            {{
+              link(
+                content.field_document_link_title.0,
+                'internal:/' ~ node.field_document|file_url,
+                {
+                  'class': ['document-link'],
+                  'download': TRUE
+                }
+              )
+            }}
+          </div>
+        </div>
+
+        <div class="medium-6 column">
+          {{ content.field_images }}
+          <div class="slick-pagination d-flex align-items-center justify-end">
+            <div class="numbers">2/4</div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="technology-line"></div>
+        </div>
+
+      </div>
     </div>
-  </div>
+
+    {{ content|without('field_document', 'field_document_link_title', 'body', 'field_images') }}
 
   </div>
 </article>
