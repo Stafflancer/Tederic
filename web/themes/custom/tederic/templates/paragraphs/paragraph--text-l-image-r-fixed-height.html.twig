@@ -1,0 +1,23 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+
+
+<div{{ attributes.addClass(classes) }}>
+  {{ content|without('field_image_height', 'field_image_crop') }}
+  {% if content.field_image_crop.0 %}
+    {%
+      set imageStyle = {
+        '#theme':      'image_style',
+        '#style_name': (content.field_image_height[0]['#markup'] == "950px") ? 'image_height_950px_crop' : 'image_height_880px_crop',
+        '#uri':        paragraph.field_image_crop[0].entity.uri.value,
+        '#alt':        paragraph.field_image_crop[0].alt
+      }
+    %}
+    {{ imageStyle }}
+  {% endif %}
+</div>

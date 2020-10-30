@@ -29,6 +29,10 @@ function tederic_breadcrumb_system_breadcrumb_alter(Breadcrumb &$breadcrumb, Rou
           $term = Term::load($sub_category_tid);
           $lbt = $term->getName();
           break;
+        case 'technology':
+          // Remove first breadcrumb for Technology.
+          unset($links[0]);
+          break;
         case 'page':
         case 'worldwide':
           $links[0] = Link::createFromRoute(t('Company'), '<nolink>');

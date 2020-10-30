@@ -26,11 +26,18 @@
         });
       }
 
+      function staticParentCategories() {
+        // Make parent categories not clickable.
+        $('[id^="edit-categories"] .form-checkboxes.bef-nested > ul > li > .form-item input').remove();
+      }
+
       $(document).ready(function() {
         seriesDots();
+        staticParentCategories();
       });
       $( document ).ajaxComplete(function() {
         seriesDots();
+        staticParentCategories();
       });
     }
   }

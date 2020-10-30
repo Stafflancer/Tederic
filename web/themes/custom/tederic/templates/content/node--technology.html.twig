@@ -1,0 +1,25 @@
+<article{{ attributes }}>
+
+  {{ drupal_entity('block', 'tederic_breadcrumbs') }}
+
+  <div{{ content_attributes }}>
+{{ breakpoint() }}
+  <div class="row">
+    <div class="small-12 column">
+      {{ 
+        link(
+          content.field_document_link_title.0, 
+          'internal:/' ~ node.field_document|file_url, 
+          { 
+            'class': ['document-link'],
+            'download': TRUE
+          }
+        )
+      }}
+
+      {{ content|without('field_document', 'field_document_link_title') }}
+    </div>
+  </div>
+
+  </div>
+</article>
