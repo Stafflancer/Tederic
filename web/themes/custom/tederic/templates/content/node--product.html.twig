@@ -17,6 +17,16 @@
             <div class="document-wrapper d-flex align-items-center justify-space-between">
               <span>{{ 'Download Brochure'|t }}</span>
               {{ content.field_document }}
+              {{ 
+                link(
+                  content.field_document_link_title.0, 
+                  'internal:/' ~ node.field_document|file_url, 
+                  { 
+                    'class': ['document-link'],
+                    'download': TRUE
+                  }
+                )
+              }}
             </div>
           {% endif %}
           {{ content.field_small_blocks }}

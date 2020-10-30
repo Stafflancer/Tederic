@@ -6,6 +6,11 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
+  {% if content.field_technologies.0 %}
+    <h3>{{ 'Related technologies'|t }}</h3>
+    {{ content.field_technologies }}
+  {% endif %}
+
   {% if content.field_solutions.0 %}
     <h3>{{ 'Related Applications & solutions'|t }}</h3>
     {{ content.field_solutions }}
