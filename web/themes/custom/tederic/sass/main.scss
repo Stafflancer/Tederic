@@ -3357,6 +3357,7 @@ input[type="search"] {
   }
 
   [id*="edit-reset"] {
+    display: block;
     color: $dark_blue_text;
     font-size: 18px;
     letter-spacing: 0;
