@@ -1,0 +1,19 @@
+uuid: 4c0a8ad6-93e6-49fc-8187-5dde895acd31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_link_title
+    - node.type.product
+id: node.product.field_document_link_title
+field_name: field_document_link_title
+entity_type: node
+bundle: product
+label: 'Document link title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

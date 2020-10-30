@@ -1,0 +1,23 @@
+uuid: 14416378-5757-4a4c-a834-48a03325239c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.technology
+  module:
+    - text
+id: node.technology.body
+field_name: body
+entity_type: node
+bundle: technology
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

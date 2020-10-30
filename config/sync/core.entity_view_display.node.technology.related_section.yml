@@ -1,0 +1,45 @@
+uuid: febfcef1-4f0b-486e-ac47-f4187549dc98
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.related_section
+    - field.field.node.technology.body
+    - field.field.node.technology.field_categories
+    - field.field.node.technology.field_document
+    - field.field.node.technology.field_document_link_title
+    - field.field.node.technology.field_images
+    - field.field.node.technology.field_sections
+    - field.field.node.technology.field_subtitle
+    - image.style.solution_related_section
+    - node.type.technology
+  module:
+    - svg_image
+    - user
+id: node.technology.related_section
+targetEntityType: node
+bundle: technology
+mode: related_section
+content:
+  field_images:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: solution_related_section
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_categories: true
+  field_document: true
+  field_document_link_title: true
+  field_sections: true
+  field_subtitle: true
+  langcode: true
+  links: true

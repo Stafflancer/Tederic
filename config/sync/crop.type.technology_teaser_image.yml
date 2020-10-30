@@ -1,0 +1,12 @@
+uuid: 2faa0ec7-469c-4ba4-bc37-0232fa490069
+langcode: en
+status: true
+dependencies: {  }
+id: technology_teaser_image
+label: 'Technology Teaser Image'
+description: ''
+aspect_ratio: '340:480'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

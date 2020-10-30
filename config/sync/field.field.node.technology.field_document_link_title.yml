@@ -1,0 +1,19 @@
+uuid: 21b78af1-fcf3-4c54-85ce-ae152b67c060
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_link_title
+    - node.type.technology
+id: node.technology.field_document_link_title
+field_name: field_document_link_title
+entity_type: node
+bundle: technology
+label: 'Document link title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

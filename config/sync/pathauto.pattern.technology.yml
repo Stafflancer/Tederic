@@ -1,22 +1,22 @@
-uuid: a5c2da1a-d4ed-4c4e-9086-d0bd62186d7d
+uuid: e48ef3d0-8459-404f-bbe6-891ef35968ed
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: news
-label: News
+id: technology
+label: Technology
 type: 'canonical_entities:node'
-pattern: 'news/[node:title]'
+pattern: 'technology/[node:title]'
 selection_criteria:
-  0aebc702-1878-4616-821d-4ad4840ccd6c:
+  6a1d41c5-578a-4e0b-90ae-c1e937e350fe:
     id: node_type
     bundles:
-      news: news
+      technology: technology
     negate: false
     context_mapping:
       node: node
-    uuid: 0aebc702-1878-4616-821d-4ad4840ccd6c
+    uuid: 6a1d41c5-578a-4e0b-90ae-c1e937e350fe
 selection_logic: and
-weight: -6
+weight: -10
 relationships: {  }

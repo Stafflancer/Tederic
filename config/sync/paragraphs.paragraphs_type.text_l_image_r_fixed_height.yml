@@ -1,0 +1,10 @@
+uuid: c618c515-8c96-4501-b0ce-a58fc4eedf44
+langcode: en
+status: true
+dependencies: {  }
+id: text_l_image_r_fixed_height
+label: 'Text L / Image R (fixed height) section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

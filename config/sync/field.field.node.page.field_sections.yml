@@ -14,6 +14,7 @@ dependencies:
     - paragraphs.paragraphs_type.mission_section
     - paragraphs.paragraphs_type.products_with_filters
     - paragraphs.paragraphs_type.quote_section
+    - paragraphs.paragraphs_type.technologies_with_filters
     - paragraphs.paragraphs_type.text_l_image_r_section
     - paragraphs.paragraphs_type.vertical_carousel_text_section
   module:
@@ -44,7 +45,11 @@ settings:
       quote_section: quote_section
       text_l_image_r_section: text_l_image_r_section
       vertical_carousel_text_section: vertical_carousel_text_section
+      technologies_with_filters: technologies_with_filters
     target_bundles_drag_drop:
+      2_columns_section:
+        weight: 46
+        enabled: false
       blue_background_text_section:
         enabled: true
         weight: 37
@@ -62,6 +67,9 @@ settings:
         enabled: false
       contact_section:
         weight: 24
+        enabled: false
+      contact_us_section:
+        weight: 53
         enabled: false
       events_section:
         weight: 25
@@ -141,6 +149,9 @@ settings:
       quote_section:
         enabled: true
         weight: 63
+      related_section:
+        weight: 80
+        enabled: false
       slider:
         weight: 38
         enabled: false
@@ -153,6 +164,9 @@ settings:
       solution_parts:
         weight: 41
         enabled: false
+      technologies_with_filters:
+        enabled: true
+        weight: 85
       text_l_block_r:
         weight: 42
         enabled: false

@@ -1,0 +1,21 @@
+uuid: 8c3caf05-f012-4491-aec1-f8339a23f3b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.technology
+  module:
+    - text
+id: node.technology.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: technology
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

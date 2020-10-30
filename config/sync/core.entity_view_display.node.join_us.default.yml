@@ -1,0 +1,41 @@
+uuid: cb33de93-8c99-4cd5-9f51-625b995efe34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.join_us.field_intro
+    - field.field.node.join_us.field_sections
+    - node.type.join_us
+  module:
+    - entity_reference_revisions
+    - user
+id: node.join_us.default
+targetEntityType: node
+bundle: join_us
+mode: default
+content:
+  field_intro:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_sections:
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

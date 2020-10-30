@@ -1,34 +1,31 @@
-uuid: 8589d011-03d5-41d9-9c72-8bb898f7ff24
+uuid: 871bc118-7669-4eef-acba-7d9494ac99f2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.product.body
-    - field.field.node.product.field_background_color
-    - field.field.node.product.field_categories
-    - field.field.node.product.field_document
-    - field.field.node.product.field_document_link_title
-    - field.field.node.product.field_image_crop
-    - field.field.node.product.field_sections
-    - field.field.node.product.field_series_sub_category
-    - field.field.node.product.field_small_blocks
+    - field.field.node.technology.body
+    - field.field.node.technology.field_categories
+    - field.field.node.technology.field_document
+    - field.field.node.technology.field_document_link_title
+    - field.field.node.technology.field_images
+    - field.field.node.technology.field_sections
+    - field.field.node.technology.field_subtitle
     - image.style.thumbnail
-    - node.type.product
+    - node.type.technology
   module:
-    - color_field
     - field_group
+    - image_widget_crop
     - media_library
     - paragraphs
     - path
-    - svg_image
     - text
 third_party_settings:
   field_group:
-    group_product_description:
+    group_description:
       children:
         - group_tabs
       parent_name: ''
-      weight: 1
+      weight: 0
       format_type: details
       region: content
       format_settings:
@@ -37,12 +34,12 @@ third_party_settings:
         description: ''
         open: true
         required_fields: true
-      label: 'Product description'
+      label: Description
     group_tabs:
       children:
         - group_left_side
         - group_right_side
-      parent_name: group_product_description
+      parent_name: group_description
       weight: 20
       format_type: tabs
       region: content
@@ -55,8 +52,9 @@ third_party_settings:
       children:
         - title
         - field_categories
-        - field_series_sub_category
+        - field_subtitle
         - body
+        - group_download_button
       parent_name: group_tabs
       weight: 20
       format_type: tab
@@ -70,8 +68,7 @@ third_party_settings:
       label: 'Left side'
     group_right_side:
       children:
-        - group_download_button
-        - field_small_blocks
+        - field_images
       parent_name: group_tabs
       weight: 21
       format_type: tab
@@ -87,8 +84,8 @@ third_party_settings:
       children:
         - field_document
         - field_document_link_title
-      parent_name: group_right_side
-      weight: 20
+      parent_name: group_left_side
+      weight: 5
       format_type: details
       region: content
       format_settings:
@@ -98,95 +95,87 @@ third_party_settings:
         open: true
         required_fields: true
       label: 'Download button'
-id: node.product.default
+id: node.technology.default
 targetEntityType: node
-bundle: product
+bundle: technology
 mode: default
 content:
   body:
-    weight: 5
+    type: text_textarea_with_summary
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    type: text_textarea_with_summary
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_background_color:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: color_field_widget_html5
-    region: content
   field_categories:
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_document:
-    type: media_library_widget
-    weight: 21
+    weight: 12
     settings:
       media_types: {  }
     third_party_settings: {  }
+    type: media_library_widget
     region: content
   field_document_link_title:
-    weight: 22
+    weight: 13
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_image_crop:
-    weight: 3
+  field_images:
+    weight: 14
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - technology_teaser_image
+        - free
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   field_sections:
-    weight: 10
-    settings:
-      title: Section
-      title_plural: Sections
-      edit_mode: closed
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: breadcrumb
-    third_party_settings: {  }
-    type: entity_reference_paragraphs
-    region: content
-  field_series_sub_category:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_small_blocks:
-    type: entity_reference_paragraphs
-    weight: 22
+    weight: 15
     settings:
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: _none
+      default_paragraph_type: ''
     third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_subtitle:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   langcode:
     type: language_select
-    weight: 0
+    weight: 2
     region: content
     settings:
       include_locked: true
@@ -220,20 +209,20 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 2
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 11
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
