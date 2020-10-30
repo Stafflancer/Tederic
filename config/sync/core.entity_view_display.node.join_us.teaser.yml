@@ -1,0 +1,25 @@
+uuid: 491d451e-bd25-41ac-9b72-809ce3871736
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.join_us.field_intro
+    - field.field.node.join_us.field_sections
+    - node.type.join_us
+  module:
+    - user
+id: node.join_us.teaser
+targetEntityType: node
+bundle: join_us
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_intro: true
+  field_sections: true
+  langcode: true

@@ -1,0 +1,12 @@
+uuid: a54844d1-bde5-4c8a-bd4a-3087ff596174
+langcode: en
+status: true
+dependencies: {  }
+id: image_height_950px
+label: 'Image Height 950px'
+description: ''
+aspect_ratio: '835:950'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 835
+hard_limit_height: 950

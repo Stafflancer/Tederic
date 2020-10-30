@@ -1,0 +1,10 @@
+uuid: 2fa5d46f-17b0-4f09-930c-7f9914600833
+langcode: en
+status: true
+dependencies: {  }
+id: technologies_with_filters
+label: 'Technologies with Filters'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

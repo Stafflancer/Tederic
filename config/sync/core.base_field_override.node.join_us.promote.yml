@@ -1,0 +1,22 @@
+uuid: 5d13f3f7-bf61-4332-91ef-dd9864fd611a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.join_us
+id: node.join_us.promote
+field_name: promote
+entity_type: node
+bundle: join_us
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

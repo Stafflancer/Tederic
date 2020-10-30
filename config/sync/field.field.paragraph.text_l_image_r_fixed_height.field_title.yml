@@ -1,0 +1,21 @@
+uuid: 243e635e-e51f-43e2-b54f-f39d4038d237
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.text_l_image_r_fixed_height
+  module:
+    - text
+id: paragraph.text_l_image_r_fixed_height.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: text_l_image_r_fixed_height
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

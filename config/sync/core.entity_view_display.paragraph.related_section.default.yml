@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.related_section.field_solutions
+    - field.field.paragraph.related_section.field_technologies
     - paragraphs.paragraphs_type.related_section
 id: paragraph.related_section.default
 targetEntityType: paragraph
@@ -11,8 +12,17 @@ bundle: related_section
 mode: default
 content:
   field_solutions:
+    weight: 1
+    label: above
+    settings:
+      view_mode: related_section
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_technologies:
     weight: 0
-    label: hidden
+    label: above
     settings:
       view_mode: related_section
       link: false

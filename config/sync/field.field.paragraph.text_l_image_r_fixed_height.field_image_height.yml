@@ -1,0 +1,21 @@
+uuid: f0436936-6080-4cd3-8787-30359cff6134
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_height
+    - paragraphs.paragraphs_type.text_l_image_r_fixed_height
+  module:
+    - options
+id: paragraph.text_l_image_r_fixed_height.field_image_height
+field_name: field_image_height
+entity_type: paragraph
+bundle: text_l_image_r_fixed_height
+label: 'Image height'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

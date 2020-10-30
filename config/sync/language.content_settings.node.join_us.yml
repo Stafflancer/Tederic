@@ -1,0 +1,16 @@
+uuid: 64f8f20a-338f-4374-a4af-ce09dfe933b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.join_us
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.join_us
+target_entity_type_id: node
+target_bundle: join_us
+default_langcode: site_default
+language_alterable: true

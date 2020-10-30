@@ -1,0 +1,16 @@
+uuid: 8b9d0324-036e-4506-8b5f-42fbf0da3c2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technology_category
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.technology_category
+target_entity_type_id: taxonomy_term
+target_bundle: technology_category
+default_langcode: site_default
+language_alterable: true

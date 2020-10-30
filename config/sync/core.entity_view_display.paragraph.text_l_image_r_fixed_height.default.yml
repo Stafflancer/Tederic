@@ -1,0 +1,62 @@
+uuid: 3a237384-edc0-4b41-8025-02347211e7b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_l_image_r_fixed_height.field_image_crop
+    - field.field.paragraph.text_l_image_r_fixed_height.field_image_height
+    - field.field.paragraph.text_l_image_r_fixed_height.field_subtitle
+    - field.field.paragraph.text_l_image_r_fixed_height.field_text
+    - field.field.paragraph.text_l_image_r_fixed_height.field_title
+    - paragraphs.paragraphs_type.text_l_image_r_fixed_height
+  module:
+    - options
+    - svg_image
+    - text
+id: paragraph.text_l_image_r_fixed_height.default
+targetEntityType: paragraph
+bundle: text_l_image_r_fixed_height
+mode: default
+content:
+  field_image_crop:
+    weight: 3
+    label: above
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image_height:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_subtitle:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: a6812222-03cd-48e1-be0d-d7d740bf2881
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_image_height
+field_name: field_image_height
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 880px
+      label: 880px
+    -
+      value: 950px
+      label: 950px
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,164 @@
+uuid: 75c3cd7f-a01f-4798-987b-4ed31b225d13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.technology
+    - paragraphs.paragraphs_type.2_columns_section
+    - paragraphs.paragraphs_type.related_section
+    - paragraphs.paragraphs_type.text_l_image_r_section
+  module:
+    - entity_reference_revisions
+id: node.technology.field_sections
+field_name: field_sections
+entity_type: node
+bundle: technology
+label: Sections
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      2_columns_section: 2_columns_section
+      related_section: related_section
+      text_l_image_r_section: text_l_image_r_section
+    target_bundles_drag_drop:
+      2_columns_section:
+        enabled: true
+        weight: 45
+      blue_background_text_section:
+        weight: 46
+        enabled: false
+      breadcrumb:
+        weight: 47
+        enabled: false
+      cards_section:
+        weight: 48
+        enabled: false
+      cards_section_row:
+        weight: 49
+        enabled: false
+      cards_section_row_cards:
+        weight: 50
+        enabled: false
+      contact_section:
+        weight: 51
+        enabled: false
+      contact_us_section:
+        weight: 52
+        enabled: false
+      events_section:
+        weight: 53
+        enabled: false
+      general_media:
+        weight: 54
+        enabled: false
+      highlights_and_sectors_section:
+        weight: 55
+        enabled: false
+      history_block:
+        weight: 56
+        enabled: false
+      history_year:
+        weight: 57
+        enabled: false
+      icon:
+        weight: 58
+        enabled: false
+      icon_cards_section:
+        weight: 62
+        enabled: false
+      icon_simple:
+        weight: 63
+        enabled: false
+      icons_inner_section:
+        weight: 59
+        enabled: false
+      icons_section:
+        weight: 60
+        enabled: false
+      icons_slider:
+        weight: 61
+        enabled: false
+      image_carousel_section:
+        weight: 64
+        enabled: false
+      image_l_text_r:
+        weight: 65
+        enabled: false
+      image_section:
+        weight: 66
+        enabled: false
+      intro_section:
+        weight: 67
+        enabled: false
+      location:
+        weight: 68
+        enabled: false
+      location_column:
+        weight: 70
+        enabled: false
+      location_part:
+        weight: 71
+        enabled: false
+      locations_section:
+        weight: 69
+        enabled: false
+      mission_section:
+        weight: 72
+        enabled: false
+      news_section:
+        weight: 74
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 73
+        enabled: false
+      product_small_block:
+        weight: 77
+        enabled: false
+      products_section:
+        weight: 75
+        enabled: false
+      products_with_filters:
+        weight: 76
+        enabled: false
+      quote_section:
+        weight: 78
+        enabled: false
+      related_section:
+        enabled: true
+        weight: 79
+      slider:
+        weight: 80
+        enabled: false
+      slider_section:
+        weight: 81
+        enabled: false
+      solution_part:
+        weight: 82
+        enabled: false
+      solution_parts:
+        weight: 83
+        enabled: false
+      text_l_block_r:
+        weight: 84
+        enabled: false
+      text_l_image_r_section:
+        enabled: true
+        weight: 85
+      text_section:
+        weight: 86
+        enabled: false
+      vertical_carousel_text_section:
+        weight: 87
+        enabled: false
+      wechat:
+        weight: 88
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,25 @@
+uuid: 5dbddb3b-725b-4eac-9dc7-e299020f5d03
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.technology_teaser_image
+  module:
+    - crop
+name: technology_teaser_image_crop
+label: 'Technology Teaser Image Crop'
+effects:
+  a86e6aa6-de82-4be4-a7ee-f49e8e592adf:
+    uuid: a86e6aa6-de82-4be4-a7ee-f49e8e592adf
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: technology_teaser_image
+  52a8c70a-6b57-45f9-898a-5b0e51737522:
+    uuid: 52a8c70a-6b57-45f9-898a-5b0e51737522
+    id: image_scale
+    weight: 2
+    data:
+      width: 340
+      height: 480
+      upscale: false

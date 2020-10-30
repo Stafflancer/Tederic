@@ -1,0 +1,88 @@
+uuid: 191e6e3c-6ca4-48ce-9158-5b4c83b09b5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.2_columns_section.field_text
+    - field.field.paragraph.2_columns_section.field_text_2
+    - field.field.paragraph.2_columns_section.field_title
+    - paragraphs.paragraphs_type.2_columns_section
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_left_side
+        - group_right_side
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_left_side:
+      children:
+        - field_title
+        - field_text
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Left side'
+    group_right_side:
+      children:
+        - field_text_2
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Right side'
+id: paragraph.2_columns_section.default
+targetEntityType: paragraph
+bundle: 2_columns_section
+mode: default
+content:
+  field_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text_2:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

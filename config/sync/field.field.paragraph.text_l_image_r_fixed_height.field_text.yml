@@ -1,0 +1,21 @@
+uuid: 7cd1077b-e55b-4ed7-8f78-fde518db6c7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.text_l_image_r_fixed_height
+  module:
+    - text
+id: paragraph.text_l_image_r_fixed_height.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: text_l_image_r_fixed_height
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

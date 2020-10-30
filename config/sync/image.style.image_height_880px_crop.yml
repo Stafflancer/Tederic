@@ -1,0 +1,25 @@
+uuid: 7b7f7ac6-e87f-43e1-8c00-095acffdd57a
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.image_height_880px
+  module:
+    - crop
+name: image_height_880px_crop
+label: 'Image Height 880px Crop'
+effects:
+  5d75dbcd-6d81-4ca2-927c-d4f7e94f7978:
+    uuid: 5d75dbcd-6d81-4ca2-927c-d4f7e94f7978
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: image_height_880px
+  c54a1939-aeb7-4e0c-82e0-353ad90315a2:
+    uuid: c54a1939-aeb7-4e0c-82e0-353ad90315a2
+    id: image_scale
+    weight: 2
+    data:
+      width: 835
+      height: 880
+      upscale: false

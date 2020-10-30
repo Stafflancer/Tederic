@@ -1,0 +1,10 @@
+uuid: 85912069-52e1-4856-bd64-f4d287486420
+langcode: en
+status: true
+dependencies: {  }
+id: product_animation_section
+label: 'Product animation section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
