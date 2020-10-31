@@ -11,3 +11,31 @@
 function tederic_preprocess_breadcrumb(&$variables) {
   $variables['#cache']['contexts'][] = 'url';
 }
+
+/**
+ * Implements template_preprocess_views_view_field().
+ */
+function tederic_preprocess_views_view_field(&$variables) {
+  $view = $variables['view'];
+  if ($view->id() == 'products') {
+    if ($variables['field']->field == 'field_series_sub_category') {
+      if (empty($variables['row']->taxonomy_term_field_data_node__field_series_sub_category_tid)) {
+        $variables['output'] = [
+          '#markup' => '<h3>' . $variables['output'] . '</h3>'
+        ];
+      }
+      else {
+        $sub_category_tid = $variables['row']->taxonomy_term_field_data_node__field_series_sub_category_tid;
+        $sub_category_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($sub_category_tid);
+        $parent_category_tid = $sub_category_term->get('field_parent_category')->getValue()[0]['target_id'];
+        $parent_category_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($parent_category_tid);
+        $class = trim($parent_category_term->name->value);
+        $class = strtolower($class);
+        $class = str_replace(' ', '-', $class);
+        $variables['output'] = [
+          '#markup' => '<h3 class="pc-' . $class . '">' . $variables['output'] . '</h3>'
+        ];
+      }
+    }
+  }
+}
