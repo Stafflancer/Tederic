@@ -1,0 +1,21 @@
+uuid: 86beff43-c704-474e-91ad-c1ea2a68706c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_map
+    - paragraphs.paragraphs_type.contact_information_section
+  module:
+    - text
+id: paragraph.contact_information_section.field_map
+field_name: field_map
+entity_type: paragraph
+bundle: contact_information_section
+label: Map
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

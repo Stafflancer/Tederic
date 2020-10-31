@@ -1,0 +1,10 @@
+uuid: d392d5a2-e109-4062-9895-137c9426fc0a
+langcode: en
+status: true
+dependencies: {  }
+id: form_section
+label: 'Form section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

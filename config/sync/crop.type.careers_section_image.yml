@@ -1,0 +1,12 @@
+uuid: 7c0f6a25-12de-4b4e-9dcf-2d2271cf55ec
+langcode: en
+status: true
+dependencies: {  }
+id: careers_section_image
+label: 'Careers Section Image'
+description: ''
+aspect_ratio: '700:200'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 700
+hard_limit_height: 200

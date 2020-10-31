@@ -1,0 +1,156 @@
+uuid: aab7f61e-38dd-4da1-9e3c-5189b0aff84d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_information_section.field_image_crop
+    - field.field.paragraph.contact_information_section.field_map
+    - field.field.paragraph.contact_information_section.field_text
+    - field.field.paragraph.contact_information_section.field_text_2
+    - field.field.paragraph.contact_information_section.field_text_3
+    - field.field.paragraph.contact_information_section.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.contact_information_section
+  module:
+    - field_group
+    - image_widget_crop
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_left_side
+        - group_right_side
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_left_side:
+      children:
+        - field_title
+        - field_text
+        - group_email_address
+        - group_phone_number
+        - field_map
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Left side'
+    group_right_side:
+      children:
+        - field_image_crop
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Right side'
+    group_email_address:
+      children:
+        - field_text_2
+      parent_name: group_left_side
+      weight: 3
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Email address'
+    group_phone_number:
+      children:
+        - field_text_3
+      parent_name: group_left_side
+      weight: 4
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: true
+      label: 'Phone number'
+id: paragraph.contact_information_section.default
+targetEntityType: paragraph
+bundle: contact_information_section
+mode: default
+content:
+  field_image_crop:
+    weight: 22
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - contact_info_section_image
+      crop_types_required:
+        - contact_info_section_image
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_map:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text_2:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text_3:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

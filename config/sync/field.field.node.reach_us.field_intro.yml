@@ -1,19 +1,18 @@
-uuid: f4a91215-b237-4826-9215-ebe7ce634d68
+uuid: dcfdd31c-d466-444d-a980-4418f86c00f8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sections
-    - node.type.join_us
-    - paragraphs.paragraphs_type.careers_section
-    - paragraphs.paragraphs_type.text_l_image_r_fixed_height
+    - field.storage.node.field_intro
+    - node.type.reach_us
+    - paragraphs.paragraphs_type.intro_section
   module:
     - entity_reference_revisions
-id: node.join_us.field_sections
-field_name: field_sections
+id: node.reach_us.field_intro
+field_name: field_intro
 entity_type: node
-bundle: join_us
-label: Sections
+bundle: reach_us
+label: Intro
 description: ''
 required: false
 translatable: false
@@ -24,59 +23,58 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      careers_section: careers_section
-      text_l_image_r_fixed_height: text_l_image_r_fixed_height
+      intro_section: intro_section
     target_bundles_drag_drop:
       2_columns_section:
-        weight: 48
-        enabled: false
-      blue_background_text_section:
         weight: 49
         enabled: false
-      breadcrumb:
+      blue_background_text_section:
         weight: 50
         enabled: false
-      cards_section:
+      breadcrumb:
         weight: 51
         enabled: false
-      cards_section_row:
+      cards_section:
         weight: 52
         enabled: false
-      cards_section_row_cards:
+      cards_section_row:
         weight: 53
         enabled: false
-      careers_section:
-        enabled: true
-        weight: 55
-      contact_section:
+      cards_section_row_cards:
         weight: 54
         enabled: false
-      contact_us_section:
+      careers_section:
         weight: 55
         enabled: false
-      events_section:
+      contact_section:
         weight: 56
         enabled: false
-      general_media:
+      contact_us_section:
         weight: 57
         enabled: false
-      highlights_and_sectors_section:
+      events_section:
         weight: 58
         enabled: false
-      history_block:
+      general_media:
         weight: 59
         enabled: false
-      history_year:
+      highlights_and_sectors_section:
         weight: 60
         enabled: false
-      icon:
+      history_block:
         weight: 61
         enabled: false
-      icon_cards_section:
+      history_year:
         weight: 62
         enabled: false
-      icon_simple:
+      icon:
         weight: 63
+        enabled: false
+      icon_cards_section:
+        weight: 67
+        enabled: false
+      icon_simple:
+        weight: 68
         enabled: false
       icons_inner_section:
         weight: 64
@@ -88,43 +86,43 @@ settings:
         weight: 66
         enabled: false
       image_carousel_section:
-        weight: 67
-        enabled: false
-      image_l_text_r:
-        weight: 68
-        enabled: false
-      image_section:
         weight: 69
         enabled: false
-      intro_section:
+      image_l_text_r:
         weight: 70
         enabled: false
-      location:
+      image_section:
         weight: 71
         enabled: false
-      location_column:
+      intro_section:
+        enabled: true
         weight: 72
+      location:
+        weight: 73
+        enabled: false
+      location_column:
+        weight: 75
         enabled: false
       location_part:
-        weight: 73
+        weight: 76
         enabled: false
       locations_section:
         weight: 74
         enabled: false
       mission_section:
-        weight: 75
-        enabled: false
-      news_section:
-        weight: 76
-        enabled: false
-      newsletter_sign_up_block:
         weight: 77
         enabled: false
-      product_animation_section:
+      news_section:
+        weight: 79
+        enabled: false
+      newsletter_sign_up_block:
         weight: 78
         enabled: false
+      product_animation_section:
+        weight: 82
+        enabled: false
       product_small_block:
-        weight: 79
+        weight: 83
         enabled: false
       products_section:
         weight: 80
@@ -133,42 +131,42 @@ settings:
         weight: 81
         enabled: false
       quote_section:
-        weight: 82
-        enabled: false
-      related_section:
-        weight: 83
-        enabled: false
-      slider:
         weight: 84
         enabled: false
-      slider_section:
+      related_section:
         weight: 85
         enabled: false
-      solution_part:
+      slider:
         weight: 86
         enabled: false
-      solution_parts:
+      slider_section:
         weight: 87
         enabled: false
-      technologies_with_filters:
+      solution_part:
         weight: 88
         enabled: false
-      text_l_block_r:
+      solution_parts:
         weight: 89
         enabled: false
-      text_l_image_r_fixed_height:
-        enabled: true
+      technologies_with_filters:
         weight: 90
-      text_l_image_r_section:
+        enabled: false
+      text_l_block_r:
         weight: 91
         enabled: false
-      text_section:
+      text_l_image_r_fixed_height:
         weight: 92
         enabled: false
-      vertical_carousel_text_section:
+      text_l_image_r_section:
         weight: 93
         enabled: false
-      wechat:
+      text_section:
         weight: 94
+        enabled: false
+      vertical_carousel_text_section:
+        weight: 95
+        enabled: false
+      wechat:
+        weight: 96
         enabled: false
 field_type: entity_reference_revisions

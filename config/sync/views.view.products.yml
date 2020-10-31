@@ -716,10 +716,24 @@ display:
           error_message: true
           plugin_id: taxonomy_index_tid
       sorts:
-        field_series_sub_category_target_id:
-          id: field_series_sub_category_target_id
-          table: node__field_series_sub_category
-          field: field_series_sub_category_target_id
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: field_series_sub_category
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
@@ -727,27 +741,23 @@ display:
           exposed: false
           expose:
             label: ''
-          plugin_id: standard
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
           entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
+          entity_field: title
+          plugin_id: standard
       title: Products
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_series_sub_category:
+          id: field_series_sub_category
+          table: node__field_series_sub_category
+          field: field_series_sub_category
+          relationship: none
+          group_type: group
+          admin_label: 'field_series_sub_category: Taxonomy term'
+          required: false
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       use_ajax: true
