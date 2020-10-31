@@ -1,0 +1,23 @@
+uuid: 398f6233-2fb2-4863-a745-3788c0af8003
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_webform
+    - paragraphs.paragraphs_type.form_section
+id: paragraph.form_section.field_webform
+field_name: field_webform
+entity_type: paragraph
+bundle: form_section
+label: Webform
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

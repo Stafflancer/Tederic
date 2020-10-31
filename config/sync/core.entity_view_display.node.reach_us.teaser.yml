@@ -1,0 +1,27 @@
+uuid: 868ae3ff-2ad5-4846-a176-76c0419c3959
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reach_us.field_contact_information
+    - field.field.node.reach_us.field_form
+    - field.field.node.reach_us.field_intro
+    - node.type.reach_us
+  module:
+    - user
+id: node.reach_us.teaser
+targetEntityType: node
+bundle: reach_us
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contact_information: true
+  field_form: true
+  field_intro: true
+  langcode: true

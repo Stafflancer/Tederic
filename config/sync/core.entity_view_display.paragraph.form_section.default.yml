@@ -1,0 +1,39 @@
+uuid: 8f5afccd-bbce-4845-9b4d-ef722a90b386
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.form_section.field_text
+    - field.field.paragraph.form_section.field_title
+    - field.field.paragraph.form_section.field_webform
+    - paragraphs.paragraphs_type.form_section
+  module:
+    - text
+id: paragraph.form_section.default
+targetEntityType: paragraph
+bundle: form_section
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_webform:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

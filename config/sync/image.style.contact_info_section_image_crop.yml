@@ -1,0 +1,25 @@
+uuid: 3fc3169f-6c4c-43ba-a2e7-0798928e102e
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.contact_info_section_image
+  module:
+    - crop
+name: contact_info_section_image_crop
+label: 'Contact Info Section Image Crop'
+effects:
+  a371d838-3d71-4bea-bc5b-f91cfd7860e1:
+    uuid: a371d838-3d71-4bea-bc5b-f91cfd7860e1
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: contact_info_section_image
+  de5a4247-0a13-44f2-a357-1571a9448127:
+    uuid: de5a4247-0a13-44f2-a357-1571a9448127
+    id: image_scale
+    weight: 2
+    data:
+      width: 835
+      height: null
+      upscale: false

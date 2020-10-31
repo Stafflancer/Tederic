@@ -1,0 +1,51 @@
+uuid: f6e08eae-60c9-46d0-9b30-c08cef03b6f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reach_us.field_contact_information
+    - field.field.node.reach_us.field_form
+    - field.field.node.reach_us.field_intro
+    - node.type.reach_us
+  module:
+    - entity_reference_revisions
+    - user
+id: node.reach_us.default
+targetEntityType: node
+bundle: reach_us
+mode: default
+content:
+  field_contact_information:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_form:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_intro:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

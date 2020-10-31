@@ -1,0 +1,16 @@
+uuid: 4d485d15-6965-43c5-9736-0eebb1c16ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reach_us
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.reach_us
+target_entity_type_id: node
+target_bundle: reach_us
+default_langcode: site_default
+language_alterable: true

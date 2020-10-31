@@ -1,19 +1,18 @@
-uuid: f4a91215-b237-4826-9215-ebe7ce634d68
+uuid: 884e6b34-f928-4a49-a112-97fc6c73946a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sections
-    - node.type.join_us
-    - paragraphs.paragraphs_type.careers_section
-    - paragraphs.paragraphs_type.text_l_image_r_fixed_height
+    - field.storage.node.field_contact_information
+    - node.type.reach_us
+    - paragraphs.paragraphs_type.contact_information_section
   module:
     - entity_reference_revisions
-id: node.join_us.field_sections
-field_name: field_sections
+id: node.reach_us.field_contact_information
+field_name: field_contact_information
 entity_type: node
-bundle: join_us
-label: Sections
+bundle: reach_us
+label: 'Contact information'
 description: ''
 required: false
 translatable: false
@@ -24,151 +23,156 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      careers_section: careers_section
-      text_l_image_r_fixed_height: text_l_image_r_fixed_height
+      contact_information_section: contact_information_section
     target_bundles_drag_drop:
       2_columns_section:
-        weight: 48
-        enabled: false
-      blue_background_text_section:
-        weight: 49
-        enabled: false
-      breadcrumb:
-        weight: 50
-        enabled: false
-      cards_section:
         weight: 51
         enabled: false
-      cards_section_row:
+      blue_background_text_section:
         weight: 52
         enabled: false
-      cards_section_row_cards:
+      breadcrumb:
         weight: 53
         enabled: false
-      careers_section:
-        enabled: true
-        weight: 55
-      contact_section:
+      cards_section:
         weight: 54
         enabled: false
-      contact_us_section:
+      cards_section_row:
         weight: 55
         enabled: false
-      events_section:
+      cards_section_row_cards:
         weight: 56
         enabled: false
-      general_media:
+      careers_section:
         weight: 57
         enabled: false
-      highlights_and_sectors_section:
+      contact_information_section:
+        enabled: true
         weight: 58
-        enabled: false
-      history_block:
+      contact_section:
         weight: 59
         enabled: false
-      history_year:
+      contact_us_section:
         weight: 60
         enabled: false
-      icon:
+      events_section:
         weight: 61
         enabled: false
-      icon_cards_section:
+      form_section:
         weight: 62
         enabled: false
-      icon_simple:
+      general_media:
         weight: 63
         enabled: false
-      icons_inner_section:
+      highlights_and_sectors_section:
         weight: 64
         enabled: false
-      icons_section:
+      history_block:
         weight: 65
         enabled: false
-      icons_slider:
+      history_year:
         weight: 66
         enabled: false
-      image_carousel_section:
+      icon:
         weight: 67
         enabled: false
-      image_l_text_r:
+      icon_cards_section:
         weight: 68
         enabled: false
-      image_section:
+      icon_simple:
         weight: 69
         enabled: false
-      intro_section:
+      icons_inner_section:
         weight: 70
         enabled: false
-      location:
+      icons_section:
         weight: 71
         enabled: false
-      location_column:
+      icons_slider:
         weight: 72
         enabled: false
-      location_part:
+      image_carousel_section:
         weight: 73
         enabled: false
-      locations_section:
+      image_l_text_r:
         weight: 74
         enabled: false
-      mission_section:
+      image_section:
         weight: 75
         enabled: false
-      news_section:
+      intro_section:
         weight: 76
         enabled: false
-      newsletter_sign_up_block:
+      location:
         weight: 77
         enabled: false
-      product_animation_section:
+      location_column:
         weight: 78
         enabled: false
-      product_small_block:
+      location_part:
         weight: 79
         enabled: false
-      products_section:
+      locations_section:
         weight: 80
         enabled: false
-      products_with_filters:
+      mission_section:
         weight: 81
         enabled: false
-      quote_section:
+      news_section:
         weight: 82
         enabled: false
-      related_section:
+      newsletter_sign_up_block:
         weight: 83
         enabled: false
-      slider:
+      product_animation_section:
         weight: 84
         enabled: false
-      slider_section:
+      product_small_block:
         weight: 85
         enabled: false
-      solution_part:
+      products_section:
         weight: 86
         enabled: false
-      solution_parts:
+      products_with_filters:
         weight: 87
         enabled: false
-      technologies_with_filters:
+      quote_section:
         weight: 88
         enabled: false
-      text_l_block_r:
+      related_section:
         weight: 89
         enabled: false
-      text_l_image_r_fixed_height:
-        enabled: true
+      slider:
         weight: 90
-      text_l_image_r_section:
+        enabled: false
+      slider_section:
         weight: 91
         enabled: false
-      text_section:
+      solution_part:
         weight: 92
         enabled: false
-      vertical_carousel_text_section:
+      solution_parts:
         weight: 93
         enabled: false
-      wechat:
+      technologies_with_filters:
         weight: 94
+        enabled: false
+      text_l_block_r:
+        weight: 95
+        enabled: false
+      text_l_image_r_fixed_height:
+        weight: 96
+        enabled: false
+      text_l_image_r_section:
+        weight: 97
+        enabled: false
+      text_section:
+        weight: 98
+        enabled: false
+      vertical_carousel_text_section:
+        weight: 99
+        enabled: false
+      wechat:
+        weight: 100
         enabled: false
 field_type: entity_reference_revisions

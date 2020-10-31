@@ -1,0 +1,25 @@
+uuid: c87b0271-352e-49dc-bb51-e1d217e644c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.careers_section_image
+  module:
+    - crop
+name: careers_section_image_crop
+label: 'Careers Section Image Crop'
+effects:
+  49bf378f-960b-40e3-9b13-c8b6db054c94:
+    uuid: 49bf378f-960b-40e3-9b13-c8b6db054c94
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: careers_section_image
+  3e8a1d54-3d23-4fd1-b6ec-76902c857830:
+    uuid: 3e8a1d54-3d23-4fd1-b6ec-76902c857830
+    id: image_scale
+    weight: 2
+    data:
+      width: 1400
+      height: 400
+      upscale: false

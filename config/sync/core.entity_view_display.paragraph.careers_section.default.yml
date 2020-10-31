@@ -1,0 +1,52 @@
+uuid: 3c61be43-ab64-4d28-98d8-38278cfe788c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.careers_section.field_image_crop
+    - field.field.paragraph.careers_section.field_link
+    - field.field.paragraph.careers_section.field_text
+    - image.style.careers_section_image_crop
+    - paragraphs.paragraphs_type.careers_section
+  module:
+    - link
+    - svg_image
+    - text
+id: paragraph.careers_section.default
+targetEntityType: paragraph
+bundle: careers_section
+mode: default
+content:
+  field_image_crop:
+    weight: 0
+    label: above
+    settings:
+      image_style: careers_section_image_crop
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
