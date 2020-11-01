@@ -3205,7 +3205,7 @@ textarea[rows] {
         justify-content: space-between;
 
         &:hover {
-          text-decoration: underline;
+          box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
         }
 
         &:after {
@@ -3409,6 +3409,10 @@ textarea[rows] {
         padding-top: 6px;
         text-align: center;
 
+        &:hover {
+          box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
+        }
+
         .sub-title {
           display: block;
           padding: 30px;
@@ -3432,6 +3436,10 @@ textarea[rows] {
         display: block;
         background-color: $white;
         border-radius: 8px;
+
+        &:hover {
+          box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
+        }
 
         img {
           border-radius: 8px 8px 0 0;
@@ -3896,6 +3904,21 @@ textarea[rows] {
     margin-bottom: 30px;
   }
 
+  .field-categories {
+    margin-bottom: 15px;
+
+    .field__item {
+      display: inline-block;
+      color: $dark_blue_text;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 16px;
+      margin-right: 10px;
+      padding-bottom: 3px;
+      border-bottom: 3px solid $gray_dark;
+    }
+  }
+
   .body {
     color: $dark_blue_text;
     font-size: 24px;
@@ -3920,6 +3943,10 @@ textarea[rows] {
       justify-content: space-between;
       margin-top: 40px;
       max-width: 487px;
+
+      &:hover {
+        box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
+      }
 
       &:after {
         content: '';

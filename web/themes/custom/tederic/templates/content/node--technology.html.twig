@@ -9,6 +9,7 @@
       <div class="row">
         <div class="medium-6 column">
           <div class="large-title">{{ label }}</div>
+          {{ content.field_categories }}
           {{ content.body }}
 
           <div class="download-document-wrapper">
@@ -39,7 +40,7 @@
       </div>
     </div>
 
-    {{ content|without('field_document', 'field_document_link_title', 'body', 'field_images') }}
+    {{ content|without('field_document', 'field_document_link_title', 'body', 'field_images', 'field_categories') }}
 
   </div>
 </article>
