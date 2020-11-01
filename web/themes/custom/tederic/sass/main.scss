@@ -35,6 +35,13 @@ label {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 16px;
+
+  &.form-required {
+    &:after {
+      content: ' *';
+      color:$red;
+    }
+  }
 }
 
 .form-item {
@@ -2278,6 +2285,10 @@ textarea[rows] {
     margin-bottom: 30px;
   }
 
+  .field-icon {
+    display: inline-block;
+  }
+
   .field-country-name,
   .field-country-name p {
     font-size: 18px;
@@ -2287,6 +2298,7 @@ textarea[rows] {
   }
   .field-country-name {
     margin-bottom: 8px;
+    display: inline-block;
   }
 
   .field-company-name,
