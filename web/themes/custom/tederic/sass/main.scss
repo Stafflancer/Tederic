@@ -30,6 +30,17 @@ p {
   margin: 0;
 }
 
+label {
+  color: $dark_blue;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.form-item {
+  margin-bottom: 30px;
+}
+
 select,
 textarea,
 input[type="text"],
@@ -38,20 +49,131 @@ input[type="email"],
 input[type="password"],
 input[type="search"] {
   background: $white;
-  color: $gray_text;
+  color: $dark_blue;
   font-family: $font_name;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0;
   line-height: 29px;
   border: none;
-  box-shadow: none;
   padding: 3px 0;
+  box-shadow: 0 1px 2px 0 rgba(255,255,255,0.5), 0 1px 0 0 rgba(73,73,73,0.5);
 
   &:focus {
     border: none;
-    box-shadow: none;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,0.5), 0 1px 0 0 rgba(73,73,73,0.5);
   }
+}
+
+input[type="submit"] {
+  font-family: $font_name;
+}
+
+textarea,
+textarea[rows] {
+  height: 125px;
+}
+
+.webform-submission-form {
+  .js-form-type-checkbox {
+    position: relative;
+
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    label {
+      margin: 0;
+      color: $dark_blue_text;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 16px;
+      padding-left: 34px;
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        border: 2px solid $dark_blue;
+        margin-right: 10px;
+        position: absolute;
+        top: -3px;
+        left: 0;
+      }
+
+      &:after {
+        content: '';
+        background-color: $dark_blue;
+        position: absolute;
+        top: 1px;
+        left: 4px;
+        width: 16px;
+        height: 16px;
+        opacity: 0;
+        transition: .3s all ease;
+        transform: scale(0);
+      }
+    }
+
+    input:checked + label {
+      &:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  .form-actions {
+    input {
+      color: $dark_blue_text;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 21px;
+      padding: 0;
+      background-color: transparent;
+      text-transform: uppercase;
+      border: none;
+      background: url('../images/icons/arrow-right.svg') no-repeat center right/10px;
+      padding-right: 26px;
+
+      &:hover {
+        padding-right: 16px;
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  color:    #586267;
+  font-size: 14px;
+}
+:-moz-placeholder {
+  color:    #586267;
+  opacity:  1;
+  font-size: 14px;
+}
+::-moz-placeholder {
+  color:    #586267;
+  opacity:  1;
+  font-size: 14px;
+}
+:-ms-input-placeholder {
+  color:    #586267;
+  font-size: 14px;
+}
+::-ms-input-placeholder {
+  color:    #586267;
+  font-size: 14px;
+}
+::placeholder {
+  color:    #586267;
+  font-size: 14px;
 }
 
 .slick-vertical .slick-slide {
@@ -329,7 +451,7 @@ input[type="search"] {
   padding-left: 20px;
   padding-right: 20px;
 }
-.site-slogan, input, select, textarea, a, button {
+.site-slogan, input, select, textarea, a, button, input[type="submit"] {
   transition: .3s all ease;
 }
 
@@ -665,6 +787,7 @@ input[type="search"] {
     
     .js-form-type-search {
       flex: 1;
+      margin-bottom: 0;
 
       input[type="search"] {
         padding: 3px 5px 3px 34px;
@@ -1361,13 +1484,19 @@ input[type="search"] {
       li {
         padding: 0 10px;
 
-        &:nth-child(1) {
-          flex: 0 0 34%;
-          max-width: 34%;
+        .event-item {
+          background-color: $white;
+        }
 
+        .special-label {
           .event-item {
             background-color: $gray_dark;
           }
+        }
+
+        &:nth-child(1) {
+          flex: 0 0 34%;
+          max-width: 34%;
 
           h2 {
             max-width: 400px;
@@ -1376,10 +1505,6 @@ input[type="search"] {
         &:nth-child(2) {
           flex: 0 0 66%;
           max-width: 66%;
-
-          .event-item {
-            background-color: $white;
-          }
 
           h2 {
             margin-bottom: 20px;
@@ -1486,6 +1611,12 @@ input[type="search"] {
     margin-bottom: 30px;
   }
 
+  .special-label {
+    > a {
+      background-color: $gray_dark !important;
+    }
+  }
+
   .item-list {
     > ul {
       margin: 0 -10px 0;
@@ -1543,6 +1674,11 @@ input[type="search"] {
       color: $dark_blue_text;
       margin-bottom: 0;
     }
+  }
+
+  .link {
+    margin-top: 15px;
+    text-align: center;
   }
 }
 
@@ -1622,6 +1758,35 @@ input[type="search"] {
       margin: 0;
       background: transparent;
       padding-right: 30px;
+      box-shadow: none;
+
+      
+      &::-webkit-input-placeholder {
+        color:    $white;
+        font-size: 22px;
+      }
+      &:-moz-placeholder {
+        color:    $white;
+        opacity:  1;
+        font-size: 22px;
+      }
+      &::-moz-placeholder {
+        color:    $white;
+        opacity:  1;
+        font-size: 22px;
+      }
+      &:-ms-input-placeholder {
+        color:    $white;
+        font-size: 22px;
+      }
+      &::-ms-input-placeholder {
+        color:    $white;
+        font-size: 22px;
+      }
+      &::placeholder {
+        color:    $white;
+        font-size: 22px;
+      }
     }
 
     .form-actions {
@@ -3352,6 +3517,10 @@ input[type="search"] {
   align-items: center;
   position: relative;
 
+  .form-item {
+    margin-bottom: 0;
+  }
+
   &.open {
     &:after {
       content: '';
@@ -3473,8 +3642,8 @@ input[type="search"] {
 
       label:hover,
       input:checked + label {
-        border: 2px solid #0F283D;
-        background-color: #FFFFFF;
+        border: 2px solid $dark_blue;
+        background-color: $white;
       }
     }
   }
@@ -3644,7 +3813,7 @@ input[type="search"] {
 
         &:hover {
           &:before {
-            border-color: transparent;
+            opacity: 0;
           }
         }
       }
@@ -3753,7 +3922,7 @@ input[type="search"] {
       display: inline-block;
       margin-right: 15px;
       margin-top: 10px;
-      color: #0B2434;
+      color: $dark_blue_text;
       font-size: 14px;
       letter-spacing: 0;
       line-height: 16px;
@@ -3773,6 +3942,37 @@ input[type="search"] {
   .title {
     padding-top: 100px;
     margin-bottom: 40px;
+  }
+
+  .form-wrapper {
+    padding: 30px;
+    background-color: $white;
+    border-radius: 10px;
+
+    .text-large {
+      color: $dark_blue_text;
+      margin-bottom: 28px;
+    }
+
+    .webform-submission-contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+
+      > div {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0 10px;
+      }
+
+      .form-item-first-name,
+      .form-item-last-name,
+      .form-item-country,
+      .form-item-company {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+    }
   }
 }
 
@@ -3844,7 +4044,7 @@ input[type="search"] {
   }
 }
 
-.field-sections {
+[about="/join-us"] .field-sections {
   margin-top: 80px;
 }
 .text-l-image-r-fixed-height {
