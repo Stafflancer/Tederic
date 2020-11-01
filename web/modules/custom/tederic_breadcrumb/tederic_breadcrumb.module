@@ -37,6 +37,10 @@ function tederic_breadcrumb_system_breadcrumb_alter(Breadcrumb &$breadcrumb, Rou
         case 'worldwide':
           $links[0] = Link::createFromRoute(t('Company'), '<nolink>');
           break;
+        case 'reach_us':
+        case 'join_us':
+          $links[0] = Link::createFromRoute(t('Contact'), '<nolink>');
+          break;
       }
 
       $links[] = Link::createFromRoute($lbt, '<nolink>');
