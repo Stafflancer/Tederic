@@ -11,7 +11,7 @@ dependencies:
 id: social_media_menu
 theme: tederic
 region: footer_first
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:social-media-menu'
 settings:
