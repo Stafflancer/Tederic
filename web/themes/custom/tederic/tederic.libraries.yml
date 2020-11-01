@@ -34,3 +34,9 @@ series:
   version: 1.0
   js:
     js/series-dots.js: {}
+
+# Exposed form
+exposed-form:
+  version: 1.0
+  js:
+    js/exposed-form.js: {}

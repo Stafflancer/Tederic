@@ -20,8 +20,9 @@ function tederic_common_form_alter(&$form, FormStateInterface $form_state, $form
       // Check view display.
       $display = $view['display']['id'];
       if ($display == 'products_block') {
-        // Add Series library.
+        // Add libraries.
         $form['#attached']['library'][] = 'tederic/series';
+        $form['#attached']['library'][] = 'tederic/exposed-form';
         // Change All option label.
         $form['series_sub_category']['#options']['All'] = t('All');
       }
