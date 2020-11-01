@@ -121,6 +121,15 @@ input[type="search"] {
   line-height: 29px;
 }
 
+.text-large,
+.text-large p {
+  color: $gray_text;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
 .link {
   a {
     color: $dark_blue_text;
@@ -3754,6 +3763,124 @@ input[type="search"] {
       &:hover {
         border-color: transparent;
       }
+    }
+  }
+}
+
+.form-section {
+  background-color: $gray;
+
+  .title {
+    padding-top: 100px;
+    margin-bottom: 40px;
+  }
+}
+
+.contact-information-section {
+  padding: 130px 45px;
+
+  .text-wrapper {
+    max-width: 650px;
+  }
+
+  .title {
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .field-text {
+    margin-bottom: 80px;
+  }
+
+  .field-text-2,
+  .field-text-3 {
+    border-radius: 10px;
+    background-color: $gray;
+    padding: 30px 30px 22px;
+    margin-bottom: 40px;
+
+    h2 {
+      color: $gray_text;
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: $dark_blue_text;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 16px;
+
+      &:nth-child(3) {
+        margin-top: 15px;
+      }
+    }
+
+    a {
+      color: $dark_blue_text;
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 46px;
+    }
+  }
+
+  .field-map {
+    iframe {
+      border: 0;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .field-image-crop {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.field-sections {
+  margin-top: 80px;
+}
+.text-l-image-r-fixed-height {
+  .text-wrapper {
+    max-width: 650px;
+    padding-top: 80px;
+  }
+}
+
+.careers-section {
+  .field-image-crop {
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-wrapper {
+    height: 100%;
+    background-color: $dark_blue;
+    padding: 55px 15px 60px 70px;
+
+    .text-pos {
+      max-width: 720px;
+    }
+  }
+
+  .text-large,
+  .text-large p {
+    color: $white;
+  }
+
+  .link {
+    text-align: right;
+    a {
+      color: $white;
+      font-weight: 400;
     }
   }
 }
