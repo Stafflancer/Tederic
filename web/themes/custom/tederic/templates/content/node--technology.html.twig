@@ -3,7 +3,6 @@
   {{ drupal_entity('block', 'tederic_breadcrumbs') }}
 
   <div{{ content_attributes }}>
-{{ breakpoint() }}
 
     <div class="technology-node">
       <div class="row">
@@ -11,19 +10,20 @@
           <div class="large-title">{{ label }}</div>
           {{ content.field_categories }}
           {{ content.body }}
-
-          <div class="download-document-wrapper">
-            {{
-              link(
-                content.field_document_link_title.0,
-                'internal:/' ~ node.field_document|file_url,
-                {
-                  'class': ['document-link'],
-                  'download': TRUE
-                }
-              )
-            }}
-          </div>
+          {% if content.field_document_link_title.0 and content.field_document.0 %}
+            <div class="download-document-wrapper">
+              {{
+                link(
+                  content.field_document_link_title.0,
+                  'internal:/' ~ node.field_document|file_url,
+                  {
+                    'class': ['document-link'],
+                    'download': TRUE
+                  }
+                )
+              }}
+            </div>
+          {% endif %}
         </div>
 
         <div class="medium-6 column">

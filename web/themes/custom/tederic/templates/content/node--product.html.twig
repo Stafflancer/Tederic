@@ -13,7 +13,7 @@
           {{ content.body }}
         </div>
         <div class="product-items-right">
-          {% if content.field_document.0 %}
+          {% if content.field_document_link_title.0 and content.field_document.0 %}
             <div class="document-wrapper">
               {{
                 link(
