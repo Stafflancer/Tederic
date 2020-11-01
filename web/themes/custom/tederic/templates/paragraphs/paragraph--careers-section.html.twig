@@ -1,0 +1,23 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'section-margin'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="row expanded">
+    <div class="medium-5">
+      {{ content.field_image_crop }}
+    </div>
+    <div class="medium-7">
+      <div class="text-wrapper">
+        <div class="text-pos">
+          <div class="text-large">{{ content.field_text }}</div>
+          <div class="link">{{ content.field_link }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
