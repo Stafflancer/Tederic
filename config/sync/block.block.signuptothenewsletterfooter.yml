@@ -1,0 +1,31 @@
+uuid: 1bb3dc3f-64e2-40b9-b76a-e6e03f0068d6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:caf54048-a1de-45f9-aff6-fc9e8aa45515'
+  module:
+    - block_content
+    - system
+  theme:
+    - tederic
+id: signuptothenewsletterfooter
+theme: tederic
+region: footer_first
+weight: -7
+provider: null
+plugin: 'block_content:caf54048-a1de-45f9-aff6-fc9e8aa45515'
+settings:
+  id: 'block_content:caf54048-a1de-45f9-aff6-fc9e8aa45515'
+  label: 'Sign up to the newsletter (footer)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
