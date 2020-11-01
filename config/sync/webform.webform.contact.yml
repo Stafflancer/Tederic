@@ -119,7 +119,7 @@ settings:
   draft_pending_multiple_message: ''
   confirmation_type: modal
   confirmation_title: ''
-  confirmation_message: "<h2>Thank you for your interest in tederic machinery!</h2>\r\nWe have received your request.<br />\r\nOur executives will reach out to you at the earliest.<br />\r\nUntil then, Take a look at our products<br />\r\n<a href=\"products\">VIEW PRODUCTS</a>"
+  confirmation_message: "<div class=\"get-in-touch-confirmation\">\r\n<h2>Thank you for your interest<br />\r\nin tederic machinery!</h2>\r\n\r\n<p>We have received your request.</p>\r\n\r\n<p>Our executives will reach out to you at the earliest.<br />\r\n&nbsp;</p>\r\n\r\n<p>Until then, Take a look at our products</p>\r\n\r\n<div class=\"link\"><a href=\"products\">VIEW PRODUCTS</a></div>\r\n</div>"
   confirmation_url: '<front>'
   confirmation_attributes: {  }
   confirmation_back: true
