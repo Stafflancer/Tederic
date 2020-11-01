@@ -36,3 +36,15 @@ function tederic_common_form_alter(&$form, FormStateInterface $form_state, $form
 function tederic_common_preprocess_links(&$variables) {
   $variables['language_id'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
 }
+
+/**
+ * Implements hook_preprocess_region().
+ */
+function tederic_common_preprocess_region(&$variables) {
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    $variables['is_front'] = FALSE;
+  }
+}

@@ -1,0 +1,34 @@
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+{% if content %}
+  <section{{ attributes.addClass(classes) }}>
+    <div class="custom-row">
+      <div class="custom-column">
+        <div class="region-wrapper">
+
+          <div class="footer-left">
+            {{ drupal_entity('block', 'footerlogo') }}
+          </div>
+          <div class="footer-right d-flex-wrap flex-column">
+            <div class="nenews-letter-footer">
+              {% if not is_front %}
+                <h2>{{ 'Sign up to the newsletter'|t }}</h2>
+                {{ drupal_entity('block', 'signuptothenewsletterfooter') }}
+              {% endif %}
+            </div>
+
+            <div class="d-flex-wrap">
+              {{ drupal_entity('block', 'footer_menu') }}
+              {{ drupal_entity('block', 'social_media_menu') }}
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
