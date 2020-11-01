@@ -3418,14 +3418,25 @@ textarea[rows] {
         font-weight: bold;
         font-size: 36px;
         line-height: 24px;
+        text-transform: uppercase;
 
-        span {
-          display: inline-block;
-          margin: 0 5px;
-          color: #E8412D;
-          font-size: 17px;
-          position: relative;
-          top: -7px;
+        &.pc-neo {
+          span {
+            display: inline-block;
+            margin: 0 5px;
+            color: #E8412D;
+            font-size: 18px;
+            position: relative;
+            top: -6px;
+          }
+        }
+
+        &.pc-dream {
+          color: #084F9D;
+
+          span {
+            color: #E8412D;
+          }
         }
       }
 
@@ -4093,6 +4104,69 @@ textarea[rows] {
     a {
       color: $white;
       font-weight: 400;
+    }
+  }
+}
+
+.ui-widget.ui-widget-content {
+  font-family: $font_name;
+  z-index: 501;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 10px -2px rgba(0,0,0,0.1), 0 1px 5px 0 rgba(0,0,0,0.2);
+  padding: 30px;
+  width: 845px !important;
+  max-width: 100%;
+
+  .ui-dialog-titlebar {
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    .ui-dialog-titlebar-close {
+      background: url('../images/icons/close.svg') no-repeat center/contain;
+      height: 24px;
+      width: 24px;
+      margin: 0;
+      top: 0;
+      right: 0;
+      border: none;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .ui-widget-content {
+    padding: 0;
+
+    .get-in-touch-confirmation {
+      text-align: center;
+      padding: 40px 0;
+
+      h2 {
+        color: $dark_blue_text;
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: $dark_blue_text;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 34px;
+        text-align: center;
+      }
+
+      a {
+        outline: none;
+      }
     }
   }
 }
