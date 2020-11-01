@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.contact_us_section
     - paragraphs.paragraphs_type.highlights_and_sectors_section
     - paragraphs.paragraphs_type.image_carousel_section
+    - paragraphs.paragraphs_type.product_animation_section
     - paragraphs.paragraphs_type.related_section
   module:
     - entity_reference_revisions
@@ -30,7 +31,11 @@ settings:
       contact_us_section: contact_us_section
       image_carousel_section: image_carousel_section
       related_section: related_section
+      product_animation_section: product_animation_section
     target_bundles_drag_drop:
+      2_columns_section:
+        weight: 51
+        enabled: false
       blue_background_text_section:
         weight: 40
         enabled: false
@@ -46,6 +51,12 @@ settings:
       cards_section_row_cards:
         weight: 44
         enabled: false
+      careers_section:
+        weight: 57
+        enabled: false
+      contact_information_section:
+        weight: 58
+        enabled: false
       contact_section:
         weight: 15
         enabled: false
@@ -54,6 +65,9 @@ settings:
         weight: 49
       events_section:
         weight: 16
+        enabled: false
+      form_section:
+        weight: 62
         enabled: false
       general_media:
         weight: 17
@@ -118,6 +132,9 @@ settings:
       newsletter_sign_up_block:
         weight: 20
         enabled: false
+      product_animation_section:
+        enabled: true
+        weight: 86
       product_small_block:
         weight: 70
         enabled: false
@@ -145,8 +162,14 @@ settings:
       solution_parts:
         weight: 71
         enabled: false
+      technologies_with_filters:
+        weight: 94
+        enabled: false
       text_l_block_r:
         weight: 25
+        enabled: false
+      text_l_image_r_fixed_height:
+        weight: 96
         enabled: false
       text_l_image_r_section:
         weight: 73
