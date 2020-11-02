@@ -1,0 +1,27 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+
+  {{ content.field_icon }}
+  {{ content.field_country_name }}
+  {{ content.field_company_name }}
+
+  {% if content.field_address.0 %}
+    <label>{{ 'Address'|t }}</label>
+    {{ content.field_address }}
+  {% endif %}
+
+  {{ content.field_geolocalization }}
+
+  {% if content.field_phone_number.0 or content.field_email_address.0 %}
+    <label>{{ 'Contact'|t }}</label>
+    {{ content.field_phone_number }}
+    {{ content.field_email_address }}
+  {% endif %}
+
+</div>
