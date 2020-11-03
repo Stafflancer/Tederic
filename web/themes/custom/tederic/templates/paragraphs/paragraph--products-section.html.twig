@@ -9,14 +9,26 @@
   <div class="row">
     <div class="large-4 column">
       <div class="sup-title">{{ 'our products'|t }}</div>
-      <div class="title">{{ content.field_title }}</div>
-      <div class="sub-title">{{ content.field_subtitle }}</div>
-      <div class="text">{{ content.field_text }}</div>
-      <div class="link">{{ content.field_link }}</div>
+
+      {% if content.field_title.0 %}
+        <div class="title">{{ content.field_title }}</div>
+      {% endif %}
+
+      {% if content.field_subtitle.0 %}
+        <div class="sub-title">{{ content.field_subtitle }}</div>
+      {% endif %}
+
+      {% if content.field_text.0 %}
+        <div class="text">{{ content.field_text }}</div>
+      {% endif %}
+
+      {% if content.field_link.0 %}
+        <div class="link">{{ content.field_link }}</div>
+      {% endif %}
     </div>
     <div class="large-8 column">
       <div class="products-wrapper">
-
+        {{ content.field_products_cards }}
         <ul>
           <li>
             <a href="#" class="product-item" style="background-color: #0F283D; color: #ffffff;">

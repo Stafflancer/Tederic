@@ -1,0 +1,27 @@
+<div class="product-item" style="background-color: {{ content.field_background_color.0|raw }};">
+  <a href="{{ path('entity.node.canonical', {'node': 30}, {'query': {'series_sub_category': term.id}}) }}" >
+    {{ breakpoint() }}
+    <div class="product-img">
+      {{ content.field_image.0 }}
+    </div>
+
+    {% set pc = content.field_parent_category.0["#plain_text"] %}
+
+    <div class="product-title {{ ("pc-" ~ pc)|clean_class }}">
+      {% set term_name = name.0["#context"]["value"] %}
+
+      {% if pc == 'NEO' %}
+        {{ term_name|replace({" ": "<span>•</span>"})|raw }}
+      {% elseif pc == 'DREAM' %}
+        {{ (term_name ~ "<span>.</span>")|raw }}
+      {% else %}
+        {{ term_name }}
+      {% endif %}
+    </div>
+
+    <div class="product-sub-title">
+      {{ content.description }}
+    </div>
+  </a>
+</div>
+

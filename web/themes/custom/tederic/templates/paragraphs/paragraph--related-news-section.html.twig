@@ -1,0 +1,11 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <h3>{{ 'Related News'|t }}</h3>
+  {{ content }}
+</div>

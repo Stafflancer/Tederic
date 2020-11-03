@@ -9,6 +9,13 @@
   <div class="row">
     <div class="small-12 column">
 
+      {% if content.field_products.0 %}
+        <div class="section-margin">
+          <h3 class="sup-title">{{ 'Recommended products for lenses'|t }}</h3>
+          {{ content.field_products }}
+        </div>
+      {% endif %}      
+
       {% if content.field_technologies.0 %}
         <div class="section-margin">
           <h3 class="sup-title">{{ 'Related technologies'|t }}</h3>
