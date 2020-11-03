@@ -1,0 +1,21 @@
+uuid: 9ae6e540-c6e0-4882-91ed-e056c5d76494
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.text_l_image_r_hotline_number
+  module:
+    - text
+id: paragraph.text_l_image_r_hotline_number.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: text_l_image_r_hotline_number
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

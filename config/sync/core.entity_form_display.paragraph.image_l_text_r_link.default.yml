@@ -1,0 +1,108 @@
+uuid: 06a7df2f-0ed1-4a1d-a913-947e918267f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_l_text_r_link.field_image_crop
+    - field.field.paragraph.image_l_text_r_link.field_link
+    - field.field.paragraph.image_l_text_r_link.field_text
+    - field.field.paragraph.image_l_text_r_link.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_l_text_r_link
+  module:
+    - field_group
+    - image_widget_crop
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_left_side
+        - group_right_side
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_left_side:
+      children:
+        - field_image_crop
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Left side'
+    group_right_side:
+      children:
+        - field_title
+        - field_text
+        - field_link
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Right side'
+id: paragraph.image_l_text_r_link.default
+targetEntityType: paragraph
+bundle: image_l_text_r_link
+mode: default
+content:
+  field_image_crop:
+    weight: 1
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - free
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

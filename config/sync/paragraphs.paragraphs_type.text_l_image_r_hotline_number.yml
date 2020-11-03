@@ -1,0 +1,10 @@
+uuid: e5cb1b0c-2c05-4fb7-9d24-39d2eea9119b
+langcode: en
+status: true
+dependencies: {  }
+id: text_l_image_r_hotline_number
+label: 'Text L / Image R + hotline number'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

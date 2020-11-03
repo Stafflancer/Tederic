@@ -1,0 +1,190 @@
+uuid: 21ae101f-4929-4d9b-b27a-e3172c79699a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_l_image_r_hotline_num
+    - node.type.support
+    - paragraphs.paragraphs_type.text_l_image_r_hotline_number
+  module:
+    - entity_reference_revisions
+id: node.support.field_text_l_image_r_hotline_num
+field_name: field_text_l_image_r_hotline_num
+entity_type: node
+bundle: support
+label: 'Text L / Image R + hotline number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_l_image_r_hotline_number: text_l_image_r_hotline_number
+    target_bundles_drag_drop:
+      2_columns_section:
+        weight: 55
+        enabled: false
+      blue_background_text_section:
+        weight: 56
+        enabled: false
+      breadcrumb:
+        weight: 57
+        enabled: false
+      cards_section:
+        weight: 58
+        enabled: false
+      cards_section_row:
+        weight: 59
+        enabled: false
+      cards_section_row_cards:
+        weight: 60
+        enabled: false
+      careers_section:
+        weight: 61
+        enabled: false
+      contact_information_section:
+        weight: 62
+        enabled: false
+      contact_section:
+        weight: 63
+        enabled: false
+      contact_us_section:
+        weight: 64
+        enabled: false
+      events_section:
+        weight: 65
+        enabled: false
+      form_section:
+        weight: 66
+        enabled: false
+      general_media:
+        weight: 67
+        enabled: false
+      highlights_and_sectors_section:
+        weight: 68
+        enabled: false
+      history_block:
+        weight: 69
+        enabled: false
+      history_year:
+        weight: 70
+        enabled: false
+      icon:
+        weight: 71
+        enabled: false
+      icon_cards_section:
+        weight: 75
+        enabled: false
+      icon_simple:
+        weight: 76
+        enabled: false
+      icons_inner_section:
+        weight: 72
+        enabled: false
+      icons_section:
+        weight: 73
+        enabled: false
+      icons_slider:
+        weight: 74
+        enabled: false
+      image_carousel_section:
+        weight: 77
+        enabled: false
+      image_l_text_r:
+        weight: 78
+        enabled: false
+      image_l_text_r_link:
+        weight: 79
+        enabled: false
+      image_section:
+        weight: 80
+        enabled: false
+      intro_section:
+        weight: 81
+        enabled: false
+      location:
+        weight: 82
+        enabled: false
+      location_column:
+        weight: 84
+        enabled: false
+      location_part:
+        weight: 85
+        enabled: false
+      locations_section:
+        weight: 83
+        enabled: false
+      mission_section:
+        weight: 86
+        enabled: false
+      news_section:
+        weight: 88
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 87
+        enabled: false
+      product_animation_section:
+        weight: 91
+        enabled: false
+      product_small_block:
+        weight: 92
+        enabled: false
+      products_section:
+        weight: 89
+        enabled: false
+      products_with_filters:
+        weight: 90
+        enabled: false
+      quote_section:
+        weight: 93
+        enabled: false
+      related_section:
+        weight: 94
+        enabled: false
+      slider:
+        weight: 95
+        enabled: false
+      slider_section:
+        weight: 96
+        enabled: false
+      solution_part:
+        weight: 97
+        enabled: false
+      solution_parts:
+        weight: 98
+        enabled: false
+      technologies_with_filters:
+        weight: 99
+        enabled: false
+      text_l_block_r:
+        weight: 100
+        enabled: false
+      text_l_image_r:
+        weight: 101
+        enabled: false
+      text_l_image_r_fixed_height:
+        weight: 102
+        enabled: false
+      text_l_image_r_hotline_number:
+        enabled: true
+        weight: 103
+      text_l_image_r_section:
+        weight: 104
+        enabled: false
+      text_l_small_image_r:
+        weight: 105
+        enabled: false
+      text_section:
+        weight: 106
+        enabled: false
+      vertical_carousel_text_section:
+        weight: 107
+        enabled: false
+      wechat:
+        weight: 108
+        enabled: false
+field_type: entity_reference_revisions

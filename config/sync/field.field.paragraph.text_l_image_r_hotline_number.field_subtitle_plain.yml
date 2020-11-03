@@ -1,0 +1,19 @@
+uuid: 8d36f372-b80e-4205-8b85-300a83d314da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle_plain
+    - paragraphs.paragraphs_type.text_l_image_r_hotline_number
+id: paragraph.text_l_image_r_hotline_number.field_subtitle_plain
+field_name: field_subtitle_plain
+entity_type: paragraph
+bundle: text_l_image_r_hotline_number
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

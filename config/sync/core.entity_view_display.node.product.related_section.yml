@@ -1,0 +1,65 @@
+uuid: af6f9b16-4eb0-461e-8343-7f689d47653d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.related_section
+    - field.field.node.product.body
+    - field.field.node.product.field_background_color
+    - field.field.node.product.field_categories
+    - field.field.node.product.field_document
+    - field.field.node.product.field_document_link_title
+    - field.field.node.product.field_image_crop
+    - field.field.node.product.field_sections
+    - field.field.node.product.field_series_sub_category
+    - field.field.node.product.field_small_blocks
+    - image.style.large
+    - node.type.product
+  module:
+    - color_field
+    - svg_image
+    - user
+id: node.product.related_section
+targetEntityType: node
+bundle: product
+mode: related_section
+content:
+  field_background_color:
+    weight: 0
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_categories:
+    weight: 2
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image_crop:
+    weight: 1
+    label: above
+    settings:
+      image_style: large
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  field_document: true
+  field_document_link_title: true
+  field_sections: true
+  field_series_sub_category: true
+  field_small_blocks: true
+  langcode: true
+  links: true
