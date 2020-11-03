@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.news.field_big_card
     - field.field.node.news.field_date
     - field.field.node.news.field_popular
+    - field.field.node.news.field_sections
     - field.field.node.news.field_special_label
     - node.type.news
   module:
     - datetime
+    - entity_reference_revisions
     - text
     - user
 id: node.news.default
@@ -53,6 +55,15 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_sections:
+    weight: 106
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
   field_special_label:
     weight: 104

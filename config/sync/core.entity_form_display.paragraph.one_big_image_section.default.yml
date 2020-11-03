@@ -1,0 +1,33 @@
+uuid: fc138410-9ffe-4271-ba56-ccf25609d9ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.one_big_image_section.field_image_crop
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.one_big_image_section
+  module:
+    - image_widget_crop
+id: paragraph.one_big_image_section.default
+targetEntityType: paragraph
+bundle: one_big_image_section
+mode: default
+content:
+  field_image_crop:
+    weight: 0
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - free
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+hidden:
+  created: true
+  status: true

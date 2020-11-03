@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.products_section.field_link
+    - field.field.paragraph.products_section.field_products_cards
     - field.field.paragraph.products_section.field_subtitle
     - field.field.paragraph.products_section.field_text
     - field.field.paragraph.products_section.field_title
@@ -23,6 +24,16 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_products_cards:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_subtitle:
     weight: 1
@@ -48,6 +59,11 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

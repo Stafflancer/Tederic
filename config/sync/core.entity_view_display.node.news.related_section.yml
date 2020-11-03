@@ -1,9 +1,9 @@
-uuid: e001628d-bb4b-41b6-b2b1-a6c8c8ec0900
+uuid: 59ffb25d-3e5b-4a6a-aaed-8d9eebcfa64f
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.related_section
     - field.field.node.news.body
     - field.field.node.news.field_big_card
     - field.field.node.news.field_date
@@ -12,30 +12,27 @@ dependencies:
     - field.field.node.news.field_special_label
     - node.type.news
   module:
-    - text
+    - datetime
     - user
-id: node.news.teaser
+id: node.news.related_section
 targetEntityType: node
 bundle: news
-mode: teaser
+mode: related_section
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
+  field_date:
+    weight: 0
+    label: above
     settings:
-      trim_length: 600
+      timezone_override: ''
+      date_format: 'd M, Y'
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+    type: datetime_custom
     region: content
 hidden:
+  body: true
   field_big_card: true
-  field_date: true
   field_popular: true
   field_sections: true
   field_special_label: true
   langcode: true
+  links: true

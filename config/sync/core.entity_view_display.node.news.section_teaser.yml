@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.news.field_big_card
     - field.field.node.news.field_date
     - field.field.node.news.field_popular
+    - field.field.node.news.field_sections
     - field.field.node.news.field_special_label
     - node.type.news
   module:
@@ -39,5 +40,6 @@ hidden:
   body: true
   field_big_card: true
   field_popular: true
+  field_sections: true
   langcode: true
   links: true

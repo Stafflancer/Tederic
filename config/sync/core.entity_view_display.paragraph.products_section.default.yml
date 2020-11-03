@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.products_section.field_link
+    - field.field.paragraph.products_section.field_products_cards
     - field.field.paragraph.products_section.field_subtitle
     - field.field.paragraph.products_section.field_text
     - field.field.paragraph.products_section.field_title
@@ -27,6 +28,15 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_products_cards:
+    weight: 4
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
   field_subtitle:
     weight: 1

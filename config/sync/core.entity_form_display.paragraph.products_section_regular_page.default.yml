@@ -1,0 +1,36 @@
+uuid: a9b7e9fd-1184-4a0f-acb8-c176772ca377
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_section_regular_page.field_products_cards
+    - field.field.paragraph.products_section_regular_page.field_title
+    - paragraphs.paragraphs_type.products_section_regular_page
+  module:
+    - text
+id: paragraph.products_section_regular_page.default
+targetEntityType: paragraph
+bundle: products_section_regular_page
+mode: default
+content:
+  field_products_cards:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

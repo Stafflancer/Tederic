@@ -1,0 +1,25 @@
+uuid: 366a926b-fe3d-4e91-8c01-085a28c3a9fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_news_section.field_news
+    - paragraphs.paragraphs_type.related_news_section
+id: paragraph.related_news_section.default
+targetEntityType: paragraph
+bundle: related_news_section
+mode: default
+content:
+  field_news:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

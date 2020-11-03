@@ -1,0 +1,22 @@
+uuid: 04e33af9-9189-4f20-be05-ac8c153c46d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_news_section.field_news
+    - paragraphs.paragraphs_type.related_news_section
+id: paragraph.related_news_section.default
+targetEntityType: paragraph
+bundle: related_news_section
+mode: default
+content:
+  field_news:
+    weight: 0
+    label: above
+    settings:
+      view_mode: related_section
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

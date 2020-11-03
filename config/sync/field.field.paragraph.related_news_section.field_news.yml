@@ -1,0 +1,28 @@
+uuid: b638c689-51c5-4562-b848-ff5a6c8e82eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news
+    - node.type.news
+    - paragraphs.paragraphs_type.related_news_section
+id: paragraph.related_news_section.field_news
+field_name: field_news
+entity_type: paragraph
+bundle: related_news_section
+label: News
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

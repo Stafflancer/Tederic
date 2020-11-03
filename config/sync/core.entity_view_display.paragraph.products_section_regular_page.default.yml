@@ -1,0 +1,32 @@
+uuid: 6953affe-2ba0-4210-a073-b2b64a05511d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_section_regular_page.field_products_cards
+    - field.field.paragraph.products_section_regular_page.field_title
+    - paragraphs.paragraphs_type.products_section_regular_page
+  module:
+    - text
+id: paragraph.products_section_regular_page.default
+targetEntityType: paragraph
+bundle: products_section_regular_page
+mode: default
+content:
+  field_products_cards:
+    weight: 1
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

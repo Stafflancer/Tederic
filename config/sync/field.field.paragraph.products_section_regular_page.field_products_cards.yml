@@ -1,0 +1,29 @@
+uuid: f2c369d1-c091-419a-a005-1429da574cd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_products_cards
+    - paragraphs.paragraphs_type.products_section_regular_page
+    - taxonomy.vocabulary.series_sub_category
+id: paragraph.products_section_regular_page.field_products_cards
+field_name: field_products_cards
+entity_type: paragraph
+bundle: products_section_regular_page
+label: 'Products cards'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      series_sub_category: series_sub_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

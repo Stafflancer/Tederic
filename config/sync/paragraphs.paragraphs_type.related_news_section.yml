@@ -1,0 +1,10 @@
+uuid: f7f75913-4b35-400e-9542-794e750eab2a
+langcode: en
+status: true
+dependencies: {  }
+id: related_news_section
+label: 'Related news section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
