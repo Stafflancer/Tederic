@@ -1,0 +1,127 @@
+uuid: aed38f82-0a35-49e6-9bf7-1b4c6b2864a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_l_image_r_hotline_number.field_icon
+    - field.field.paragraph.text_l_image_r_hotline_number.field_image_crop
+    - field.field.paragraph.text_l_image_r_hotline_number.field_phone_number
+    - field.field.paragraph.text_l_image_r_hotline_number.field_subtitle_plain
+    - field.field.paragraph.text_l_image_r_hotline_number.field_text
+    - field.field.paragraph.text_l_image_r_hotline_number.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.text_l_image_r_hotline_number
+  module:
+    - field_group
+    - image_widget_crop
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_left_side
+        - group_right_side
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_left_side:
+      children:
+        - field_title
+        - field_text
+        - field_icon
+        - field_phone_number
+        - field_subtitle_plain
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Left side'
+    group_right_side:
+      children:
+        - field_image_crop
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Right side'
+id: paragraph.text_l_image_r_hotline_number.default
+targetEntityType: paragraph
+bundle: text_l_image_r_hotline_number
+mode: default
+content:
+  field_icon:
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_image_crop:
+    weight: 6
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - free
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_phone_number:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subtitle_plain:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

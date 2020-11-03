@@ -1,23 +1,18 @@
-uuid: 1217648c-9a94-4a18-989e-d341fd5dadfb
+uuid: 46b35f24-f055-4dc2-a2d8-75677ffc94ad
 langcode: en
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform
-_core:
-  default_config_hash: ywLzu4PKup4MjhKzlVPqWyRXPu5co-ou5hySnaWh6Uc
+dependencies: {  }
 open: null
 close: null
 weight: 0
-uid: null
+uid: 1
 template: false
 archive: false
-id: contact
-title: 'Contact Us'
-description: 'Basic email contact webform.'
+id: get_in_touch
+title: 'Get in touch'
+description: ''
 category: ''
-elements: "first_name:\n  '#type': textfield\n  '#title': 'First name'\n  '#required': true\nlast_name:\n  '#type': textfield\n  '#title': 'Last name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\ncountry:\n  '#type': select\n  '#title': Country\n  '#options': country_names\ncompany:\n  '#type': textfield\n  '#title': Company\narea_of_interest:\n  '#type': select\n  '#title': 'Area of interest'\n  '#options':\n    'Product -  Injection Molding Machine': 'Product -  Injection Molding Machine'\n  '#required': true\ndescription:\n  '#type': textarea\n  '#title': Description\n  '#placeholder': 'Please share some further details…'\ni_accept_the_processing_of_my_personal_data_provided_here_:\n  '#type': checkbox\n  '#title': 'I accept the processing of my personal data provided here.'\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Submit request'"
+elements: "first_name:\n  '#type': textfield\n  '#title': 'First name'\n  '#required': true\nlast_name:\n  '#type': textfield\n  '#title': 'Last name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\nmachine_type:\n  '#type': select\n  '#title': 'Machine type'\n  '#options':\n    'Machine type 1': 'Machine type 1'\n  '#required': true\nmachine_code:\n  '#type': textfield\n  '#title': 'Machine code'\n  '#required': true\ndescription:\n  '#type': textarea\n  '#title': 'Fault description'\n  '#placeholder': 'Please share some further details…'\n  '#required': true\ni_accept:\n  '#type': checkbox\n  '#title': 'I accept the processing of my personal data provided here.'\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Submit request'"
 css: ''
 javascript: ''
 settings:
@@ -30,7 +25,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -119,8 +114,8 @@ settings:
   draft_pending_multiple_message: ''
   confirmation_type: modal
   confirmation_title: ''
-  confirmation_message: "<div class=\"get-in-touch-confirmation\">\r\n<h2>Thank you for your interest<br />\r\nin tederic machinery!</h2>\r\n\r\n<p>We have received your request.</p>\r\n\r\n<p>Our executives will reach out to you at the earliest.<br />\r\n&nbsp;</p>\r\n\r\n<p>Until then, Take a look at our products</p>\r\n\r\n<div class=\"link\"><a href=\"/products\">VIEW PRODUCTS</a></div>\r\n</div>\r\n\r\n<div id=\"gtx-trans\" style=\"position: absolute; left: 94px; top: 231.812px;\">\r\n<div class=\"gtx-trans-icon\">&nbsp;</div>\r\n</div>"
-  confirmation_url: '<front>'
+  confirmation_message: "<div class=\"get-in-touch-confirmation\">\r\n<h2>Thank you for your interest<br />\r\nin tederic machinery!</h2>\r\n\r\n<p>We have received your request.</p>\r\n\r\n<p>Our executives will reach out to you at the earliest.<br />\r\n&nbsp;</p>\r\n\r\n<p>Until then, Take a look at our products</p>\r\n\r\n<div class=\"link\"><a href=\"/products\">VIEW PRODUCTS</a></div>\r\n</div>"
+  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -195,79 +190,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email_confirmation:
-    id: email
-    label: 'Email confirmation'
-    notes: ''
-    handler_id: email_confirmation
-    status: true
-    conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: '[webform_submission:values:email:raw]'
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-  email_notification:
-    id: email
-    label: 'Email notification'
-    notes: ''
-    handler_id: email_notification
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: _default
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
-      from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
+handlers: {  }
 variants: {  }

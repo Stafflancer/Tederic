@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_categories
     - field.storage.node.field_image_crop
     - field.storage.node.field_series_sub_category
+    - image.style.large
     - node.type.product
     - taxonomy.vocabulary.product_category
     - taxonomy.vocabulary.series_sub_category
@@ -361,7 +362,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: large
             image_link: ''
             svg_render_as_image: true
             svg_attributes:

@@ -1,0 +1,33 @@
+uuid: 49228b50-6125-4608-8904-6b620dead4a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.support.field_form
+    - field.field.node.support.field_image_l_text_r_link
+    - field.field.node.support.field_intro
+    - field.field.node.support.field_text_l_image_r
+    - field.field.node.support.field_text_l_image_r_hotline_num
+    - field.field.node.support.field_text_l_small_image_r
+    - node.type.support
+  module:
+    - user
+id: node.support.teaser
+targetEntityType: node
+bundle: support
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_form: true
+  field_image_l_text_r_link: true
+  field_intro: true
+  field_text_l_image_r: true
+  field_text_l_image_r_hotline_num: true
+  field_text_l_small_image_r: true
+  langcode: true

@@ -1,0 +1,46 @@
+uuid: 02d34e69-5e43-4477-b757-081152ee7323
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_l_small_image_r.field_image_crop
+    - field.field.paragraph.text_l_small_image_r.field_text
+    - field.field.paragraph.text_l_small_image_r.field_title
+    - image.style.crop
+    - paragraphs.paragraphs_type.text_l_small_image_r
+  module:
+    - svg_image
+    - text
+id: paragraph.text_l_small_image_r.default
+targetEntityType: paragraph
+bundle: text_l_small_image_r
+mode: default
+content:
+  field_image_crop:
+    weight: 2
+    label: above
+    settings:
+      image_style: crop
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
