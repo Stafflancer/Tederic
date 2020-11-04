@@ -1,7 +1,5 @@
 @import 'slick';
 
-$font_name: 'Ubuntu';
-
 // colors
 $dark_blue: #0F283D;
 $dark_blue_text: #0B2434;
@@ -16,12 +14,8 @@ $gray_text: #5A616C;
   padding: 0;
 }
 body {
-  font-family: $font_name;
   color: $dark_blue;
   overflow-x: hidden;
-}
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: $font_name;
 }
 p {
   margin-bottom: 25px;
@@ -57,7 +51,6 @@ input[type="password"],
 input[type="search"] {
   background: $white;
   color: $dark_blue;
-  font-family: $font_name;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0;
@@ -74,10 +67,6 @@ input[type="search"] {
 
 select {
   background: url('../images/icons/arrow-down-red.svg') no-repeat center right 7px/32px;
-}
-
-input[type="submit"] {
-  font-family: $font_name;
 }
 
 textarea,
@@ -208,7 +197,6 @@ textarea[rows] {
 .sup-title,
 .sup-title p {
   color: $gray_text;
-  font-family: $font_name;
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 0;
@@ -221,7 +209,6 @@ textarea[rows] {
 .title,
 .title p {
   color: $dark_blue_text;
-  font-family: $font_name;
   font-size: 36px;
   font-weight: 300;
   letter-spacing: 0;
@@ -234,7 +221,6 @@ textarea[rows] {
 .sub-title,
 .sub-title p {
   color: $dark_blue_text;
-  font-family: $font_name;
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 0;
@@ -247,7 +233,6 @@ textarea[rows] {
 .text,
 .text p {
   color: $dark_blue_text;
-  font-family: $font_name;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0;
@@ -266,7 +251,6 @@ textarea[rows] {
 .link {
   a {
     color: $dark_blue_text;
-    font-family: $font_name;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0;
@@ -307,7 +291,6 @@ textarea[rows] {
 .link-right {
   a {
     color: $dark_blue_text;
-    font-family: $font_name;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0;
@@ -514,7 +497,6 @@ textarea[rows] {
         a {
           display: block;
           color: $white;
-          font-family: $font_name;
           font-size: 14px;
           letter-spacing: 0;
           line-height: 20px;
@@ -543,7 +525,6 @@ textarea[rows] {
       cursor: pointer;
       display: block;
       color: $white;
-      font-family: $font_name;
       font-size: 16px;
       letter-spacing: 0;
       line-height: 20px;
@@ -596,7 +577,6 @@ textarea[rows] {
         display: flex;
         align-items: center;
         color: $gray_text;
-        font-family: $font_name;
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 0;
@@ -679,7 +659,6 @@ textarea[rows] {
         a {
           display: block;
           color: $white;
-          font-family: $font_name;
           font-size: 18px;
           letter-spacing: 0;
           line-height: 20px;
@@ -958,7 +937,6 @@ textarea[rows] {
         a {
           display: block;
           color: $white;
-          font-family: $font_name;
           font-size: 16px;
           letter-spacing: 0;
           line-height: 20px;
@@ -1055,7 +1033,6 @@ textarea[rows] {
     flex: 1;
     color: $white;
     margin: 0;
-    font-family: $font_name;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1063,7 +1040,6 @@ textarea[rows] {
     p {
       color: $white;
       margin: 0;
-      font-family: $font_name;
       font-size: 16px;
       font-weight: 500;
       letter-spacing: 0;
@@ -1085,7 +1061,6 @@ textarea[rows] {
         a {
           display: block;
           color: $white;
-          font-family: $font_name;
           font-size: 16px;
           font-weight: 500;
           letter-spacing: 0;
@@ -1183,7 +1158,6 @@ textarea[rows] {
     bottom: 60px;
     width: 100%;
     color: $white;
-    font-family: $font_name;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1219,7 +1193,6 @@ textarea[rows] {
   .field-text p {
     margin: 0;
     color: $white;
-    font-family: $font_name;
     font-size: 48px;
     font-weight: 300;
     letter-spacing: -0.44px;
@@ -1231,7 +1204,6 @@ textarea[rows] {
       display: inline-block;
       margin-top: 20px;
       color: $white;
-      font-family: $font_name;
       font-size: 18px;
       letter-spacing: 0;
       line-height: 21px;
@@ -1334,7 +1306,6 @@ textarea[rows] {
   .field-title,
   .field-title p {
     color: $gray_text;
-    font-family: $font_name;
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 0;
@@ -1348,7 +1319,6 @@ textarea[rows] {
   .field-text,
   .field-text p {
     color: $dark_blue_text;
-    font-family: $font_name;
     font-size: 36px;
     font-weight: 300;
     letter-spacing: 0;
@@ -1389,7 +1359,6 @@ textarea[rows] {
     .field-text,
     .field-text p {
       color: $dark_blue;
-      font-family: $font_name;
       font-size: 22px;
       font-weight: 300;
       letter-spacing: 0;
@@ -1880,7 +1849,6 @@ textarea[rows] {
 
       input[type="submit"] {
         color: $white;
-        font-family: $font_name;
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 0;
@@ -2107,7 +2075,6 @@ textarea[rows] {
     > .field-title,
     > .field-title p {
       color: $dark_blue_text;
-      font-family: $font_name;
       font-size: 36px;
       font-weight: 300;
       letter-spacing: 0;
@@ -4321,7 +4288,6 @@ textarea[rows] {
 }
 
 .ui-widget.ui-widget-content {
-  font-family: $font_name;
   z-index: 501;
   border: none;
   border-radius: 10px;

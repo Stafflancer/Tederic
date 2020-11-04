@@ -1,0 +1,12 @@
+select,
+textarea,
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="submit"],
+.ui-widget.ui-widget-content,
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans';
+}

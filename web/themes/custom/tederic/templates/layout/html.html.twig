@@ -26,7 +26,11 @@
 <!DOCTYPE html>
 <html{{ html_attributes }}>
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    {% if language_id == 'zh-hans' %}
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    {% else %}
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>

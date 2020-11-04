@@ -7,8 +7,6 @@ core: 8.x
 
 libraries:
   - tederic/global-styling
-  - tederic/load-page
-  - tederic/timeline
 
 regions:
   header_top: 'Header Top'
