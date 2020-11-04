@@ -6,6 +6,10 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  <h3>{{ 'Related News'|t }}</h3>
-  {{ content }}
+  <div class="row">
+    <div class="small-12 column">
+      <h3 class="block-title">{{ 'Related News'|t }}</h3>
+      {{ content }}
+    </div>
+  </div>
 </div>

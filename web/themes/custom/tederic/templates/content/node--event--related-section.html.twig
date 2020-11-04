@@ -1,6 +1,13 @@
 <article{{ attributes }}>
-  <a href="{{ url }}">
-    {{ label }}
-    {{ content }}
+  <a href="{{ url }}" class="item">
+
+    <div class="wrapper">
+      <div class="img">{{ content.field_image_crop }}</div>
+      <div class="content">
+        {{ label }}
+        {{ content.field_date_range }}
+      </div>
+    </div>
+
   </a>
 </article>
