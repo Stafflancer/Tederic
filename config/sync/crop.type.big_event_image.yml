@@ -1,12 +1,12 @@
-uuid: 03e6d4b3-c05c-4162-bb67-32982bcc129d
+uuid: e50225f7-c8f5-4431-8186-a13d35f76a55
 langcode: en
 status: true
 dependencies: {  }
-id: event_big
+id: big_event_image
 label: 'Big Event Image'
 description: ''
 aspect_ratio: '990:255'
 soft_limit_width: null
 soft_limit_height: null
-hard_limit_width: null
-hard_limit_height: null
+hard_limit_width: 990
+hard_limit_height: 255

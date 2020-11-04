@@ -1,0 +1,25 @@
+uuid: 5a871a71-8cc7-4084-a776-e71efa9e6f71
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.big_news_image
+  module:
+    - crop
+name: big_news_image_crop
+label: 'Big News Image Crop'
+effects:
+  468522cd-2ffd-488f-a930-b0483f4c7c2f:
+    uuid: 468522cd-2ffd-488f-a930-b0483f4c7c2f
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: big_news_image
+  247aad03-0402-4483-9cc7-c300458714e1:
+    uuid: 247aad03-0402-4483-9cc7-c300458714e1
+    id: image_scale
+    weight: 2
+    data:
+      width: 480
+      height: 460
+      upscale: false

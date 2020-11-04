@@ -1,0 +1,12 @@
+uuid: c3aa92a3-d492-47c8-a0d0-3aec6436e30b
+langcode: en
+status: true
+dependencies: {  }
+id: big_news_image
+label: 'Big News Image'
+description: ''
+aspect_ratio: '480:460'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 480
+hard_limit_height: 460

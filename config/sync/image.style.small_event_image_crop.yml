@@ -1,0 +1,25 @@
+uuid: a06aedba-829a-4dc6-83df-74e4528e8c2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.small_event_image
+  module:
+    - crop
+name: small_event_image_crop
+label: 'Small Event Image Crop'
+effects:
+  0ed760e2-6c11-4b14-ac88-a79a119dfb2c:
+    uuid: 0ed760e2-6c11-4b14-ac88-a79a119dfb2c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: small_event_image
+  d1c3fdb8-4ea3-4ad8-b3eb-34ecd3cf27c0:
+    uuid: d1c3fdb8-4ea3-4ad8-b3eb-34ecd3cf27c0
+    id: image_scale
+    weight: 2
+    data:
+      width: 230
+      height: 160
+      upscale: false

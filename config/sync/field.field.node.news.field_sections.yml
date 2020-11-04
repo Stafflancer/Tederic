@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.one_big_image_section
     - paragraphs.paragraphs_type.related_news_section
     - paragraphs.paragraphs_type.text_l_image_r
+    - paragraphs.paragraphs_type.text_l_small_image_r
     - paragraphs.paragraphs_type.text_section
   module:
     - entity_reference_revisions
@@ -31,6 +32,7 @@ settings:
       image_carousel_section: image_carousel_section
       one_big_image_section: one_big_image_section
       text_l_image_r: text_l_image_r
+      text_l_small_image_r: text_l_small_image_r
       text_section: text_section
     target_bundles_drag_drop:
       2_columns_section:
@@ -193,8 +195,8 @@ settings:
         weight: 106
         enabled: false
       text_l_small_image_r:
+        enabled: true
         weight: 107
-        enabled: false
       text_section:
         enabled: true
         weight: 108

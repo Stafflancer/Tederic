@@ -1,0 +1,12 @@
+uuid: eacf7c55-30a9-4f6f-a409-acbab85b2e87
+langcode: en
+status: true
+dependencies: {  }
+id: small_event_image
+label: 'Small Event Image'
+description: ''
+aspect_ratio: '230:160'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 230
+hard_limit_height: 160

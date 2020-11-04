@@ -1,0 +1,12 @@
+uuid: d57c8ea6-f68d-41a8-8c62-0648d95fdac1
+langcode: en
+status: true
+dependencies: {  }
+id: medium_news_image
+label: 'Medium News Image'
+description: ''
+aspect_ratio: '475:240'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 475
+hard_limit_height: 240

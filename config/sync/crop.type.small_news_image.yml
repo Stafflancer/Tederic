@@ -1,0 +1,12 @@
+uuid: 49abea01-3f2b-4faa-bcec-c77072b8a79d
+langcode: en
+status: true
+dependencies: {  }
+id: small_news_image
+label: 'Small News Image'
+description: ''
+aspect_ratio: '230:160'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 230
+hard_limit_height: 160

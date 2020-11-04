@@ -1,0 +1,25 @@
+uuid: 3401907c-3ec3-4002-bf76-0611422930e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.big_event_image
+  module:
+    - crop
+name: big_event_image_crop
+label: 'Big Event Image Crop'
+effects:
+  2d49bbed-8d52-48e2-9acb-ec9845378255:
+    uuid: 2d49bbed-8d52-48e2-9acb-ec9845378255
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: big_event_image
+  50e02470-14b1-41ea-87c0-d5dece667076:
+    uuid: 50e02470-14b1-41ea-87c0-d5dece667076
+    id: image_scale
+    weight: 2
+    data:
+      width: 990
+      height: 255
+      upscale: false

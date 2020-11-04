@@ -1,12 +1,12 @@
-uuid: 9458f9e2-0ca7-4f31-b4f1-4530ca0c079a
+uuid: 89b78227-4d56-48ab-a252-e4d02bba5a8c
 langcode: en
 status: true
 dependencies: {  }
-id: event_medium
+id: medium_event_image
 label: 'Medium Event Image'
 description: ''
 aspect_ratio: '475:255'
 soft_limit_width: null
 soft_limit_height: null
-hard_limit_width: null
-hard_limit_height: null
+hard_limit_width: 475
+hard_limit_height: 255

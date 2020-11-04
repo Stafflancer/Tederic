@@ -1,0 +1,25 @@
+uuid: 5efc81fb-1ea0-4586-b937-fff87c73721d
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.medium_news_image
+  module:
+    - crop
+name: medium_news_image_crop
+label: 'Medium News Image Crop'
+effects:
+  2fc2f26c-46d4-444d-9a1c-00dace6af556:
+    uuid: 2fc2f26c-46d4-444d-9a1c-00dace6af556
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: medium_news_image
+  63303235-a07f-45b7-9d66-8812509c52fc:
+    uuid: 63303235-a07f-45b7-9d66-8812509c52fc
+    id: image_scale
+    weight: 2
+    data:
+      width: 475
+      height: 240
+      upscale: false

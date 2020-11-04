@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.text_l_small_image_r.field_image_crop
     - field.field.paragraph.text_l_small_image_r.field_text
     - field.field.paragraph.text_l_small_image_r.field_title
+    - field.field.paragraph.text_l_small_image_r.field_title_above
     - image.style.crop
     - paragraphs.paragraphs_type.text_l_small_image_r
   module:
@@ -42,5 +43,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_title_above:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
 hidden: {  }

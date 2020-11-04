@@ -1,0 +1,10 @@
+uuid: 03ee4bcf-877e-4ffd-a6fd-c073dfcce01d
+langcode: en
+status: true
+dependencies: {  }
+id: related_event_section
+label: 'Related event section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

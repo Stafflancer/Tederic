@@ -1,8 +1,9 @@
-uuid: 30f96006-774c-4d3a-ad58-87be6eb1b919
+uuid: a0b87d05-3ded-4caa-ba96-c1a486d07ad2
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.related_section
     - field.field.node.event.body
     - field.field.node.event.field_address
     - field.field.node.event.field_big_card
@@ -11,27 +12,20 @@ dependencies:
     - field.field.node.event.field_sections
     - field.field.node.event.field_special_label
     - field.field.node.event.field_visitors
+    - image.style.small_event_image_crop
     - node.type.event
   module:
     - datetime_range
-    - entity_reference_revisions
-    - text
+    - svg_image
     - user
-id: node.event.default
+id: node.event.related_section
 targetEntityType: node
 bundle: event
-mode: default
+mode: related_section
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_date_range:
-    weight: 0
-    label: hidden
+    weight: 1
+    label: above
     settings:
       timezone_override: ''
       separator: '-'
@@ -39,19 +33,24 @@ content:
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_sections:
-    weight: 2
+  field_image_crop:
+    type: image
+    weight: 0
+    region: content
     label: above
     settings:
-      view_mode: default
-      link: ''
+      image_style: small_event_image_crop
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
 hidden:
+  body: true
   field_address: true
   field_big_card: true
-  field_image_crop: true
+  field_sections: true
   field_special_label: true
   field_visitors: true
   langcode: true

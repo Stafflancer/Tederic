@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_big_card
     - field.field.node.event.field_date_range
     - field.field.node.event.field_image_crop
+    - field.field.node.event.field_sections
     - field.field.node.event.field_special_label
     - field.field.node.event.field_visitors
     - image.style.thumbnail
@@ -15,6 +16,7 @@ dependencies:
   module:
     - datetime_range
     - image_widget_crop
+    - paragraphs
     - path
     - text
 id: node.event.default
@@ -67,13 +69,29 @@ content:
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list:
-        - event_medium
-        - event_big
+        - big_event_image
+        - medium_event_image
+        - small_event_image
+      crop_types_required:
+        - big_event_image
+        - medium_event_image
+        - small_event_image
       progress_indicator: throbber
-      crop_types_required: {  }
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
+    region: content
+  field_sections:
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
     region: content
   field_special_label:
     weight: 4

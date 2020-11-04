@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_big_card
     - field.field.node.event.field_date_range
     - field.field.node.event.field_image_crop
+    - field.field.node.event.field_sections
     - field.field.node.event.field_special_label
     - field.field.node.event.field_visitors
     - node.type.event
@@ -81,5 +82,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_address: true
+  field_sections: true
   langcode: true
   links: true

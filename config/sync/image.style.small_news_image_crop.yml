@@ -1,0 +1,25 @@
+uuid: d352d2f6-f2ec-46dc-8b12-e614ca404fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.small_news_image
+  module:
+    - crop
+name: small_news_image_crop
+label: 'Small News Image Crop'
+effects:
+  21ca904f-c13f-480c-af1e-6d2a66e93f65:
+    uuid: 21ca904f-c13f-480c-af1e-6d2a66e93f65
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: small_news_image
+  e08fb563-b482-4a0d-a6e7-01f64f367f1a:
+    uuid: e08fb563-b482-4a0d-a6e7-01f64f367f1a
+    id: image_scale
+    weight: 2
+    data:
+      width: 230
+      height: 160
+      upscale: false

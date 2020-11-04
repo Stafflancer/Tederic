@@ -1,0 +1,23 @@
+uuid: 5e0ed2da-7389-4acf-92a6-d77f0d01f79a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_above
+    - paragraphs.paragraphs_type.text_l_small_image_r
+id: paragraph.text_l_small_image_r.field_title_above
+field_name: field_title_above
+entity_type: paragraph
+bundle: text_l_small_image_r
+label: 'Title above'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

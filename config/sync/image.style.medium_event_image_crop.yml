@@ -1,0 +1,25 @@
+uuid: 9fceaf3b-344b-4282-b385-ab2817700275
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.medium_event_image
+  module:
+    - crop
+name: medium_event_image_crop
+label: 'Medium Event Image Crop'
+effects:
+  690aa13e-fb94-42b8-9eb9-2f7d13743350:
+    uuid: 690aa13e-fb94-42b8-9eb9-2f7d13743350
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: medium_event_image
+  46ac0e04-093f-46fa-ae9d-ddbf61ae0165:
+    uuid: 46ac0e04-093f-46fa-ae9d-ddbf61ae0165
+    id: image_scale
+    weight: 2
+    data:
+      width: 475
+      height: 255
+      upscale: false

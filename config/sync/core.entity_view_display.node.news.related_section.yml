@@ -7,12 +7,15 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_big_card
     - field.field.node.news.field_date
+    - field.field.node.news.field_image_crop
     - field.field.node.news.field_popular
     - field.field.node.news.field_sections
     - field.field.node.news.field_special_label
+    - image.style.small_news_image_crop
     - node.type.news
   module:
     - datetime
+    - svg_image
     - user
 id: node.news.related_section
 targetEntityType: node
@@ -20,7 +23,7 @@ bundle: news
 mode: related_section
 content:
   field_date:
-    weight: 0
+    weight: 1
     label: above
     settings:
       timezone_override: ''
@@ -28,6 +31,19 @@ content:
     third_party_settings: {  }
     type: datetime_custom
     region: content
+  field_image_crop:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: small_news_image_crop
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
 hidden:
   body: true
   field_big_card: true
