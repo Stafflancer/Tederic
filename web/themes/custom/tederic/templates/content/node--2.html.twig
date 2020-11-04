@@ -1,0 +1,38 @@
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div{{ author_attributes }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+
+  <div{{ content_attributes }}>
+    <div class="lock-page">
+      <div class="row">
+        <div class="small-12 column">
+
+          <img src="/themes/custom/tederic/images/403.jpg" >
+          <h2 class="mb">Ops! 403. Access forbidden.</h2>
+          <h2>You tried to access a page you did not <br>have prior authorization for.</h2>
+          <div class="link">
+            <a href="{{ url('<front>') }}">BACK TO HOME</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</article>

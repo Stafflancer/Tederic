@@ -1,0 +1,38 @@
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div{{ author_attributes }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+
+  <div{{ content_attributes }}>
+    <div class="lock-page">
+      <div class="row">
+        <div class="small-12 column">
+
+          <img src="/themes/custom/tederic/images/404.jpg" >
+          <h2 class="mb">404. Sorry, the page you were <br>looking for is not available.</h2>
+          <h2>Let’s get you back.</h2>
+          <div class="link">
+            <a href="{{ url('<front>') }}">BACK TO HOME</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</article>
