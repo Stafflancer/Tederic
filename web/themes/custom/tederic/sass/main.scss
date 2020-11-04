@@ -73,6 +73,7 @@ input[type="search"] {
 }
 
 select {
+  background: url('../images/icons/arrow-down-red.svg') no-repeat center right 7px/32px;
 }
 
 input[type="submit"] {
@@ -2341,6 +2342,14 @@ textarea[rows] {
 
   .field-icon {
     display: inline-block;
+
+    img {
+      height: 21px;
+      width: 22px;
+      margin-right: 7px;
+      position: relative;
+      top: -4px;
+    }
   }
 
   .field-country-name,
