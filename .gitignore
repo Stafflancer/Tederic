@@ -9,6 +9,7 @@
 /web/themes/custom/tederic/node_modules
 /web/themes/custom/tederic/css/main.css
 /web/themes/custom/tederic/package-lock.json
+/web/sites/default/files.zip
 
 # Ignore sensitive information
 /web/sites/*/settings.php
