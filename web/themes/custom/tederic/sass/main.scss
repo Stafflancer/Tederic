@@ -201,6 +201,10 @@ textarea[rows] {
   font-weight: 300;
   letter-spacing: 0;
   line-height: 32px;
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .title {
@@ -213,10 +217,17 @@ textarea[rows] {
   font-weight: 300;
   letter-spacing: 0;
   line-height: 46px;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .sub-title {
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 .sub-title,
 .sub-title p {
@@ -225,10 +236,17 @@ textarea[rows] {
   font-weight: 300;
   letter-spacing: 0;
   line-height: 34px;
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .text {
   margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }
 .text,
 .text p {
@@ -237,6 +255,10 @@ textarea[rows] {
   font-weight: 300;
   letter-spacing: 0;
   line-height: 29px;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .text-large,
@@ -456,6 +478,9 @@ textarea[rows] {
 /* Header fixed */
 .content-wrapper {
   padding-top: 126px;
+  @media screen and (max-width: 767px) {
+    padding-top: 64px;
+  }
 }
 .header-fixed {
   width: 100%;
@@ -467,6 +492,13 @@ textarea[rows] {
 // Header
 .region-header-top {
   background-color: $dark_blue;
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+
+    > .custom-row > .custom-column {
+      padding: 0;
+    }
+  }
 
   .region-wrapper {
     position: relative;
@@ -474,14 +506,16 @@ textarea[rows] {
     align-items: center;
     justify-content: flex-end;
 
-    &:after {
-      content: '';
-      background-color: #3f5263;
-      height: 1px;
-      width: 80%;
-      position: absolute;
-      bottom: 0;
-      right: 0;
+    @media screen and (min-width: 768px) {
+      &:after {
+        content: '';
+        background-color: #3f5263;
+        height: 1px;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
     }
   }
 
@@ -521,6 +555,13 @@ textarea[rows] {
     position: relative;
     margin: 0 0 0 40px;
 
+    .block-wrapper {
+      @media screen and (max-width: 767px) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
     .language-toggle {
       cursor: pointer;
       display: block;
@@ -532,6 +573,10 @@ textarea[rows] {
       padding: 15px 0;
       display: flex;
       align-items: center;
+      @media screen and (max-width: 767px) {
+        line-height: 24px;
+        padding: 0;
+      }
 
       &:after {
         content: '';
@@ -540,6 +585,12 @@ textarea[rows] {
         height: 11px;
         margin-left: 7px;
         transition: .3s all ease;
+        @media screen and (max-width: 767px) {
+          background: url('../images/icons/arrow-down-red-mob.svg') no-repeat center right/14px;
+          width: 14px;
+          height: 8px;
+          margin-left: 9px;
+        }
       }
 
       &.l-active:after {
@@ -633,17 +684,34 @@ textarea[rows] {
 .region-header {
   background-color: $dark_blue;
   padding: 15px 0 20px;
-  // overflow: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+
+    .column {
+      padding: 0;
+    }
+  }
 
   .region-wrapper {
     display: flex;
   }
 
   #block-tederic-branding {
-    flex: 1;
+    @media screen and (min-width: 768px) {
+      flex: 1;
+    }
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
 
     img {
-      min-width: 167px;
+      display: block;
+      max-width: 167px;
+      @media screen and (max-width: 767px) {
+        max-width: 100px;
+      }
     }
   }
 
@@ -655,6 +723,9 @@ textarea[rows] {
 
       li {
         display: inline-block;
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
 
         a {
           display: block;
@@ -665,31 +736,42 @@ textarea[rows] {
           position: relative;
           overflow: hidden;
           padding: 6px 0;
-
-          &:after {
-            content: '';
-            width: 100%;
-            height: 1px;
-            background-color: $white;
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            transition: .3s all ease;
+          @media screen and (max-width: 868px) {
+            font-size: 17px;
+          }
+          @media screen and (max-width: 767px) {
+            color: $dark_blue;
           }
 
-          &:hover:after {
-            bottom: 3px;
+          @media screen and (min-width: 768px) {
+            &:after {
+              content: '';
+              width: 100%;
+              height: 1px;
+              background-color: $white;
+              position: absolute;
+              left: 0;
+              bottom: -5px;
+              transition: .3s all ease;
+            }
+
+            &:hover:after {
+              bottom: 3px;
+            }
           }
         }
+
         > ul {
-          // display: none;
-          background: #Fff;
-          border-radius: 8px;
-          padding: 10px;
-          position: absolute;
-          z-index: -1;
-          opacity: 0;
-          visibility: hidden;
+          @media screen and (min-width: 768px) {
+            // display: none;
+            background: #Fff;
+            border-radius: 8px;
+            padding: 10px;
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+          }
 
           li {
             display: block;
@@ -701,10 +783,13 @@ textarea[rows] {
               font-size: 14px;
               letter-spacing: 0.64px;
               line-height: 16px;
-              border-bottom: 1px solid transparent;
 
-              &:hover {
-                border-color: $dark_blue;
+              @media screen and (min-width: 768px) {
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                  border-color: $dark_blue;
+                }
               }
             }
           }
@@ -721,6 +806,102 @@ textarea[rows] {
 
       li + li {
         margin-left: 30px;
+        @media screen and (max-width: 868px) {
+          margin-left: 15px;
+        }
+        @media screen and (max-width: 767px) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    #block-tederic-main-menu {
+      display: none;
+      flex: 0 0 100%;
+      max-width: 100%;
+      background-color: #F5F5F5;
+      padding: 27px 25px 27px 35px;
+      height: calc(100vh - 64px);
+      overflow: auto;
+
+      > ul {
+        > li {
+          margin-bottom: 14px;
+          > a {
+            color: $dark_blue;
+            font-size: 21px;
+            letter-spacing: 0;
+            line-height: 25px;
+            padding: 12px 0;
+            position: relative;
+
+            &.dropdown {
+              &:after {
+                content: '';
+                background: url('../images/icons/arrow-right.svg') no-repeat center/contain;
+                height: 18px;
+                width: 10px;
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                margin-top: -9px;
+                transition: .3s all ease;
+              }
+
+              &.active {
+                &:after {
+                  transform: rotate(90deg);
+                }
+              }
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          ul {
+            display: none;
+            padding: 22px 0 40px 20px;
+
+            li {
+              a {
+                display: block;
+                color: $dark_blue;
+                font-size: 16px;
+                letter-spacing: 0.73px;
+                line-height: 18px;
+                padding: 0;
+              }
+
+              &:not(:last-child) {
+                margin-bottom: 29px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #block-top-menu {
+      border-top: 1px solid #BBBBBB;
+      margin-top: 30px;
+      padding-top: 20px;
+
+      > ul {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 14px;
+          }
+
+          a {
+            color: $dark_blue;
+            font-size: 21px;
+            letter-spacing: 0;
+            line-height: 25px;
+            padding: 12px 0;
+          }
+        }
       }
     }
   }
@@ -730,6 +911,9 @@ textarea[rows] {
     display: flex;
     align-items: center;
     transition: .3s all ease;
+    @media screen and (max-width: 767px) {
+      position: static;
+    }
 
     &.open-search {
       overflow: visible;
@@ -739,9 +923,7 @@ textarea[rows] {
         opacity: 1;
       }
     }
-  }
 
-  #block-tederic-search {
     .close-search {
       width: 32px;
       height: 39px;
@@ -749,6 +931,10 @@ textarea[rows] {
       position: absolute;
       left: 0px;
       cursor: pointer;
+      @media screen and (max-width: 767px) {
+        left: 20px;
+        background-size: 24px;
+      }
     }
 
     .show-search {
@@ -757,6 +943,16 @@ textarea[rows] {
       background: url('../images/icons/search.svg') no-repeat;
       margin-left: 24px;
       cursor: pointer;
+      @media screen and (max-width: 767px) {
+        width: 44px;
+        height: 44px;
+        background-size: 24px;
+        margin: 0;
+        background-position: center;
+        position: absolute;
+        top: 10px;
+        right: 118px;
+      }
 
       &:hover {
         opacity: 0.8;
@@ -768,11 +964,20 @@ textarea[rows] {
       align-items: center;
       width: 465px;
       position: absolute;
-      right: -600px;
-      top: 50%;
-      transform: translateY(-50%);
+      right: -800px;
       opacity: 0;
       transition: .3s all ease;
+      @media screen and (min-width: 768px) {
+        transform: translateY(-50%);
+        top: 50%;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 14px 20px;
+        height: 64px;
+        width: 100%;
+        top: 0;
+        background-color: $dark_blue;
+      }
     }
 
     input {
@@ -785,12 +990,19 @@ textarea[rows] {
 
       input[type="search"] {
         padding: 3px 5px 3px 34px;
+        @media screen and (max-width: 767px) {
+          height: 35px;
+        }
       }
     }
 
     .form-actions {
       flex: 0 0 56px;
       padding-left: 24px;
+      @media screen and (max-width: 767px) {
+        flex: 0 0 24px;
+        padding-left: 15px;
+      }
 
       .form-submit {
         width: 32px;
@@ -799,6 +1011,11 @@ textarea[rows] {
         font-size: 0;
         border: none;
         text-indent: 99999px;
+        @media screen and (max-width: 767px) {
+          width: 24px;
+          height: 24px;
+          background-size: contain;
+        }
 
         &:hover {
           opacity: 0.8;
@@ -814,57 +1031,40 @@ textarea[rows] {
   background-color: $dark_blue;
   position: relative;
 
-  &:after {
-    content: '';
-    height: 2px;
-    background-color: $red;
-    position: absolute;
-    width: 144px;
-    transform: rotate(-45deg);
-    bottom: 35px;
-    right: -22px;
-    z-index: 1;
+  @media screen and (min-width: 768px) {
+    &:after {
+      content: '';
+      height: 2px;
+      background-color: $red;
+      position: absolute;
+      width: 144px;
+      transform: rotate(-45deg);
+      bottom: 35px;
+      right: -20px;
+      z-index: 1;
+    }
   }
-  // .line {
-  //   content: '';
-  //   height: 2px;
-  //   background-color: $red;
-  //   position: absolute;
-  // }
-  // .line-1 {
-  //   width: 150px;
-  //   transform: rotate(-45deg);
-  //   left: -35px;
-  //   bottom: -50px;
-  // }
-  // .line-2 {
-  //   width: 180px;
-  //   transform: rotate(45deg);
-  //   top: 40px;
-  //   left: 365px;
-  // }
-  // .line-3 {
-  //   width: 280px;
-  //   transform: rotate(-45deg);
-  //   top: 190px;
-  //   right: -45px;
-  // }
 
   .region-wrapper {
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-
-    &:after {
-      content: '';
-      height: 2px;
-      background-color: $red;
-      position: absolute;
-      width: 150px;
-      transform: rotate(45deg);
-      top: 53px;
-      left: 240px;
+    @media screen and (max-width: 767px) {
+      padding-top: 30px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      &:after {
+        content: '';
+        height: 2px;
+        background-color: $red;
+        position: absolute;
+        width: 150px;
+        transform: rotate(45deg);
+        top: 53px;
+        left: 240px;
+      }
     }
   }
 
@@ -872,6 +1072,11 @@ textarea[rows] {
     flex: 1;
     position: relative;
     z-index: 2;
+    @media screen and (max-width: 767px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 35px;
+    }
 
     #block-footerlogo {
       img {
@@ -928,11 +1133,21 @@ textarea[rows] {
       display: flex;
       flex-wrap: wrap;
       max-width: 355px;
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        flex-flow: column;
+        padding-right: 55px;
+      }
 
       li {
         flex: 0 0 50%;
         max-width: 50%;
         padding: 0 80px 11px 0;
+        @media screen and (max-width: 767px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0 0 10px 0;
+        }
 
         a {
           display: block;
@@ -1009,16 +1224,21 @@ textarea[rows] {
   padding-top: 60px;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+    padding-top: 30px;
+  }
 
-  &:after {
-    content: '';
-    height: 2px;
-    background-color: $red;
-    position: absolute;
-    width: 150px;
-    transform: rotate(-45deg);
-    left: -35px;
-    top: 70px;
+  @media screen and (min-width: 768px) {
+    &:after {
+      content: '';
+      height: 2px;
+      background-color: $red;
+      position: absolute;
+      width: 150px;
+      transform: rotate(-45deg);
+      left: -35px;
+      top: 70px;
+    }
   }
 
   .region-wrapper {
@@ -1027,6 +1247,11 @@ textarea[rows] {
     border-top: 1px solid rgba(202, 206, 208, 0.5);
     position: relative;
     z-index: 2;
+    @media screen and (max-width: 767px) {
+      padding: 15px 0;
+      flex-flow: column;
+      align-items: center;
+    }
   }
 
   #block-copyright {
@@ -1037,6 +1262,10 @@ textarea[rows] {
     font-weight: 500;
     letter-spacing: 0;
     line-height: 21px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+      text-align: center;
+    }
     p {
       color: $white;
       margin: 0;
@@ -1131,6 +1360,9 @@ textarea[rows] {
 
   .main-slick-arrows {
     display: flex;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 
     .slick-arrow {
       background-image: url('../images/icons/s-arrow-right.png');
@@ -1169,10 +1401,22 @@ textarea[rows] {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media screen and (max-width: 767px) {
+      bottom: 26px;
+    }
 
     .numbers {
       position: absolute;
       right: 62px;
+      @media screen and (max-width: 767px) {
+        right: 26px;
+        bottom: 0;
+        margin: 0;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 4px;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -1184,6 +1428,9 @@ textarea[rows] {
 .main-slider-text {
   background-color: $dark_blue;
   padding: 47px 0;
+  @media screen and (max-width: 767px) {
+    padding: 30px 0;
+  }
 
   .field-text {
     max-width: 1090px;
@@ -1197,6 +1444,11 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: -0.44px;
     line-height: 56px;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: 32px;
+    }
   }
 
   .field-link {
@@ -1212,6 +1464,9 @@ textarea[rows] {
       align-items: center;
       padding-bottom: 4px;
       text-transform: uppercase;
+      @media screen and (max-width: 767px) {
+        margin-top: 30px;
+      }
 
       &:after {
         content: '';
@@ -1264,18 +1519,36 @@ textarea[rows] {
 
 .text-l-block-r {
   padding: 130px 0 80px;
-
+  @media screen and (max-width: 1024px) {
+    padding-top: 80px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 35px;
+  }
   .paragraph-wrapper {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
   }
 
   .text-left {
     flex: 0 0 450px;
+    max-width: 450px;
     padding-right: 5%;
+    @media screen and (max-width: 1024px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 0;
+    }
   }
   .img-right {
     flex: 1;
+    @media screen and (max-width: 1024px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: -1;
+      margin-bottom: 38px;
+    }
 
     img {
       width: 100%;
@@ -1287,6 +1560,14 @@ textarea[rows] {
   }
   .sub-title {
     margin-bottom: 6px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .text,
+  .text p {
+    color: #303133;
   }
   .text {
     margin-bottom: 0;
@@ -1294,6 +1575,9 @@ textarea[rows] {
   .link {
     a {
       margin: 40px 0 35px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -1302,6 +1586,9 @@ textarea[rows] {
   padding: 80px 0 120px;
   background-color: $gray;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
 
   .field-title,
   .field-title p {
@@ -1311,9 +1598,16 @@ textarea[rows] {
     letter-spacing: 0;
     line-height: 32px;
     margin: 0;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   .field-title {
     margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 25px;
+    }
   }
 
   .field-text,
@@ -1324,24 +1618,46 @@ textarea[rows] {
     letter-spacing: 0;
     line-height: 46px;
     margin: 0;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: left;
+    }
   }
   .field-text {
     max-width: 1100px;
     margin: 0 auto 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 50px;
+    }
   }
 
   .field-media-image {
     img {
       margin: 0 auto 15px;
+      @media screen and (max-width: 767px) {
+        height: 55px;
+        margin-bottom: 10px;
+      }
     }
   }
 
   .field-icons-sliders {
     max-width: 1220px;
     margin: 0 auto;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px -10px 0;
+    }
 
     .icons-slider {
       padding: 25px 10px 0;
+      @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+      }
     }
 
     .field-title,
@@ -1351,9 +1667,18 @@ textarea[rows] {
       font-weight: 400;
       letter-spacing: 0;
       line-height: 32px;
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+        letter-spacing: 0.3px;
+        line-height: 28px;
+        text-align: center;
+      }
     }
     .field-title {
       margin-bottom: 20px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+      }
     }
 
     .field-text,
@@ -1368,6 +1693,9 @@ textarea[rows] {
     .field-text {
       max-width: 100%;
       margin: 0;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
 
     .slick-arrow {
@@ -1384,11 +1712,17 @@ textarea[rows] {
       top: 50%;
       margin-top: 21px;
       cursor: pointer;
+      @media screen and (max-width: 1450px) {
+        right: 0;
+      }
 
       &.slick-prev {
         right: auto;
         left: -100px;
         transform: rotate(-180deg);
+        @media screen and (max-width: 1450px) {
+          left: 0;
+        }
       }
 
       &.slick-disabled {
@@ -1405,6 +1739,9 @@ textarea[rows] {
 .products-section {
   padding: 100px 0 80px;
   position: relative;
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
 
   &:before {
     content: '';
@@ -1415,6 +1752,11 @@ textarea[rows] {
     transform: rotate(45deg);
     top: 20px;
     left: -40px;
+    @media screen and (max-width: 767px) {
+      width: 50px;
+      top: -3px;
+      left: -10px;
+    }
   }
   &:after {
     content: '';
@@ -1424,18 +1766,31 @@ textarea[rows] {
     width: 190px;
     transform: rotate(-45deg);
     bottom: 80px;
-    right: -35px;
+    right: -27px;
+    @media screen and (max-width: 767px) {
+      width: 90px;
+      bottom: -10px;
+      right: -15px;
+    }
   }
 
   .field-products-cards {
     margin: -50px -10px 0;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 640px) {
+      margin-top: -30px;
+    }
 
     .product-item {
       flex: 0 0 50%;
       max-width: 50%;
       padding: 50px 10px 0;
+      @media screen and (max-width: 640px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 30px;
+      }
 
       > a {
         display: block;
@@ -1506,14 +1861,30 @@ textarea[rows] {
   .title {
     margin-bottom: 40px;
   }
+  .text,
+  .text p {
+    color: #586267;
+  }
   .text {
     margin-bottom: 60px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .link {
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 75px;
+    }
   }
 }
 
 .events-section {
   background-color: $gray;
   padding: 110px 0 50px;
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
 
   .field-title,
   .field-title p {
@@ -1522,6 +1893,10 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 46px;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
   .field-title {
     margin-bottom: 30px;
@@ -1533,17 +1908,22 @@ textarea[rows] {
       padding: 0;
       list-style-type: none;
       display: flex;
-      flex-wrap: wrap;
+      overflow: auto;
 
       li {
         padding: 0 10px;
 
-        .event-item {
+        article {
           background-color: $white;
-        }
+          border-radius: 8px;
+          height: 100%;
+          transition: .3s all ease;
 
-        .special-label {
-          .event-item {
+          &:hover {
+            box-shadow: 0 2px 7px 0 rgba(88,98,103,0.4);
+          }
+
+          &.special-label {
             background-color: $gray_dark;
           }
         }
@@ -1551,6 +1931,7 @@ textarea[rows] {
         &:nth-child(1) {
           flex: 0 0 34%;
           max-width: 34%;
+          min-width: 280px;
 
           h2 {
             max-width: 400px;
@@ -1559,6 +1940,7 @@ textarea[rows] {
         &:nth-child(2) {
           flex: 0 0 66%;
           max-width: 66%;
+          min-width: 355px;
 
           h2 {
             margin-bottom: 20px;
@@ -1570,12 +1952,7 @@ textarea[rows] {
 
   .event-item {
     display: block;
-    border-radius: 8px;
-    position: relative;
-
-    &:hover {
-      box-shadow: 0 2px 7px 0 rgba(88,98,103,0.4);
-    }
+    position: relative; 
 
     img {
       border-radius: 8px 8px 0 0;
@@ -1588,6 +1965,9 @@ textarea[rows] {
     color: $dark_blue_text;
     border-radius: 0 0 8px 8px;
     min-height: 214px;
+    @media screen and (max-width: 1023px) {
+      padding: 20px 15px 20px 18px;
+    }
 
     .event-bottom {
       position: absolute;
@@ -1597,6 +1977,15 @@ textarea[rows] {
       padding: 0 20px;
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: 1023px) {
+        flex-flow: column;
+        position: static;
+        padding: 0;
+
+        > div {
+          margin-top: 15px;
+        }
+      }
     }
 
     .node-title {
@@ -1609,6 +1998,12 @@ textarea[rows] {
       font-weight: 500;
       letter-spacing: 0;
       line-height: 21px;
+      color: $gray_text;
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+      }
     }
 
     .date {
@@ -1660,6 +2055,9 @@ textarea[rows] {
 .news-section {
   background-color: $gray;
   padding-bottom: 130px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
 
   .title {
     margin-bottom: 30px;
@@ -1683,6 +2081,10 @@ textarea[rows] {
         flex: 0 0 50%;
         max-width: 50%;
         padding: 0 10px 20px;
+        @media screen and (max-width: 767px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
 
         > article {
           height: 100%;
@@ -1699,6 +2101,9 @@ textarea[rows] {
     border-radius: 8px;
     padding: 20px 30px 70px;
     position: relative;
+    @media screen and (max-width: 767px) {
+      padding: 20px 15px 70px 20px;
+    }
 
     &:hover {
       box-shadow: 0 2px 7px 0 rgba(88,98,103,0.4);
@@ -1719,6 +2124,10 @@ textarea[rows] {
       position: absolute;
       left: 30px;
       bottom: 30px;
+      @media screen and (max-width: 767px) {
+        left: 20px;
+        bottom: 20px;
+      }
       > div {
         display: inline-block;
       }
@@ -1741,6 +2150,10 @@ textarea[rows] {
   background-color: $dark_blue;
   color: $white;
   position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 30px 0;
+  }
 
   &:before {
     content: '';
@@ -1751,6 +2164,13 @@ textarea[rows] {
     transform: rotate(45deg);
     top: 52px;
     left: -23px;
+    @media screen and (max-width: 767px) {
+      width: 60px;
+      transform: rotate(-45deg);
+      top: 20px;
+      left: auto;
+      right: -10px;
+    }
   }
   &:after {
     content: '';
@@ -1761,10 +2181,23 @@ textarea[rows] {
     transform: rotate(45deg);
     bottom: 65px;
     right: -15px;
+    @media screen and (max-width: 767px) {
+      width: 60px;
+      bottom: 19px;
+      right: auto;
+      left: 30px;
+    }
   }
 
   .field-title {
-    padding-left: 40px;
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 1025px) {
+      padding-left: 40px;
+    }
+    @media screen and (max-width: 1024px) {
+      padding-bottom: 40px;
+    }
   }
 
   .field-title,
@@ -1774,12 +2207,23 @@ textarea[rows] {
     letter-spacing: -0.44px;
     line-height: 56px;
     max-width: 375px;
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+      letter-spacing: -0.28px;
+      line-height: 34px;
+      max-width: 200px;
+    }
   }
 
   .sup-title,
   .sup-title p {
     margin-bottom: 35px;
     color: $white;
+  }
+  .sup-title {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   form {
@@ -1788,6 +2232,11 @@ textarea[rows] {
     align-items: center;
     border-bottom: 2px solid #586267;
     padding-bottom: 15px;
+    @media screen and (max-width: 767px) {
+      border-bottom: none;
+      padding-bottom: 0;
+      flex-flow: column;
+    }
 
     .form-item {
       margin: 0;
@@ -1795,6 +2244,11 @@ textarea[rows] {
 
     .js-form-type-text {
       flex: 1px;
+      @media screen and (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+      }
     }
 
     .link {
@@ -1813,39 +2267,52 @@ textarea[rows] {
       background: transparent;
       padding-right: 30px;
       box-shadow: none;
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+        border-bottom: 2px solid #586267;
+        padding-bottom: 11px;
+        color: $white;
+        margin-bottom: 40px;
+      }
 
-      
-      &::-webkit-input-placeholder {
-        color:    $white;
-        font-size: 22px;
-      }
-      &:-moz-placeholder {
-        color:    $white;
-        opacity:  1;
-        font-size: 22px;
-      }
-      &::-moz-placeholder {
-        color:    $white;
-        opacity:  1;
-        font-size: 22px;
-      }
-      &:-ms-input-placeholder {
-        color:    $white;
-        font-size: 22px;
-      }
-      &::-ms-input-placeholder {
-        color:    $white;
-        font-size: 22px;
-      }
-      &::placeholder {
-        color:    $white;
-        font-size: 22px;
+      @media screen and (min-width: 768px) {
+        &::-webkit-input-placeholder {
+          color:    $white;
+          font-size: 22px;
+        }
+        &:-moz-placeholder {
+          color:    $white;
+          opacity:  1;
+          font-size: 22px;
+        }
+        &::-moz-placeholder {
+          color:    $white;
+          opacity:  1;
+          font-size: 22px;
+        }
+        &:-ms-input-placeholder {
+          color:    $white;
+          font-size: 22px;
+        }
+        &::-ms-input-placeholder {
+          color:    $white;
+          font-size: 22px;
+        }
+        &::placeholder {
+          color:    $white;
+          font-size: 22px;
+        }
       }
     }
 
     .form-actions {
       margin: 0;
       padding-right: 35px;
+      @media screen and (max-width: 767px) {
+        padding-right: 0;
+      }
 
       input[type="submit"] {
         color: $white;
@@ -1872,6 +2339,10 @@ textarea[rows] {
 }
 
 .contact-section {
+  @media screen and (max-width: 1023px) {
+    padding: 50px 0 40px;
+  }
+
   .row {
     align-items: center;
     .row {
@@ -1886,11 +2357,44 @@ textarea[rows] {
     }
   }
 
+  .hide-for-medium-down {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
+
   .title {
     padding: 0 55px;
+    @media screen and (max-width: 1400px) {
+      padding: 0 15px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+  .title,
+  .title p {
+    @media screen and (max-width: 1400px) {
+      font-size: 26px;
+      line-height: 36px;
+    }
+    @media screen and (max-width: 1023px) {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
   }
 
   .field-text-2 {
+    @media screen and (max-width: 1023px) {
+      text-align: center;
+    }
     h3 {
       color: $dark_blue_text;
       font-size: 24px;
@@ -1898,6 +2402,12 @@ textarea[rows] {
       letter-spacing: 0;
       line-height: 34px;
       margin-bottom: 6px;
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 16px;
+        margin-bottom: 11px;
+      }
     }
 
     p {
@@ -1907,6 +2417,12 @@ textarea[rows] {
       font-weight: 300;
       letter-spacing: 0;
       line-height: 39px;
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 16px;
+        margin-bottom: 11px;
+      }
     }
 
     a {
@@ -1919,9 +2435,14 @@ textarea[rows] {
     }
   }
 
-  .show-mobile {
-    @media screen and (min-width: 768px) {
+  .field-media-image {
+    text-align: center;
+    @media screen and (min-width: 1024px) {
       display: none;
+    }
+
+    img {
+      width: 64px;
     }
   }
 
@@ -4477,7 +4998,7 @@ textarea[rows] {
     }
 
     .field-phone-number {
-      color: #0F283D;
+      color: $dark_blue;
       font-size: 50px;
       font-weight: 500;
       letter-spacing: 0;
@@ -4771,5 +5292,18 @@ textarea[rows] {
         }
       }
     }
+  }
+}
+
+.mobile-menu {
+  background: url('../images/icons/menu.svg') no-repeat center/26px;
+  padding: 22px;
+  margin-left: 10px;
+
+  &.active {
+    background: url('../images/icons/close-white.svg') no-repeat center/26px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="10px" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2A526A74-6944-48FC-9F12-FAE60123308C</title>
+    <defs>
+        <path d="M19,8 C19.5522847,8 20,8.44771525 20,9 C20,9.51283584 19.6139598,9.93550716 19.1166211,9.99327227 L19,10 L1,10 C0.44771525,10 0,9.55228475 0,9 C0,8.48716416 0.38604019,8.06449284 0.883378875,8.00672773 L1,8 L19,8 Z M19,0 C19.5522847,0 20,0.44771525 20,1 C20,1.51283584 19.6139598,1.93550716 19.1166211,1.99327227 L19,2 L1,2 C0.44771525,2 0,1.55228475 0,1 C0,0.487164161 0.38604019,0.0644928393 0.883378875,0.00672773133 L1,0 L19,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-319.000000, -454.000000)">
+            <g id="ICONS/Menu" transform="translate(319.000000, 454.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="COLOR/-Tederic-Red" mask="url(#mask-2)" fill="#FFFFFF">
+                    <g transform="translate(-2.000000, -7.000000)" id="Rectangle">
+                        <rect x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

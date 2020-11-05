@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2E8849F3-D575-48BA-82CE-B55412954E24</title>
+    <defs>
+        <path d="M0.878456977,0.512632299 C1.12691893,0.280734474 1.50548543,0.275291147 1.75984965,0.487533116 L1.82070599,0.545123644 L7.84525957,7.00000248 L1.82070599,13.4548813 C1.56948335,13.7240484 1.14762409,13.7385953 0.878456977,13.4873727 C0.629995023,13.2554748 0.598487598,12.8781825 0.792703903,12.6098025 L0.845965632,12.5451236 L6.02066914,7.00000248 L0.845965632,1.45488131 C0.614067808,1.20641936 0.60862448,0.827852861 0.820866449,0.573488639 L0.878456977,0.512632299 Z" id="path-1"></path>
+    </defs>
+    <g id="Design---Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01---Mobile-Home" transform="translate(-296.000000, -29.000000)">
+            <g id="Menu/Mobile-Menu">
+                <g id="Language" transform="translate(267.000000, 10.000000)">
+                    <g id="ICONS/Arrow-right" transform="translate(36.000000, 23.000000) rotate(-270.000000) translate(-36.000000, -23.000000) translate(32.000000, 16.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Path" fill="#E8412D" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="COLOR/-Tederic-Red" mask="url(#mask-2)" fill="#E8412D">
+                            <g transform="translate(-4.000000, -1.000000)" id="Rectangle">
+                                <rect x="0" y="0" width="16" height="16"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

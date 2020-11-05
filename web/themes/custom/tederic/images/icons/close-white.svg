@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>307FA2CD-8A36-414F-915F-8EA334AF319D</title>
+    <defs>
+        <path d="M0.866116524,0.866116524 C1.35427189,0.377961159 2.14572811,0.377961159 2.63388348,0.866116524 L2.63388348,0.866116524 L13,11.233 L23.3661165,0.866116524 C23.8542719,0.377961159 24.6457281,0.377961159 25.1338835,0.866116524 C25.5844884,1.31672148 25.6191503,2.0257603 25.2378692,2.5161243 L25.1338835,2.63388348 L14.767,13 L25.1338835,23.3661165 L25.2378692,23.4838757 C25.6191503,23.9742397 25.5844884,24.6832785 25.1338835,25.1338835 C24.6457281,25.6220388 23.8542719,25.6220388 23.3661165,25.1338835 L23.3661165,25.1338835 L13,14.767 L2.63388348,25.1338835 C2.14572811,25.6220388 1.35427189,25.6220388 0.866116524,25.1338835 C0.415511571,24.6832785 0.380849652,23.9742397 0.762130765,23.4838757 L0.866116524,23.3661165 L11.233,13 L0.866116524,2.63388348 L0.762130765,2.5161243 C0.380849652,2.0257603 0.415511571,1.31672148 0.866116524,0.866116524 Z" id="path-1"></path>
+    </defs>
+    <g id="Design---Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00---Mobile-Menu" transform="translate(-330.000000, -19.000000)">
+            <g id="Menu/Mobile-Menu">
+                <g id="Menu" transform="translate(321.000000, 10.000000)">
+                    <g id="ICONS/Menu---White" transform="translate(9.000000, 9.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#E8412D" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="COLOR/-Tederic-Red" mask="url(#mask-2)" fill="#FFFFFF">
+                            <g transform="translate(-2.000000, -2.000000)" id="Rectangle">
+                                <rect x="0" y="0" width="30" height="30"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

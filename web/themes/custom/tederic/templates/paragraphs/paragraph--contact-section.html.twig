@@ -7,16 +7,16 @@
 <div{{ attributes.addClass(classes) }}>
 
   <div class="row expanded">
-    <div class="large-5">
-      <div class="show-mobile">{{ content.field_icon }}</div>
-      {{ content.field_image_crop }}
+    <div class="small-12 large-5">
+      {{ content.field_icon }}
+      <div class="hide-for-medium-down">{{ content.field_image_crop }}</div>
     </div>
-    <div class="large-7">
+    <div class="small-12 large-7">
       <div class="row">
-        <div class="large-7">
+        <div class="small-12 large-7">
           <div class="title">{{ content.field_text }}</div>
         </div>
-        <div class="large-5">
+        <div class="small-12 large-5">
           {{ content.field_text_2 }}
         </div>
       </div>

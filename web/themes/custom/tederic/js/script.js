@@ -1,5 +1,26 @@
 (function($, Drupal) {
   $(document).ready(function() {
+    // vars
+    var window_width = $(window).width();
+
+    // Mobile menu
+    $('#block-tederic-main-menu > ul > li > ul').each(function() {
+      $(this).prev('a').addClass('dropdown');
+      $(this).prev('a').attr('href', 'javascript:void(0);');
+    });
+
+    function mibileMenu() {
+      if (window_width <= 767) {
+        $('#block-top-menu').insertAfter('#block-tederic-main-menu > ul');
+      } else {
+        $('#block-top-menu').insertBefore('#block-languageswitcher');
+      }
+    }
+
+    mibileMenu();
+    $(window).resize(function() {
+      mibileMenu();
+    });
 
     // Button Up
     var document_height = $(document).height();
@@ -94,12 +115,26 @@
     }
 
     // Slider for icons (Home page)
-    $('.icons-section .field-icons-sliders').not('.slick-initialized').slick({
+    const settings = {
       arrows: true,
       infinite: false,
       slidesToShow: 3,
       slidesToScroll: 3,
       adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: 'unslick'
+        }
+      ]
+    };
+ 
+    const sl_icons =  $('.icons-section .field-icons-sliders').not('.slick-initialized').slick(settings);
+
+    $(window).on('resize', function() {
+      if (window_width <= 767 && !sl_icons.hasClass('slick-initialized')) {
+        $('.icons-section .field-icons-sliders').not('.slick-initialized').slick(settings);
+      }
     });
 
     // Vertical Slider
@@ -155,6 +190,18 @@
       });
       $('.close-search').unbind('click').bind('click', function() {
         $('#block-tederic-search').removeClass('open-search');
+      });
+
+      // Mobile menu
+      $('.mobile-menu').unbind('click').bind('click', function() {
+        $(this).toggleClass('active');
+        $('#block-tederic-main-menu').slideToggle();
+      });
+      console.log('true');
+      $('#block-tederic-main-menu .dropdown').unbind('click').bind('click', function() {
+        console.log('click');
+        $(this).next('ul').slideToggle();
+        $(this).toggleClass('active');
       });
 
     }
