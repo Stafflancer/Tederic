@@ -1,0 +1,21 @@
+uuid: 2b1ff7ad-b3a6-445c-906b-0d0e4b8baf42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_popular_news_layout
+    - paragraphs.paragraphs_type.news_with_filters
+  module:
+    - options
+id: paragraph.news_with_filters.field_popular_news_layout
+field_name: field_popular_news_layout
+entity_type: paragraph
+bundle: news_with_filters
+label: 'Popular news layout'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

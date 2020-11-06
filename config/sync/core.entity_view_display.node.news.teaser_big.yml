@@ -1,9 +1,9 @@
-uuid: e001628d-bb4b-41b6-b2b1-a6c8c8ec0900
+uuid: ec818a97-8671-4637-871e-546da309a71e
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaser_big
     - field.field.node.news.body
     - field.field.node.news.field_big_card
     - field.field.node.news.field_date
@@ -11,42 +11,41 @@ dependencies:
     - field.field.node.news.field_popular
     - field.field.node.news.field_sections
     - field.field.node.news.field_special_label
-    - image.style.medium_news_image_crop
+    - image.style.big_news_image_crop
     - node.type.news
   module:
     - datetime
     - svg_image
     - text
     - user
-id: node.news.teaser
+id: node.news.teaser_big
 targetEntityType: node
 bundle: news
-mode: teaser
+mode: teaser_big
 content:
   body:
-    label: hidden
-    type: text_summary_or_trimmed
+    type: text_default
     weight: 1
-    settings:
-      trim_length: 600
+    region: content
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    region: content
   field_date:
-    type: datetime_custom
     weight: 2
-    region: content
     label: above
     settings:
       timezone_override: ''
       date_format: 'd M, Y'
     third_party_settings: {  }
+    type: datetime_custom
+    region: content
   field_image_crop:
     type: image
     weight: 0
     region: content
     label: above
     settings:
-      image_style: medium_news_image_crop
+      image_style: big_news_image_crop
       image_link: ''
       svg_render_as_image: true
       svg_attributes:
@@ -61,9 +60,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_big_card: true
   field_popular: true
   field_sections: true
   langcode: true
-  links: true

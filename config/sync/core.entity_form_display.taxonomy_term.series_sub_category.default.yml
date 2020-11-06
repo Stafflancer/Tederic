@@ -28,9 +28,10 @@ content:
     third_party_settings: {  }
   field_background_color:
     weight: 4
-    settings: {  }
+    settings:
+      default_colors: '#ffffff,#0f283d,#caced0,#f1f1f3'
     third_party_settings: {  }
-    type: color_field_widget_html5
+    type: color_field_widget_box
     region: content
   field_image:
     weight: 1

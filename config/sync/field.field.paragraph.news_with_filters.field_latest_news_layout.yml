@@ -1,0 +1,21 @@
+uuid: 692ef2d3-c64e-446b-99b7-c7a85d537e14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_latest_news_layout
+    - paragraphs.paragraphs_type.news_with_filters
+  module:
+    - options
+id: paragraph.news_with_filters.field_latest_news_layout
+field_name: field_latest_news_layout
+entity_type: paragraph
+bundle: news_with_filters
+label: 'Latest news layout'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

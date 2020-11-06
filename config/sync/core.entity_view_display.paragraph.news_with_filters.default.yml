@@ -1,0 +1,41 @@
+uuid: 7a377e8b-a5d7-41a4-8163-5bc0a819a6a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_with_filters.field_latest_news_layout
+    - field.field.paragraph.news_with_filters.field_newsletter_block
+    - field.field.paragraph.news_with_filters.field_popular_news_layout
+    - paragraphs.paragraphs_type.news_with_filters
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.news_with_filters.default
+targetEntityType: paragraph
+bundle: news_with_filters
+mode: default
+content:
+  field_latest_news_layout:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_newsletter_block:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_popular_news_layout:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

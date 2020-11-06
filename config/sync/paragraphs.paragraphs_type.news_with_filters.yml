@@ -1,0 +1,10 @@
+uuid: c4b4b891-0ca8-414a-9132-1d83112b0ac2
+langcode: en
+status: true
+dependencies: {  }
+id: news_with_filters
+label: 'News with filters'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
