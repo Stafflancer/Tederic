@@ -1,0 +1,38 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{{ attach_library('tederic/tederic_tabs') }}
+
+<div{{ attributes.addClass(classes) }}>
+  
+  <ul class="news-events-nav">
+    <li class="active"><a href="{{ path('entity.node.canonical', {'node': 47}) }}">{{ 'News'|t }}</a></li>
+    <li><a href="/">{{ 'Events'|t }}</a></li>
+  </ul>
+
+  <div class="tederic-tabs">
+    <ul>
+      <li><a href="#popular-news">{{ 'Popular'|t }}</a></li>
+      <li><a href="#recent-news">{{ 'Recent'|t }}</a></li>
+    </ul>
+
+    <div id="popular-news">
+      <h2>{{ 'Popular News'|t }}</h2>
+    </div>
+
+    <div id="recent-news">
+      <h2>{{ 'Latest News'|t }}</h2>
+      {% if content.field_latest_news_layout.0|render == '1b_3s' %}
+        {{ drupal_view('news', 'latest_1big_3_medium_block') }}
+      {% elseif content.field_latest_news_layout.0|render == '3s_3s' %}
+        {{ drupal_view('news', 'latest_3_3_medium_block') }}
+      {% endif %}
+      {{ content.field_newsletter_block }}
+    </div>
+  </div>
+  
+</div>

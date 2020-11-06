@@ -1,0 +1,8 @@
+{% set specialLabel = content.field_special_label.0 ? 'special-label' : '' %}
+
+<article{{ attributes.addClass(specialLabel) }}>
+  <a href="{{ url }}">
+    {{ label }}
+    {{ content }}
+  </a>
+</article>

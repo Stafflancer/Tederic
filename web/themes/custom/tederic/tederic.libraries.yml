@@ -54,3 +54,11 @@ font-zh:
   css:
     base:
       css/font_zh.css: {}
+
+# jQuery UI Tabs
+tederic_tabs:
+  version: 1.0
+  js:
+    js/tederic_tabs.js: {}
+  dependencies:
+    - jquery_ui_tabs/tabs
