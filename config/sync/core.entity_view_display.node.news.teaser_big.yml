@@ -24,11 +24,12 @@ bundle: news
 mode: teaser_big
 content:
   body:
-    type: text_default
+    type: text_trimmed
     weight: 1
     region: content
     label: above
-    settings: {  }
+    settings:
+      trim_length: 300
     third_party_settings: {  }
   field_date:
     weight: 2
