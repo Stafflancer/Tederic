@@ -1,9 +1,9 @@
-uuid: 01484895-5a3c-4178-9388-4c786ebb78e5
+uuid: 4e0b7f40-6ab6-4aff-bc50-7b67e44a4e5d
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaser_big
     - field.field.node.event.body
     - field.field.node.event.field_address
     - field.field.node.event.field_big_card
@@ -12,64 +12,63 @@ dependencies:
     - field.field.node.event.field_sections
     - field.field.node.event.field_special_label
     - field.field.node.event.field_visitors
-    - image.style.medium_event_image_crop
     - node.type.event
   module:
     - datetime_range
     - svg_image
     - text
     - user
-id: node.event.teaser
+id: node.event.teaser_big
 targetEntityType: node
 bundle: event
-mode: teaser
+mode: teaser_big
 content:
   body:
-    label: hidden
-    type: text_summary_or_trimmed
+    label: above
+    type: text_trimmed
     weight: 0
     settings:
-      trim_length: 600
+      trim_length: 300
     third_party_settings: {  }
     region: content
   field_big_card:
     type: boolean
     weight: 4
     region: content
-    label: hidden
+    label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
   field_date_range:
-    type: daterange_default
     weight: 2
-    region: content
-    label: hidden
+    label: above
     settings:
       timezone_override: ''
       separator: '-'
       format_type: medium
     third_party_settings: {  }
+    type: daterange_default
+    region: content
   field_image_crop:
     type: image
     weight: 5
     region: content
     label: above
     settings:
-      image_style: medium_event_image_crop
-      image_link: ''
-      svg_render_as_image: true
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
   field_special_label:
     type: string
     weight: 3
     region: content
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -77,7 +76,7 @@ content:
     type: string
     weight: 1
     region: content
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }

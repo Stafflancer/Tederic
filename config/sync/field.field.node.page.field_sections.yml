@@ -7,6 +7,7 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.blue_background_text_section
     - paragraphs.paragraphs_type.cards_section
+    - paragraphs.paragraphs_type.events_with_filters
     - paragraphs.paragraphs_type.history_block
     - paragraphs.paragraphs_type.icon_cards_section
     - paragraphs.paragraphs_type.icons_inner_section
@@ -47,6 +48,7 @@ settings:
       quote_section: quote_section
       text_l_image_r_section: text_l_image_r_section
       vertical_carousel_text_section: vertical_carousel_text_section
+      events_with_filters: events_with_filters
       technologies_with_filters: technologies_with_filters
       products_section_regular_page: products_section_regular_page
       news_with_filters: news_with_filters
@@ -84,6 +86,9 @@ settings:
       events_section:
         weight: 25
         enabled: false
+      events_with_filters:
+        enabled: true
+        weight: 72
       form_section:
         weight: 69
         enabled: false

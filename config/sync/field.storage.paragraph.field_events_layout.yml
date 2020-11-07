@@ -1,0 +1,27 @@
+uuid: e49e6798-21c6-499e-9b53-3cfca592eba6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_events_layout
+field_name: field_events_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: one_m_one_b
+      label: '1 medium, 1 big'
+    -
+      value: one_b_one_m
+      label: '1 big, 1 medium'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

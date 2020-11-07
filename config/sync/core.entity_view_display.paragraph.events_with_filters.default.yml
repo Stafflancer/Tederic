@@ -1,0 +1,22 @@
+uuid: edc2622d-a13b-4792-a4bd-f97cb1e0a5e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events_with_filters.field_events_layout
+    - paragraphs.paragraphs_type.events_with_filters
+  module:
+    - options
+id: paragraph.events_with_filters.default
+targetEntityType: paragraph
+bundle: events_with_filters
+mode: default
+content:
+  field_events_layout:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

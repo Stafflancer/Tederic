@@ -1,0 +1,21 @@
+uuid: a09eaff5-7788-4c81-8b3c-a74b23b3bf8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events_with_filters.field_events_layout
+    - paragraphs.paragraphs_type.events_with_filters
+id: paragraph.events_with_filters.default
+targetEntityType: paragraph
+bundle: events_with_filters
+mode: default
+content:
+  field_events_layout:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

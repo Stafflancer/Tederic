@@ -1,0 +1,10 @@
+uuid: 6aa27469-5ea6-49af-979f-b087d7c20fa2
+langcode: en
+status: true
+dependencies: {  }
+id: events_with_filters
+label: 'Events with filters'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

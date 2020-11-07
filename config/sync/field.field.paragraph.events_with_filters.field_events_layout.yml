@@ -1,0 +1,21 @@
+uuid: 756f43c2-fce5-4517-bbb8-3a8901efe8c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_events_layout
+    - paragraphs.paragraphs_type.events_with_filters
+  module:
+    - options
+id: paragraph.events_with_filters.field_events_layout
+field_name: field_events_layout
+entity_type: paragraph
+bundle: events_with_filters
+label: 'Events layout'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
