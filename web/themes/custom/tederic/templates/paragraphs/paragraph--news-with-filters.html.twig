@@ -36,9 +36,9 @@
             <h2>{{ 'Popular News'|t }}</h2>
 
             {% if content.field_popular_news_layout.0|render == '1b_3s' %}
-              {{ drupal_view('news', 'latest_1big_3_medium_block') }}
+              {{ drupal_view('news', 'popular_1big_3_medium_block') }}
             {% elseif content.field_popular_news_layout.0|render == '3s_3s' %}
-              {{ drupal_view('news', 'latest_3_3_medium_block') }}
+              {{ drupal_view('news', 'popular_3_3_medium_block') }}
             {% endif %}
           </div>
 
