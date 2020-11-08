@@ -1,11 +1,18 @@
 (function($, Drupal) {
   $(document).ready(function() {
+    // Close dialog by overlay click.
+    $(document).ajaxComplete(function() {
+      $('.ui-widget-overlay').click(function() {
+        $('button.ui-dialog-titlebar-close').trigger('click');
+      });
+    });
+
     // vars
     var window_width = $(window).width();
 
     // Mobile menu
     $('#block-tederic-main-menu > ul > li > ul').each(function() {
-      $(this).prev('a').addClass('dropdown');
+      // $(this).prev('a').addClass('dropdown');
       $(this).prev('a').attr('href', 'javascript:void(0);');
     });
 

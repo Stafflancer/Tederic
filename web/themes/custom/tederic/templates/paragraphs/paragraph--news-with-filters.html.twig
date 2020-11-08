@@ -6,12 +6,13 @@
 %}
 
 {{ attach_library('tederic/tederic_tabs') }}
+{{ attach_library('tederic_common/news') }}
 
 <div{{ attributes.addClass(classes) }}>
   
   <ul class="news-events-nav">
     <li class="active"><a href="{{ path('entity.node.canonical', {'node': 47}) }}">{{ 'News'|t }}</a></li>
-    <li><a href="/">{{ 'Events'|t }}</a></li>
+    <li><a href="{{ path('entity.node.canonical', {'node': 78}) }}">{{ 'Events'|t }}</a></li>
   </ul>
 
   <div class="tederic-tabs">
