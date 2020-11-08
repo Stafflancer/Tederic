@@ -1,0 +1,22 @@
+uuid: f53e517b-f166-4357-b8b9-f60f71d34d54
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.careers_section
+id: paragraph.careers_section.status
+field_name: status
+entity_type: paragraph
+bundle: careers_section
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

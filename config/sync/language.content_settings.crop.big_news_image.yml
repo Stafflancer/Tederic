@@ -1,0 +1,11 @@
+uuid: a012f6ef-7ec5-457d-a337-e7cb13c9301d
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.big_news_image
+id: crop.big_news_image
+target_entity_type_id: crop
+target_bundle: big_news_image
+default_langcode: site_default
+language_alterable: false

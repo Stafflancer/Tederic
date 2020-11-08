@@ -1,0 +1,11 @@
+uuid: f4007b07-d321-43c9-a57d-365e98362f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.contact_info_section_image
+id: crop.contact_info_section_image
+target_entity_type_id: crop
+target_bundle: contact_info_section_image
+default_langcode: site_default
+language_alterable: false

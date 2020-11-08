@@ -1,0 +1,22 @@
+uuid: d41e02e0-4176-4094-a83b-e65bfaa1c0aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.technologies_with_filters
+id: paragraph.technologies_with_filters.status
+field_name: status
+entity_type: paragraph
+bundle: technologies_with_filters
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

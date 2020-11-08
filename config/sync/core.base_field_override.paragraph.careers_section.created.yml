@@ -1,0 +1,18 @@
+uuid: eabf1266-a0a0-4df5-8685-b274c4f9f771
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.careers_section
+id: paragraph.careers_section.created
+field_name: created
+entity_type: paragraph
+bundle: careers_section
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

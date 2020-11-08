@@ -1,0 +1,18 @@
+uuid: 38b43fe1-a7e3-4ed9-a63d-d97da9b1f8df
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.related_news_section
+id: paragraph.related_news_section.created
+field_name: created
+entity_type: paragraph
+bundle: related_news_section
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

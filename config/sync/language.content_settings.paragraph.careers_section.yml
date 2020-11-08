@@ -1,0 +1,18 @@
+uuid: af9f9662-a9e8-4b87-828e-e0ac55d374af
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.careers_section
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.careers_section
+target_entity_type_id: paragraph
+target_bundle: careers_section
+default_langcode: site_default
+language_alterable: false

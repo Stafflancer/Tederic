@@ -1,0 +1,22 @@
+uuid: 6c2bddce-b1f7-48e5-9238-eb63cfb914e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.products_with_filters
+id: paragraph.products_with_filters.status
+field_name: status
+entity_type: paragraph
+bundle: products_with_filters
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

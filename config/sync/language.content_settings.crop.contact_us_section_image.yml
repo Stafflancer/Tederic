@@ -1,0 +1,11 @@
+uuid: 70e03abb-04c9-48af-96e9-8a81decad217
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.contact_us_section_image
+id: crop.contact_us_section_image
+target_entity_type_id: crop
+target_bundle: contact_us_section_image
+default_langcode: site_default
+language_alterable: false

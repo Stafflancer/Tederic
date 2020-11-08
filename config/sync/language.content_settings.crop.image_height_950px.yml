@@ -1,0 +1,11 @@
+uuid: 38dd5369-40c7-4a5e-ba66-c4de074f7ee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.image_height_950px
+id: crop.image_height_950px
+target_entity_type_id: crop
+target_bundle: image_height_950px
+default_langcode: site_default
+language_alterable: false

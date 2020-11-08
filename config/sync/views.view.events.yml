@@ -250,7 +250,7 @@ display:
             offset_label: Offset
           views_infinite_scroll:
             button_text: 'View previous events'
-            automatically_load_content: true
+            automatically_load_content: false
       defaults:
         pager: false
         use_ajax: false

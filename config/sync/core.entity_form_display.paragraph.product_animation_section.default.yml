@@ -1,0 +1,26 @@
+uuid: 0de52af9-2542-4d47-86f1-82795d50ac62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_animation_section.field_image_crop
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.product_animation_section
+  module:
+    - svg_image
+id: paragraph.product_animation_section.default
+targetEntityType: paragraph
+bundle: product_animation_section
+mode: default
+content:
+  field_image_crop:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

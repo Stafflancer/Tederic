@@ -1,0 +1,11 @@
+uuid: 57286070-9dde-4ccd-9409-d962aa58ef7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.careers_section_image
+id: crop.careers_section_image
+target_entity_type_id: crop
+target_bundle: careers_section_image
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: 998a865d-68fb-425b-9a83-5f573d3bd57a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.text_l_image_r_hotline_number
+id: paragraph.text_l_image_r_hotline_number.created
+field_name: created
+entity_type: paragraph
+bundle: text_l_image_r_hotline_number
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

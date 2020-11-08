@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_form
     - node.type.support
+    - paragraphs.paragraphs_type.anchor
     - paragraphs.paragraphs_type.form_section
   module:
     - entity_reference_revisions
@@ -23,11 +24,15 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      anchor: anchor
       form_section: form_section
     target_bundles_drag_drop:
       2_columns_section:
         weight: 55
         enabled: false
+      anchor:
+        enabled: true
+        weight: 63
       blue_background_text_section:
         weight: 56
         enabled: false
@@ -57,6 +62,9 @@ settings:
         enabled: false
       events_section:
         weight: 65
+        enabled: false
+      events_with_filters:
+        weight: 74
         enabled: false
       form_section:
         enabled: true
@@ -124,8 +132,14 @@ settings:
       news_section:
         weight: 88
         enabled: false
+      news_with_filters:
+        weight: 98
+        enabled: false
       newsletter_sign_up_block:
         weight: 87
+        enabled: false
+      one_big_image_section:
+        weight: 99
         enabled: false
       product_animation_section:
         weight: 91
@@ -136,11 +150,20 @@ settings:
       products_section:
         weight: 89
         enabled: false
+      products_section_regular_page:
+        weight: 101
+        enabled: false
       products_with_filters:
         weight: 90
         enabled: false
       quote_section:
         weight: 93
+        enabled: false
+      related_event_section:
+        weight: 106
+        enabled: false
+      related_news_section:
+        weight: 107
         enabled: false
       related_section:
         weight: 94

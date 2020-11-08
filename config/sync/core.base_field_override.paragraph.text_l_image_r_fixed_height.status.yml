@@ -1,0 +1,22 @@
+uuid: 4e4897c8-ea50-4052-af34-e2d8baee82dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.text_l_image_r_fixed_height
+id: paragraph.text_l_image_r_fixed_height.status
+field_name: status
+entity_type: paragraph
+bundle: text_l_image_r_fixed_height
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

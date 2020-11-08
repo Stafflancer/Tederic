@@ -12,7 +12,7 @@ bundle: text_l_image_r_hotline_number
 label: 'Phone number'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

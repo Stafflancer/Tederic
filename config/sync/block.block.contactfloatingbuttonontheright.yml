@@ -1,0 +1,31 @@
+uuid: 012de0fd-9fa4-42e3-bb88-85ac46bc1a4b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2fccf3eb-3c6b-43dd-9532-d7c9d100edbb'
+  module:
+    - block_content
+    - system
+  theme:
+    - tederic
+id: contactfloatingbuttonontheright
+theme: tederic
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:2fccf3eb-3c6b-43dd-9532-d7c9d100edbb'
+settings:
+  id: 'block_content:2fccf3eb-3c6b-43dd-9532-d7c9d100edbb'
+  label: 'Contact floating button on the right'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/products/*'
+    negate: true
+    context_mapping: {  }

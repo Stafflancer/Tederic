@@ -1,0 +1,11 @@
+uuid: a53a3e93-025d-4809-8cec-abd029032d02
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.technology_teaser_image
+id: crop.technology_teaser_image
+target_entity_type_id: crop
+target_bundle: technology_teaser_image
+default_langcode: site_default
+language_alterable: false

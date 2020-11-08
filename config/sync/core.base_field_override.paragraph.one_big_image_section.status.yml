@@ -1,0 +1,22 @@
+uuid: 49320b8a-7975-42b8-acb2-8eb07c7b2fbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.one_big_image_section
+id: paragraph.one_big_image_section.status
+field_name: status
+entity_type: paragraph
+bundle: one_big_image_section
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

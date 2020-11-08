@@ -1,0 +1,11 @@
+uuid: 39f4bcd5-1f69-4bd5-b879-12551a47d7b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.medium_news_image
+id: crop.medium_news_image
+target_entity_type_id: crop
+target_bundle: medium_news_image
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: bd736468-5d1f-413b-a03a-af0fa12dbbf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.news_with_filters
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.news_with_filters
+target_entity_type_id: paragraph
+target_bundle: news_with_filters
+default_langcode: site_default
+language_alterable: false
