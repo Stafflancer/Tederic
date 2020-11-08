@@ -30,7 +30,10 @@
 
           {{ drupal_view('events', 'upcoming_events_block') }}
 
-          <a class="prev-events-link">{{ 'View previous events'|t }}</a>
+          <div class="link">
+            <a class="prev-events-link">{{ 'View previous events'|t }}</a>
+          </div>
+
           <div class="prev-events-wrap hidden">
             {{ drupal_view('events', 'events_list_block') }}
           </div>

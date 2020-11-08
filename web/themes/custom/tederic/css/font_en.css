@@ -7,7 +7,10 @@ input[type="password"],
 input[type="search"],
 input[type="submit"],
 .ui-widget.ui-widget-content,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button,
 body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu';
 }
- 

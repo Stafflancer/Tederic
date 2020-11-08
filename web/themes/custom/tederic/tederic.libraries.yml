@@ -40,14 +40,14 @@ exposed-form:
   version: 1.0
   js:
     js/exposed-form.js: {}
-    
-# Font for all languages 
+
+# Font for all languages
 font-en:
   version: 1.0
   css:
     base:
       css/font_en.css: {}
-    
+
 # Font for Сhinese language
 font-zh:
   version: 1.0

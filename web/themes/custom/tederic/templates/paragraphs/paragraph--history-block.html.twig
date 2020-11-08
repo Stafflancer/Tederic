@@ -1,0 +1,12 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{{ attach_library('tederic/timeline') }}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ content }}
+</div>
