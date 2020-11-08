@@ -2,7 +2,8 @@
 
 <article{{ attributes.addClass(specialLabel) }}>
   <a href="{{ url }}">
-    {{ label }}
-    {{ content }}
+    {{ content.field_image_crop }}
+    <div class="sub-title">{{ label }}</div>
+    {{ content.field_date }}
   </a>
 </article>

@@ -9,43 +9,72 @@
 {{ attach_library('tederic_common/news') }}
 
 <div{{ attributes.addClass(classes) }}>
-  
-  <ul class="news-events-nav">
-    <li class="active"><a href="{{ path('entity.node.canonical', {'node': 47}) }}">{{ 'News'|t }}</a></li>
-    <li><a href="{{ path('entity.node.canonical', {'node': 78}) }}">{{ 'Events'|t }}</a></li>
-  </ul>
-
   <div class="tederic-tabs">
-    <ul>
-      <li><a href="#popular-news">{{ 'Popular'|t }}</a></li>
-      <li><a href="#recent-news">{{ 'Recent'|t }}</a></li>
-    </ul>
+
+    <div class="row">
+      <div class="small-12 column">
+
+        <div class="d-flex justify-space-between align-items-center section-margin tab-top">
+          <div class="news-events-nav">
+            <span class="active"><a href="{{ path('entity.node.canonical', {'node': 47}) }}">{{ 'News'|t }}</a></span>
+            <span><a href="{{ path('entity.node.canonical', {'node': 78}) }}">{{ 'Events'|t }}</a></span>
+          </div>
+
+          <ul>
+            <li><a href="#popular-news">{{ 'Popular'|t }}</a></li>
+            <li><a href="#recent-news">{{ 'Recent'|t }}</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
 
     <div id="popular-news">
-      <h2>{{ 'Popular News'|t }}</h2>
+      <div class="row">
+        <div class="small-12 column">
+          <div class="top-block">
+            <h2>{{ 'Popular News'|t }}</h2>
 
-      {% if content.field_popular_news_layout.0|render == '1b_3s' %}
-        {{ drupal_view('news', 'latest_1big_3_medium_block') }}
-      {% elseif content.field_popular_news_layout.0|render == '3s_3s' %}
-        {{ drupal_view('news', 'latest_3_3_medium_block') }}
-      {% endif %}
+            {% if content.field_popular_news_layout.0|render == '1b_3s' %}
+              {{ drupal_view('news', 'latest_1big_3_medium_block') }}
+            {% elseif content.field_popular_news_layout.0|render == '3s_3s' %}
+              {{ drupal_view('news', 'latest_3_3_medium_block') }}
+            {% endif %}
+          </div>
 
-      {{ drupal_view('news', 'popular_list_block') }}
+          <div class="bottom-block">
+            {{ drupal_view('news', 'popular_list_block') }}
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="recent-news">
-      <h2>{{ 'Latest News'|t }}</h2>
+      <div class="row">
+        <div class="small-12 column">
+          <div class="top-block">
+            <h2>{{ 'Latest News'|t }}</h2>
 
-      {% if content.field_latest_news_layout.0|render == '1b_3s' %}
-        {{ drupal_view('news', 'latest_1big_3_medium_block') }}
-      {% elseif content.field_latest_news_layout.0|render == '3s_3s' %}
-        {{ drupal_view('news', 'latest_3_3_medium_block') }}
-      {% endif %}
+            {% if content.field_latest_news_layout.0|render == '1b_3s' %}
+              {{ drupal_view('news', 'latest_1big_3_medium_block') }}
+            {% elseif content.field_latest_news_layout.0|render == '3s_3s' %}
+              {{ drupal_view('news', 'latest_3_3_medium_block') }}
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
 
       {{ content.field_newsletter_block }}
 
-      {{ drupal_view('news', 'latest_list_block') }}
+      <div class="bottom-block">
+        <div class="row">
+          <div class="small-12 column">
+            {{ drupal_view('news', 'latest_list_block') }}
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
-  
 </div>

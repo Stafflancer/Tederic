@@ -1,8 +1,26 @@
 {% set specialLabel = content.field_special_label.0 ? 'special-label' : '' %}
 
 <article{{ attributes.addClass(specialLabel) }}>
-  <div>{{ 'Industry news'|t }}</div>
-  {{ label }}
-  {{ content }}
-  <a href="{{ url }}">{{ 'Read more'|t }}</a>
+  <div class="row">
+    <div class="medium-4 column">
+      {{ content.field_image_crop }}
+      {{ content.field_special_label }}
+    </div>
+    <div class="medium-8 column">
+      <div class="new-wrapper">
+        <div class="new-label">{{ 'Industry news'|t }}</div>
+
+        <div class="title">{{ label }}</div>
+
+        {{ content.body }}
+
+        <div class="new-bottom d-flex justify-space-between align-items-center">
+          {{ content.field_date }}
+          <div class="link">
+            <a href="{{ url }}">{{ 'Read more'|t }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </article>

@@ -9,18 +9,35 @@
 {{ attach_library('tederic_common/events') }}
 
 <div{{ attributes.addClass(classes) }}>
-  
-  <ul class="news-events-nav">
-    <li><a href="{{ path('entity.node.canonical', {'node': 47}) }}">{{ 'News'|t }}</a></li>
-    <li class="active"><a href="{{ path('entity.node.canonical', {'node': 78}) }}">{{ 'Events'|t }}</a></li>
-  </ul>
+  <div class="tederic-tabs">
 
-  <h2>{{ 'Upcoming events'|t }}</h2>
+    <div class="row">
+      <div class="small-12 column">
+        <div class="d-flex justify-space-between align-items-center section-margin tab-top">
+          <div class="news-events-nav">
+            <span><a href="{{ path('entity.node.canonical', {'node': 47}) }}">{{ 'News'|t }}</a></span>
+            <span class="active"><a href="{{ path('entity.node.canonical', {'node': 78}) }}">{{ 'Events'|t }}</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  {{ drupal_view('events', 'upcoming_events_block') }}
+    <div class="row">
+      <div class="small-12 column">
+        <div class="tab-event">
 
-  <a class="prev-events-link">{{ 'View previous events'|t }}</a>
-  <div class="prev-events-wrap hidden">
-    {{ drupal_view('events', 'events_list_block') }}
+          <h2>{{ 'Upcoming events'|t }}</h2>
+
+          {{ drupal_view('events', 'upcoming_events_block') }}
+
+          <a class="prev-events-link">{{ 'View previous events'|t }}</a>
+          <div class="prev-events-wrap hidden">
+            {{ drupal_view('events', 'events_list_block') }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
