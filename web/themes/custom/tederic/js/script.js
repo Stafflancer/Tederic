@@ -1,5 +1,12 @@
 (function($, Drupal) {
   $(document).ready(function() {
+
+    if ($('.big-card').length > 0) {
+      $('.big-card').each(function() {
+        $(this).parent().addClass('big-card-li');
+      });
+    }
+
     // Close dialog by overlay click.
     $(document).ajaxComplete(function() {
       $('.ui-widget-overlay').click(function() {
@@ -204,9 +211,7 @@
         $(this).toggleClass('active');
         $('#block-tederic-main-menu').slideToggle();
       });
-      console.log('true');
       $('#block-tederic-main-menu .dropdown').unbind('click').bind('click', function() {
-        console.log('click');
         $(this).next('ul').slideToggle();
         $(this).toggleClass('active');
       });
