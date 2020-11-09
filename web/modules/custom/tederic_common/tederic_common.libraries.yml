@@ -1,0 +1,9 @@
+events:
+  version: 1.0
+  js:
+    js/events.js: {}
+
+news:
+  version: 1.0
+  js:
+    js/news.js: {}
