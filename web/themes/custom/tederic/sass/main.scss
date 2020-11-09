@@ -5864,6 +5864,7 @@ textarea[rows] {
             display: block;
             border-radius: 8px;
             height: 100%;
+            position: relative;
 
             &:hover {
               box-shadow: 0 2px 7px 0 rgba(88,98,103,0.4);
