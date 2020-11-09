@@ -12,7 +12,7 @@ gulp.task('sass', function() {
 gulp.task('autoprefix', () =>
   gulp.src('css/main.css')
     .pipe(autoprefixer({
-      browsers: ['last 99 versions'],
+      browsers: ['last 2 versions', 'iOS 8'],
       cascade: false
   }))
   .pipe(gulp.dest('css'))

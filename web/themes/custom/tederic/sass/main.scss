@@ -5955,6 +5955,20 @@ textarea[rows] {
     margin-top: 100px;
     text-align: center;
   }
+
+  .prev-events-wrap {
+    .item-list {
+      > ul {
+        > li {
+          img {
+            &:first-child {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #block-contactfloatingbuttonontheright {
