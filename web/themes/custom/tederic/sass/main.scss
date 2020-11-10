@@ -2641,6 +2641,7 @@ textarea[rows] {
     margin-right: 20px;
     @media screen and (max-width: 767px) {
       margin-right: 7px;
+      flex: 0 0 32px;
     }
   }
 
