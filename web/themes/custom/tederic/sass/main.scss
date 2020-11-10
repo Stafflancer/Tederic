@@ -395,6 +395,9 @@ textarea[rows] {
 }
 .field-image-crop {
   text-align: right;
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+  }
 }
 .slick-pagination {
   margin-top: 20px;
@@ -2508,6 +2511,10 @@ textarea[rows] {
         line-height: 32px;
         display: flex;
         align-items: center;
+        @media screen and (max-width: 767px) {
+          font-size: 20px;
+          line-height: 24px;
+        }
       }
 
       li + li {
@@ -2517,6 +2524,9 @@ textarea[rows] {
           height: 16px;
           width: 9px;
           margin: 0 15px;
+          @media screen and (max-width: 767px) {
+            margin: 0px 8px;
+          }
         }
       }
     }
@@ -2525,6 +2535,9 @@ textarea[rows] {
 .intro-section {
   #block-tederic-breadcrumbs {
     margin: 0 0 20px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
     .custom-column {
       padding: 0;
     }
@@ -2547,6 +2560,9 @@ textarea[rows] {
   > .row {
     padding: 110px 0 150px;
     position: relative;
+    @media screen and (max-width: 767px) {
+      padding: 80px 0 55px;
+    }
   }
 
   .line {
@@ -2560,18 +2576,34 @@ textarea[rows] {
     transform: rotate(-45deg);
     top: 190px;
     right: -45px;
+    @media screen and (max-width: 767px) {
+      width: 90px;
+      top: 75px;
+      right: -15px;
+    }
   }
   .line-2 {
     width: 180px;
     transform: rotate(45deg);
     top: 40px;
     left: 365px;
+    @media screen and (max-width: 767px) {
+      width: 50px;
+      top: 30px;
+      left: 80px;
+    }
   }
   .line-3 {
     width: 500px;
     transform: rotate(-45deg);
     top: 560px;
     left: -300px;
+    @media screen and (max-width: 767px) {
+      width: 43px;
+      top: 320px;
+      left: -15px;
+      transform: rotate(-55deg);
+    }
   }
 
   .field-text,
@@ -2581,6 +2613,15 @@ textarea[rows] {
     letter-spacing: -0.44px;
     line-height: 56px;
     max-width: 1300px;
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+      letter-spacing: -0.28px;
+      line-height: 34px;
+
+      strong {
+        font-weight: 300;
+      }
+    }
   }
   .field-text {
     padding-top: 30px;
@@ -2598,11 +2639,17 @@ textarea[rows] {
 .section-media-icon {
   .field-media-icon {
     margin-right: 20px;
+    @media screen and (max-width: 767px) {
+      margin-right: 7px;
+    }
   }
 
   .field-media-image {
     img {
       width: 64px;
+      @media screen and (max-width: 767px) {
+        width: 32px;
+      }
     }
   }
 
@@ -2613,6 +2660,16 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 32px;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .field-image-crop {
+    @media screen and (max-width: 1023px) {
+      margin: 0 -20px;
+    }
   }
 }
 .solution-parts {
@@ -2627,6 +2684,15 @@ textarea[rows] {
       font-weight: 300;
       letter-spacing: 0;
       line-height: 46px;
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    .field-title {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -2638,6 +2704,16 @@ textarea[rows] {
     .solution-part {
       padding: 40px 10px 0;
       flex: 0 0 33.333%;
+      max-width: 33.333%;
+      @media screen and (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 0;
+
+        &:not(:last-child) {
+          padding-bottom: 80px;
+        }
+      }
     }
   }
 
@@ -2677,19 +2753,33 @@ textarea[rows] {
       letter-spacing: 0;
       line-height: 29px;
       color: #586267;
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
 
     .link {
       position: absolute;
       right: 0;
       bottom: 30px;
+      @media screen and (max-width: 767px) {
+        right: auto;
+        left: 0;
+      }
     }
   }
 }
 .other-solutions-block {
   padding: 130px 0;
+  @media screen and (max-width: 767px) {
+    padding-top: 80px;
+  }
+
   .title {
-    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
   }
 
   .item-list {
@@ -2704,6 +2794,15 @@ textarea[rows] {
         max-width: 12.5%;
         flex: 0 0 12.5%;
         text-align: center;
+        @media screen and (max-width: 1023px) {
+          margin-bottom: 30px;
+          max-width: 20%;
+          flex: 0 0 20%;
+        }
+        @media screen and (max-width: 767px) {
+          max-width: 50%;
+          flex: 0 0 50%;
+        }
       }
     }
   }
@@ -2715,17 +2814,28 @@ textarea[rows] {
     letter-spacing: 0;
     line-height: 32px;
     text-align: center;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .field-media-image {
     text-align: center;
     min-height: 80px;
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      min-height: 64px;
+    }
 
     img {
       max-width: 80px;
       max-height: 80px;
       width: 100%;
+      @media screen and (max-width: 767px) {
+        max-width: 64px;
+        max-height: 64px;
+      }
     }
   }
 }
@@ -2734,6 +2844,9 @@ textarea[rows] {
 .solutions-part {
   .title {
     margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 35px;
+    }
   }
 
   .solutions-part-content {
@@ -2747,9 +2860,17 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 29px;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   .body {
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 30px;
+    }
+
     ul {
       margin: 0;
       padding: 0;
@@ -5985,6 +6106,9 @@ textarea[rows] {
   right: -57px;
   transform: rotate(-90deg);
   transition: .3s all ease;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   &:hover {
     right: -40px;
