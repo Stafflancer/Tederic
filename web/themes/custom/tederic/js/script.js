@@ -16,6 +16,9 @@
 
     // vars
     var window_width = $(window).width();
+    $(window).resize(function() {
+      window_width = $(window).width();
+    });
 
     // Mobile menu
     $('#block-tederic-main-menu > ul > li > ul').each(function() {
@@ -112,6 +115,14 @@
         appendArrows: $('.slick-pagination'),
         prevArrow: '<div class="main-arrow-prev" aria-hidden="true"></div>',
         nextArrow: '<div class="main-arrow-next" aria-hidden="true"></div>',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+        ]
       });
     }
     if ($('.technology-node .field-images').length > 0) {
@@ -128,26 +139,94 @@
       });
     }
 
-    // Slider for icons (Home page)
-    const settings = {
+    const settings_sl_icons = {
       arrows: true,
       infinite: false,
       slidesToShow: 3,
       slidesToScroll: 3,
       adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: 'unslick'
-        }
-      ]
     };
- 
-    const sl_icons =  $('.icons-section .field-icons-sliders').not('.slick-initialized').slick(settings);
 
+    const settings_products_selector = {
+      arrows: false,
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+    };
+
+    var sl_icons_selector =  $('.icons-section .field-icons-sliders');
+    var sl_products_selector =  $('.related-section .field-products');
+    var sl_technologies_selector =  $('.related-section .field-technologies');
+    var sl_products_solutions_selector =  $('.related-section .field-solutions');
+
+    // Function initialized slick
+    function initializedSlick(selector, settings) {
+      if ((selector.length > 0) && (!selector.hasClass('slick-initialized'))) {
+        selector.not('.slick-initialized').slick(settings);
+      }
+    }
+
+    // Function unslick slick
+    function unslick(selector) {
+      if ((selector.length > 0) && (selector.hasClass('slick-initialized'))) {
+        selector.slick('unslick');
+      }
+    }
+
+    // Slick
+    if (window_width <= 767) {
+      // Slider destroy for icons (Home page)
+      unslick(sl_icons_selector);
+
+      // Solutions products
+      initializedSlick(sl_products_selector, settings_products_selector);
+
+      // Solutions technologies
+      initializedSlick(sl_technologies_selector, settings_products_selector);
+
+      // Products Solutions
+      initializedSlick(sl_products_solutions_selector, settings_products_selector);
+    } else {
+      // Slider for icons (Home page)
+      initializedSlick(sl_icons_selector, settings_sl_icons);
+
+      // Solutions products
+      unslick(sl_products_selector);
+
+      // Solutions technologies
+      unslick(sl_technologies_selector);
+
+      // Products Solutions
+      unslick(sl_products_solutions_selector);
+    }
+
+    // Slider for mobile
     $(window).on('resize', function() {
-      if (window_width <= 767 && !sl_icons.hasClass('slick-initialized')) {
-        $('.icons-section .field-icons-sliders').not('.slick-initialized').slick(settings);
+      if (window_width <= 767) {
+        // Slider for icons (Home page)
+        unslick(sl_icons_selector);
+
+        // Solutions products
+        initializedSlick(sl_products_selector, settings_products_selector);
+
+        // Solutions technologies
+        initializedSlick(sl_technologies_selector, settings_products_selector);
+
+        // Products Solutions
+        initializedSlick(sl_products_solutions_selector, settings_products_selector);
+      } else {
+        // Slider destroy for icons (Home page)
+        initializedSlick(sl_icons_selector, settings_sl_icons);
+
+        // Solutions products
+        unslick(sl_products_selector);
+
+        // Solutions technologies
+        unslick(sl_technologies_selector);
+
+        // Products Solutions
+        unslick(sl_products_solutions_selector);
       }
     });
 

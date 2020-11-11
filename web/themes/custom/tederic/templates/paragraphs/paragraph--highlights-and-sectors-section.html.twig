@@ -8,12 +8,14 @@
 
 <div{{ attributes.addClass(classes) }}>
   <div class="row">
-    <div class="large-7 column">
+    <div class="small-12 medium-6 large-7 column">
         <div class="sup-title title-left">{{ content.field_title }}</div>
         {{ content.field_text }}
     </div>
-    <div class="large-5 column">
-        <div class="sup-title">{{ content.field_title_2 }}</div>
+    <div class="small-12 medium-6 large-5 column">
+        <div class="hide-mobile">
+          <div class="sup-title">{{ content.field_title_2 }}</div>
+        </div>
         {{ content.field_icons }}
     </div>
   </div>
