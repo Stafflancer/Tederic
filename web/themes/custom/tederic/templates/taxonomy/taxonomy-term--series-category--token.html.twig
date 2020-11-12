@@ -3,12 +3,14 @@
     {{ content.field_image.0 }}
   </div>
 
-  <div class="product-title {{ ("pc-" ~ pc)|clean_class }}">
-    {% set term_name = name.0["#context"]["value"] %}
-    {{ term_name }}
-  </div>
+  <div class="product-content">
+    <div class="product-title {{ ("pc-" ~ pc)|clean_class }}">
+      {% set term_name = name.0["#context"]["value"] %}
+      {{ term_name }}
+    </div>
 
-  <div class="product-sub-title">
-    {{ content.description }}
+    <div class="product-sub-title">
+      {{ content.description }}
+    </div>
   </div>
 </div>
