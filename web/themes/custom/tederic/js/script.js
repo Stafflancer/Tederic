@@ -1,6 +1,11 @@
 (function($, Drupal) {
   $(document).ready(function() {
 
+    $('.field-machine-parts .machine-part > .field-title').click(function() {
+      $(this).toggleClass('active');
+      $(this).next().slideToggle();
+    });
+
     if ($('.big-card').length > 0) {
       $('.big-card').each(function() {
         $(this).parent().addClass('big-card-li');
