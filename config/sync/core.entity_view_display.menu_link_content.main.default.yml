@@ -1,0 +1,39 @@
+uuid: 980d04cf-b72f-45bc-8490-8ed138bd86bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.main.field_product_link_item
+    - field.field.menu_link_content.main.field_solution
+    - system.menu.main
+id: menu_link_content.main.default
+targetEntityType: menu_link_content
+bundle: main
+mode: default
+content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_product_link_item:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_solution:
+    weight: 0
+    label: above
+    settings:
+      view_mode: icon
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 5465ddcd-5583-472b-93a3-b7d7a23dc0a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_product_link_item
+    - system.menu.main
+id: menu_link_content.main.field_product_link_item
+field_name: field_product_link_item
+entity_type: menu_link_content
+bundle: main
+label: 'Product link item'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

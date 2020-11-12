@@ -1,20 +1,27 @@
-uuid: 28698632-f327-470c-b0fe-ef060f51f024
+uuid: c650ea5f-3c7d-4764-accd-b38465c4ec2d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image_crop
-    - paragraphs.paragraphs_type.product_animation_section
+    - field.storage.taxonomy_term.field_image
+    - taxonomy.vocabulary.series_category
   module:
+    - content_translation
     - image
-id: paragraph.product_animation_section.field_image_crop
-field_name: field_image_crop
-entity_type: paragraph
-bundle: product_animation_section
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: taxonomy_term.series_category.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: series_category
 label: Image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

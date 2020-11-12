@@ -1,0 +1,22 @@
+uuid: 74dc6bc6-f41c-47b3-9668-5de41423cae6
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.machine_part_item
+id: paragraph.machine_part_item.status
+field_name: status
+entity_type: paragraph
+bundle: machine_part_item
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

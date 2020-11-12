@@ -1,0 +1,76 @@
+uuid: 6b796d7a-1302-4846-ae5c-fb4bfc81dbb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.series_category.field_background_color
+    - field.field.taxonomy_term.series_category.field_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.series_category
+  module:
+    - color_field
+    - path
+    - svg_image
+    - text
+id: taxonomy_term.series_category.default
+targetEntityType: taxonomy_term
+bundle: series_category
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_background_color:
+    weight: 3
+    settings:
+      default_colors: '#ffffff,#0f283d,#caced0,#f1f1f3'
+    third_party_settings: {  }
+    type: color_field_widget_box
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

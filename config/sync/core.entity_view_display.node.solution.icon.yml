@@ -1,0 +1,35 @@
+uuid: ded606ef-7756-43bd-b2b4-01127e81455e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.icon
+    - field.field.node.solution.body
+    - field.field.node.solution.field_image_crop
+    - field.field.node.solution.field_intro
+    - field.field.node.solution.field_media_icon
+    - field.field.node.solution.field_solution_parts
+    - node.type.solution
+  module:
+    - user
+id: node.solution.icon
+targetEntityType: node
+bundle: solution
+mode: icon
+content:
+  field_media_icon:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_image_crop: true
+  field_intro: true
+  field_solution_parts: true
+  langcode: true
+  links: true

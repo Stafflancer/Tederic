@@ -1,0 +1,28 @@
+uuid: 8eaf33e9-2abe-427d-950a-65f0d53773fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_solution
+    - node.type.solution
+    - system.menu.main
+id: menu_link_content.main.field_solution
+field_name: field_solution
+entity_type: menu_link_content
+bundle: main
+label: Solution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      solution: solution
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
