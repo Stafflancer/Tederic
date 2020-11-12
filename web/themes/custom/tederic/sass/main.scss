@@ -1054,6 +1054,9 @@ textarea[rows] {
             flex-flow: column;
             align-items: flex-start;
             top: 40px;
+            @media screen and (min-width: 768px) {
+              display: block;
+            }
 
             &:after {
               @media screen and (min-width: 768px) {
