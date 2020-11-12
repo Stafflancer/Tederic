@@ -1,6 +1,8 @@
 <?php
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_form_alter().
@@ -25,6 +27,52 @@ function tederic_common_form_alter(&$form, FormStateInterface $form_state, $form
         $form['#attached']['library'][] = 'tederic/exposed-form';
         // Change All option label.
         $form['series_sub_category']['#options']['All'] = t('All');
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_links().
+ */
+function tederic_common_node_update(EntityInterface $entity) {
+  // We need remove Big Card checkbox for other news/events 
+  // nodes if new node is Big Card.
+  _tederic_common_big_card_checking($entity);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function tederic_common_node_insert(EntityInterface $entity) {
+  // We need remove Big Card checkbox for other news/events 
+  // nodes if new node is Big Card.
+  _tederic_common_big_card_checking($entity);
+}
+
+/**
+ * Implements hook_preprocess_region().
+ */
+function _tederic_common_big_card_checking($entity) {
+  $type = $entity->getType();
+  $needed_types = [
+    'news',
+    'events',
+  ];
+  if (in_array($type, $needed_types)) {
+    $big_card = $entity->get('field_big_card')->getValue()[0]['value'];
+    if ($big_card) {
+      $database = \Drupal::database();
+      $query = $database->query("SELECT entity_id FROM {node__field_big_card} WHERE bundle = :type AND entity_id <> :nid AND field_big_card_value = 1", [
+        ':type' => $type,
+        ':nid' => $entity->id(),
+      ]);
+      $results = $query->fetchAll();
+
+      foreach ($results as $result) {
+        $node = Node::load($result->entity_id);
+        $node->set('field_big_card', 0);
+        $node->save();
       }
     }
   }

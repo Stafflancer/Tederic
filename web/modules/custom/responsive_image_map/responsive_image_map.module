@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains responsive_image_map.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function responsive_image_map_theme() {
+  return [
+    'responsive_image_map' => [
+      'variables' => [
+        'src' => NULL,
+        'width' => NULL,
+        'height' => NULL
+      ]
+    ],
+    'easy_mapper_generator' => [
+      'variables' => [
+        'url' => NULL,
+      ]
+    ]
+  ];
+}
