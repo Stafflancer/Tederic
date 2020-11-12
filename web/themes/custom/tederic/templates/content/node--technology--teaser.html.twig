@@ -1,11 +1,13 @@
 <article{{ attributes }}>
   <div class="row">
 
-    <div class="medium-6">
-      {{ content.field_images.0 }}
+    <div class="small-12 medium-6">
+      {% if content.field_images.0 %}
+        <div class="img">{{ content.field_images.0 }}</div>
+      {% endif %}
     </div>
 
-    <div class="medium-6">
+    <div class="small-12 medium-6">
       <div class="technologie-content">
         <h2 class="title">{{ label }}</h2>
         {{ content|without('field_images') }}

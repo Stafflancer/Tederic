@@ -153,12 +153,14 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: true,
+      centerMode: true,
     };
 
     var sl_icons_selector =  $('.icons-section .field-icons-sliders');
     var sl_products_selector =  $('.related-section .field-products');
     var sl_technologies_selector =  $('.related-section .field-technologies');
     var sl_products_solutions_selector =  $('.related-section .field-solutions');
+    var sl_products_regular_page =  $('.products-section-regular-page .field-products-cards');
 
     // Function initialized slick
     function initializedSlick(selector, settings) {
@@ -174,8 +176,13 @@
       }
     }
 
-    // Slick
+    // Responsive
     if (window_width <= 767) {
+      $('.locations-section .location-part:not(:first-child) .field-text').unbind('click').bind('click', function() {
+        $(this).toggleClass('active');
+        $(this).next().slideToggle();
+      });
+
       // Slider destroy for icons (Home page)
       unslick(sl_icons_selector);
 
@@ -187,6 +194,9 @@
 
       // Products Solutions
       initializedSlick(sl_products_solutions_selector, settings_products_selector);
+
+      // Products regular page
+      initializedSlick(sl_products_regular_page, settings_products_selector);
     } else {
       // Slider for icons (Home page)
       initializedSlick(sl_icons_selector, settings_sl_icons);
@@ -199,6 +209,9 @@
 
       // Products Solutions
       unslick(sl_products_solutions_selector);
+
+      // Products regular page
+      unslick(sl_products_regular_page);
     }
 
     // Slider for mobile
@@ -215,6 +228,9 @@
 
         // Products Solutions
         initializedSlick(sl_products_solutions_selector, settings_products_selector);
+
+        // Products regular page
+        initializedSlick(sl_products_regular_page, settings_products_selector);
       } else {
         // Slider destroy for icons (Home page)
         initializedSlick(sl_icons_selector, settings_sl_icons);
@@ -227,6 +243,9 @@
 
         // Products Solutions
         unslick(sl_products_solutions_selector);
+
+        // Products regular page
+        unslick(sl_products_regular_page);
       }
     });
 
@@ -240,6 +259,16 @@
       // adaptiveHeight: true,
       vertical: true,
       // verticalSwiping: true,
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            centerMode: false,
+            vertical: false,
+            adaptiveHeight: true,
+          }
+        },
+      ]
     });
     if ($('.vertical-carousel-text-section .field-images').length > 0) {
       var maxHeight = -1;

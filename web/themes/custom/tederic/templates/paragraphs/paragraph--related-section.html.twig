@@ -10,21 +10,21 @@
     <div class="small-12 column">
 
       {% if content.field_products.0 %}
-        <div class="section-margin">
+        <div class="section-margin recommended-products">
           <h3 class="sup-title">{{ 'Recommended products for lenses'|t }}</h3>
           {{ content.field_products }}
         </div>
-      {% endif %}      
+      {% endif %}
 
       {% if content.field_technologies.0 %}
-        <div class="section-margin">
+        <div class="section-margin related-technologies">
           <h3 class="sup-title">{{ 'Related technologies'|t }}</h3>
           {{ content.field_technologies }}
         </div>
       {% endif %}
 
       {% if content.field_solutions.0 %}
-        <div class="section-margin">
+        <div class="section-margin related-applications-solutions">
           <h3 class="sup-title">{{ 'Related Applications & solutions'|t }}</h3>
           {{ content.field_solutions }}
         </div>

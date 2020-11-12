@@ -2980,14 +2980,22 @@ textarea[rows] {
 /* Regular Page */
 .text-section {
   margin: 80px 0;
+  @media screen and (max-width: 767px) {
+    margin: 40px 0;
+  }
 
   .title {
     text-align: center;
     margin-bottom: 25px;
     text-align: center;
+    @media screen and (max-width: 767px) {
+      text-align: left;
+      margin-bottom: 20px;
+    }
   }
 
-  .field-text {
+  .field-text,
+  .field-text p {
     color: $gray_text;
     font-size: 24px;
     font-weight: 300;
@@ -2995,17 +3003,37 @@ textarea[rows] {
     line-height: 32px;
     max-width: 935px;
     margin: 0 auto;
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 29px;
+    }
   }
 }
 
 .locations-section {
+  @media screen and (max-width: 767px) {
+    .section-margin {
+      padding: 40px 0 90px;
+    }
+  }
+
   .field-columns {
     display: flex;
+    flex-wrap: wrap;
     margin: -40px -15px 0;
+    @media screen and (max-width: 767px) {
+      margin: -20px 0 0;
+    }
 
     .location-column {
       flex: 0 0 33.333%;
+      max-width: 33.333%;
       padding: 40px 15px 0;
+      @media screen and (max-width: 767px) {
+        padding: 20px 0 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
     }
   }
 
@@ -3129,6 +3157,50 @@ textarea[rows] {
     &:not(:last-child) {
       border-bottom: 1px solid $gray_text;
       margin-bottom: 40px;
+      @media screen and (max-width: 767px) {
+        padding-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      &:not(:first-child) {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        .field-text {
+          margin: 0 -20px 30px;
+          background-color: #F5F5F5;
+          padding: 28px 60px 28px 30px;
+          position: relative;
+          cursor: pointer;
+
+          &:after {
+            content: '';
+            background: url('../images/arrow-right.svg') no-repeat center/11px;
+            height: 20px;
+            width: 11px;
+            position: absolute;
+            top: 50%;
+            right: 35px;
+            margin-top: -10px;
+            transition: .3s all ease;
+          }
+
+          &.active {
+            &:after {
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        .field-columns {
+          display: none;
+          border-bottom: 1px solid $gray_text;
+          margin-bottom: 40px;
+          padding-bottom: 40px;
+        }
+      }
     }
 
     .field-text,
@@ -3146,8 +3218,22 @@ textarea[rows] {
 }
 
 .text-l-image-r-section {
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
+
+  .medium-6 {
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+
   .title {
     margin-bottom: 60px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   .field-text,
@@ -3157,6 +3243,16 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 34px;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .field-image-crop {
+    @media screen and (max-width: 767px) {
+      margin: 40px -20px 0;
+    }
   }
 }
 
@@ -3172,12 +3268,21 @@ textarea[rows] {
   .field-icons {
     text-align: center;
     display: flex;
-    margin: 0 -47px;
+    margin: -50px -47px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      margin: -40px 0 0;
+    }
 
     .icon {
       flex: 0 0 33.333%;
-      max-width: 33.333%;
-      padding: 0 47px;
+      padding: 50px 47px 0;
+      @media screen and (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 50px 0 0;
+      }
     }
 
     img {
@@ -3207,10 +3312,24 @@ textarea[rows] {
   .paragraph-wrapper {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     > div {
       flex: 0 0 50%;
       max-width: 50%;
+      @media screen and (max-width: 1023px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .field-images {
+      @media screen and (max-width: 1023px) {
+        margin-bottom: 40px;
+        img {
+          margin: 0 !important;
+        }
+      }
     }
   }
 
@@ -3221,6 +3340,9 @@ textarea[rows] {
     letter-spacing: 0;
     line-height: 29px;
     color: $gray_text;
+    @media screen and (max-width: 1023px) {
+      padding-left: 0;
+    }
 
     h3 {
       color: $dark_blue;
@@ -3229,6 +3351,10 @@ textarea[rows] {
       font-weight: 300;
       letter-spacing: 0;
       line-height: 46px;
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
 
     * + h3 {
@@ -3251,15 +3377,27 @@ textarea[rows] {
   padding: 80px 0;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
 
   .field-text,
   .field-text p {
-    width: 1125px;
     font-size: 36px;
     font-weight: 300;
     letter-spacing: 0;
     line-height: 46px;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  .field-text {
+    max-width: 1165px;
     margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
   }
 
   &:before {
@@ -3271,6 +3409,12 @@ textarea[rows] {
     transform: rotate(45deg);
     top: 50%;
     left: -60px;
+    @media screen and (max-width: 767px) {
+      width: 30px;
+      left: -7px;
+      top: 30px;
+      height: 2px;
+    }
   }
   &:after {
     content: '';
@@ -3281,6 +3425,13 @@ textarea[rows] {
     transform: rotate(-45deg);
     top: 65px;
     right: -35px;
+    @media screen and (max-width: 767px) {
+      right: -12px;
+      width: 70px;
+      height: 2px;
+      top: auto;
+      bottom: 65px;
+    }
   }
 }
 
@@ -3288,7 +3439,7 @@ textarea[rows] {
   padding: 130px 0;
 
   .custom-row {
-    width: 1125px;
+    max-width: 1125px;
     margin: 0 auto;
   }
 
@@ -3298,9 +3449,16 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 46px;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
   .field-title {
     margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
 
   .field-title-plain {
@@ -3310,11 +3468,21 @@ textarea[rows] {
     letter-spacing: 0;
     margin-bottom: 38px;
     padding: 30px 30px 0 30px;
+    @media screen and (max-width: 767px) {
+      padding: 20px 20px 0 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
-  .field-text-2 {
-    margin-right: 30px;
+  .field-text-2,
+  .field-text-3 {
     padding-left: 30px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+    }
   }
 
   .field-text,
@@ -3324,10 +3492,16 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 29px;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   .field-text {
-    margin-top: 15px;
     padding: 0 30px 30px;
+    @media screen and (max-width: 767px) {
+      padding: 0 20px 20px;
+    }
   }
 
   .field-text-2,
@@ -3360,6 +3534,9 @@ textarea[rows] {
 
     img {
       border-radius: 8px 8px 0 0;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
     }
   }
 
@@ -3380,12 +3557,18 @@ textarea[rows] {
   }
 
   .field-cards {
-    margin-top: -15px;
+    @media screen and (min-width: 768px) {
+      margin-top: -15px;
+    }
+
     .field-cards-section-row-cards {
       margin: 0 -8px;
 
       .cards-section-row-cards {
         padding: 15px 8px 0;
+        @media screen and (max-width: 767px) {
+          padding-top: 20px;
+        }
       }
     }
   }
@@ -3408,8 +3591,11 @@ textarea[rows] {
         clear: both;
       }
 
-      .field-text-2 {
-        padding-left: 0;
+      .field-text-2,
+      .field-text-3 {
+        @media screen and (min-width: 768px) {
+          padding-left: 0;
+        }
       }
     }
 
@@ -3418,9 +3604,19 @@ textarea[rows] {
       padding-right: 7.5px;
       margin-right: 22.5px;
       width: 50%;
+      @media screen and (max-width: 767px) {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+      }
 
       img {
         border-radius: 8px 0 0 8px;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          border-radius: 8px 8px 0 0;
+        }
       }
     }
   }
@@ -3428,11 +3624,16 @@ textarea[rows] {
   .layout-2-small {
     .field-cards-section-row-cards {
       display: flex;
+      flex-wrap: wrap;
 
        .cards-section-row-cards {
          max-width: 50%;
          flex: 0 0 50%;
-       }
+        @media screen and (max-width: 767px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
     }
   }
 }
@@ -3442,6 +3643,12 @@ textarea[rows] {
   padding: 35px 20px 80px;
   margin-bottom: 80px !important;
   position: relative;
+  @media screen and (max-width: 767px) {
+    padding: 40px 20px;
+    margin-top: 60px;
+    margin-bottom: 130px !important;
+  }
+
   &:before {
     content: '';
     height: 2px;
@@ -3452,6 +3659,11 @@ textarea[rows] {
     top: -15px;
     left: -35px;
     z-index: 1;
+    @media screen and (max-width: 767px) {
+      width: 75px;
+      left: -12px;
+      top: 0;
+    }
   }
   &:after {
     content: '';
@@ -3463,10 +3675,15 @@ textarea[rows] {
     bottom: 115px;
     right: -25px;
     z-index: 1;
+    @media screen and (max-width: 767px) {
+      width: 35px;
+      right: -6px;
+      bottom: 40%;
+    }
   }
 
   .field-text {
-    width: 1105px;
+    max-width: 1105px;
     margin: 0 auto;
 
     &:before {
@@ -3485,13 +3702,17 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 46px;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 }
 
 .icon-cards-section {
   max-width: 1191px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 80px 20px;
 
    > .field-title-plain {
     font-size: 36px;
@@ -3500,6 +3721,12 @@ textarea[rows] {
     line-height: 46px;
     margin-bottom: 30px;
     padding-left: 40px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+      padding-left: 20px;
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   .field-cards {
@@ -3511,6 +3738,10 @@ textarea[rows] {
       max-width: 33.333%;
       flex: 0 0 33.333%;
       padding: 20px 10px 0;
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
 
       .icon-item {
         border-radius: 8px;
@@ -3522,6 +3753,9 @@ textarea[rows] {
         justify-content: center;
         padding: 30px 30px 60px;
         text-align: center;
+        @media screen and (max-width: 767px) {
+          padding: 30px 8px 50px;
+        }
       }
 
       .field-title-plain {
@@ -3553,11 +3787,16 @@ textarea[rows] {
 }
 
 .mission-section {
-  margin-bottom: 130px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 130px;
+  }
 
   .bg-dark-blue {
     background-color: $dark_blue;
     position: relative;
+    @media screen and (max-width: 767px) {
+      padding: 60px 0;
+    }
 
     &:before {
       content: '';
@@ -3569,6 +3808,12 @@ textarea[rows] {
       top: 100px;
       left: -35px;
       z-index: 1;
+      @media screen and (max-width: 767px) {
+        height: 2px;
+        width: 30px;
+        left: -5px;
+        top: 51px;
+      }
     }
     &:after {
       content: '';
@@ -3580,20 +3825,38 @@ textarea[rows] {
       bottom: 130px;
       right: -35px;
       z-index: 1;
+      @media screen and (max-width: 767px) {
+        transform: rotate(-45deg);
+        height: 2px;
+        width: 70px;
+        right: -11px;
+        bottom: 55px;
+      }
     }
   }
 
   .bg-gray {
     background-color: rgba(202,206,208,0.3);
+    @media screen and (max-width: 1023px) {
+      padding-bottom: 130px;
+    }
   }
 
   .field-text-2,
   .field-text {
-    max-width: 1102px;
+    max-width: 1142px;
+    padding: 0 20px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 
     p {
-      margin-bottom: 11px;
+      &:not(:last-child) {
+        margin-bottom: 11px;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 25px;
+        }
+      }
     }
   }
 
@@ -3604,6 +3867,16 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 46px;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+
+      &.text-align-center {
+        color: #F9F9F9;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
   }
 
   .field-image-crop {
@@ -3619,16 +3892,39 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 32px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 25px;
+      color: $dark_blue_text;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 24px;
+
+      &.text-align-center {
+        color: #586267;
+      }
+    }
   }
 }
 
 .image-l-text-r {
   margin-top: 130px;
   margin-bottom: 130px !important;
+  @media screen and (max-width: 1023px) {
+    margin-top: 0;
+  }
 
   .l-text {
-    padding-left: 90px;
-    max-width: 570px;
+    @media screen and (min-width: 1024px) {
+      padding-left: 90px;
+      max-width: 570px;
+    }
+  }
+
+  .title {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
   }
 
   .field-text,
@@ -3638,14 +3934,24 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 32px;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   .link {
     margin-top: 130px;
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
   }
 
   .field-image-crop {
     text-align: left;
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 40px;
+    }
   }
 }
 .history-block {
@@ -3658,6 +3964,11 @@ textarea[rows] {
     line-height: 46px;
     margin-bottom: 12px;
     padding-left: 90px;
+    @media screen and (max-width: 991px) {
+      padding-left: 20px;
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   .field-year {
@@ -3685,6 +3996,9 @@ textarea[rows] {
     padding: 0;
     overflow: visible;
     padding-left: 90px;
+    @media screen and (max-width: 991px) {
+      padding-left: 20px;
+    }
 
     .timeline__wrap {
       overflow: visible;
@@ -4299,6 +4613,7 @@ textarea[rows] {
         // padding-left: 20px;
         // padding-right: 20px;
         margin: 0;
+        padding-bottom: 7px;
       }
 
       > a {
@@ -4320,6 +4635,12 @@ textarea[rows] {
             padding-top: 15px;
           }
         }
+
+        @media screen and (max-width: 767px) {
+          img {
+            margin: 0 auto;
+          }
+        }
       }
     }
   }
@@ -4333,6 +4654,9 @@ textarea[rows] {
       padding: 30px 15px 0;
       flex: 0 0 33.333%;
       max-width: 33.333%;
+      @media screen and (max-width: 767px) {
+        padding-bottom: 7px;
+      }
 
       > a {
         display: block;
@@ -4805,13 +5129,24 @@ textarea[rows] {
         padding: 0 40px 80px;
         flex: 0 0 50%;
         max-width: 50%;
+        @media screen and (max-width: 1023px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding-bottom: 50px;
+        }
 
         article {
           border-radius: 8px;
           transition: .3s all ease;
+          @media screen and (max-width: 640px) {
+            border: 2px solid #D6D7DD;
+          }
 
-          img {
-            border-radius: 8px 0 0 8px;
+          .img {
+            text-align: center;
+            img {
+              border-radius: 8px 0 0 8px;
+            }
           }
 
           &:hover {
@@ -4826,9 +5161,17 @@ textarea[rows] {
   .technologie-content {
     padding: 30px 30px 75px;
     position: relative;
+    @media screen and (max-width: 640px) {
+      padding: 25px 25px 75px;
+    }
 
     .title {
       margin-bottom: 10px;
+      @media screen and (max-width: 640px) {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
 
     .body,
@@ -4842,9 +5185,15 @@ textarea[rows] {
 
     .body {
       margin-bottom: 10px;
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
     }
 
     .field-categories {
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
       .field__item {
         display: inline-block;
         color: $dark_blue_text;
@@ -4863,6 +5212,10 @@ textarea[rows] {
       position: absolute;
       left: 30px;
       bottom: 30px;
+      @media screen and (max-width: 640px) {
+        left: auto;
+        right: 25px;
+      }
 
       a {
         color: $dark_blue_text;
@@ -4908,14 +5261,22 @@ textarea[rows] {
 }
 
 .technology-node {
-  .technology-line {
-    width: 100%;
-    margin-top: 130px;
-    border-bottom: 2px solid #D6D7DD;
+  .medium-6 {
+    @media screen and (max-width: 767px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 
   .large-title {
     margin-bottom: 30px;
+  }
+  .large-title,
+  .large-title p {
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
   }
 
   .field-categories {
@@ -4933,12 +5294,17 @@ textarea[rows] {
     }
   }
 
-  .body {
+  .body,
+  .body p {
     color: $dark_blue_text;
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 0;
     line-height: 34px;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .download-document-wrapper {
@@ -4957,6 +5323,10 @@ textarea[rows] {
       justify-content: space-between;
       margin-top: 40px;
       max-width: 487px;
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        margin-bottom: 25px;
+      }
 
       &:hover {
         box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
@@ -4970,6 +5340,14 @@ textarea[rows] {
         font-size: 0px;
         color: transparent;
       }
+    }
+  }
+
+  .technology-line {
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      margin-top: 130px;
+      border-bottom: 2px solid #D6D7DD;
     }
   }
 }
@@ -5356,10 +5734,19 @@ textarea[rows] {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 46px;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
   .field-title {
-    text-align: center;
     margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 767px) {
+      padding-left: 25px;
+    }
   }
 
   .field-products-cards {
@@ -5368,17 +5755,38 @@ textarea[rows] {
     margin: -20px -10px 0;
     padding: 0 30px;
     justify-content: center;
+    @media screen and (max-width: 767px) {
+      padding: 0;
+      margin: 0 -20px;
+
+      .slick-list {
+        padding: 0 30px !important;
+      }
+    }
 
     .product-item {
       flex: 0 0 25%;
       max-width: 25%;
       padding: 20px 10px 0;
+      @media screen and (max-width: 1023px) {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0 15px;
+      }
 
       > a {
         display: block;
         border-radius: 6px;
         padding: 20px 20px 10px;
         height: 100%;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 7px;
+          padding: 15px;
+        }
 
         &:hover {
           box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
@@ -5397,12 +5805,21 @@ textarea[rows] {
       .product-img {
         text-align: center;
         margin-bottom: 30px;
+
+        img {
+          @media screen and (max-width: 767px) {
+            margin: 0 auto;
+          }
+        }
       }
 
       .product-title {
         font-size: 20px;
         font-weight: 700;
         line-height: 18px;
+        @media screen and (max-width: 767px) {
+          font-size: 22px;
+        }
 
         &.pc-neo {
           // color: $dark_blue;
@@ -5440,6 +5857,10 @@ textarea[rows] {
         font-weight: 300;
         letter-spacing: 0;
         line-height: 16.8px;
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+          line-height: 18px;
+        }
       }
     }
   }
@@ -6366,5 +6787,23 @@ textarea[rows] {
 
   .ajax-progress {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .related-technologies,
+  .related-applications-solutions,
+  .recommended-products {
+    margin: 0 -20px;
+    overflow: hidden;
+
+    .slick-list {
+      padding: 0 40px !important;
+      margin: 0;
+    }
+
+    > .sup-title {
+      padding-left: 40px;
+    }
   }
 }
