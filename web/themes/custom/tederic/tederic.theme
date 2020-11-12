@@ -6,6 +6,20 @@
  */
 
 /**
+ * Implements hook_preprocess_html().
+ */
+function tederic_preprocess_html(&$variables) {
+  $language_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+  $variables['language_id'] = $language_id;
+  if ($language_id == 'zh-hans') {
+    $variables['#attached']['library'][] = 'tederic/font-zh';
+  } else {
+    $variables['#attached']['library'][] = 'tederic/font-en';
+  }
+}
+
+/**
  * Implements theme_preprocess_breadcrumb().
  */
 function tederic_preprocess_breadcrumb(&$variables) {
@@ -37,20 +51,6 @@ function tederic_preprocess_views_view_field(&$variables) {
         ];
       }
     }
-  }
-}
-
-/**
- * Implements hook_preprocess_html().
- */
-function tederic_preprocess_html(&$variables) {
-  $language_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
-
-  $variables['language_id'] = $language_id;
-  if ($language_id == 'zh-hans') {
-    $variables['#attached']['library'][] = 'tederic/font-zh';
-  } else {
-    $variables['#attached']['library'][] = 'tederic/font-en';
   }
 }
 

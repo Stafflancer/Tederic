@@ -1,0 +1,5 @@
+{% set productLink = ("On" in items.0.content) ? true : false %}
+{% if productLink %}
+  {{ drupal_view('series_sub_categories', 'menu_left_block') }}
+  {{ drupal_view('series_sub_categories', 'menu_right_block') }}
+{% endif %}

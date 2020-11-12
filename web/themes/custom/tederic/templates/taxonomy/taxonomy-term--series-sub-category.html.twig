@@ -1,6 +1,5 @@
 <div class="product-item">
   <a href="{{ path('entity.node.canonical', {'node': 30}, {'query': {'series_sub_category': term.id}}) }}" style="background-color: {{ content.field_background_color.0|raw }};" >
-    {{ breakpoint() }}
     <div class="product-img">
       {{ content.field_image.0 }}
     </div>
@@ -24,4 +23,3 @@
     </div>
   </a>
 </div>
-
