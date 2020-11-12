@@ -1,0 +1,11 @@
+easy-mapper:
+  version: 1.0
+  js:
+    js/easy-mapper-1.2.0.js: {}
+  css:
+    base:
+      css/easy-mapper.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.ui

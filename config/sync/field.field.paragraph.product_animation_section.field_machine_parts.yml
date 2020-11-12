@@ -1,0 +1,214 @@
+uuid: d1db9cb7-bf1f-491d-a46f-bd9e7cfb8b6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_machine_parts
+    - paragraphs.paragraphs_type.machine_part
+    - paragraphs.paragraphs_type.product_animation_section
+  module:
+    - entity_reference_revisions
+id: paragraph.product_animation_section.field_machine_parts
+field_name: field_machine_parts
+entity_type: paragraph
+bundle: product_animation_section
+label: 'Machine parts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      machine_part: machine_part
+    target_bundles_drag_drop:
+      2_columns_section:
+        weight: 63
+        enabled: false
+      anchor:
+        weight: 64
+        enabled: false
+      blue_background_text_section:
+        weight: 65
+        enabled: false
+      breadcrumb:
+        weight: 66
+        enabled: false
+      cards_section:
+        weight: 67
+        enabled: false
+      cards_section_row:
+        weight: 68
+        enabled: false
+      cards_section_row_cards:
+        weight: 69
+        enabled: false
+      careers_section:
+        weight: 70
+        enabled: false
+      contact_information_section:
+        weight: 71
+        enabled: false
+      contact_section:
+        weight: 72
+        enabled: false
+      contact_us_section:
+        weight: 73
+        enabled: false
+      events_section:
+        weight: 74
+        enabled: false
+      events_with_filters:
+        weight: 75
+        enabled: false
+      form_section:
+        weight: 76
+        enabled: false
+      general_media:
+        weight: 77
+        enabled: false
+      highlights_and_sectors_section:
+        weight: 78
+        enabled: false
+      history_block:
+        weight: 79
+        enabled: false
+      history_year:
+        weight: 80
+        enabled: false
+      icon:
+        weight: 81
+        enabled: false
+      icon_cards_section:
+        weight: 85
+        enabled: false
+      icon_simple:
+        weight: 86
+        enabled: false
+      icons_inner_section:
+        weight: 82
+        enabled: false
+      icons_section:
+        weight: 83
+        enabled: false
+      icons_slider:
+        weight: 84
+        enabled: false
+      image_carousel_section:
+        weight: 87
+        enabled: false
+      image_l_text_r:
+        weight: 88
+        enabled: false
+      image_l_text_r_link:
+        weight: 89
+        enabled: false
+      image_section:
+        weight: 90
+        enabled: false
+      intro_section:
+        weight: 91
+        enabled: false
+      location:
+        weight: 92
+        enabled: false
+      location_column:
+        weight: 94
+        enabled: false
+      location_part:
+        weight: 95
+        enabled: false
+      locations_section:
+        weight: 93
+        enabled: false
+      machine_part:
+        enabled: true
+        weight: 96
+      mission_section:
+        weight: 97
+        enabled: false
+      news_section:
+        weight: 99
+        enabled: false
+      news_with_filters:
+        weight: 100
+        enabled: false
+      newsletter_sign_up_block:
+        weight: 98
+        enabled: false
+      one_big_image_section:
+        weight: 101
+        enabled: false
+      product_animation_section:
+        weight: 105
+        enabled: false
+      product_small_block:
+        weight: 106
+        enabled: false
+      products_section:
+        weight: 102
+        enabled: false
+      products_section_regular_page:
+        weight: 103
+        enabled: false
+      products_with_filters:
+        weight: 104
+        enabled: false
+      quote_section:
+        weight: 107
+        enabled: false
+      related_event_section:
+        weight: 108
+        enabled: false
+      related_news_section:
+        weight: 109
+        enabled: false
+      related_section:
+        weight: 110
+        enabled: false
+      slider:
+        weight: 111
+        enabled: false
+      slider_section:
+        weight: 112
+        enabled: false
+      solution_part:
+        weight: 113
+        enabled: false
+      solution_parts:
+        weight: 114
+        enabled: false
+      technologies_with_filters:
+        weight: 115
+        enabled: false
+      text_l_block_r:
+        weight: 116
+        enabled: false
+      text_l_image_r:
+        weight: 117
+        enabled: false
+      text_l_image_r_fixed_height:
+        weight: 118
+        enabled: false
+      text_l_image_r_hotline_number:
+        weight: 119
+        enabled: false
+      text_l_image_r_section:
+        weight: 120
+        enabled: false
+      text_l_small_image_r:
+        weight: 121
+        enabled: false
+      text_section:
+        weight: 122
+        enabled: false
+      vertical_carousel_text_section:
+        weight: 123
+        enabled: false
+      wechat:
+        weight: 124
+        enabled: false
+field_type: entity_reference_revisions

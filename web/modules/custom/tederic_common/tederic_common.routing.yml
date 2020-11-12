@@ -1,0 +1,16 @@
+
+tederic_common.tederic_common_default_controller_hello:
+  path: '/tederic_common/hello/{name}'
+  defaults:
+    _controller: '\Drupal\tederic_common\Controller\TedericCommonDefaultController::hello'
+    _title: 'test'
+  requirements:
+    _permission: 'access content'
+
+tederic_common.prev_events_view:
+  path: '/custom/ajax/prev-events'
+  defaults:
+    _title: 'Events'
+    _controller: '\Drupal\tederic_common\Controller\TedericCommonDefaultController::prevEventsView'
+  requirements:
+    _permission: 'access content'

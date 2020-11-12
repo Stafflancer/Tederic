@@ -1,0 +1,15 @@
+uuid: 17853a03-96c8-4d23-9513-86870ea7d1e7
+langcode: en
+status: true
+dependencies: {  }
+name: image_map
+label: 'Image Map'
+effects:
+  768dd5ac-a527-4156-bda5-67c29d5debe3:
+    uuid: 768dd5ac-a527-4156-bda5-67c29d5debe3
+    id: image_scale
+    weight: 1
+    data:
+      width: 1100
+      height: null
+      upscale: false

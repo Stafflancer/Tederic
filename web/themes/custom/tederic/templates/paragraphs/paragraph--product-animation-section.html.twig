@@ -6,5 +6,25 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  {{ content }}
+  {% if parts_map_data %}
+    <div class="links-map" style="position: relative;">
+      {{ content.field_image_crop.0 }}
+      {% for link in parts_map_data %}
+        {{
+          link(
+            'X',
+            'internal:' ~ path('responsive_image_map.entity.view', {'entity_type': 'paragraph', 'entity_id': link.pid, 'view_mode': 'default'}),
+            {
+              'class': ['use-ajax'],
+              'data-dialog-type': 'modal',
+              'style': link.style ~ ' background: rgba(0, 0, 0, .6);',
+            }
+          )
+        }}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {{ content.field_machine_parts }}
+
 </div>

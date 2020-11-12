@@ -1,0 +1,29 @@
+uuid: 4b4bc5a7-40af-4b02-88a1-a4501a0a4acc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_machine_parts_data
+    - paragraphs.paragraphs_type.product_animation_section
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    image_map: image_map
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: paragraph.product_animation_section.field_machine_parts_data
+field_name: field_machine_parts_data
+entity_type: paragraph
+bundle: product_animation_section
+label: 'Machine parts data'
+description: 'Paste generated code to this field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 3bf959cc-73be-46b9-9a2c-f9b32c19d8d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_machine_parts_data
+field_name: field_machine_parts_data
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

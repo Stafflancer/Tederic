@@ -1,7 +1,9 @@
 uuid: 51b2d2ca-61e9-41da-a766-3c110f683095
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - media
 _core:
   default_config_hash: oz6NyPDAB4HB6N9hgH2LwNVtCd-sXbMG1fbn5KsRIDI
 name: 'Restricted HTML'
@@ -30,3 +32,12 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

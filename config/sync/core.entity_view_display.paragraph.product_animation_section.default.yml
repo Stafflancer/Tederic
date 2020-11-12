@@ -4,16 +4,22 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.product_animation_section.field_image_crop
+    - field.field.paragraph.product_animation_section.field_machine_parts
+    - field.field.paragraph.product_animation_section.field_machine_parts_data
     - paragraphs.paragraphs_type.product_animation_section
   module:
+    - entity_reference_revisions
     - svg_image
+    - text
 id: paragraph.product_animation_section.default
 targetEntityType: paragraph
 bundle: product_animation_section
 mode: default
 content:
   field_image_crop:
-    weight: 0
+    type: image
+    weight: 2
+    region: content
     label: above
     settings:
       svg_attributes:
@@ -23,6 +29,20 @@ content:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-    type: image
+  field_machine_parts:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_machine_parts_data:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
 hidden: {  }

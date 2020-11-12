@@ -1,0 +1,5 @@
+name: 'Dynamic Responsive Image Map Generator With jQuery'
+type: module
+description: 'Works on responsive web design that automatically adjust the size & position of the image map depending on the current window size.'
+core: 8.x
+package: 'Custom'

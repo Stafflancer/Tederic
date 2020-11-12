@@ -1,0 +1,14 @@
+responsive_image_map.easy_mapper_generator:
+  path: '/easy_mapper_generator'
+  defaults:
+    _controller: '\Drupal\responsive_image_map\Controller\ResponsiveImageMap::easyMapperGenerator'
+    _title: 'Easy mapper generator'
+  requirements:
+    _role: administrator+editor
+
+responsive_image_map.entity.view:
+  path: '/admin/responsive_image_map/entity/view/{entity_type}/{entity_id}/{view_mode}'
+  defaults:
+    _controller: '\Drupal\responsive_image_map\Controller\ResponsiveImageMap::entityView'
+  requirements:
+    _permission: 'access content'
