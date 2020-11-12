@@ -96,3 +96,26 @@ function tederic_common_preprocess_region(&$variables) {
     $variables['is_front'] = FALSE;
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK() for taxonomy terms.
+ *
+ * Currently Drupal core's taxonomy term module only provides:
+ *  * $suggestions[] = 'taxonomy_term__' . $term->bundle();
+ *  * $suggestions[] = 'taxonomy_term__' . $term->id() . $term->bundle();
+ *
+ * This is a very basic template suggestion that should be in core:
+ * https://www.drupal.org/project/drupal/issues/2767243
+ *
+ */
+function tederic_common_theme_suggestions_taxonomy_term(array $variables) {
+  $term = $variables['elements']['#taxonomy_term'];
+  // We allow dots in view modes?!  But keeping this from discarded core patch.
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+  $suggestions[] = 'taxonomy_term__' . $term->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'taxonomy_term__' . $sanitized_view_mode;
+  $suggestions[] = 'taxonomy_term__' . $term->id() . '__' . $term->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'taxonomy_term__' . $term->id() . '__' . $sanitized_view_mode;
+
+  return $suggestions;
+}
