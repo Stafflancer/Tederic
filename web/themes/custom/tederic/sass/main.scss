@@ -731,8 +731,56 @@ textarea[rows] {
 
       li {
         display: inline-block;
+        position: relative;
         @media screen and (max-width: 767px) {
           display: block;
+        }
+
+        ul {
+          min-width: 135px;
+
+          li {
+            &:not(:last-child) {
+              margin-bottom: 15px;
+            }
+          }
+
+          .field-solution {
+            margin-right: 15px;
+            flex: 0 0 32px;
+            max-width: 32px;
+            order: -1;
+          }
+        }
+
+        &:first-child {
+          ul {
+            min-width: 315px;
+          }
+        }
+
+        &:nth-child(2) {
+          ul {
+            min-width: 315px;
+
+            li {
+              &:not(:last-child) {
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          ul {
+            min-width: 360px;
+          }
+        }
+
+        &:nth-child(4) {
+          ul {
+            min-width: 225px;
+          }
         }
 
         a {
@@ -773,16 +821,18 @@ textarea[rows] {
           @media screen and (min-width: 768px) {
             // display: none;
             background: #Fff;
-            border-radius: 8px;
-            padding: 10px;
+            border-radius: 5px;
+            padding: 30px;
             position: absolute;
             z-index: -1;
             opacity: 0;
             visibility: hidden;
+            box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12);
           }
 
           li {
-            display: block;
+            display: flex;
+            align-items: center;
             margin-left: 0;
 
             a {
@@ -791,12 +841,13 @@ textarea[rows] {
               font-size: 14px;
               letter-spacing: 0.64px;
               line-height: 16px;
+              text-transform: uppercase;
 
               @media screen and (min-width: 768px) {
-                border-bottom: 1px solid transparent;
+                border-bottom: 2px solid transparent;
 
                 &:hover {
-                  border-color: $dark_blue;
+                  border-color: #E8412D;
                 }
               }
             }
@@ -808,6 +859,8 @@ textarea[rows] {
             z-index: 100;
             opacity: 1;
             visibility: visible;
+            flex-flow: column;
+            align-items: flex-start;
           }
         }
       }
@@ -834,8 +887,12 @@ textarea[rows] {
       overflow: auto;
 
       > ul {
+        flex-flow: column;
+        align-items: flex-start;
         > li {
           margin-bottom: 14px;
+          width: 100%;
+          &.dropdown {
           > a {
             color: $dark_blue;
             font-size: 21px;
@@ -843,8 +900,8 @@ textarea[rows] {
             line-height: 25px;
             padding: 12px 0;
             position: relative;
+            background: transparent;
 
-            &.dropdown {
               &:after {
                 content: '';
                 background: url('../images/icons/arrow-right.svg') no-repeat center/contain;

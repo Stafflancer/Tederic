@@ -20,12 +20,6 @@
       window_width = $(window).width();
     });
 
-    // Mobile menu
-    $('#block-tederic-main-menu > ul > li > ul').each(function() {
-      // $(this).prev('a').addClass('dropdown');
-      $(this).prev('a').attr('href', 'javascript:void(0);');
-    });
-
     function mibileMenu() {
       if (window_width <= 767) {
         $('#block-top-menu').insertAfter('#block-tederic-main-menu > ul');
@@ -139,6 +133,15 @@
       });
     }
 
+    // Mobile menu
+    function menuLinkVoid() {
+      $('#block-tederic-main-menu > ul > li > ul').each(function() {
+        // $(this).prev('a').addClass('dropdown');
+        $(this).prev('a').attr('href', 'javascript:void(0);');
+      });
+    }
+
+    // Sliders settings
     const settings_sl_icons = {
       arrows: true,
       infinite: false,
@@ -178,6 +181,9 @@
 
     // Responsive
     if (window_width <= 767) {
+      menuLinkVoid();
+
+      // Show / hide location address
       $('.locations-section .location-part:not(:first-child) .field-text').unbind('click').bind('click', function() {
         $(this).toggleClass('active');
         $(this).next().slideToggle();
@@ -217,6 +223,14 @@
     // Slider for mobile
     $(window).on('resize', function() {
       if (window_width <= 767) {
+        menuLinkVoid();
+
+        // Show / hide location address
+        $('.locations-section .location-part:not(:first-child) .field-text').unbind('click').bind('click', function() {
+          $(this).toggleClass('active');
+          $(this).next().slideToggle();
+        });
+
         // Slider for icons (Home page)
         unslick(sl_icons_selector);
 
