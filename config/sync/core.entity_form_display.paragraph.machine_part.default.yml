@@ -1,0 +1,39 @@
+uuid: da96499f-cfbc-46fe-b0ec-50318de6913e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.machine_part.field_machine_part_items
+    - field.field.paragraph.machine_part.field_title
+    - paragraphs.paragraphs_type.machine_part
+  module:
+    - paragraphs
+    - text
+id: paragraph.machine_part.default
+targetEntityType: paragraph
+bundle: machine_part
+mode: default
+content:
+  field_machine_part_items:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: machine_part_item
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

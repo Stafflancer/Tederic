@@ -1,0 +1,21 @@
+uuid: 944ae96e-8704-4163-86e2-ecaa0eecdb12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.machine_part_item
+  module:
+    - text
+id: paragraph.machine_part_item.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: machine_part_item
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,15 @@
+uuid: 92fda5db-321e-4811-9085-a72ab0e592f7
+langcode: en
+status: true
+dependencies: {  }
+name: machine_part_item
+label: 'Machine Part Item'
+effects:
+  28083b34-ce58-4c5b-bf77-dd5627d6cdda:
+    uuid: 28083b34-ce58-4c5b-bf77-dd5627d6cdda
+    id: image_scale
+    weight: 1
+    data:
+      width: 235
+      height: null
+      upscale: false

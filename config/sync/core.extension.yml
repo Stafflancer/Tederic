@@ -55,6 +55,7 @@ module:
   path: 0
   path_alias: 0
   rdf: 0
+  responsive_image_map: 0
   search: 0
   shortcut: 0
   svg_image: 0

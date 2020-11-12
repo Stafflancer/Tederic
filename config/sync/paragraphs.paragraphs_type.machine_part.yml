@@ -1,0 +1,10 @@
+uuid: 4325c071-bd8b-401a-b036-ac8c78ebeb1e
+langcode: en
+status: true
+dependencies: {  }
+id: machine_part
+label: 'Machine part'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

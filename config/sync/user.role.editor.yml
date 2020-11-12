@@ -16,4 +16,5 @@ permissions:
   - 'translate any entity'
   - 'update content translations'
   - 'use text format full_html'
+  - 'use text format image_map'
   - 'view the administration theme'

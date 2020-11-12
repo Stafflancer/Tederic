@@ -15,7 +15,7 @@ bundle: news_with_filters
 mode: default
 content:
   field_latest_news_layout:
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -33,7 +33,7 @@ content:
     third_party_settings: {  }
     region: content
   field_popular_news_layout:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
