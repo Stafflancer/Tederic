@@ -6,13 +6,21 @@ dependencies:
     - field.storage.paragraph.field_machine_parts_data
     - paragraphs.paragraphs_type.product_animation_section
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    image_map: image_map
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
 id: paragraph.product_animation_section.field_machine_parts_data
 field_name: field_machine_parts_data
 entity_type: paragraph
 bundle: product_animation_section
 label: 'Machine parts data'
-description: ''
+description: 'Paste generated code to this field.'
 required: false
 translatable: false
 default_value: {  }
