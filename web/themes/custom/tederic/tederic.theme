@@ -53,3 +53,44 @@ function tederic_preprocess_html(&$variables) {
     $variables['#attached']['library'][] = 'tederic/font-en';
   }
 }
+
+/**
+ * Add dynamic blog post variables.
+ */
+function tederic_preprocess_paragraph(&$variables) {
+  $paragraph_type = $variables['paragraph']->bundle();
+
+  switch ($paragraph_type) {
+    case 'product_animation_section':
+      $paragraph = $variables['paragraph'];
+
+      $data_html = $paragraph->get('field_machine_parts_data')->getValue()[0]['value'];
+
+      $machine_parts = $paragraph->get('field_machine_parts')->getValue();
+      if (!empty($machine_parts)) {
+        $machine_parts_pid = [];
+        foreach ($machine_parts as $value) {
+          $machine_parts_pid[] = $value['target_id'];
+        }
+
+        // Parse html
+        $dom = new DOMDocument();
+        $dom->loadHTML($data_html);
+        $links = $dom->getElementsByTagName('a');
+        if (!empty($links)) {
+          $parts_map_data = [];
+
+          foreach($links as $key => $link) {
+            $style = $link->getAttribute('style');
+            $parts_map_data[] = [
+              'pid' => $machine_parts_pid[$key],
+              'style' => $style,
+            ];
+          }
+
+          $variables['parts_map_data'] = $parts_map_data;
+        }
+      }
+      break;
+  }
+}
