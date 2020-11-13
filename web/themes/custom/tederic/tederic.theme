@@ -87,8 +87,12 @@ function tederic_preprocess_paragraph(&$variables) {
               'style' => $style,
             ];
           }
-
+          // Map dara array.
           $variables['parts_map_data'] = $parts_map_data;
+          // Dialog options.
+          $variables['dialog_options'] = \Drupal\Component\Serialization\Json::encode([
+            'dialogClass' => 'machine-part',
+          ]);
         }
       }
       break;
