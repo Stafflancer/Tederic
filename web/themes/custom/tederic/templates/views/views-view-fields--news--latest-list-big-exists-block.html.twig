@@ -1,11 +1,11 @@
-<div class="popular-content">
+<div class="popular-content {{ fields.field_special_label.content|raw ? 'special-label' }}">
   <div class="popular-img">
     {{ fields.field_image_crop.content }}
   </div>
   <div class="popular-wrapper">
     {{ fields.title.content }}
     <div class="popular-bottom d-flex align-items-center">
-      {% if fields.field_special_label.content %}
+      {% if fields.field_special_label.content|raw %}
         <div class="field-special-label">{{ fields.field_special_label.content }}</div><span>·</span>
       {% endif %}
       <div class="field-date">{{ fields.field_date_1.content }}</div>

@@ -18,12 +18,14 @@
     {% endif %}
 
     <div class="small-12 medium-6 column">
-      {% if ("Off" in content.field_title_above.0) and content.field_title.0 %}
-        <div class="title">{{ content.field_title }}</div>
-      {% endif %}
-      {% if content.field_text.0 %}
-        <div class="text-large">{{ content.field_text }}</div>
-      {% endif %}
+      <div class="text-max-width">
+        {% if ("Off" in content.field_title_above.0) and content.field_title.0 %}
+          <div class="title">{{ content.field_title }}</div>
+        {% endif %}
+        {% if content.field_text.0 %}
+          <div class="text-large">{{ content.field_text }}</div>
+        {% endif %}
+      </div>
     </div>
 
     <div class="small-12 medium-6 column">

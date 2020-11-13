@@ -1,34 +1,35 @@
 {%
   set classes = [
     paragraph.bundle|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished',
-    'text-section'
+    not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  <div class="row align-items-center">
+  <div class="row">
     <div class="small-12 medium-6 column">
-      {% if content.field_title.0 %}
-        <div class="title">{{ content.field_title }}</div>
-      {% endif %}
+      <div class="text-max-width">
+        {% if content.field_title.0 %}
+          <div class="title">{{ content.field_title }}</div>
+        {% endif %}
 
-      {% if content.field_text.0 %}
-        <div class="text-large">{{ content.field_text }}</div>
-      {% endif %}
+        {% if content.field_text.0 %}
+          <div class="text-large">{{ content.field_text }}</div>
+        {% endif %}
 
-      {% if content.field_phone_number.0 or content.field_subtitle_plain.0 %}
-        <div class="phone-wrapper d-flex">
-          {{ content.field_icon }}
-          <div>
-            {{ content.field_phone_number }}
-            {{ content.field_subtitle_plain }}
+        {% if content.field_phone_number.0 or content.field_subtitle_plain.0 %}
+          <div class="phone-wrapper d-flex">
+            {{ content.field_icon }}
+            <div>
+              {{ content.field_phone_number }}
+              {{ content.field_subtitle_plain }}
+            </div>
           </div>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
     </div>
 
-    <div class="small-12 medium-6 column order-1">
+    <div class="small-12 medium-6 order-1">
       {{ content.field_image_crop }}
     </div>
   </div>
