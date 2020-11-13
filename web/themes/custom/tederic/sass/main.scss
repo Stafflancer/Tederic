@@ -6322,11 +6322,24 @@ textarea[rows] {
 
 .field-text-l-image-r-hotline-num {
   margin: 30px 0;
+  @media screen and (max-width: 767px) {
+    margin: 0 0 130px;
+  }
 
   @media screen and (max-width: 767px) {
     .small-12 {
       max-width: 100%;
       flex: 0 0 100%;
+    }
+
+    .order-1 {
+      order: -1;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .text-section {
+      margin: 0;
     }
   }
 
@@ -6338,18 +6351,32 @@ textarea[rows] {
   .text-large,
   .text-large p {
     color: $dark_blue_text;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .phone-wrapper {
     margin-top: 90px;
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
   }
 
   .phone-wrapper {
+    @media screen and (max-width: 767px) {
+      align-items: center;
+    }
+
     .field-icon {
       flex: 0 0 70px;
       max-width: 70px;
       padding-right: 27px;
       padding-top: 5px;
+      @media screen and (max-width: 767px) {
+        padding-top: 0;
+      }
 
       img {
         width: 100%;
@@ -6363,6 +6390,13 @@ textarea[rows] {
       letter-spacing: 0;
       line-height: 48px;
       margin-bottom: 15px;
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: -0.28px;
+        line-height: 34px;
+        margin-bottom: 10px;
+      }
     }
 
     .field-subtitle-plain {
@@ -6370,6 +6404,11 @@ textarea[rows] {
       letter-spacing: 0;
       line-height: 21px;
       text-transform: uppercase;
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+      }
     }
   }
 
@@ -6381,6 +6420,19 @@ textarea[rows] {
 .image-l-text-r-link {
   margin: 30px 0;
 
+  @media screen and (max-width: 767px) {
+    margin: 30px 0 130px;
+
+    .small-12 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+
+    .img {
+      padding: 0 0 30px;
+    }
+  }
+
   .field-image-crop {
     text-align: left;
   }
@@ -6388,20 +6440,44 @@ textarea[rows] {
   .title {
     text-align: left;
     margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   .text-large,
   .text-large p {
     color: $dark_blue_text;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .link {
     margin-top: 60px;
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
   }
 }
 
 .text-l-image-r {
   margin: 30px 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 130px 0 80px;
+
+    .small-12 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+
+    .order-1 {
+      order: -1;
+      padding: 0 0 30px;
+    }
+  }
 
   .sub-title,
   .sub-title p {
@@ -6412,11 +6488,18 @@ textarea[rows] {
   .title {
     text-align: left;
     margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
-  
+
   .text-large,
   .text-large p {
     color: $dark_blue_text;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .field-image-crop {
@@ -6427,15 +6510,39 @@ textarea[rows] {
 .text-l-small-image-r {
   margin: 30px 0 80px;
 
+  @media screen and (max-width: 767px) {
+    margin: 80px 0;
+
+    .small-12 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+
+    .field-image-crop {
+      margin-top: 30px;
+    }
+  }
+
   .text-large,
   .text-large p,
   .text-large li {
     color: $dark_blue_text;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .text-large ul,
   .text-large ol {
     margin-bottom: 25px;
+    @media screen and (max-width: 767px) {
+      li {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 30px;
+      }
+    }
   }
 }
 
