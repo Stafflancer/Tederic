@@ -12,12 +12,13 @@
       {% for link in parts_map_data %}
         {{
           link(
-            'X',
+            '',
             'internal:' ~ path('responsive_image_map.entity.view', {'entity_type': 'paragraph', 'entity_id': link.pid, 'view_mode': 'default'}),
             {
               'class': ['use-ajax'],
               'data-dialog-type': 'modal',
-              'style': link.style ~ ' background: rgba(0, 0, 0, .6);',
+              'data-dialog-options': dialog_options,
+              'style': link.style,
             }
           )
         }}
