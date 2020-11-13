@@ -7172,12 +7172,12 @@ textarea[rows] {
       list-style-type: none;
       display: flex;
       flex-wrap: wrap;
-      margin: -20px -10px 0;
+      margin: 0 -10px;
 
       > li {
         max-width: 33.333%;
         flex: 0 0 33.333%;
-        padding: 20px 10px 0;
+        padding: 0 10px 20px;
 
         &.big-card-li {
           max-width: 66.66667%;
