@@ -8,7 +8,9 @@
 <div{{ attributes.addClass(classes) }}>
   <div class="row">
     <div class="small-12 column">
-      <div class="title">{{ content.field_title }}</div>
+      {% if content.field_title.0 %}
+        <div class="title">{{ content.field_title }}</div>
+      {% endif %}
       {{ content.field_text }}
     </div>
   </div>
