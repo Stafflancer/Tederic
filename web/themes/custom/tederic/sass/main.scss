@@ -29,6 +29,9 @@ label {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 16px;
+  @media screen and (max-width: 767px) {
+    color: #586267;
+  }
 
   &.form-required {
     &:after {
@@ -58,6 +61,9 @@ input[type="search"] {
   border: none;
   padding: 3px 0;
   box-shadow: 0 1px 2px 0 rgba(255,255,255,0.5), 0 1px 0 0 rgba(73,73,73,0.5);
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
 
   &:focus {
     border: none;
@@ -94,6 +100,9 @@ textarea[rows] {
       line-height: 16px;
       padding-left: 34px;
       position: relative;
+      @media screen and (max-width: 767px) {
+        color: #586267;
+      }
 
       &:before {
         content: '';
@@ -104,6 +113,9 @@ textarea[rows] {
         position: absolute;
         top: -3px;
         left: 0;
+        @media screen and (max-width: 767px) {
+          border-color: #586267;
+        }
       }
 
       &:after {
@@ -268,6 +280,10 @@ textarea[rows] {
   font-weight: 300;
   letter-spacing: 0;
   line-height: 32px;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 29px;
+  }
 }
 
 .link {
@@ -1305,7 +1321,7 @@ textarea[rows] {
   background-color: $dark_blue;
   position: relative;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1610px) {
     &:after {
       content: '';
       height: 2px;
@@ -1327,8 +1343,8 @@ textarea[rows] {
     @media screen and (max-width: 767px) {
       padding-top: 30px;
     }
-  
-    @media screen and (min-width: 768px) {
+
+    @media screen and (min-width: 1610px) {
       &:after {
         content: '';
         height: 2px;
@@ -1482,7 +1498,7 @@ textarea[rows] {
               border-radius: 3px;
             }
           }
-          
+
         }
       }
     }
@@ -1502,7 +1518,7 @@ textarea[rows] {
     padding-top: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1610px) {
     &:after {
       content: '';
       height: 2px;
@@ -4391,18 +4407,24 @@ textarea[rows] {
       border-radius: 0;
       padding: 0;
       border: none;
-      
+
       &:before {
         visibility: hidden;
       }
 
       &.timeline-nav-button--next {
         right: 90px;
+        @media screen and (max-width: 767px) {
+          right: 5px;
+        }
       }
 
       &.timeline-nav-button--prev {
         left: 90px;
         transform: translateY(-50%) rotate(180deg);
+        @media screen and (max-width: 767px) {
+          left: 5px;
+        }
       }
 
       &[disabled] {
@@ -5688,9 +5710,20 @@ textarea[rows] {
 .form-section {
   background-color: $gray;
 
+  .medium-6 {
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+
   .title {
     padding-top: 100px;
     margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      padding-top: 0;
+      margin-bottom: 16px;
+    }
   }
 
   .text-large ul,
@@ -5698,14 +5731,23 @@ textarea[rows] {
     margin-bottom: 25px;
   }
 
-  .form-wrapper {
+  .form-wrapper-content {
     padding: 30px;
     background-color: $white;
     border-radius: 10px;
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+      padding: 30px 25px;
+    }
 
     .text-large {
       color: $dark_blue_text;
       margin-bottom: 28px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 23px;
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
   }
 }
@@ -5728,25 +5770,63 @@ textarea[rows] {
   .form-item-company,
   .form-item-machine-type,
   .form-item-machine-code {
-    max-width: 50%;
-    flex: 0 0 50%;
+    @media screen and (min-width: 768px) {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
   }
 }
 
 .contact-information-section {
   padding: 130px 45px;
+  @media screen and (max-width: 1023px) {
+    padding: 80px 0 130px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .for-mob {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .for-desk {
+      display: none;
+    }
+
+    .small-12 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+
+    .for-mob {
+      margin: 0 -20px 70px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 
   .text-wrapper {
-    max-width: 650px;
+    @media screen and (min-width: 768px) {
+      max-width: 650px;
+    }
   }
 
   .title {
     padding-top: 80px;
     margin-bottom: 40px;
+    @media screen and (max-width: 1023px) {
+      padding-top: 0;
+      margin-bottom: 15px;
+    }
   }
 
   .field-text {
     margin-bottom: 80px;
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 28px;
+    }
   }
 
   .field-text-2,
@@ -5755,14 +5835,22 @@ textarea[rows] {
     background-color: $gray;
     padding: 30px 30px 22px;
     margin-bottom: 40px;
+    @media screen and (max-width: 1023px) {
+      padding: 20px 15px 20px 30px;
+      margin-bottom: 25px;
+    }
 
     h2 {
-      color: $gray_text;
+      color: $dark_blue_text;
       font-size: 24px;
       font-weight: 300;
       letter-spacing: 0;
       line-height: 32px;
       margin-bottom: 10px;
+      @media screen and (max-width: 1023px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
 
     p {
@@ -5771,6 +5859,9 @@ textarea[rows] {
       font-size: 14px;
       letter-spacing: 0;
       line-height: 16px;
+      @media screen and (max-width: 1023px) {
+
+      }
 
       &:nth-child(3) {
         margin-top: 15px;
@@ -5783,10 +5874,22 @@ textarea[rows] {
       font-weight: 500;
       letter-spacing: 0;
       line-height: 46px;
+      @media screen and (max-width: 1023px) {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 300;
+
+        strong {
+          font-weight: 300;
+        }
+      }
     }
   }
 
   .field-map {
+    @media screen and (max-width: 1023px) {
+      margin-top: 80px;
+    }
     iframe {
       border: 0;
       width: 100%;
@@ -5801,40 +5904,119 @@ textarea[rows] {
   }
 }
 
-[about="/join-us"] .field-sections {
+[about="/contact/join-us"] .field-sections {
   margin-top: 80px;
 }
 .text-l-image-r-fixed-height {
+  .small-12 {
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      flex: 0 0 100%;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
   .text-wrapper {
     max-width: 650px;
     padding-top: 80px;
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      padding-top: 20px;
+      padding-bottom: 80px;
+
+      .sup-title {
+        margin-bottom: 10px;
+      }
+
+      .text-large,
+      .text-large p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
   }
 }
 
 .careers-section {
+  @media screen and (max-width: 1023px) {
+      padding: 50px 0 130px;
+  }
+
   .field-image-crop {
     img {
       width: 100%;
     }
   }
 
+  @media screen and (max-width: 1023px) {
+    .order-1 {
+      order: -1;
+    }
+  }
+
   .text-wrapper {
     height: 100%;
     background-color: $dark_blue;
-    padding: 55px 15px 60px 70px;
+    padding: 0 15px 0 70px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1023px) {
+      padding: 60px 30px 75px;
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        height: 2px;
+        background-color: $red;
+        position: absolute;
+        width: 65px;
+        transform: rotate(-45deg);
+        top: 20px;
+        right: -12px;
+        z-index: 1;
+      }
+
+      &:before {
+        content: '';
+        height: 2px;
+        background-color: $red;
+        position: absolute;
+        width: 60px;
+        transform: rotate(45deg);
+        bottom: 19px;
+        left: 15px;
+      }
+    }
 
     .text-pos {
-      max-width: 720px;
+      @media screen and (min-width: 1024px) {
+        max-width: 720px;
+        width: 100%;
+      }
     }
   }
 
   .text-large,
   .text-large p {
     color: $white;
+    @media screen and (max-width: 1023px) {
+      font-size: 30px;
+      font-weight: 300;
+      letter-spacing: -0.28px;
+      line-height: 34px;
+    }
   }
 
   .link {
-    text-align: right;
+    @media screen and (min-width: 1024px) {
+      text-align: right;
+    }
+    @media screen and (max-width: 1023px) {
+      margin-top: 60px;
+    }
     a {
       color: $white;
       font-weight: 400;
@@ -6140,6 +6322,13 @@ textarea[rows] {
 
 .field-text-l-image-r-hotline-num {
   margin: 30px 0;
+
+  @media screen and (min-width: 768px) {
+    .small-12 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
 
   .title {
     text-align: left;
@@ -7091,6 +7280,9 @@ textarea[rows] {
       background: transparent !important;
       font-size: 0px;
       color: transparent;
+      @media screen and (max-width: 767px) {
+        display: none !important;
+      }
 
       &:after {
         content: '';
@@ -7205,45 +7397,58 @@ textarea[rows] {
   }
 }
 
-.ui-dialog-content {
-  .machine-part {
-    > .field-title,
-    > .field-title p {
-      color: $gray_text;
-      font-size: 18px;
-      font-weight: 300;
-      letter-spacing: 0;
-      line-height: 29px;
-      margin-bottom: 0;
+.ui-dialog {
+  &.machine-part {
+    padding: 25px 25px 45px;
+    max-width: 564px;
+
+    .ui-dialog-title {
+      display: none;
     }
 
-    .machine-part-item {
-      .field-title,
-      .field-title p {
+    .ui-dialog-titlebar-close {
+      z-index: 200;
+    }
+
+    .machine-part {
+      > .field-title,
+      > .field-title p {
         color: $gray_text;
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 300;
         letter-spacing: 0;
         line-height: 29px;
         margin-bottom: 0;
       }
-      .field-title {
-        margin-bottom: 10px;
-      }
-    }
-
-    .field-machine-part-items {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -10px;
 
       .machine-part-item {
-        max-width: 50%;
-        flex: 0 0 50%;
-        padding: 0 10px;
+        .field-title,
+        .field-title p {
+          color: $gray_text;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0;
+          line-height: 29px;
+          margin-bottom: 0;
+        }
+        .field-title {
+          margin-bottom: 10px;
+        }
+      }
 
-        img {
-          width: 100%;
+      .field-machine-part-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+
+        .machine-part-item {
+          max-width: 50%;
+          flex: 0 0 50%;
+          padding: 0 10px;
+
+          img {
+            width: 100%;
+          }
         }
       }
     }
