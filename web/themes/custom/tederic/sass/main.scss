@@ -7978,3 +7978,23 @@ textarea[rows] {
     margin-top: 30px;
   }
 }
+.node-support {
+  .form-section {
+    .text-large {
+      ul,
+      ol {
+        li {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .text-large,
+    .text-large p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
