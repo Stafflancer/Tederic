@@ -1,0 +1,107 @@
+uuid: 8700d663-698d-4f7f-8e3a-f92a12c8d259
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.map_location.field_address
+    - field.field.node.map_location.field_big_icon
+    - field.field.node.map_location.field_company_name
+    - field.field.node.map_location.field_country
+    - field.field.node.map_location.field_email_address
+    - field.field.node.map_location.field_headquarter
+    - field.field.node.map_location.field_phone_number
+    - field.field.node.map_location.field_x
+    - field.field.node.map_location.field_y
+    - node.type.map_location
+  module:
+    - user
+id: node.map_location.default
+targetEntityType: node
+bundle: map_location
+mode: default
+content:
+  field_address:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_big_icon:
+    weight: 109
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_company_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_country:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email_address:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_headquarter:
+    weight: 106
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_phone_number:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_x:
+    weight: 107
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_y:
+    weight: 108
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

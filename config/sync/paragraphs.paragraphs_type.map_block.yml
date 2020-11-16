@@ -1,0 +1,10 @@
+uuid: 52de3c36-a591-4ffd-9833-411e27bd0eec
+langcode: en
+status: true
+dependencies: {  }
+id: map_block
+label: 'Map block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

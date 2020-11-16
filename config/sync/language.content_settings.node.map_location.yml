@@ -1,0 +1,16 @@
+uuid: d5d58356-14bf-4ef2-95f1-3f2d2b113638
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.map_location
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.map_location
+target_entity_type_id: node
+target_bundle: map_location
+default_langcode: site_default
+language_alterable: true

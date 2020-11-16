@@ -1,22 +1,18 @@
-uuid: 66f02658-fcba-4229-a256-f96b5915f499
+uuid: 8f1a5ba9-0114-49f7-8803-7bf962972cf9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sections
-    - node.type.worldwide
-    - paragraphs.paragraphs_type.image_section
-    - paragraphs.paragraphs_type.locations_section
+    - field.storage.paragraph.field_map_block
     - paragraphs.paragraphs_type.map_block
-    - paragraphs.paragraphs_type.products_section_regular_page
-    - paragraphs.paragraphs_type.text_section
+    - paragraphs.paragraphs_type.text_l_block_r
   module:
     - entity_reference_revisions
-id: node.worldwide.field_sections
-field_name: field_sections
-entity_type: node
-bundle: worldwide
-label: Sections
+id: paragraph.text_l_block_r.field_map_block
+field_name: field_map_block
+entity_type: paragraph
+bundle: text_l_block_r
+label: 'Map block'
 description: ''
 required: false
 translatable: false
@@ -27,111 +23,107 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      image_section: image_section
-      locations_section: locations_section
-      text_section: text_section
-      products_section_regular_page: products_section_regular_page
       map_block: map_block
     target_bundles_drag_drop:
       2_columns_section:
-        weight: 56
+        weight: 65
         enabled: false
       anchor:
         weight: 66
         enabled: false
       blue_background_text_section:
-        weight: 57
+        weight: 67
         enabled: false
       breadcrumb:
-        weight: 24
+        weight: 68
         enabled: false
       cards_section:
-        weight: 59
+        weight: 69
         enabled: false
       cards_section_row:
-        weight: 60
+        weight: 70
         enabled: false
       cards_section_row_cards:
-        weight: 61
+        weight: 71
         enabled: false
       careers_section:
-        weight: 62
+        weight: 72
         enabled: false
       contact_information_section:
-        weight: 63
+        weight: 73
         enabled: false
       contact_section:
-        weight: 25
+        weight: 74
         enabled: false
       contact_us_section:
-        weight: 65
+        weight: 75
         enabled: false
       events_section:
-        weight: 26
+        weight: 76
         enabled: false
       events_with_filters:
         weight: 77
         enabled: false
       form_section:
-        weight: 67
-        enabled: false
-      general_media:
-        weight: 27
-        enabled: false
-      highlights_and_sectors_section:
-        weight: 69
-        enabled: false
-      history_block:
-        weight: 70
-        enabled: false
-      history_year:
-        weight: 71
-        enabled: false
-      icon:
-        weight: 72
-        enabled: false
-      icon_cards_section:
-        weight: 76
-        enabled: false
-      icon_simple:
-        weight: 77
-        enabled: false
-      icons_inner_section:
-        weight: 73
-        enabled: false
-      icons_section:
-        weight: 28
-        enabled: false
-      icons_slider:
-        weight: 29
-        enabled: false
-      image_carousel_section:
         weight: 78
         enabled: false
-      image_l_text_r:
+      general_media:
         weight: 79
         enabled: false
-      image_l_text_r_link:
+      highlights_and_sectors_section:
         weight: 80
         enabled: false
+      history_block:
+        weight: 81
+        enabled: false
+      history_year:
+        weight: 82
+        enabled: false
+      icon:
+        weight: 83
+        enabled: false
+      icon_cards_section:
+        weight: 87
+        enabled: false
+      icon_simple:
+        weight: 88
+        enabled: false
+      icons_inner_section:
+        weight: 84
+        enabled: false
+      icons_section:
+        weight: 85
+        enabled: false
+      icons_slider:
+        weight: 86
+        enabled: false
+      image_carousel_section:
+        weight: 89
+        enabled: false
+      image_l_text_r:
+        weight: 90
+        enabled: false
+      image_l_text_r_link:
+        weight: 91
+        enabled: false
       image_section:
-        enabled: true
-        weight: 30
+        weight: 92
+        enabled: false
       intro_section:
-        weight: 31
+        weight: 93
         enabled: false
       location:
-        weight: 32
+        weight: 94
         enabled: false
       location_column:
-        weight: 33
+        weight: 96
         enabled: false
       location_part:
-        weight: 23
+        weight: 97
         enabled: false
       locations_section:
-        enabled: true
-        weight: 34
+        weight: 95
+        enabled: false
       machine_part:
         weight: 98
         enabled: false
@@ -142,37 +134,37 @@ settings:
         enabled: true
         weight: 100
       mission_section:
-        weight: 87
+        weight: 101
         enabled: false
       news_section:
-        weight: 35
+        weight: 103
         enabled: false
       news_with_filters:
         weight: 104
         enabled: false
       newsletter_sign_up_block:
-        weight: 36
+        weight: 102
         enabled: false
       one_big_image_section:
         weight: 105
         enabled: false
       product_animation_section:
-        weight: 93
+        weight: 109
         enabled: false
       product_small_block:
-        weight: 94
+        weight: 110
         enabled: false
       products_section:
-        weight: 37
+        weight: 106
         enabled: false
       products_section_regular_page:
-        enabled: true
-        weight: 91
+        weight: 107
+        enabled: false
       products_with_filters:
-        weight: 92
+        weight: 108
         enabled: false
       quote_section:
-        weight: 95
+        weight: 111
         enabled: false
       related_event_section:
         weight: 112
@@ -181,48 +173,48 @@ settings:
         weight: 113
         enabled: false
       related_section:
-        weight: 96
+        weight: 114
         enabled: false
       slider:
-        weight: 38
+        weight: 115
         enabled: false
       slider_section:
-        weight: 39
+        weight: 116
         enabled: false
       solution_part:
-        weight: 40
+        weight: 117
         enabled: false
       solution_parts:
-        weight: 41
+        weight: 118
         enabled: false
       technologies_with_filters:
-        weight: 101
+        weight: 119
         enabled: false
       text_l_block_r:
-        weight: 42
+        weight: 120
         enabled: false
       text_l_image_r:
-        weight: 103
+        weight: 121
         enabled: false
       text_l_image_r_fixed_height:
-        weight: 104
+        weight: 122
         enabled: false
       text_l_image_r_hotline_number:
-        weight: 105
+        weight: 123
         enabled: false
       text_l_image_r_section:
-        weight: 106
+        weight: 124
         enabled: false
       text_l_small_image_r:
-        weight: 107
+        weight: 125
         enabled: false
       text_section:
-        enabled: true
-        weight: 43
+        weight: 126
+        enabled: false
       vertical_carousel_text_section:
-        weight: 109
+        weight: 127
         enabled: false
       wechat:
-        weight: 44
+        weight: 128
         enabled: false
 field_type: entity_reference_revisions

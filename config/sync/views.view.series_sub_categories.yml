@@ -333,21 +333,7 @@ display:
           entity_type: taxonomy_term
           entity_field: langcode
           plugin_id: language
-      sorts:
-        weight:
-          id: weight
-          table: taxonomy_term_field_data
-          field: weight
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: taxonomy_term
-          entity_field: weight
-          plugin_id: standard
+      sorts: {  }
       title: 'Series Sub Categories'
       header: {  }
       footer: {  }
@@ -569,6 +555,22 @@ display:
           plugin_id: term_name
       defaults:
         fields: false
+        sorts: false
+      sorts:
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:
@@ -688,6 +690,7 @@ display:
         filter_groups: false
         style: false
         row: false
+        sorts: false
       filter_groups:
         operator: AND
         groups:
@@ -711,6 +714,21 @@ display:
           relationship: none
           view_mode: token
       display_description: ''
+      sorts:
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:

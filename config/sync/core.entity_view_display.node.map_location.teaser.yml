@@ -1,0 +1,63 @@
+uuid: 0cc7ecba-ff9e-429c-b1aa-218d52f510bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.map_location.field_address
+    - field.field.node.map_location.field_big_icon
+    - field.field.node.map_location.field_company_name
+    - field.field.node.map_location.field_country
+    - field.field.node.map_location.field_email_address
+    - field.field.node.map_location.field_headquarter
+    - field.field.node.map_location.field_phone_number
+    - field.field.node.map_location.field_x
+    - field.field.node.map_location.field_y
+    - node.type.map_location
+  module:
+    - user
+id: node.map_location.teaser
+targetEntityType: node
+bundle: map_location
+mode: teaser
+content:
+  field_address:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_company_name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_email_address:
+    type: string
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_phone_number:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_big_icon: true
+  field_country: true
+  field_headquarter: true
+  field_x: true
+  field_y: true
+  langcode: true
+  links: true
