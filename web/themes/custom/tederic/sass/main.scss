@@ -861,8 +861,10 @@ textarea[rows] {
                       a {
                         display: block;
                         padding-top: 0;
-                        border: none;
-                        padding: 9px 0;
+                        padding: 9px 0 3px;
+                        @media screen and (min-width: 768px) {
+                          margin-bottom: 3px;
+                        }
                       }
                     }
                   }
@@ -896,7 +898,7 @@ textarea[rows] {
                 }
 
                 .views-field-name {
-                  width: 100%;
+                  // width: 100%;
                 }
 
                 .product-item {
