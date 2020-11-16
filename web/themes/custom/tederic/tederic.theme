@@ -52,6 +52,17 @@ function tederic_preprocess_views_view_field(&$variables) {
       }
     }
   }
+  
+  if ($view->id() == 'series_sub_categories') {
+    if ($view->current_display == 'menu_left_block') {
+      if ($variables['field']->field == 'name') {
+        $sub_category_tid = $variables['row']->tid;
+        $sub_category_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($sub_category_tid);
+        $parent_category_tid = $sub_category_term->get('field_parent_category')->getValue()[0]['target_id'];
+        $variables['parent_category_tid'] = $parent_category_tid;
+      }
+    }
+  }
 }
 
 /**
