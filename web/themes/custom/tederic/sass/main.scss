@@ -8178,6 +8178,12 @@ body {
     .marker-wrap {
       white-space: nowrap;
 
+      &.headquarter {
+        .marker-country {
+          color: #E8412D;
+        }
+      }
+
       .marker-icon {
         width: 12px;
 
