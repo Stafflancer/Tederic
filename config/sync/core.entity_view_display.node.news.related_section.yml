@@ -44,11 +44,18 @@ content:
         width: null
         height: null
     third_party_settings: {  }
+  field_special_label:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   body: true
   field_big_card: true
   field_popular: true
   field_sections: true
-  field_special_label: true
   langcode: true
   links: true
