@@ -1,0 +1,23 @@
+uuid: a305f2cc-dcab-41a4-b8bb-3f14b5177a8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_big_icon
+    - node.type.map_location
+id: node.map_location.field_big_icon
+field_name: field_big_icon
+entity_type: node
+bundle: map_location
+label: 'Big icon'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: 5df3bfdd-7107-428c-b59e-e802a4e202cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_name
+    - node.type.map_location
+id: node.map_location.field_company_name
+field_name: field_company_name
+entity_type: node
+bundle: map_location
+label: 'Company name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

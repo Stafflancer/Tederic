@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>11B77159-B284-4BF0-AAAB-C70CCE433685</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="20.4705882"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-312.000000, -639.000000)">
+            <g id="TEDERIC_DOT/red" transform="translate(312.000000, 639.470588)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Background"></g>
+                <path d="M12.0678774,5.14098568e-14 C7.35892681,5.14098568e-14 4.17514242,0.825854124 2.5165242,2.47756237 C0.857905976,4.12927062 0.0190645772,6.69832704 -2.10655023e-13,10.1847316 C-2.10655023e-13,13.8493088 0.838841399,16.4737432 2.5165242,18.0580348 C4.19420699,19.6423264 7.37799139,20.4465109 12.0678774,20.4705882 C16.6576744,20.4705882 19.7961804,19.6664038 21.4833955,18.0580348 C23.1706106,16.4496658 24.009452,13.8252314 24,10.1847316 C24,6.69832704 23.1610783,4.12927062 21.4833955,2.47756237 C19.8057127,0.825854124 16.6672067,5.14098568e-14 12.0678774,5.14098568e-14 Z" fill="#E8412D" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

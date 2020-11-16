@@ -1,0 +1,34 @@
+uuid: 8700d663-698d-4f7f-8e3a-f92a12c8d259
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.map_location.field_address
+    - field.field.node.map_location.field_big_icon
+    - field.field.node.map_location.field_company_name
+    - field.field.node.map_location.field_country
+    - field.field.node.map_location.field_email_address
+    - field.field.node.map_location.field_headquarter
+    - field.field.node.map_location.field_phone_number
+    - field.field.node.map_location.field_x
+    - field.field.node.map_location.field_y
+    - node.type.map_location
+  module:
+    - user
+id: node.map_location.default
+targetEntityType: node
+bundle: map_location
+mode: default
+content: {  }
+hidden:
+  field_address: true
+  field_big_icon: true
+  field_company_name: true
+  field_country: true
+  field_email_address: true
+  field_headquarter: true
+  field_phone_number: true
+  field_x: true
+  field_y: true
+  langcode: true
+  links: true

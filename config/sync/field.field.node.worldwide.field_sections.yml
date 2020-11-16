@@ -7,6 +7,7 @@ dependencies:
     - node.type.worldwide
     - paragraphs.paragraphs_type.image_section
     - paragraphs.paragraphs_type.locations_section
+    - paragraphs.paragraphs_type.map_block
     - paragraphs.paragraphs_type.products_section_regular_page
     - paragraphs.paragraphs_type.text_section
   module:
@@ -30,9 +31,13 @@ settings:
       locations_section: locations_section
       text_section: text_section
       products_section_regular_page: products_section_regular_page
+      map_block: map_block
     target_bundles_drag_drop:
       2_columns_section:
         weight: 56
+        enabled: false
+      anchor:
+        weight: 66
         enabled: false
       blue_background_text_section:
         weight: 57
@@ -63,6 +68,9 @@ settings:
         enabled: false
       events_section:
         weight: 26
+        enabled: false
+      events_with_filters:
+        weight: 77
         enabled: false
       form_section:
         weight: 67
@@ -124,14 +132,29 @@ settings:
       locations_section:
         enabled: true
         weight: 34
+      machine_part:
+        weight: 98
+        enabled: false
+      machine_part_item:
+        weight: 99
+        enabled: false
+      map_block:
+        enabled: true
+        weight: 100
       mission_section:
         weight: 87
         enabled: false
       news_section:
         weight: 35
         enabled: false
+      news_with_filters:
+        weight: 104
+        enabled: false
       newsletter_sign_up_block:
         weight: 36
+        enabled: false
+      one_big_image_section:
+        weight: 105
         enabled: false
       product_animation_section:
         weight: 93
@@ -150,6 +173,12 @@ settings:
         enabled: false
       quote_section:
         weight: 95
+        enabled: false
+      related_event_section:
+        weight: 112
+        enabled: false
+      related_news_section:
+        weight: 113
         enabled: false
       related_section:
         weight: 96

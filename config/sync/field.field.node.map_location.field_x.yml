@@ -1,0 +1,23 @@
+uuid: e416b025-0f07-4fc7-a3cd-79d8a4e076c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_x
+    - node.type.map_location
+id: node.map_location.field_x
+field_name: field_x
+entity_type: node
+bundle: map_location
+label: x
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: float

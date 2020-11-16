@@ -1,0 +1,19 @@
+uuid: 41cadfec-bd8c-4e16-b148-a34246e1e4cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.map_location
+id: node.map_location.field_country
+field_name: field_country
+entity_type: node
+bundle: map_location
+label: Country
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

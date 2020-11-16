@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_l_block_r.field_image
     - field.field.paragraph.text_l_block_r.field_link
+    - field.field.paragraph.text_l_block_r.field_map_block
     - field.field.paragraph.text_l_block_r.field_subtitle
     - field.field.paragraph.text_l_block_r.field_text
     - field.field.paragraph.text_l_block_r.field_title
@@ -12,7 +12,7 @@ dependencies:
   module:
     - field_group
     - link
-    - media_library
+    - paragraphs
     - text
 third_party_settings:
   field_group:
@@ -48,6 +48,7 @@ third_party_settings:
       label: 'Left side'
     group_ri:
       children:
+        - field_map_block
         - field_image
       parent_name: group_tabs
       weight: 5
@@ -65,13 +66,6 @@ targetEntityType: paragraph
 bundle: text_l_block_r
 mode: default
 content:
-  field_image:
-    type: media_library_widget
-    weight: 6
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
   field_link:
     weight: 4
     settings:
@@ -79,6 +73,18 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_map_block:
+    type: entity_reference_paragraphs
+    weight: 11
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
     region: content
   field_subtitle:
     weight: 2
@@ -104,6 +110,11 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true
