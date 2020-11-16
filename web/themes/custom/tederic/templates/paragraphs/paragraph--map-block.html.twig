@@ -1,0 +1,12 @@
+{%
+  set classes = [
+    paragraph.bundle|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <img src="/{{ base_path ~ directory }}/images/map/map.svg" id="map-block-img" />
+</div>
+
+{# <img src="/{{ base_path ~ directory }}/images/map/map-with-dots.svg" id="map-block-img-test" style="width: 100%;" /> #}
