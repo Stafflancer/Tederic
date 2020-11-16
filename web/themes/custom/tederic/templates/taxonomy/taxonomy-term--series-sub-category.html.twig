@@ -9,9 +9,9 @@
     <div class="product-title {{ ("pc-" ~ pc)|clean_class }}">
       {% set term_name = name.0["#context"]["value"] %}
 
-      {% if pc == 'NEO' %}
+      {% if 'NEO' in pc %}
         {{ term_name|replace({" ": "<span>•</span>"})|raw }}
-      {% elseif pc == 'DREAM' %}
+      {% elseif 'DREAM' in pc %}
         {{ (term_name ~ "<span>.</span>")|raw }}
       {% else %}
         {{ term_name }}
