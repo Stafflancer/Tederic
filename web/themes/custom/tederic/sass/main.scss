@@ -1330,8 +1330,22 @@ textarea[rows] {
 .region-footer-first {
   background-color: $dark_blue;
   position: relative;
+  z-index: 1;
 
-  @media screen and (min-width: 1610px) {
+  @media screen and (min-width: 768px) {
+    &:before {
+      content: '';
+      height: 2px;
+      background-color: $red;
+      position: absolute;
+      width: 150px;
+      transform: rotate(-45deg);
+      left: -25px;
+      top: 215px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
     &:after {
       content: '';
       height: 2px;
@@ -1354,7 +1368,7 @@ textarea[rows] {
       padding-top: 30px;
     }
 
-    @media screen and (min-width: 1610px) {
+    @media screen and (min-width: 768px) {
       &:after {
         content: '';
         height: 2px;
@@ -1388,6 +1402,9 @@ textarea[rows] {
   .footer-right {
     position: relative;
     z-index: 2;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   .nenews-letter-footer {
@@ -1432,7 +1449,7 @@ textarea[rows] {
       list-style-type: none;
       display: flex;
       flex-wrap: wrap;
-      max-width: 355px;
+      max-width: 360px;
       @media screen and (max-width: 767px) {
         max-width: 100%;
         flex-flow: column;
@@ -1442,7 +1459,7 @@ textarea[rows] {
       li {
         flex: 0 0 50%;
         max-width: 50%;
-        padding: 0 80px 11px 0;
+        padding: 0 70px 11px 0;
         @media screen and (max-width: 767px) {
           flex: 0 0 100%;
           max-width: 100%;
@@ -1526,19 +1543,6 @@ textarea[rows] {
   overflow: hidden;
   @media screen and (max-width: 767px) {
     padding-top: 30px;
-  }
-
-  @media screen and (min-width: 1610px) {
-    &:after {
-      content: '';
-      height: 2px;
-      background-color: $red;
-      position: absolute;
-      width: 150px;
-      transform: rotate(-45deg);
-      left: -35px;
-      top: 70px;
-    }
   }
 
   .region-wrapper {
@@ -7997,6 +8001,68 @@ textarea[rows] {
     .text-large p {
       font-size: 20px;
       line-height: 24px;
+    }
+  }
+}
+
+body {
+  &:not(.path-frontpage) {
+    .footer-menu-soc {
+      @media screen and (min-width: 768px) {
+        padding-right: 40px;
+      }
+    }
+
+    .region-footer-first {
+      &:after {
+        @media screen and (max-width: 1610px) {
+          bottom: 15px;
+        }
+      }
+
+      .region-wrapper {
+        &:after {
+          @media screen and (min-width: 768px) {
+            top: 35px;
+            width: 100px;
+            left: 140px;
+          }
+          @media screen and (min-width: 1024px) {
+            width: 240px;
+            top: 84px;
+          }
+        }
+      }
+    }
+  }
+
+  &.path-frontpage {
+    .region-footer-first {
+      &:after {
+        @media screen and (max-width: 1610px) {
+          width: 100px;
+          bottom: 0px;
+          right: -14px;
+        }
+      }
+
+      &:before {
+        @media screen and (max-width: 1610px) {
+          width: 85px;
+          left: -11px;
+          top: 170px;
+        }
+      }
+
+      .region-wrapper {
+        &:after {
+          @media screen and (min-width: 768px) and (max-width: 1023px) {
+            top: 35px;
+            width: 100px;
+            left: 140px;
+          }
+        }
+      }
     }
   }
 }
