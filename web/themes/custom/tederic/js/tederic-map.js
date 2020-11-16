@@ -12,10 +12,6 @@
   //   });
   // });
 
-  // $(".leaflet-container").bind("mousewheel", function() {
-  //   return false;
-  // });
-
   var window_width = $(window).width();
   var mobile_width = 767;
 
