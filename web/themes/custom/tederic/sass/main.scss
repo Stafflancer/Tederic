@@ -8136,3 +8136,108 @@ body {
     }
   }
 }
+
+.leaflet-container {
+  background-color: $gray;
+
+  .desc-wrap {
+    white-space: nowrap;
+
+    span {
+      display: inline-block;
+      color: #586267;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 29px;
+      vertical-align: middle;
+
+      &:not(:last-child) {
+        margin-right: 45px;
+      }
+    }
+
+    img {
+      display: inline-block;
+      max-width: 18px;
+      margin-right: 10px;
+    }
+  }
+
+  .marker-wrap {
+    white-space: nowrap;
+
+    .marker-icon {
+      width: 12px;
+
+      &.big {
+        width: 20px;
+      }
+    }
+
+    .marker-country {
+      color: $dark_blue;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0;
+      vertical-align: middle;
+      padding-left: 10px;
+    }
+  }
+
+  .leaflet-popup-content-wrapper {
+    background-color: $white;
+    box-shadow: 0 1px 11px 0 rgba(0,0,0,0.15);
+    padding: 15px 20px 20px;
+    text-align: center;
+  }
+
+  .leaflet-popup-tip {
+    background-color: $white;
+    box-shadow: 0 1px 11px 0 rgba(0,0,0,0.15);
+  }
+
+  .leaflet-popup-content {
+    margin: 0;
+  }
+
+  .field-company-name {
+    color: $dark_blue;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  .field-address {
+    color: #586267;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .field-phone-number,
+  .field-email-address {
+    color: #212121;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+
+  .field-phone-number {
+    margin-bottom: 8px;
+  }
+
+  .leaflet-popup-close-button {
+    display: none;
+  }
+
+  .leaflet-top,
+  .leaflet-bottom {
+    z-index: 499;
+  }
+}
