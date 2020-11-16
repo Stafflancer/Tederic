@@ -88,7 +88,7 @@
           // Open headquarter popup for mobile except homepage.
           if ((window_width <= mobile_width) && data.headquarter && !$('body').hasClass('path-frontpage')) {
             marker.openPopup();
-            this.setZoom(2).panTo(data.x, data.y);
+            // this.setZoom(2).panTo(data.x, data.y);
           }
         }
       },
@@ -122,10 +122,10 @@
         // Add desc...
         var myIcon = L.divIcon({
           className: 'desc-wrap',
-          html: '<img src="/themes/custom/tederic/images/map/red-dot.svg"/>'+
+          html: '<div><img src="/themes/custom/tederic/images/map/red-dot.svg"/>'+
                 '<span>' + Drupal.t('Headquartes') + '</span>'+
                 '<img src="/themes/custom/tederic/images/map/blue-dot.svg"/>'+
-                '<span>' + Drupal.t('Subsidiaries') + '</span>'
+                '<span>' + Drupal.t('Subsidiaries') + '</span></div>'
         });
         // you can set .my-div-icon styles in CSS
         L.marker(this.relposToLatLng(0.5, 0.9), {icon: myIcon}).addTo(this.map);

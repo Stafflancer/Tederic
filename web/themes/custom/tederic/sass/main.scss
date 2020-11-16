@@ -2310,6 +2310,10 @@ textarea[rows] {
     img {
       border-radius: 8px 8px 0 0;
       max-height: 244px;
+      @media screen and (max-width: 1023px) {
+        height: 150px;
+        object-fit: cover;
+      }
     }
   }
 
@@ -8154,9 +8158,15 @@ body {
 .map-block {
   .leaflet-container {
     background-color: $gray;
+    // height: 700px !important;
 
     .desc-wrap {
       white-space: nowrap;
+      width: 300px !important;
+
+      > div {
+        transform: translateX(-50%);
+      }
 
       span {
         display: inline-block;
@@ -8174,7 +8184,7 @@ body {
 
       img {
         display: inline-block;
-        max-width: 18px;
+        width: 18px;
         margin-right: 10px;
       }
     }
