@@ -919,9 +919,10 @@ textarea[rows] {
                   position: relative;
                   border-radius: 4px;
                   margin-bottom: 30px;
+                  min-height: 150px;
 
                   &[data-tid="15"] {
-                    margin-bottom: 0;
+                    // margin-bottom: 0;
                   }
 
                   &.series-sub-category {
@@ -958,7 +959,7 @@ textarea[rows] {
                   }
 
                   &.series-category {
-                    min-height: 150px;
+                    // min-height: 150px;
                     .product-content {
                       color: #fff;
                       position: absolute;
