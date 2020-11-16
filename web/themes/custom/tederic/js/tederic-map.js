@@ -28,11 +28,13 @@
         var map = this.map,
         loc = this.relposToLatLng(data.x, data.y);
 
+        // Position class.
         title_position_class = ' right-side';
         if (data.x < 0.5) {
           title_position_class = ' left-side';
         }
 
+        // Not show popop if cantent is empty.
         if (data.note == "\n") {
           var popup = false;
         }
@@ -42,8 +44,10 @@
         
         loc_icon_url = '/themes/custom/tederic/images/map/';
         var loc_icon = 'blue-dot.svg';
+        var headquarter_class = '';
         if (data.headquarter) {
           loc_icon = 'red-dot.svg';
+          headquarter_class = ' headquarter';
         }
 
         size_class = '';
@@ -60,12 +64,21 @@
         //   shadowSize: icon_size,
         //   shadowAnchor: [10, 8],
         // });
+
+        var marker_icon = '<img class="marker-icon' + size_class + '" src="' + loc_icon_url + loc_icon + '"/>';
+        var marker_country = '<span class="marker-country' + title_position_class + '">' + data.country + '</span>'
         
+        if (data.x < 0.5) {
+          marker_html = marker_country + marker_icon;
+        }
+        else {
+          marker_html = marker_icon + marker_country;
+        }
+
         var marker = L.marker(loc, {
           icon: new L.DivIcon({
-                  className: 'marker-wrap',
-                  html: '<img class="marker-icon' + size_class + '" src="' + loc_icon_url + loc_icon + '"/>'+
-                        '<span class="marker-country' + title_position_class + '">' + data.country + '</span>'
+                  className: 'marker-wrap' + headquarter_class,
+                  html: marker_html,
                 }),
           title: data.country,
         }).addTo(map);
