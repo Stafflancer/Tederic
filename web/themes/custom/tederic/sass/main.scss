@@ -6832,6 +6832,8 @@ textarea[rows] {
     margin-bottom: 20px;
     @media screen and (max-width: 767px) {
       margin-bottom: 40px;
+      font-size: 20px;
+      line-height: 24px;
     }
   }
 
@@ -7287,6 +7289,16 @@ textarea[rows] {
             @media screen and (max-width: 767px) {
               width: 100%;
             }
+          }
+
+          .field-special-label {
+            background-color: #E8412D;
+            color: $white;
+            border-radius: 0 4px 4px 0;
+            padding: 5px 10px 5px 15px;
+            position: absolute;
+            top: 30px;
+            left: 0;
           }
 
           .sub-title {
