@@ -2128,7 +2128,7 @@ textarea[rows] {
         font-weight: 700;
         line-height: 30px;
 
-        &.pc-neo {
+        &[class^="pc-neo"] {
           // color: $dark_blue;
 
           + .product-sub-title {
@@ -2144,7 +2144,7 @@ textarea[rows] {
           }
         }
 
-        &.pc-dream {
+        &[class^="pc-dream"] {
           // color: $white;
 
           + .product-sub-title {
@@ -5013,7 +5013,7 @@ textarea[rows] {
           margin-bottom: 40px;
         }
 
-        &.pc-neo {
+        &[class^="pc-neo"] {
           span {
             display: inline-block;
             margin: 0 5px;
@@ -5024,7 +5024,7 @@ textarea[rows] {
           }
         }
 
-        &.pc-dream {
+        &[class^="pc-dream"] {
           color: #084F9D;
 
           span {
@@ -6312,7 +6312,7 @@ textarea[rows] {
           font-size: 22px;
         }
 
-        &.pc-neo {
+        &[class^="pc-neo"] {
           // color: $dark_blue;
 
           + .product-sub-title {
@@ -6328,7 +6328,7 @@ textarea[rows] {
           }
         }
 
-        &.pc-dream {
+        &[class^="pc-dream"] {
           // color: $white;
 
           + .product-sub-title {
