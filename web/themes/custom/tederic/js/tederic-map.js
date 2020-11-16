@@ -85,8 +85,8 @@
         if (popup) {
           marker.bindPopup(popup);
 
-          // Open headquarter popup for mobile.
-          if ((window_width <= mobile_width) && data.headquarter) {
+          // Open headquarter popup for mobile except homepage.
+          if ((window_width <= mobile_width) && data.headquarter && !$('body').hasClass('path-frontpage')) {
             marker.openPopup();
             this.setZoom(2).panTo(data.x, data.y);
           }
@@ -111,6 +111,11 @@
       onReady: function() {
         // Disable scrollWheelZoom
         this.map.scrollWheelZoom.disable();
+        // Hide zoomControl for homepage.
+        if ($('body').hasClass('path-frontpage')) {
+          this.map.zoomControl.remove();
+        }
+
         // Import notes
         var notes = drupalSettings.map_block.locations;
         this.import(notes);
