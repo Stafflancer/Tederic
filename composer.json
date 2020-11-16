@@ -10,33 +10,18 @@
         }
     ],
     "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-              "name": "wwalc/colorbutton",
-              "version": "4.15.0",
-              "type": "drupal-library",
-              "dist": {
-                "url": "https://download.ckeditor.com/colorbutton/releases/colorbutton_4.15.0.zip",
-                "type": "zip"
-              },
-              "require": {
-                "composer/installers": "~1.0"
-              }
-            }
-        },
-        {
+      {
+          "type": "composer",
+          "url": "https://packages.drupal.org/8"
+      },
+      {
           "type": "package",
           "package": {
-            "name": "wwalc/colordialog",
+            "name": "wwalc/colorbutton",
             "version": "4.15.0",
             "type": "drupal-library",
             "dist": {
-              "url": "https://download.ckeditor.com/colordialog/releases/colordialog_4.15.0.zip",
+              "url": "https://download.ckeditor.com/colorbutton/releases/colorbutton_4.15.0.zip",
               "type": "zip"
             },
             "require": {
@@ -44,35 +29,62 @@
             }
           }
       },
-        {
-            "type": "package",
-            "package": {
-              "name": "wwalc/panelbutton",
-              "version": "4.15.0",
-              "type": "drupal-library",
-              "dist": {
-                "url": "https://download.ckeditor.com/panelbutton/releases/panelbutton_4.15.0.zip",
-                "type": "zip"
-              },
-              "require": {
-                "composer/installers": "~1.0"
-              }
-            }
-        },
-        {
+      {
+        "type": "package",
+        "package": {
+          "name": "wwalc/colordialog",
+          "version": "4.15.0",
+          "type": "drupal-library",
+          "dist": {
+            "url": "https://download.ckeditor.com/colordialog/releases/colordialog_4.15.0.zip",
+            "type": "zip"
+          },
+          "require": {
+            "composer/installers": "~1.0"
+          }
+        }
+      },
+      {
           "type": "package",
           "package": {
-            "name": "wwalc/font",
+            "name": "wwalc/panelbutton",
             "version": "4.15.0",
             "type": "drupal-library",
             "dist": {
-              "url": "https://download.ckeditor.com/font/releases/font_4.15.0.zip",
+              "url": "https://download.ckeditor.com/panelbutton/releases/panelbutton_4.15.0.zip",
               "type": "zip"
             },
             "require": {
               "composer/installers": "~1.0"
             }
           }
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "wwalc/font",
+          "version": "4.15.0",
+          "type": "drupal-library",
+          "dist": {
+            "url": "https://download.ckeditor.com/font/releases/font_4.15.0.zip",
+            "type": "zip"
+          },
+          "require": {
+            "composer/installers": "~1.0"
+          }
+        }
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "sachinchoolur/lightgallery",
+          "type": "drupal-library",
+          "version": "1.6.11",
+          "dist": {
+              "url": "https://github.com/sachinchoolur/lightGallery/archive/1.6.11.zip",
+              "type": "zip"
+          }
+        }
       }
     ],
     "require": {
@@ -94,6 +106,7 @@
         "drupal/field_group": "^3.1",
         "drupal/image_widget_crop": "^2.3",
         "drupal/jquery_ui_tabs": "^1.1",
+        "drupal/lightgallery": "~1.0",
         "drupal/link_attributes": "^1.11",
         "drupal/menu_firstchild": "^2.0@RC",
         "drupal/menu_item_extras": "^2.12",

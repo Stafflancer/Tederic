@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d947662b30bdee31e360c2295f09bbd",
+    "content-hash": "5571e23acc9c810211482cd8930e0b61",
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -4074,6 +4074,55 @@
             }
         },
         {
+            "name": "drupal/lightgallery",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/lightgallery.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightgallery-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "917d836c34cf028b5f4cb4ed25d4ff4f05d7483b"
+            },
+            "require": {
+                "drupal/core": "^8",
+                "sachinchoolur/lightgallery": "^1.2.21"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1539678482",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dietr_ch",
+                    "homepage": "https://www.drupal.org/user/9438"
+                },
+                {
+                    "name": "robin.ingelbrecht",
+                    "homepage": "https://www.drupal.org/user/2339074"
+                }
+            ],
+            "description": "Integrate the Light Gallery library with Drupal.",
+            "homepage": "https://www.drupal.org/project/lightgallery",
+            "support": {
+                "source": "https://git.drupalcode.org/project/lightgallery"
+            }
+        },
+        {
             "name": "drupal/link_attributes",
             "version": "1.11.0",
             "source": {
@@ -6515,6 +6564,15 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "sachinchoolur/lightgallery",
+            "version": "1.6.11",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/sachinchoolur/lightGallery/archive/1.6.11.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "stack/builder",
