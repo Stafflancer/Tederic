@@ -63,3 +63,19 @@ tederic_tabs:
     js/tederic_tabs.js: {}
   dependencies:
     - jquery_ui_tabs/tabs
+
+# imgViewer2
+img-viewer2:
+  version: 1.2.0
+  js:
+    'https://unpkg.com/leaflet@1.0.2/dist/leaflet.js': { type: external }
+    js/imgViewer2/dist/imgViewer2.min.js: {}
+    'https://unpkg.com/leaflet-responsive-popup@0.2.0/leaflet.responsive.popup.js': { type: external }
+    # js/imgViewer2/docs/lib/leaflet-beautify-marker-icon.js: {}
+    js/tederic-map.js: {}
+  css:
+    base:
+      js/imgViewer2/dist/imgViewer2.min.css: {}
+      'https://unpkg.com/leaflet@1.0.2/dist/leaflet.css': { type: external }
+      'https://unpkg.com/leaflet-responsive-popup@0.2.0/leaflet.responsive.popup.css': { type: external }
+      # js/imgViewer2/docs/lib/leaflet-beautify-marker-icon.css: {}

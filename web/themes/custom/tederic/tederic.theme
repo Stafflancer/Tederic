@@ -56,10 +56,13 @@ function tederic_preprocess_views_view_field(&$variables) {
   if ($view->id() == 'series_sub_categories') {
     if ($view->current_display == 'menu_left_block') {
       if ($variables['field']->field == 'name') {
+        // Add parent category tid to variable.
         $sub_category_tid = $variables['row']->tid;
         $sub_category_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($sub_category_tid);
         $parent_category_tid = $sub_category_term->get('field_parent_category')->getValue()[0]['target_id'];
         $variables['parent_category_tid'] = $parent_category_tid;
+        // Add separator.
+        $variables['output'] = str_replace(' ', '&nbsp;<span>-</span>&nbsp;', $variables['output']);
       }
     }
   }
@@ -106,6 +109,49 @@ function tederic_preprocess_paragraph(&$variables) {
           ]);
         }
       }
+      break;
+    case 'map_block':
+      $locations = [];
+      $lang_code = \Drupal::languageManager()->getCurrentLanguage()->getId();
+      $map_locations = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(
+        [
+          'type' => 'map_location', 
+          'status' => 1,
+          'langcode' => $lang_code,
+        ]
+      );
+
+      if (!empty($map_locations)) {
+        foreach ($map_locations as $nid => $node) {
+          // $node = $node->getTranslation($lang_code)->toArray();
+          // Is headquarter
+          $headquarter = empty($node->get('field_headquarter')->getValue()[0]['value']) ? FALSE : TRUE;
+          // Is headquarter
+          $big_icon = empty($node->get('field_big_icon')->getValue()[0]['value']) ? FALSE : TRUE;
+          // Country
+          $country = empty($node->get('field_country')->getValue()[0]['value']) ? '' : $node->get('field_country')->getValue()[0]['value'];
+          // Position
+          $x = $node->get('field_x')->getValue()[0]['value'];
+          $y = $node->get('field_y')->getValue()[0]['value'];
+          // Content
+          $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+          $build = $view_builder->view($node, 'teaser');
+          $output = render($build);
+          $location = [
+            'x' => $x / 100,
+            'y' => $y / 100,
+            'note' => $output,
+            'headquarter' => $headquarter,
+            'big_icon' => $big_icon,
+            'country' => $country
+          ];
+
+          $locations[] = $location;
+        }
+      }
+
+      $variables['#attached']['library'][] = 'tederic/img-viewer2'; 
+      $variables['#attached']['drupalSettings']['map_block']['locations'] = $locations;
       break;
   }
 }
