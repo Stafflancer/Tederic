@@ -1869,6 +1869,10 @@ textarea[rows] {
       max-width: 100%;
       order: -1;
       margin-bottom: 38px;
+
+      .field-map-block {
+        margin: 0 -20px;
+      }
     }
 
     img {
@@ -8266,6 +8270,14 @@ body {
     .leaflet-top,
     .leaflet-bottom {
       z-index: 499;
+    }
+  }
+}
+
+.leaflet-resp-popup-west {
+  .leaflet-popup-tip-container {
+    @media screen and (max-width: 767px) {
+      // display: none;
     }
   }
 }
