@@ -8,6 +8,7 @@ global-styling:
   js:
     js/slick.min.js: {}
     js/script.js: {}
+    js/tederic-modal.js: {}
   dependencies:
     - core/drupal
     - core/jquery
