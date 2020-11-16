@@ -3045,6 +3045,9 @@ textarea[rows] {
     background-color: $white;
     border-radius: 8px;
     transition: .3s all ease;
+    @media screen and (max-width: 1023px) {
+      box-shadow: 0 2px 7px 0 rgba(88,98,103,0.4);
+    }
 
     &:hover {
       box-shadow: 0 2px 7px 0 rgba(88,98,103,0.4);
@@ -8063,6 +8066,18 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+.node--type-solution {
+  @media screen and (max-width: 1023px) {
+    .section-media-icon {
+      padding-bottom: 0;
+    }
+
+    .solution-parts {
+      background-color: transparent;
     }
   }
 }
