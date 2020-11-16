@@ -3083,6 +3083,16 @@ textarea[rows] {
       padding: 0 30px;
     }
 
+    .lightgallery-wrapper {
+      padding: 0;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+    }
+
     img {
       border-radius: 8px 8px 0 0;
       @media screen and (max-width: 767px) {
