@@ -2151,7 +2151,7 @@ textarea[rows] {
         font-weight: 700;
         line-height: 30px;
 
-        &[class^="pc-neo"] {
+        &[class*="pc-neo"] {
           // color: $dark_blue;
 
           + .product-sub-title {
@@ -2167,7 +2167,7 @@ textarea[rows] {
           }
         }
 
-        &[class^="pc-dream"] {
+        &[class*="pc-dream"] {
           // color: $white;
 
           + .product-sub-title {
@@ -2245,6 +2245,7 @@ textarea[rows] {
       list-style-type: none;
       display: flex;
       overflow: auto;
+      padding-bottom: 7px;
 
       li {
         padding: 0 10px;
@@ -5039,7 +5040,7 @@ textarea[rows] {
           margin-bottom: 40px;
         }
 
-        &[class^="pc-neo"] {
+        &[class*="pc-neo"] {
           span {
             display: inline-block;
             margin: 0 5px;
@@ -5050,7 +5051,7 @@ textarea[rows] {
           }
         }
 
-        &[class^="pc-dream"] {
+        &[class*="pc-dream"] {
           color: #084F9D;
 
           span {
@@ -6338,7 +6339,7 @@ textarea[rows] {
           font-size: 22px;
         }
 
-        &[class^="pc-neo"] {
+        &[class*="pc-neo"] {
           // color: $dark_blue;
 
           + .product-sub-title {
@@ -6354,7 +6355,7 @@ textarea[rows] {
           }
         }
 
-        &[class^="pc-dream"] {
+        &[class*="pc-dream"] {
           // color: $white;
 
           + .product-sub-title {
@@ -6847,10 +6848,9 @@ textarea[rows] {
       flex: 0 0 50%;
       max-width: 50%;
       padding: 40px 20px 0;
-      @media screen and (max-width: 1023px) {
+      @media screen and (max-width: 767px) {
         max-width: 100%;
         flex: 0 0 100%;
-        padding-bottom: 80px;
       }
     }
 
@@ -6880,8 +6880,7 @@ textarea[rows] {
           img {
             border-radius: 8px 0 0 8px;
             @media screen and (max-width: 1023px) {
-              width: 100%;
-              border-radius: 8px 8px 0 0;
+              display: none;
             }
           }
         }
@@ -6892,7 +6891,13 @@ textarea[rows] {
           flex-flow: column;
           justify-content: space-between;
           @media screen and (max-width: 1023px) {
-            padding: 30px 20px;
+            padding: 20px;
+          }
+
+          .content-bottom {
+            > div {
+              display: inline-block;
+            }
           }
 
           span {
@@ -6905,7 +6910,7 @@ textarea[rows] {
             @media screen and (max-width: 1023px) {
               font-size: 20px;
               line-height: 24px;
-              margin-bottom: 20px;
+              margin-bottom: 30px;
             }
           }
 
@@ -6915,10 +6920,6 @@ textarea[rows] {
             font-size: 14px;
             letter-spacing: 0;
             line-height: 16px;
-            @media screen and (max-width: 1023px) {
-              font-size: 18px;
-              line-height: 29px;
-            }
           }
         }
       }

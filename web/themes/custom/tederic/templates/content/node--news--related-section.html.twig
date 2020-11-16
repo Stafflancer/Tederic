@@ -3,10 +3,16 @@
 
     <div class="wrapper">
       <div class="img">{{ content.field_image_crop }}</div>
-      {{ content.field_special_label }}
       <div class="content">
         {{ label }}
-        {{ content.field_date }}
+
+        <div class="content-bottom">
+          {% if content.field_special_label.0 %}
+            {{ content.field_special_label }} · {{ content.field_date }}
+          {% else %}
+            {{ content.field_date }}
+          {% endif %}
+        </div>
       </div>
     </div>
 
