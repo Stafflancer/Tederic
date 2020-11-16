@@ -1,4 +1,4 @@
-uuid: 2dea5369-7f7e-478e-be40-914b94af6f8f
+uuid: e416b025-0f07-4fc7-a3cd-79d8a4e076c1
 langcode: en
 status: true
 dependencies:
@@ -16,8 +16,8 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  min: 0
-  max: 100
+  min: !!float 0
+  max: !!float 100
   prefix: ''
   suffix: '%'
-field_type: integer
+field_type: float
