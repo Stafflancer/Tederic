@@ -1,20 +1,27 @@
-uuid: 6c2b24b3-ec44-4576-b2f7-552c75fa06d2
+uuid: f11bb19f-2e30-4136-bb5a-c445a0129772
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image_crop
+    - field.storage.paragraph.field_images
     - paragraphs.paragraphs_type.solution_part
   module:
+    - content_translation
     - image
-id: paragraph.solution_part.field_image_crop
-field_name: field_image_crop
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: paragraph.solution_part.field_images
+field_name: field_images
 entity_type: paragraph
 bundle: solution_part
-label: Image
+label: Images
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
