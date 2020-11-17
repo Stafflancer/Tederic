@@ -8,6 +8,7 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor: 0
   ckeditor_config: 0
   ckeditor_font: 0
@@ -57,6 +58,7 @@ module:
   path: 0
   path_alias: 0
   rdf: 0
+  recaptcha: 0
   responsive_image_map: 0
   search: 0
   shortcut: 0

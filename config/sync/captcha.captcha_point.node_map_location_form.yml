@@ -1,0 +1,7 @@
+uuid: f4f4cef5-cf24-45bc-8d03-3242c7181ae9
+langcode: en
+status: false
+dependencies: {  }
+formId: node_map_location_form
+captchaType: default
+label: null

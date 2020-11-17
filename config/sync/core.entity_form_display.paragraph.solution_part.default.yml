@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.solution_part.field_image_crop
     - field.field.paragraph.solution_part.field_images
     - field.field.paragraph.solution_part.field_link
     - field.field.paragraph.solution_part.field_text
@@ -18,8 +19,8 @@ targetEntityType: paragraph
 bundle: solution_part
 mode: default
 content:
-  field_images:
-    weight: 4
+  field_image_crop:
+    weight: 3
     settings:
       show_default_crop: true
       warn_multiple_usages: true
@@ -60,4 +61,5 @@ content:
     region: content
 hidden:
   created: true
+  field_images: true
   status: true

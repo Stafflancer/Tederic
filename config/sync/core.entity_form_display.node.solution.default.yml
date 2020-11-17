@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.solution.body
     - field.field.node.solution.field_image_crop
+    - field.field.node.solution.field_images
     - field.field.node.solution.field_intro
     - field.field.node.solution.field_media_icon
     - field.field.node.solution.field_solution_parts
@@ -50,7 +51,7 @@ third_party_settings:
       label: 'Left side'
     group_right_side:
       children:
-        - field_image_crop
+        - field_images
       parent_name: group_solution_description
       weight: 12
       format_type: tab
@@ -83,8 +84,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image_crop:
-    weight: 29
+  field_images:
+    weight: 30
     settings:
       show_default_crop: true
       warn_multiple_usages: true
@@ -186,4 +187,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_image_crop: true
