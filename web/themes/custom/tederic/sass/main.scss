@@ -8301,3 +8301,43 @@ body {
     }
   }
 }
+
+.leaflet-control-container {
+  .leaflet-top {
+    top: auto;
+    bottom: 60px;
+    left: 60px;
+    @media screen and (max-width: 767px) {
+      bottom: 15px;
+      left: 15px;
+    }
+
+    .leaflet-control-zoom {
+      margin: 0;
+      border: none;
+
+      a {
+        border: none;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 0;
+        font-size: 0px;
+
+        &.leaflet-control-zoom-in {
+          background: url('../images/plus.png');
+          background-size: contain;
+        }
+
+        &.leaflet-control-zoom-out {
+          background: url('../images/minus.png');
+          background-size: contain;
+        }
+
+        & + a {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
