@@ -33,6 +33,19 @@ function tederic_common_form_alter(&$form, FormStateInterface $form_state, $form
 }
 
 /**
+ * Implements hook_webform_element_alter().
+ */
+function tederic_common_webform_element_alter(array &$element, FormStateInterface $form_state, array $context) {
+  // Captcha element type.
+  if ($element['#type'] == 'captcha') {
+    // Change captcha type to tencentcloud_captcha for Chinese language.
+    if (\Drupal::languageManager()->getCurrentLanguage()->getId() == 'zh-hans') {
+      $element['#captcha_type'] = 'tencentcloud_captcha/tencentcloud_captcha';
+    }
+  }
+}
+
+/**
  * Implements hook_preprocess_links().
  */
 function tederic_common_node_update(EntityInterface $entity) {
