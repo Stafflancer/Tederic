@@ -8173,6 +8173,7 @@ body {
     .desc-wrap {
       white-space: nowrap;
       width: 300px !important;
+      top: -20px;
 
       > div {
         transform: translateX(-50%);

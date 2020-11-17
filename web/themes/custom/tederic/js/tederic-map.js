@@ -124,7 +124,7 @@
                 '<span>' + Drupal.t('Subsidiaries') + '</span></div>'
         });
         // you can set .my-div-icon styles in CSS
-        L.marker(this.relposToLatLng(0.5, 0.9), {icon: myIcon}).addTo(this.map);
+        L.marker(this.relposToLatLng(0.5, 1), {icon: myIcon}).addTo(this.map);
       }
     });
   });
