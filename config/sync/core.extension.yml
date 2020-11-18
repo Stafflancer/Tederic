@@ -68,6 +68,7 @@ module:
   taxonomy_manager: 0
   tederic_breadcrumb: 0
   tederic_common: 0
+  tencentcloud_captcha: 0
   text: 0
   token: 0
   toolbar: 0
