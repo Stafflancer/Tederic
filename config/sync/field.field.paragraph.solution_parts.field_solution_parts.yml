@@ -15,7 +15,7 @@ bundle: solution_parts
 label: 'Solution parts'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

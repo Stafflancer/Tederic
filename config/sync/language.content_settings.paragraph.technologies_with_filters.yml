@@ -15,4 +15,4 @@ id: paragraph.technologies_with_filters
 target_entity_type_id: paragraph
 target_bundle: technologies_with_filters
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

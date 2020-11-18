@@ -14,7 +14,7 @@ bundle: news_with_filters
 label: 'Popular news layout'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
