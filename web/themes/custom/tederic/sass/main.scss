@@ -492,7 +492,21 @@ textarea[rows] {
 .region-footer-second > .custom-row > .custom-column {
   padding-left: 20px;
   padding-right: 20px;
+  @media screen and (min-width: 768px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
+@media screen and (min-width: 768px) {
+  body .blue-background-text-section .field-text,
+  body .mission-section .field-text-2,
+  body .mission-section .field-text,
+  body .quote-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .site-slogan, input, select, textarea, a, button, input[type="submit"] {
   transition: .3s all ease;
 }
