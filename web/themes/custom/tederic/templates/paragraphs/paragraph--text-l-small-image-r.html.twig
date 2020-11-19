@@ -17,7 +17,9 @@
       </div>
     {% endif %}
 
-    <div class="small-12 medium-6 column">
+    <div class="small-12 column">
+      {{ content.field_image_crop }}
+
       <div class="text-max-width">
         {% if ("Off" in content.field_title_above.0) and content.field_title.0 %}
           <div class="title">{{ content.field_title }}</div>
@@ -28,8 +30,5 @@
       </div>
     </div>
 
-    <div class="small-12 medium-6 column">
-      {{ content.field_image_crop }}
-    </div>
   </div>
 </div>

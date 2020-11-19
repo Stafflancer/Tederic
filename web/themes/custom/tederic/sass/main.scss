@@ -7191,6 +7191,7 @@ body {
         position: relative;
         @media screen and (max-width: 767px) {
           transition: .3s all ease;
+          margin-bottom: 80px;
         }
 
         &:hover {
@@ -8519,6 +8520,15 @@ body {
       margin-bottom: 25px;
     }
   }
+
+  .text-l-small-image-r {
+    .field-image-crop {
+      float: right;
+      margin-bottom: 10px;
+      margin-left: 40px;
+      max-width: 50%;
+    }
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -8610,6 +8620,17 @@ body {
   .image-l-text-r-link {
     .field-image-crop {
       margin-bottom: 30px;
+    }
+  }
+
+  .text-l-small-image-r {
+    .column {
+      display: flex;
+      flex-flow: column;
+
+      .field-image-crop {
+        order: 1;
+      }
     }
   }
 }
