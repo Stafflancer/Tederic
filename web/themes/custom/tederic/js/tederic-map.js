@@ -26,9 +26,11 @@
 
         // Position class.
         title_position_class = ' right-side';
+        /* 
         if (data.x < 0.5) {
           title_position_class = ' left-side';
-        }
+        } 
+        */
 
         // Not show popop if cantent is empty.
         if (data.note == "\n") {
@@ -64,12 +66,15 @@
         var marker_icon = '<img class="marker-icon' + size_class + '" src="' + loc_icon_url + loc_icon + '"/>';
         var marker_country = '<span class="marker-country' + title_position_class + '">' + data.country + '</span>'
         
+        /* 
         if (data.x < 0.5) {
           marker_html = marker_country + marker_icon;
         }
         else {
           marker_html = marker_icon + marker_country;
-        }
+        } 
+        */
+        marker_html = marker_icon + marker_country;
 
         var marker = L.marker(loc, {
           icon: new L.DivIcon({
@@ -90,7 +95,7 @@
           // Open headquarter popup for mobile except homepage.
           if ((window_width <= mobile_width) && data.headquarter && !$('body').hasClass('path-frontpage')) {
             marker.openPopup();
-            // this.setZoom(2).panTo(data.x, data.y);
+            this.setZoom(4).panTo(data.x, data.y);
           }
         }
       },

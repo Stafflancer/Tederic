@@ -77,3 +77,4 @@ img-viewer2:
       js/imgViewer2/dist/imgViewer2.min.css: {}
       'https://unpkg.com/leaflet@1.0.2/dist/leaflet.css': { type: external }
       'https://unpkg.com/leaflet-responsive-popup@0.2.0/leaflet.responsive.popup.css': { type: external }
+      css/tederic-map.css: {}
