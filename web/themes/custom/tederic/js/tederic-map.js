@@ -79,7 +79,13 @@
           title: data.country,
         }).addTo(map);
         if (popup) {
-          marker.bindPopup(popup);
+          marker.bindPopup(popup)
+          // Change zoom icons z-index if popup open.
+          .on('popupopen', function (popup) {
+            $('.leaflet-top, .leaflet-bottom').css('z-index', 100);
+          }).on('popupclose', function (popup) {
+            $('.leaflet-top, .leaflet-bottom').css('z-index', 499);
+          });
 
           // Open headquarter popup for mobile except homepage.
           if ((window_width <= mobile_width) && data.headquarter && !$('body').hasClass('path-frontpage')) {
@@ -103,6 +109,11 @@
   });
 
   $(document).ready( function() {
+    // Show .png for firefox because don't work with .svg
+    if (navigator.userAgent.indexOf("Firefox") !== -1) {
+      $(".map-block img#map-block-img").attr('src', $(".map-block img#map-block-img").attr('src').replace('.svg', '.png'));
+    }
+
     var $img = $(".map-block #map-block-img").imgNotes2( {
       onReady: function() {
         // Disable scrollWheelZoom

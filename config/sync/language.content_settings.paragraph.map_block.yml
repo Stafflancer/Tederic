@@ -1,9 +1,9 @@
-uuid: e640977e-1462-4091-873a-4d34bfcb7eab
+uuid: 4d09e9b8-4ddf-4adb-a80d-0374492098f2
 langcode: en
 status: true
 dependencies:
   config:
-    - paragraphs.paragraphs_type.image_section
+    - paragraphs.paragraphs_type.map_block
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: paragraph.image_section
+id: paragraph.map_block
 target_entity_type_id: paragraph
-target_bundle: image_section
+target_bundle: map_block
 default_langcode: site_default
 language_alterable: true

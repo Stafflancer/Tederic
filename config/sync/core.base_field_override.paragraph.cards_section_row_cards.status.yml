@@ -11,7 +11,7 @@ bundle: cards_section_row_cards
 label: Published
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 1

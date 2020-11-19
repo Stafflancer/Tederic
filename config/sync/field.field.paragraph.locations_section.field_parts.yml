@@ -15,7 +15,7 @@ bundle: locations_section
 label: Parts
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -22,7 +22,7 @@ bundle: product_animation_section
 label: 'Machine parts data'
 description: 'Paste generated code to this field.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
