@@ -1,0 +1,7 @@
+@media screen and (max-width: 767px) {
+  body.node--type-worldwide img#map-block-img {
+    max-width: unset !important; 
+    width: 100% !important; 
+    height: 520px !important; 
+  }
+}
