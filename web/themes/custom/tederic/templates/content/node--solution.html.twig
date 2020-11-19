@@ -4,16 +4,15 @@
 
   <div class="section-media-icon section-margin">
     <div class="row align-items-center">
-      <div class="small-12 large-6 column">
+      <div class="small-12 column">
+        {# {{ content.field_image_crop }} #}
+        {{ content.field_images }}
+
         <div class="title d-flex align-items-center justify-start">
           {{ content.field_media_icon }}
           {{ label }}
         </div>
         {{ content.body }}
-      </div>
-      <div class="small-12 large-6 column">
-        {# {{ content.field_image_crop }} #}
-        {{ content.field_images }}
       </div>
     </div>
   </div>
