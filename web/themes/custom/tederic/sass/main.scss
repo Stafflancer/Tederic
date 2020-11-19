@@ -465,7 +465,7 @@ textarea[rows] {
   }
 }
 .row .row {
-  margin: 0 -20px;
+  margin: 0 -50px;
 }
 .row,
 .views-exposed-form,
@@ -7211,6 +7211,17 @@ body {
         &:hover {
           @media screen and (max-width: 767px) {
             box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
+          }
+        }
+
+        .medium-4 {
+          @media screen and (min-width: 768px) {
+            padding-right: 10px;
+          }
+        }
+        .medium-8 {
+          @media screen and (min-width: 768px) {
+            padding-left: 45px;
           }
         }
 
