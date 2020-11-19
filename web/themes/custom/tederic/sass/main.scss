@@ -3699,20 +3699,15 @@ textarea[rows] {
 
 .vertical-carousel-text-section {
   .paragraph-wrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    > div {
-      flex: 0 0 50%;
-      max-width: 50%;
-      @media screen and (max-width: 1023px) {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-    }
 
     .field-images {
+      @media screen and (min-width: 1024px) {
+        float: left;
+        width: 50%;
+        padding-right: 110px;
+        margin-bottom: 10px;
+      }
+
       @media screen and (max-width: 1023px) {
         margin-bottom: 40px;
         img {
@@ -3723,15 +3718,11 @@ textarea[rows] {
   }
 
   .field-text {
-    padding-left: 110px;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 0;
     line-height: 29px;
     color: $gray_text;
-    @media screen and (max-width: 1023px) {
-      padding-left: 0;
-    }
 
     h3 {
       color: $dark_blue;
@@ -4301,13 +4292,6 @@ textarea[rows] {
   margin-bottom: 130px !important;
   @media screen and (max-width: 1023px) {
     margin-top: 0;
-  }
-
-  .l-text {
-    @media screen and (min-width: 1024px) {
-      padding-left: 90px;
-      max-width: 570px;
-    }
   }
 
   .title {
@@ -8443,4 +8427,59 @@ body {
 
 .history-block {
   overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .image-l-text-r {
+    .field-image-crop {
+      float: left;
+      width: 45%;
+      margin-right: 110px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text-l-image-r-section {
+    .field-image-crop {
+      float: right;
+      margin-left: 80px;
+      margin-bottom: 10px;
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .image-l-text-r {
+    .column {
+      padding: 0;
+    }
+
+    .l-text {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .text-l-image-r-section {
+    .column {
+      display: flex;
+      flex-flow: column;
+    }
+
+    .field-image-crop {
+      order: 1;
+    }
+  }
+
+  .image-l-text-r {
+    .l-text {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
