@@ -8,11 +8,9 @@
 
 <div{{ attributes.addClass(classes) }}>
   <div class="row align-items-center">
-    <div class="small-12 medium-6 img">
+    <div class="small-12 column">
       {{ content.field_image_crop }}
-    </div>
 
-    <div class="small-12 medium-6 column">
       <div class="text-max-width text-left">
         {% if content.field_title.0 %}
           <div class="title">{{ content.field_title }}</div>

@@ -8,7 +8,9 @@
 
 <div{{ attributes.addClass(classes) }}>
   <div class="row">
-    <div class="small-12 medium-6 column">
+    <div class="small-12 column">
+      {{ content.field_image_crop }}
+
       <div class="text-max-width">
 
         {% if content.field_subtitle.0 %}
@@ -23,10 +25,6 @@
           <div class="text-large">{{ content.field_text }}</div>
         {% endif %}
       </div>
-    </div>
-
-    <div class="small-12 medium-6 order-1">
-      {{ content.field_image_crop }}
     </div>
   </div>
 </div>
