@@ -6509,7 +6509,7 @@ body {
   .title {
     text-align: left;
     margin-bottom: 30px;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       padding-top: 70px;
     }
   }
@@ -6646,7 +6646,7 @@ body {
   }
 
   .sub-title {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       padding-top: 70px;
     }
   }
@@ -8104,7 +8104,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .text-max-width {
-    max-width: 650px;
+    // max-width: 650px;
 
     &.text-left {
       margin-left: auto;
@@ -8449,6 +8449,7 @@ body {
       width: 50%;
       float: right;
       margin-left: 110px;
+      margin-bottom: 10px;
     }
   }
 
@@ -8457,6 +8458,7 @@ body {
       width: 55%;
       float: right;
       margin-left: 60px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -8476,6 +8478,45 @@ body {
       width: 50%;
       float: right;
       margin-left: 60px;
+    }
+  }
+
+  .text-l-image-r-hotline-number {
+    .field-image-crop {
+      width: 50%;
+      float: right;
+      margin-bottom: 10px;
+      margin-left: 50px;
+    }
+  }
+
+  .image-l-text-r-link {
+    .field-title {
+      padding-top: 70px;
+    }
+
+    .field-image-crop {
+      width: 50%;
+      float: left;
+      margin-bottom: 10px;
+      margin-right: 50px;
+    }
+  }
+
+  .text-l-image-r {
+    .field-image-crop {
+      width: 50%;
+      float: right;
+      margin-bottom: 10px;
+      margin-left: 50px;
+    }
+
+    .field-text,
+    .field-text p {
+      max-width: 100%;
+    }
+    .field-text p {
+      margin-bottom: 25px;
     }
   }
 }
@@ -8556,6 +8597,19 @@ body {
           margin: 0 -20px;
         }
       }
+    }
+  }
+
+  .text-l-image-r-hotline-number {
+    .field-image-crop {
+      margin: 0 -20px 30px;
+    }
+  }
+
+  .text-l-image-r,
+  .image-l-text-r-link {
+    .field-image-crop {
+      margin-bottom: 30px;
     }
   }
 }
