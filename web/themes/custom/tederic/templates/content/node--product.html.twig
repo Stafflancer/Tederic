@@ -7,11 +7,6 @@
   <div class="row">
     <div class="small-12 column">
       <div class="product-wrapper">
-        <div class="product-text-left">
-          <h1 class="title">{{ label }}</h1>
-          {{ content.field_categories }}
-          {{ content.body }}
-        </div>
         <div class="product-items-right">
           {% if content.field_document_link_title.0 and content.field_document.0 %}
             <div class="document-wrapper">
@@ -29,6 +24,12 @@
           {% endif %}
           {{ content.field_small_blocks }}
           {# {{ content.field_series_sub_category }} #}
+        </div>
+
+        <div class="product-text-left">
+          <h1 class="title">{{ label }}</h1>
+          {{ content.field_categories }}
+          {{ content.body }}
         </div>
       </div>
     </div>
