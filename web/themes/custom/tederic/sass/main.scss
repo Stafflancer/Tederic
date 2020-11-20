@@ -7490,6 +7490,8 @@ body {
       transition: .3s all ease;
       @media screen and (max-width: 1023px) {
         flex-flow: column;
+        height: 100%;
+        display: block;
       }
 
       &:hover {
