@@ -29,6 +29,8 @@ timeline:
   js:
     js/timeline.min.js: {}
     js/initialization-timeline.js: {}
+  dependencies:
+    - tederic/hammer
 
 # Series
 series:
@@ -63,6 +65,13 @@ tederic_tabs:
     js/tederic_tabs.js: {}
   dependencies:
     - jquery_ui_tabs/tabs
+
+# jQuery hammer.js
+hammer:
+  version: 1.0
+  js:
+    'https://hammerjs.github.io/dist/hammer.min.js': { type: external, minified: true }
+    js/jquery.hammer.js: {}
 
 # imgViewer2
 img-viewer2:

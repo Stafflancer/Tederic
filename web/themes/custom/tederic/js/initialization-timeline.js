@@ -14,6 +14,15 @@
         });
       }
 
+      // Implement Hummer.js
+      var timeline_el = $('.timeline .timeline__wrap');
+      timeline_el.hammer().on("swipeleft", function(ev) {
+        $('.timeline-nav-button--next').trigger('click');
+      });
+      timeline_el.hammer().on("swiperight", function(ev) {
+        $('.timeline-nav-button--prev').trigger('click');
+      });
+
       if (window_width >= 1350) {
         useTimeline(8);
       } else if ((window_width >= 992) && (window_width <= 1350)) {
