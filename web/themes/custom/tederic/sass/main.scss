@@ -8698,6 +8698,11 @@ body {
         line-height: 32px;
       }
     }
+
+    .search-advanced,
+    .search-help-link {
+      display: none;
+    }
   }
 
   .search-wrapper {
