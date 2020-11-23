@@ -8745,5 +8745,25 @@ body {
         }
       }
     }
+
+    & + .pager {
+      padding: 0 20px;
+      margin-bottom: 80px;
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+          &:before {
+            width: 100%;
+          }
+
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
   }
 }
