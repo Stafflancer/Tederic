@@ -2341,14 +2341,15 @@ textarea[rows] {
 
   .event-item {
     display: block;
-    position: relative; 
+    position: relative;
+    height: 100%;
 
     img {
       border-radius: 8px 8px 0 0;
-      max-height: 244px;
+      height: 244px;
+      object-fit: cover;
       @media screen and (max-width: 1023px) {
         height: 150px;
-        object-fit: cover;
       }
     }
   }
@@ -3604,6 +3605,47 @@ textarea[rows] {
 
     .field-text {
       margin-bottom: 30px;
+    }
+  }
+}
+
+.node--type-technology {
+  .text-l-image-r-section {
+    .field-text,
+    .field-text p {
+      color: $gray_text;
+      font-size: 18px;
+      line-height: 29px;
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .field-text {
+      ul {
+        margin: 0 0 30px;
+        list-style-type: none;
+
+        li {
+          padding-left: 20px;
+          position: relative;
+
+          &:before {
+            content: '';
+            height: 7px;
+            width: 9px;
+            background-color: #E8412D;
+            border-radius: 8px;
+            position: absolute;
+            top: 11px;
+            left: 0;
+            @media screen and (max-width: 767px) {
+              top: 9px;
+            }
+          }
+        }
+      }
     }
   }
 }
