@@ -150,7 +150,7 @@ function tederic_preprocess_paragraph(&$variables) {
         }
       }
 
-      $variables['#attached']['library'][] = 'tederic/img-viewer2'; 
+      $variables['#attached']['library'][] = \Drupal::service('path.matcher')->isFrontPage() ? 'tederic/img-viewer2-homepage' : 'tederic/img-viewer2';
       $variables['#attached']['drupalSettings']['map_block']['locations'] = $locations;
       break;
   }
