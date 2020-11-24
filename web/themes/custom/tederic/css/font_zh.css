@@ -11,7 +11,7 @@ input[type="submit"],
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button,
-.leaflet-container,
+.map-block .leaflet-container,
 body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Sans';
 }
