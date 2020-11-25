@@ -35,13 +35,6 @@
     //   $('.product-item[data-tid="' + tid + '"').removeClass('show-bottom');
     // }).mouseleave();
 
-    // Close dialog by overlay click.
-    $(document).ajaxComplete(function() {
-      $('.ui-widget-overlay').click(function() {
-        $('button.ui-dialog-titlebar-close').trigger('click');
-      });
-    });
-
     // vars
     var window_width = $(window).width();
     $(window).resize(function() {

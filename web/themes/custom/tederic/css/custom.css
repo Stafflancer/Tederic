@@ -1,3 +1,17 @@
 .lightgallery .field-content a:hover {
   cursor: zoom-in;
 }
+
+/* Contact modal */
+#block-contactfloatingbuttonontheright .contact-modal-opener {
+  border-radius: 5px;
+  background-color: #586267;
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 21px;
+  text-align: center;
+  padding: 20px 30px;
+  height: 101px;
+}
