@@ -3647,6 +3647,13 @@ textarea[rows] {
         }
       }
     }
+
+    @media screen and (min-width: 768px) {
+      .field-image-crop {
+        margin-left: 55px;
+        width: 49%;
+      }
+    }
   }
 }
 
