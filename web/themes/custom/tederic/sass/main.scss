@@ -3700,6 +3700,10 @@ textarea[rows] {
   padding: 60px 0;
   background-color: $gray;
 
+  .title {
+    text-align: center;
+  }
+
   .paragraph-wrapper {
     max-width: 1100px;
     margin: 0 auto;
