@@ -111,6 +111,7 @@
         "drupal/menu_firstchild": "^2.0@RC",
         "drupal/menu_item_extras": "^2.12",
         "drupal/paragraphs": "^1.12",
+        "drupal/paragraphs_asymmetric_translation_widgets": "^1.0@beta",
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
         "drupal/svg_image": "^1.14",
@@ -183,6 +184,10 @@
             },
             "drupal/color_field": {
               "The default value not show when select color boxes": "https://www.drupal.org/files/issues/2020-09-16/the-default-value-not-show-when-select-color-boxes-3171205-2.patch"
+            },
+            "drupal/paragraphs_asymmetric_translation_widgets": {
+              "Implement a migration path": "https://www.drupal.org/files/issues/2020-01-20/2992777-implement_migration_path-21.patch",
+              "Translation Problem with Paragraph 1.6 and Paragraphs asymmetric translation widgets 1.0-beta1 | https://www.drupal.org/project/paragraphs_asymmetric_translation_widgets/issues/3035916": "./patches/paragraphs_asymmetric_translation_widgets/add-translation.patch"
             }
         }
     }

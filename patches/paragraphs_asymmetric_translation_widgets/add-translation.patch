@@ -1,0 +1,34 @@
+diff --git a/src/Plugin/Field/FieldWidget/ParagraphsClassicAsymmetricWidget.php b/src/Plugin/Field/FieldWidget/ParagraphsClassicAsymmetricWidget.php
+index 6bbd9384c..929cc967a 100644
+--- a/src/Plugin/Field/FieldWidget/ParagraphsClassicAsymmetricWidget.php
++++ b/src/Plugin/Field/FieldWidget/ParagraphsClassicAsymmetricWidget.php
+@@ -130,17 +130,19 @@ class ParagraphsClassicAsymmetricWidget extends InlineParagraphsWidget {
+       }
+       // -- paragraphs_asymmetric_translation_widgets addition start
+       elseif ($items->getFieldDefinition()->isTranslatable()) {
+-        // If the field is translatable, host entity translation should refer to
+-        // different paragraph entities. So we clone the paragraph.
+-        if (!empty($form_state->get('content_translation'))) {
+-          $paragraphs_entity = $this->createDuplicateWithSingleLanguage($paragraphs_entity, $langcode);
++        if ($paragraphs_entity->hasTranslation($langcode)) {
++          // If host entity translation refers to same paragraph entity, then
++          // fetch that instead. This is possible if Classic widget has been
++          // changed to Asymmetric widget with existing content.
++          $paragraphs_entity = $paragraphs_entity->getTranslation($langcode);
++        }
++        else {
++          // If the field is translatable, host entity translation should refer to
++          // different paragraph entities. So we clone the paragraph.
++          if (!empty($form_state->get('content_translation'))) {
++            $paragraphs_entity = $this->createDuplicateWithSingleLanguage($paragraphs_entity, $langcode);
++          }
+         }
+-        elseif ($paragraphs_entity->hasTranslation($langcode)) {
+-         // If host entity translation refers to same paragraph entity, then
+-         // fetch that instead. This is possible if Classic widget has been
+-         // changed to Asymmetric widget with existing content.
+-         $paragraphs_entity = $paragraphs_entity->getTranslation($langcode);
+-       }
+       }
+       // -- paragraphs_asymmetric_translation_widgets addition end
+       else {
