@@ -3,6 +3,8 @@
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\node\Entity\Node;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Language\LanguageInterface;
 
 /**
  * Implements hook_form_alter().
@@ -27,9 +29,49 @@ function tederic_common_form_alter(&$form, FormStateInterface $form_state, $form
         $form['#attached']['library'][] = 'tederic/exposed-form';
         // Change All option label.
         $form['series_sub_category']['#options']['All'] = t('All');
+
+        // Remove needed filter options.
+        $form['series_sub_category']['#options'] = _tederic_common_remove_filter_options($form['series_sub_category']['#options'], 'series_sub_category');
+        // $form['categories']['#options'] = _tederic_common_remove_filter_options($form['categories']['#options']);
       }
     }
   }
+}
+
+/**
+ * Remove needed filter options.
+ */
+function _tederic_common_remove_filter_options($options = [], $field = '') {
+  if (empty($options)) {
+    return [];
+  }
+
+  foreach ($options as $tid => $name) {
+    if (is_numeric($tid)) {
+      $status = Term::load($tid)->get('status')->getValue()[0]['value'];
+      if (!$status) {
+        unset($options[$tid]);
+        continue;
+      }
+
+      if (!empty($field)) {
+        $language = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT)->getId();
+
+        $query = \Drupal::database()->select('node__field_' . $field, 'nfssc');
+        $query->fields('nfssc', ['entity_id']);
+        $query->condition('nfssc.bundle', 'product');
+        $query->innerJoin('node_field_data', 'nfd', 'nfd.nid = nfssc.entity_id');
+        $query->condition('nfd.langcode', $language);
+        $query->condition('nfssc.field_' . $field . '_target_id', $tid);
+        $nid = $query->execute()->fetchField();
+        if (empty($nid)) {
+          unset($options[$tid]);
+        }
+      }
+    }
+  }
+
+  return $options;
 }
 
 /**
