@@ -12,7 +12,7 @@ dependencies:
   module:
     - field_group
     - image_widget_crop
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
     - text
 third_party_settings:
@@ -97,7 +97,7 @@ content:
     type: image_widget_crop
     region: content
   field_related_section:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 3
     settings:
       title: Paragraph

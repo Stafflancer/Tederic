@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.join_us.field_sections
     - node.type.join_us
   module:
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
 id: node.join_us.default
 targetEntityType: node
@@ -30,7 +30,7 @@ content:
       form_display_mode: default
       default_paragraph_type: intro_section
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   field_sections:
     weight: 123
@@ -42,7 +42,7 @@ content:
       form_display_mode: default
       default_paragraph_type: text_l_image_r_fixed_height
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   langcode:
     type: language_select

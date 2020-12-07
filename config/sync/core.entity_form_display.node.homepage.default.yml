@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.homepage.field_sections
     - node.type.homepage
   module:
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
 id: node.homepage.default
 targetEntityType: node
@@ -20,7 +20,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_sections:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 121
     settings:
       title: Section

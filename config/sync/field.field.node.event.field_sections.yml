@@ -20,7 +20,7 @@ bundle: event
 label: Sections
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -37,6 +37,9 @@ settings:
     target_bundles_drag_drop:
       2_columns_section:
         weight: 58
+        enabled: false
+      anchor:
+        weight: 66
         enabled: false
       blue_background_text_section:
         weight: 59
@@ -67,6 +70,9 @@ settings:
         enabled: false
       events_section:
         weight: 68
+        enabled: false
+      events_with_filters:
+        weight: 77
         enabled: false
       form_section:
         weight: 69
@@ -128,11 +134,23 @@ settings:
       locations_section:
         weight: 86
         enabled: false
+      machine_part:
+        weight: 98
+        enabled: false
+      machine_part_item:
+        weight: 99
+        enabled: false
+      map_block:
+        weight: 100
+        enabled: false
       mission_section:
         weight: 89
         enabled: false
       news_section:
         weight: 91
+        enabled: false
+      news_with_filters:
+        weight: 104
         enabled: false
       newsletter_sign_up_block:
         weight: 90

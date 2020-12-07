@@ -15,7 +15,7 @@ bundle: join_us
 label: Intro
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -27,6 +27,9 @@ settings:
     target_bundles_drag_drop:
       2_columns_section:
         weight: 47
+        enabled: false
+      anchor:
+        weight: 66
         enabled: false
       blue_background_text_section:
         weight: 48
@@ -43,6 +46,12 @@ settings:
       cards_section_row_cards:
         weight: 52
         enabled: false
+      careers_section:
+        weight: 72
+        enabled: false
+      contact_information_section:
+        weight: 73
+        enabled: false
       contact_section:
         weight: 53
         enabled: false
@@ -51,6 +60,12 @@ settings:
         enabled: false
       events_section:
         weight: 55
+        enabled: false
+      events_with_filters:
+        weight: 77
+        enabled: false
+      form_section:
+        weight: 78
         enabled: false
       general_media:
         weight: 56
@@ -88,6 +103,9 @@ settings:
       image_l_text_r:
         weight: 67
         enabled: false
+      image_l_text_r_link:
+        weight: 91
+        enabled: false
       image_section:
         weight: 68
         enabled: false
@@ -106,14 +124,29 @@ settings:
       locations_section:
         weight: 71
         enabled: false
+      machine_part:
+        weight: 98
+        enabled: false
+      machine_part_item:
+        weight: 99
+        enabled: false
+      map_block:
+        weight: 100
+        enabled: false
       mission_section:
         weight: 74
         enabled: false
       news_section:
         weight: 76
         enabled: false
+      news_with_filters:
+        weight: 104
+        enabled: false
       newsletter_sign_up_block:
         weight: 75
+        enabled: false
+      one_big_image_section:
+        weight: 105
         enabled: false
       product_animation_section:
         weight: 79
@@ -124,11 +157,20 @@ settings:
       products_section:
         weight: 77
         enabled: false
+      products_section_regular_page:
+        weight: 107
+        enabled: false
       products_with_filters:
         weight: 78
         enabled: false
       quote_section:
         weight: 81
+        enabled: false
+      related_event_section:
+        weight: 112
+        enabled: false
+      related_news_section:
+        weight: 113
         enabled: false
       related_section:
         weight: 82
@@ -151,8 +193,20 @@ settings:
       text_l_block_r:
         weight: 88
         enabled: false
+      text_l_image_r:
+        weight: 121
+        enabled: false
+      text_l_image_r_fixed_height:
+        weight: 122
+        enabled: false
+      text_l_image_r_hotline_number:
+        weight: 123
+        enabled: false
       text_l_image_r_section:
         weight: 89
+        enabled: false
+      text_l_small_image_r:
+        weight: 125
         enabled: false
       text_section:
         weight: 90

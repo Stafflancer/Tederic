@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.page.field_sections
     - node.type.page
   module:
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
@@ -32,7 +32,7 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   field_sections:
     weight: 122
@@ -44,7 +44,7 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   langcode:
     type: language_select

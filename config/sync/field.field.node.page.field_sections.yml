@@ -29,7 +29,7 @@ bundle: page
 label: Sections
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -50,11 +50,14 @@ settings:
       vertical_carousel_text_section: vertical_carousel_text_section
       events_with_filters: events_with_filters
       technologies_with_filters: technologies_with_filters
-      products_section_regular_page: products_section_regular_page
       news_with_filters: news_with_filters
+      products_section_regular_page: products_section_regular_page
     target_bundles_drag_drop:
       2_columns_section:
         weight: 46
+        enabled: false
+      anchor:
+        weight: 66
         enabled: false
       blue_background_text_section:
         enabled: true
@@ -148,6 +151,15 @@ settings:
         enabled: false
       locations_section:
         weight: 32
+        enabled: false
+      machine_part:
+        weight: 98
+        enabled: false
+      machine_part_item:
+        weight: 99
+        enabled: false
+      map_block:
+        weight: 100
         enabled: false
       mission_section:
         enabled: true

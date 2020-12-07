@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.reach_us.field_intro
     - node.type.reach_us
   module:
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
 id: node.reach_us.default
 targetEntityType: node
@@ -22,7 +22,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_contact_information:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 124
     settings:
       title: Paragraph
@@ -34,7 +34,7 @@ content:
     third_party_settings: {  }
     region: content
   field_form:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 123
     settings:
       title: Paragraph
@@ -55,7 +55,7 @@ content:
       form_display_mode: default
       default_paragraph_type: intro_section
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   langcode:
     type: language_select

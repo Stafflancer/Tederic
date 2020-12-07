@@ -16,7 +16,7 @@ dependencies:
   module:
     - datetime_range
     - image_widget_crop
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
     - text
 id: node.event.default
@@ -91,7 +91,7 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   field_special_label:
     weight: 4

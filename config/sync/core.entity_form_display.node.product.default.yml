@@ -18,7 +18,7 @@ dependencies:
     - color_field
     - field_group
     - media_library
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
     - svg_image
     - text
@@ -164,7 +164,7 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   field_series_sub_category:
     weight: 4
@@ -173,7 +173,7 @@ content:
     type: options_select
     region: content
   field_small_blocks:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 22
     settings:
       title: Paragraph
