@@ -27,7 +27,7 @@ function tederic_breadcrumb_system_breadcrumb_alter(Breadcrumb &$breadcrumb, Rou
           // Sub Category term name as last breadcrumb title.
           $sub_category_tid = $node->get('field_series_sub_category')->getValue()[0]['target_id'];
           $term = Term::load($sub_category_tid);
-          $lbt = $term->getName();
+          $lbt = empty($term) ? '' : $term->getName();
           break;
         case 'technology':
           // Remove first breadcrumb for Technology.
