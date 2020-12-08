@@ -992,6 +992,33 @@ textarea[rows] {
                   }
 
                   &.series-category {
+
+                    &[style*="0f283d"],
+                    &[style*="15, 40, 61"],
+                    &[style*="15 40 61"] {
+                      .product-content {
+                        background: linear-gradient(90deg, #0f283d 75%, rgba(15,40,61,0) 100%);
+                      }
+                    }
+
+                    &[style*="caced0"],
+                    &[style*="202, 206, 208"],
+                    &[style*="202 206 208"] {
+                      .product-content {
+                        background: linear-gradient(90deg, rgb(202, 206, 208) 75%, rgba(15,40,61,0) 100%);
+                        color: #084F9D;
+                      }
+                    }
+
+                    &[style*="f1f1f3"],
+                    &[style*="241, 241, 243"],
+                    &[style*="241 241 243"] {
+                      .product-content {
+                        background: linear-gradient(90deg, rgb(241, 241, 243) 75%, rgba(15,40,61,0) 100%);
+                        color: #084F9D;
+                      }
+                    }
+
                     // min-height: 150px;
                     .product-content {
                       color: #fff;
@@ -1002,7 +1029,7 @@ textarea[rows] {
                       transform: translateY(-50%);
                       max-width: 36%;
                       font-size: 13px;
-                      background: linear-gradient(90deg, #0f283d 75%, rgba(15,40,61,0) 100%);
+                      // background: linear-gradient(90deg, #0f283d 75%, rgba(15,40,61,0) 100%);
                     }
 
                     .product-title {
@@ -3679,10 +3706,10 @@ textarea[rows] {
   .field-text,
   .field-text p {
     color: $dark_blue_text;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 29px;
     font-weight: 300;
     letter-spacing: 0;
-    line-height: 34px;
     @media screen and (max-width: 767px) {
       font-size: 16px;
       line-height: 24px;
@@ -3760,6 +3787,10 @@ textarea[rows] {
 
 .vertical-carousel-text-section {
   .paragraph-wrapper {
+
+    .slick-list {
+      padding: 0 !important;
+    }
 
     .field-images {
       @media screen and (min-width: 1024px) {
@@ -4411,6 +4442,7 @@ textarea[rows] {
     letter-spacing: 0;
     line-height: 46px;
     margin-bottom: 10px;
+    color: $dark_blue_text;
   }
 
   .field-text-plain {
@@ -4430,8 +4462,10 @@ textarea[rows] {
     padding: 0;
     overflow: visible;
     padding-left: 90px;
+    padding-right: 90px;
     @media screen and (max-width: 991px) {
       padding-left: 20px;
+      padding-right: 20px;
     }
 
     .timeline__wrap {
@@ -4738,9 +4772,9 @@ textarea[rows] {
         background-color: rgba(202,206,208,0.3);
         height: 100%;
         padding: 20px;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
+        // display: flex;
+        // flex-flow: column;
+        // justify-content: space-between;
         @media screen and (max-width: 767px) {
           padding: 20px 20px 15px;
         }
@@ -4822,8 +4856,8 @@ textarea[rows] {
     background-color: $gray;
 
     .icon-simple {
-      flex: 0 0 107px;
-      max-width: 107px;
+      flex: 0 0 100px;
+      max-width: 100px;
       text-align: center;
       padding: 30px 7px 0;
     }
@@ -5010,6 +5044,11 @@ textarea[rows] {
 
         .field-image-crop {
           text-align: center;
+
+          img {
+            max-height: 140px;
+            width: auto;
+          }
         }
       }
 
@@ -5299,6 +5338,8 @@ textarea[rows] {
       font-weight: 300;
       letter-spacing: 0;
       line-height: 29px;
+      max-height: 90px;
+      overflow: hidden;
       @media screen and (max-width: 767px) {
         font-size: 16px;
         line-height: 24px;
@@ -6130,6 +6171,7 @@ textarea[rows] {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    // object-position: center left;
   }
 }
 
