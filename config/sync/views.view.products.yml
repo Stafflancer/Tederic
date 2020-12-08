@@ -521,9 +521,9 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
-            preserve_tags: ''
+            preserve_tags: '<p>'
             html: false
           element_type: ''
           element_class: ''
@@ -540,7 +540,7 @@ display:
           click_sort_column: value
           type: text_summary_or_trimmed
           settings:
-            trim_length: 300
+            trim_length: 100
           group_column: value
           group_columns: {  }
           group_rows: true
