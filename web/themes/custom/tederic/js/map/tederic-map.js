@@ -33,7 +33,7 @@
         */
 
         // Not show popop if cantent is empty.
-        if (data.note == "\n") {
+        if ((data.note == "\n") || ($('body').hasClass('path-frontpage') && !data.big_icon)) {
           var popup = false;
         }
         else {
@@ -51,6 +51,7 @@
         size_class = '';
         if (data.big_icon) {
           size_class = ' big';
+          headquarter_class += ' marker-wrap-big';
         }
 
         // var icon = L.icon({

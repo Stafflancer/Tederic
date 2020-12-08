@@ -5,3 +5,7 @@
     height: 520px !important; 
   }
 }
+
+.path-frontpage .leaflet-interactive:not(.marker-wrap-big):hover {
+  cursor: default !important; 
+}

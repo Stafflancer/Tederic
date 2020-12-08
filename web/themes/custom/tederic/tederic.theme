@@ -5,6 +5,9 @@
  * Functions to support theming in the Tederic custom theme.
  */
 
+use Drupal\node\Entity\Node;
+use Drupal\Core\Language\LanguageInterface;
+
 /**
  * Implements hook_preprocess_html().
  */
@@ -112,18 +115,30 @@ function tederic_preprocess_paragraph(&$variables) {
       break;
     case 'map_block':
       $locations = [];
-      $lang_code = \Drupal::languageManager()->getCurrentLanguage()->getId();
+      $langcode = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT)->getId();
+      /* 
       $map_locations = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(
         [
           'type' => 'map_location', 
           'status' => 1,
           'langcode' => $lang_code,
         ]
-      );
+      ); 
+      */
+
+      $query = \Drupal::database()->select('node_field_data', 'nfd');
+      $query->fields('nfd', ['nid']);
+      $query->condition('nfd.type', 'map_location');
+      $query->condition('nfd.status', 1);
+      $query->condition('nfd.langcode', $langcode);
+      $map_locations = $query->execute()->fetchAll();
 
       if (!empty($map_locations)) {
-        foreach ($map_locations as $nid => $node) {
-          // $node = $node->getTranslation($lang_code)->toArray();
+        foreach ($map_locations as $item) {
+          $nid = $item->nid;
+          $langcode = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT)->getId();
+          $node = Node::load($nid)->getTranslation($langcode);
+
           // Is headquarter
           $headquarter = empty($node->get('field_headquarter')->getValue()[0]['value']) ? FALSE : TRUE;
           // Is headquarter
