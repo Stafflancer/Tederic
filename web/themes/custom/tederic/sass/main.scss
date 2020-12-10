@@ -954,6 +954,14 @@ textarea[rows] {
                   margin-bottom: 30px;
                   min-height: 150px;
 
+                  // &.series-sub-category {
+                  //   .product-img {
+                  //     img {
+
+                  //     }
+                  //   }
+                  // }
+
                   &[data-tid="15"] {
                     // margin-bottom: 0;
                   }
@@ -1048,7 +1056,7 @@ textarea[rows] {
                   .product-img {
                     text-align: right;
                     img {
-                      max-width: 75%;
+                      max-width: 95%;
                       border-radius: 4px;
                     }
                   }
@@ -2195,8 +2203,12 @@ textarea[rows] {
         }
 
         &[style*="caced0"],
-        &[style*="f1f1f3"] {
-          color: $dark_blue;
+        &[style*="202, 206, 208"],
+        &[style*="202 206 208"],
+        &[style*="f1f1f3"],
+        &[style*="241, 241, 243"],
+        &[style*="241 241 243"] {
+          color: #084F9D;
         }
       }
 
@@ -5164,6 +5176,8 @@ textarea[rows] {
         img {
           border-radius: 8px 8px 0 0;
           width: 100%;
+          height: 180px;
+          object-fit: cover;
         }
 
         .sub-title {
@@ -5689,6 +5703,8 @@ textarea[rows] {
 
     .body {
       margin-bottom: 10px;
+      max-height: 180px;
+      overflow: hidden;
       @media screen and (max-width: 640px) {
         display: none;
       }
@@ -6132,7 +6148,7 @@ textarea[rows] {
   }
 }
 
-[about="/contact/join-us"] .field-sections {
+[about*="/contact/join-us"] .field-sections {
   margin-top: 80px;
 }
 .text-l-image-r-fixed-height {
@@ -6172,6 +6188,21 @@ textarea[rows] {
     height: 100%;
     object-fit: cover;
     // object-position: center left;
+    @media screen and (min-width: 1024px) {
+      min-height: 880px;
+    }
+  }
+}
+
+.node--type-join-us {
+  .text-l-image-r-fixed-height {
+    &:nth-child(2) {
+      img {
+        @media screen and (min-width: 1024px) {
+          min-height: 950px;
+        }
+      }
+    }
   }
 }
 
@@ -6920,7 +6951,7 @@ body {
   }
 
   .text-section {
-    margin: 50px 0;
+    margin: 80px 0;
   }
 
   .one-big-image-section {
@@ -8572,6 +8603,13 @@ body {
 .node--type-event {
   .image-carousel-section {
     margin-top: 50px;
+  }
+
+  .field-sections {
+    margin-bottom: 130px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 80px;
+    }
   }
 }
 

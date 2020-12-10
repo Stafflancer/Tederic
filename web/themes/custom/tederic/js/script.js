@@ -144,14 +144,18 @@
       var $slickElement = $('.technology-node .field-images');
       slickCount($slickElement);
 
-      $slickElement.not('.slick-initialized').slick({
-        arrows: true,
-        infinite: false,
-        slidesToShow: 1,
-        appendArrows: $('.slick-pagination'),
-        prevArrow: '<div class="main-arrow-prev" aria-hidden="true"></div>',
-        nextArrow: '<div class="main-arrow-next" aria-hidden="true"></div>',
-      });
+      var count_items = $('.technology-node .field-images img').length;
+
+      if (count_items > 1) {
+        $slickElement.not('.slick-initialized').slick({
+          arrows: true,
+          infinite: false,
+          slidesToShow: 1,
+          appendArrows: $('.slick-pagination'),
+          prevArrow: '<div class="main-arrow-prev" aria-hidden="true"></div>',
+          nextArrow: '<div class="main-arrow-next" aria-hidden="true"></div>',
+        });
+      }
     }
 
     // Mobile menu
