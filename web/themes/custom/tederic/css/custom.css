@@ -15,3 +15,8 @@
   padding: 20px 30px;
   height: 101px;
 }
+
+/* TODO. Need fix it. Had no time for research it. */
+.menu-item--expanded > .field-solution {
+  display: none;
+}
