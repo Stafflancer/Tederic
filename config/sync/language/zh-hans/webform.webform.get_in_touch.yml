@@ -1,0 +1,4 @@
+title: 联系我们
+elements: "first_name:\n  '#title': 名字\nlast_name:\n  '#title': 姓氏\nemail:\n  '#title': 邮箱\nmachine_type:\n  '#title': 机型\nmachine_code:\n  '#title': 机器码\ndescription:\n  '#title': 问题描述\n  '#placeholder': 请分享更多细节…\ni_accept:\n  '#title': 我接受此处提供的我的个人数据的处理。\nactions:\n  '#submit__label': 提交\n"
+settings:
+  confirmation_message: "<div class=\"get-in-touch-confirmation\">\r\n<h2>感谢您对德瑞机械的关注！</h2>\r\n\r\n<p>我们已收到您的要求。</p>\r\n\r\n<p>我们的团队将尽早与您联系。</p>\r\n\r\n<p>在此之前，欢迎查看我们的产品。</p>\r\n\r\n<div class=\"link\"><a href=\"/products\">查看产品</a></div>\r\n</div>"

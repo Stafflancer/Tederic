@@ -1,3 +1,4 @@
-title: 联络表
+title: 联系我们
 settings:
-  confirmation_message: 您的信息已被送出。
+  confirmation_message: "<div class=\"get-in-touch-confirmation\">\r\n<h2>感谢您对德瑞机械的关注！</h2>\r\n\r\n<p>我们已收到您的要求。</p>\r\n\r\n<p>我们的团队将尽早与您联系。</p>\r\n\r\n<p>在此之前，欢迎查看我们的产品。</p>\r\n\r\n<div class=\"link\"><a href=\"/products\">查看产品</a></div>\r\n</div>"
+elements: "first_name:\n  '#title': 名字\nlast_name:\n  '#title': 姓氏\nemail:\n  '#title': 邮箱\ncountry:\n  '#title': 国家\ncompany:\n  '#title': 公司\narea_of_interest:\n  '#title': 感兴趣的领域\ndescription:\n  '#title': 信息\n  '#placeholder': 请分享更多细节\ni_accept_the_processing_of_my_personal_data_provided_here_:\n  '#title': 我接受此处提供的我的个人数据的处理。\nactions:\n  '#submit__label': 提交\n"
