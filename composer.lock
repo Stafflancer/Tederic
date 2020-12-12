@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6374fe80ee7e390c2ae4aa4429f9be85",
+    "content-hash": "1ddf9d757195ad0a4c3b4170bc524c8f",
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -2402,6 +2402,54 @@
             }
         },
         {
+            "name": "drupal/animated_gif",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/animated_gif.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/animated_gif-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "694efb5743e4b2ffa51f2a539039936d425238fc"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1600635828",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Grimreaper",
+                    "homepage": "https://www.drupal.org/user/2388214"
+                },
+                {
+                    "name": "StijnStroobants",
+                    "homepage": "https://www.drupal.org/user/1787140"
+                }
+            ],
+            "description": "Allows you to render animated GIFs without image style.",
+            "homepage": "https://www.drupal.org/project/animated_gif",
+            "support": {
+                "source": "https://git.drupalcode.org/project/animated_gif"
+            }
+        },
+        {
             "name": "drupal/better_exposed_filters",
             "version": "5.0.0-beta1",
             "source": {
@@ -4530,6 +4578,10 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Implement a migration path": "https://www.drupal.org/files/issues/2020-01-20/2992777-implement_migration_path-21.patch",
+                    "Translation Problem with Paragraph 1.6 and Paragraphs asymmetric translation widgets 1.0-beta1 | https://www.drupal.org/project/paragraphs_asymmetric_translation_widgets/issues/3035916": "./patches/paragraphs_asymmetric_translation_widgets/add-translation.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
