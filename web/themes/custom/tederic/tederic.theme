@@ -58,6 +58,7 @@ function tederic_preprocess_views_view_field(&$variables) {
   
   if ($view->id() == 'series_sub_categories') {
     if ($view->current_display == 'menu_left_block') {
+      // Name
       if ($variables['field']->field == 'name') {
         // Add parent category tid to variable.
         $sub_category_tid = $variables['row']->tid;
@@ -66,6 +67,23 @@ function tederic_preprocess_views_view_field(&$variables) {
         $variables['parent_category_tid'] = $parent_category_tid;
         // Add separator.
         $variables['output'] = str_replace(' ', '&nbsp;<span>-</span>&nbsp;', $variables['output']);
+      }
+      // Description
+      if ($variables['field']->field == 'description__value') {
+        if (empty($variables['output'])) {
+          return;
+        }
+        $langcode = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT)->getId();
+        if ($langcode == 'zh-hans') {
+          $variables['output'] = mb_substr($variables['output'], 0, 6);
+        }
+        else {
+          $words = explode(' ', $variables['output']);
+          if (count($words) >= 2) {
+            $first_word = explode('-', $words[0]);
+            $variables['output'] = (count($first_word) > 1) ? $words[0] : implode(' ', [$words[0], $words[1]]);
+          }
+        }
       }
     }
   }

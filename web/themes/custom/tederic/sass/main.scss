@@ -2108,8 +2108,9 @@ textarea[rows] {
       top: 50%;
       margin-top: 21px;
       cursor: pointer;
+      z-index: 99;
       @media screen and (max-width: 1450px) {
-        right: 0;
+        right: -25px;
       }
 
       &.slick-prev {
@@ -2117,7 +2118,7 @@ textarea[rows] {
         left: -100px;
         transform: rotate(-180deg);
         @media screen and (max-width: 1450px) {
-          left: 0;
+          left: -25px;
         }
       }
 
@@ -7043,6 +7044,7 @@ body {
 
 .related-news-section,
 .related-event-section {
+  margin-top: 130px;
   padding: 80px 0;
   background-color: $gray;
 
@@ -8606,7 +8608,6 @@ body {
   }
 
   .field-sections {
-    margin-bottom: 130px;
     @media screen and (max-width: 767px) {
       margin-bottom: 80px;
     }
@@ -8909,4 +8910,12 @@ body {
       max-width: 100%;
     }
   }
+}
+
+// TODO: Move style below to needed place. Backend dev added these styles=)
+.path-node article[class^="node-"] ul li {
+  color:$gray_text;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 32px;
 }

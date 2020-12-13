@@ -20,3 +20,13 @@
 .menu-item--expanded > .field-solution {
   display: none;
 }
+
+/* Products menu description */
+.views-field-description__value {
+  color: #858585;
+  font-family: Ubuntu;
+  font-size: 14px;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  margin: 0 10px 0 20px;
+}
