@@ -1035,7 +1035,8 @@ textarea[rows] {
                       top: 50%;
                       left: 20px;
                       transform: translateY(-50%);
-                      max-width: 36%;
+                      max-width: 45%;
+                      padding-right: 40px;
                       font-size: 13px;
                       // background: linear-gradient(90deg, #0f283d 75%, rgba(15,40,61,0) 100%);
                     }
@@ -1537,7 +1538,7 @@ textarea[rows] {
       list-style-type: none;
       display: flex;
       flex-wrap: wrap;
-      max-width: 360px;
+      max-width: 385px;
       @media screen and (max-width: 767px) {
         max-width: 100%;
         flex-flow: column;
@@ -2053,6 +2054,15 @@ textarea[rows] {
         padding-top: 10px;
         flex: 0 0 33.333%;
         max-width: 33.333%;
+      }
+
+      img {
+        width: 75px;
+        height: 75px;
+        @media screen and (max-width: 768px) {
+          width: 55px;
+          height: 55px;
+        }
       }
     }
 
@@ -4076,6 +4086,10 @@ textarea[rows] {
         clear: both;
       }
 
+      .field-text-2 {
+        margin-right: 30px;
+      }
+
       .field-text-2,
       .field-text-3 {
         @media screen and (min-width: 768px) {
@@ -4587,9 +4601,10 @@ textarea[rows] {
             opacity: 1;
             background: $white;
             border: none;
-            width: 100%;
+            width: 1000px;
             height: 10px;
-            left: -50%;
+            right: 0;
+            margin-left: -1000px;
             transform: none;
             bottom: -100px;
             top: auto;
@@ -5127,7 +5142,6 @@ textarea[rows] {
         display: block;
         background-color: $white;
         border-radius: 8px;
-        padding-top: 6px;
         text-align: center;
 
         &:hover {
@@ -6205,11 +6219,16 @@ textarea[rows] {
       }
     }
   }
+
+  .region-footer-first {
+    margin-top: 80px;
+  }
 }
 
 .careers-section {
+  margin: 80px 0;
   @media screen and (max-width: 1023px) {
-      padding: 50px 0 130px;
+    margin: 50px 0 130px;
   }
 
   .field-image-crop {
@@ -8919,4 +8938,8 @@ body {
   font-size: 24px;
   letter-spacing: 0;
   line-height: 32px;
+}
+
+.node--type-news .region-footer-first {
+  margin-top: 180px;
 }

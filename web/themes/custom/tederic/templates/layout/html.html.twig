@@ -54,14 +54,31 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        -webkit-transition: .5s all ease;
+        -moz-transition: .5s all ease;
+        -ms-transition: .5s all ease;
         transition: .5s all ease;
+        -webkit-animation: flash 1s linear infinite;
+                animation: flash 1s linear infinite;
       }
       .load-page.hide-load-page {
         opacity: 0;
         z-index: -5;
+        display: none;
       }
       .load-page img {
         max-width: 167px;
+        -webkit-animation: flash 1s linear infinite;
+                animation: flash 1s linear infinite;
+      }
+
+        @keyframes flash {
+          0%, 100% {
+             opacity: 1;
+          }
+          50% {
+             opacity: 0.9;
+          }
       }
     </style>
     <css-placeholder token="{{ placeholder_token|raw }}">
