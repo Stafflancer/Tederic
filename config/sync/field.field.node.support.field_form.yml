@@ -16,7 +16,7 @@ bundle: support
 label: Form
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -125,6 +125,15 @@ settings:
         enabled: false
       locations_section:
         weight: 83
+        enabled: false
+      machine_part:
+        weight: 98
+        enabled: false
+      machine_part_item:
+        weight: 99
+        enabled: false
+      map_block:
+        weight: 100
         enabled: false
       mission_section:
         weight: 86

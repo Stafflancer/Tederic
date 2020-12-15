@@ -8,12 +8,14 @@ dependencies:
     - field.field.node.solution.field_images
     - field.field.node.solution.field_intro
     - field.field.node.solution.field_media_icon
+    - field.field.node.solution.field_metatags
     - field.field.node.solution.field_solution_parts
     - image.style.crop
     - node.type.solution
   module:
     - entity_reference_revisions
     - lightgallery
+    - metatag
     - svg_image
     - text
     - user
@@ -103,6 +105,13 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+    region: content
+  field_metatags:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_solution_parts:
     type: entity_reference_revisions_entity_view

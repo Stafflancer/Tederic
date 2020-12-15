@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.product.field_document
     - field.field.node.product.field_document_link_title
     - field.field.node.product.field_image_crop
+    - field.field.node.product.field_metatags
     - field.field.node.product.field_sections
     - field.field.node.product.field_series_sub_category
     - field.field.node.product.field_small_blocks
@@ -18,6 +19,7 @@ dependencies:
     - color_field
     - field_group
     - media_library
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
     - svg_image
@@ -153,6 +155,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_sections:
     weight: 10

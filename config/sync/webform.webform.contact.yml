@@ -201,7 +201,7 @@ handlers:
     label: 'Email confirmation'
     notes: ''
     handler_id: email_confirmation
-    status: true
+    status: false
     conditions: {  }
     weight: 1
     settings:
@@ -244,18 +244,19 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: clervie@sekkeistudio.com
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: _default
       from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
+      from_name: '[webform_submission:values:last_name:raw]'
+      subject: _default
+      body: "You have been contacted via the Contact Us form on tedericglobal.com<br />\r\n<br />\r\nSubmitted on [webform_submission:created]<br />\r\nSubmitted values are:<br />\r\n<br />\r\n[webform_submission:values]"
+      excluded_elements:
+        captcha: captcha
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -266,7 +267,7 @@ handlers:
       theme_name: ''
       parameters: {  }
       debug: false
-      reply_to: ''
+      reply_to: '[webform_submission:values:email:raw]'
       return_path: ''
       sender_mail: ''
       sender_name: ''

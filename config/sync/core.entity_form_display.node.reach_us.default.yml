@@ -6,8 +6,10 @@ dependencies:
     - field.field.node.reach_us.field_contact_information
     - field.field.node.reach_us.field_form
     - field.field.node.reach_us.field_intro
+    - field.field.node.reach_us.field_metatags
     - node.type.reach_us
   module:
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
 id: node.reach_us.default
@@ -56,6 +58,13 @@ content:
       default_paragraph_type: intro_section
     third_party_settings: {  }
     type: paragraphs_classic_asymmetric
+    region: content
+  field_metatags:
+    weight: 125
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   langcode:
     type: language_select

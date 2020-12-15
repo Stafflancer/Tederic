@@ -1,0 +1,25 @@
+display:
+  latest_list_big_exists_block:
+    display_options:
+      pager:
+        options:
+          views_infinite_scroll:
+            button_text: 查看更多新闻
+  latest_list_block:
+    display_options:
+      pager:
+        options:
+          views_infinite_scroll:
+            button_text: 查看更多新闻
+  popular_list_big_exists_block:
+    display_options:
+      pager:
+        options:
+          views_infinite_scroll:
+            button_text: 查看更多新闻
+  popular_list_block:
+    display_options:
+      pager:
+        options:
+          views_infinite_scroll:
+            button_text: 查看更多新闻

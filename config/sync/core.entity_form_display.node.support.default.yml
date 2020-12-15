@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.support.field_text_l_small_image_r
     - node.type.support
   module:
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
 id: node.support.default
 targetEntityType: node
@@ -34,10 +34,10 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   field_image_l_text_r_link:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 3
     settings:
       title: Paragraph
@@ -58,10 +58,10 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   field_text_l_image_r:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 4
     settings:
       title: Paragraph
@@ -73,7 +73,7 @@ content:
     third_party_settings: {  }
     region: content
   field_text_l_image_r_hotline_num:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 2
     settings:
       title: Paragraph
@@ -85,7 +85,7 @@ content:
     third_party_settings: {  }
     region: content
   field_text_l_small_image_r:
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     weight: 5
     settings:
       title: Paragraph

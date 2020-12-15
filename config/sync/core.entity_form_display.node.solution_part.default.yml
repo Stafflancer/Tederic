@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.solution_part.body
     - field.field.node.solution_part.field_images
+    - field.field.node.solution_part.field_metatags
     - field.field.node.solution_part.field_related_section
     - field.field.node.solution_part.field_solution
     - image.style.thumbnail
@@ -12,6 +13,7 @@ dependencies:
   module:
     - field_group
     - image_widget_crop
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
     - text
@@ -95,6 +97,13 @@ content:
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_related_section:
     type: paragraphs_classic_asymmetric

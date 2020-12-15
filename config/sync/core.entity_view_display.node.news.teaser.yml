@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.news.field_big_card
     - field.field.node.news.field_date
     - field.field.node.news.field_image_crop
+    - field.field.node.news.field_metatags
     - field.field.node.news.field_popular
     - field.field.node.news.field_sections
     - field.field.node.news.field_special_label
@@ -32,13 +33,13 @@ content:
     third_party_settings: {  }
     region: content
   field_date:
-    type: datetime_custom
+    type: datetime_default
     weight: 2
     region: content
     label: above
     settings:
       timezone_override: ''
-      date_format: 'd M, Y'
+      format_type: html_date
     third_party_settings: {  }
   field_image_crop:
     type: image
@@ -63,6 +64,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_big_card: true
+  field_metatags: true
   field_popular: true
   field_sections: true
   langcode: true

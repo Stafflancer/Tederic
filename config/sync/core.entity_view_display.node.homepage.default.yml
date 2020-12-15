@@ -3,16 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.homepage.field_metatags
     - field.field.node.homepage.field_sections
     - node.type.homepage
   module:
     - entity_reference_revisions
+    - metatag
     - user
 id: node.homepage.default
 targetEntityType: node
 bundle: homepage
 mode: default
 content:
+  field_metatags:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_sections:
     type: entity_reference_revisions_entity_view
     weight: 0

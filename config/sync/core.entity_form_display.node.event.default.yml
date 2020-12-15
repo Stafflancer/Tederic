@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_big_card
     - field.field.node.event.field_date_range
     - field.field.node.event.field_image_crop
+    - field.field.node.event.field_metatags
     - field.field.node.event.field_sections
     - field.field.node.event.field_special_label
     - field.field.node.event.field_visitors
@@ -16,6 +17,7 @@ dependencies:
   module:
     - datetime_range
     - image_widget_crop
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
     - text
@@ -80,6 +82,13 @@ content:
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
+    region: content
+  field_metatags:
+    weight: 27
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_sections:
     weight: 26

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.solution.field_images
     - field.field.node.solution.field_intro
     - field.field.node.solution.field_media_icon
+    - field.field.node.solution.field_metatags
     - field.field.node.solution.field_solution_parts
     - node.type.solution
   module:
@@ -32,6 +33,7 @@ hidden:
   field_image_crop: true
   field_images: true
   field_intro: true
+  field_metatags: true
   field_solution_parts: true
   langcode: true
   links: true

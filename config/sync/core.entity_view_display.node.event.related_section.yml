@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_big_card
     - field.field.node.event.field_date_range
     - field.field.node.event.field_image_crop
+    - field.field.node.event.field_metatags
     - field.field.node.event.field_sections
     - field.field.node.event.field_special_label
     - field.field.node.event.field_visitors
@@ -50,6 +51,7 @@ hidden:
   body: true
   field_address: true
   field_big_card: true
+  field_metatags: true
   field_sections: true
   field_special_label: true
   field_visitors: true

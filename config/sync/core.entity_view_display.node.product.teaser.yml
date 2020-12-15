@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.product.field_document
     - field.field.node.product.field_document_link_title
     - field.field.node.product.field_image_crop
+    - field.field.node.product.field_metatags
     - field.field.node.product.field_sections
     - field.field.node.product.field_series_sub_category
     - field.field.node.product.field_small_blocks
@@ -33,6 +34,7 @@ hidden:
   field_document: true
   field_document_link_title: true
   field_image_crop: true
+  field_metatags: true
   field_sections: true
   field_series_sub_category: true
   field_small_blocks: true

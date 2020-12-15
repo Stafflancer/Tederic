@@ -1,0 +1,21 @@
+uuid: 58cf9a3b-b84a-45f6-a35e-dc7f3f0d519a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.reach_us
+  module:
+    - metatag
+id: node.reach_us.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: reach_us
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

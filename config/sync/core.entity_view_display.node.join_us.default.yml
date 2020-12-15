@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.join_us.field_intro
+    - field.field.node.join_us.field_metatags
     - field.field.node.join_us.field_sections
     - node.type.join_us
   module:
     - entity_reference_revisions
+    - metatag
     - user
 id: node.join_us.default
 targetEntityType: node
@@ -22,6 +24,13 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+    region: content
+  field_metatags:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_sections:
     weight: 103

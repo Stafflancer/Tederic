@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.news.field_big_card
     - field.field.node.news.field_date
     - field.field.node.news.field_image_crop
+    - field.field.node.news.field_metatags
     - field.field.node.news.field_popular
     - field.field.node.news.field_sections
     - field.field.node.news.field_special_label
@@ -15,6 +16,7 @@ dependencies:
   module:
     - datetime
     - image_widget_crop
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
     - text
@@ -71,6 +73,13 @@ content:
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_popular:
     weight: 3

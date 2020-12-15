@@ -1,0 +1,21 @@
+uuid: c4bf636b-a103-4b7c-a980-f9cd4d83456d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.join_us
+  module:
+    - metatag
+id: node.join_us.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: join_us
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

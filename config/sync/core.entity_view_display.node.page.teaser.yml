@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.field_intro
+    - field.field.node.page.field_metatags
     - field.field.node.page.field_sections
     - node.type.page
   module:
@@ -21,5 +22,6 @@ content:
     region: content
 hidden:
   field_intro: true
+  field_metatags: true
   field_sections: true
   langcode: true

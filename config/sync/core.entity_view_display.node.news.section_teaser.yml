@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.news.field_big_card
     - field.field.node.news.field_date
     - field.field.node.news.field_image_crop
+    - field.field.node.news.field_metatags
     - field.field.node.news.field_popular
     - field.field.node.news.field_sections
     - field.field.node.news.field_special_label
@@ -25,9 +26,9 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      date_format: 'jS F, Y'
+      format_type: html_date
     third_party_settings: {  }
-    type: datetime_custom
+    type: datetime_default
     region: content
   field_special_label:
     weight: 0
@@ -41,6 +42,7 @@ hidden:
   body: true
   field_big_card: true
   field_image_crop: true
+  field_metatags: true
   field_popular: true
   field_sections: true
   langcode: true

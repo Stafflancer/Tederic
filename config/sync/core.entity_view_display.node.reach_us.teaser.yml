@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.reach_us.field_contact_information
     - field.field.node.reach_us.field_form
     - field.field.node.reach_us.field_intro
+    - field.field.node.reach_us.field_metatags
     - node.type.reach_us
   module:
     - user
@@ -24,4 +25,5 @@ hidden:
   field_contact_information: true
   field_form: true
   field_intro: true
+  field_metatags: true
   langcode: true

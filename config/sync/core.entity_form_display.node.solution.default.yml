@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.solution.field_images
     - field.field.node.solution.field_intro
     - field.field.node.solution.field_media_icon
+    - field.field.node.solution.field_metatags
     - field.field.node.solution.field_solution_parts
     - image.style.thumbnail
     - node.type.solution
@@ -15,6 +16,7 @@ dependencies:
     - field_group
     - image_widget_crop
     - media_library
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
     - text
@@ -117,6 +119,13 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
+    region: content
+  field_metatags:
+    weight: 31
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_solution_parts:
     type: paragraphs_classic_asymmetric

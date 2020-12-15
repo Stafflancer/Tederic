@@ -6,9 +6,11 @@ dependencies:
     - field.field.node.reach_us.field_contact_information
     - field.field.node.reach_us.field_form
     - field.field.node.reach_us.field_intro
+    - field.field.node.reach_us.field_metatags
     - node.type.reach_us
   module:
     - entity_reference_revisions
+    - metatag
     - user
 id: node.reach_us.default
 targetEntityType: node
@@ -41,6 +43,13 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+    region: content
+  field_metatags:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   links:
     weight: 100

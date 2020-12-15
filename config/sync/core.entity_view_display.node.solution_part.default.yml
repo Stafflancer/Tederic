@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.solution_part.body
     - field.field.node.solution_part.field_images
+    - field.field.node.solution_part.field_metatags
     - field.field.node.solution_part.field_related_section
     - field.field.node.solution_part.field_solution
     - image.style.solution_part_image_crop
     - node.type.solution_part
   module:
     - entity_reference_revisions
+    - metatag
     - svg_image
     - text
     - user
@@ -38,6 +40,13 @@ content:
         height: null
     third_party_settings: {  }
     type: image
+    region: content
+  field_metatags:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_related_section:
     type: entity_reference_revisions_entity_view

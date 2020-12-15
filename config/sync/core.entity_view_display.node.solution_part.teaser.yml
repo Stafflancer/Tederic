@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.solution_part.body
     - field.field.node.solution_part.field_images
+    - field.field.node.solution_part.field_metatags
     - field.field.node.solution_part.field_related_section
     - field.field.node.solution_part.field_solution
     - node.type.solution_part
@@ -32,6 +33,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_images: true
+  field_metatags: true
   field_related_section: true
   field_solution: true
   langcode: true

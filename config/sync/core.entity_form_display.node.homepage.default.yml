@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.homepage.field_metatags
     - field.field.node.homepage.field_sections
     - node.type.homepage
   module:
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
 id: node.homepage.default
@@ -19,6 +21,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_metatags:
+    weight: 122
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_sections:
     type: paragraphs_classic_asymmetric
     weight: 121

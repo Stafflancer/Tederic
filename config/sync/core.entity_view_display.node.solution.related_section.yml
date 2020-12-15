@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.solution.field_images
     - field.field.node.solution.field_intro
     - field.field.node.solution.field_media_icon
+    - field.field.node.solution.field_metatags
     - field.field.node.solution.field_solution_parts
     - image.style.solution_related_section
     - node.type.solution
@@ -50,6 +51,7 @@ hidden:
   body: true
   field_intro: true
   field_media_icon: true
+  field_metatags: true
   field_solution_parts: true
   langcode: true
   links: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_big_card
     - field.field.node.event.field_date_range
     - field.field.node.event.field_image_crop
+    - field.field.node.event.field_metatags
     - field.field.node.event.field_sections
     - field.field.node.event.field_special_label
     - field.field.node.event.field_visitors
@@ -15,6 +16,7 @@ dependencies:
   module:
     - datetime_range
     - entity_reference_revisions
+    - metatag
     - text
     - user
 id: node.event.default
@@ -38,6 +40,13 @@ content:
       format_type: medium
     third_party_settings: {  }
     type: daterange_default
+    region: content
+  field_metatags:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_sections:
     weight: 2

@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.join_us.field_intro
+    - field.field.node.join_us.field_metatags
     - field.field.node.join_us.field_sections
     - node.type.join_us
   module:
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
 id: node.join_us.default
@@ -31,6 +33,13 @@ content:
       default_paragraph_type: intro_section
     third_party_settings: {  }
     type: paragraphs_classic_asymmetric
+    region: content
+  field_metatags:
+    weight: 124
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_sections:
     weight: 123

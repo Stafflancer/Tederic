@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.worldwide.field_sections
     - node.type.worldwide
   module:
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
 id: node.worldwide.default
 targetEntityType: node
@@ -30,7 +30,7 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   field_sections:
     weight: 123
@@ -42,7 +42,7 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   langcode:
     type: language_select

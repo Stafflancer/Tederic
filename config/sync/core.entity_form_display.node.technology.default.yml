@@ -16,7 +16,7 @@ dependencies:
     - field_group
     - image_widget_crop
     - media_library
-    - paragraphs
+    - paragraphs_asymmetric_translation_widgets
     - path
     - text
 third_party_settings:
@@ -163,7 +163,7 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs_classic_asymmetric
     region: content
   field_subtitle:
     weight: 3

@@ -15,7 +15,7 @@ bundle: support
 label: 'Text L / Image R'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -27,6 +27,9 @@ settings:
     target_bundles_drag_drop:
       2_columns_section:
         weight: 55
+        enabled: false
+      anchor:
+        weight: 66
         enabled: false
       blue_background_text_section:
         weight: 56
@@ -57,6 +60,9 @@ settings:
         enabled: false
       events_section:
         weight: 65
+        enabled: false
+      events_with_filters:
+        weight: 77
         enabled: false
       form_section:
         weight: 66
@@ -118,14 +124,29 @@ settings:
       locations_section:
         weight: 83
         enabled: false
+      machine_part:
+        weight: 98
+        enabled: false
+      machine_part_item:
+        weight: 99
+        enabled: false
+      map_block:
+        weight: 100
+        enabled: false
       mission_section:
         weight: 86
         enabled: false
       news_section:
         weight: 88
         enabled: false
+      news_with_filters:
+        weight: 104
+        enabled: false
       newsletter_sign_up_block:
         weight: 87
+        enabled: false
+      one_big_image_section:
+        weight: 105
         enabled: false
       product_animation_section:
         weight: 91
@@ -136,11 +157,20 @@ settings:
       products_section:
         weight: 89
         enabled: false
+      products_section_regular_page:
+        weight: 107
+        enabled: false
       products_with_filters:
         weight: 90
         enabled: false
       quote_section:
         weight: 93
+        enabled: false
+      related_event_section:
+        weight: 112
+        enabled: false
+      related_news_section:
+        weight: 113
         enabled: false
       related_section:
         weight: 94
