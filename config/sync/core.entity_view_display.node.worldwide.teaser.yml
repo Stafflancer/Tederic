@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.worldwide.field_intro
+    - field.field.node.worldwide.field_metatags
     - field.field.node.worldwide.field_sections
     - node.type.worldwide
   module:
@@ -21,5 +22,6 @@ content:
     region: content
 hidden:
   field_intro: true
+  field_metatags: true
   field_sections: true
   langcode: true

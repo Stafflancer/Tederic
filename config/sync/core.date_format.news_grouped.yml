@@ -1,0 +1,8 @@
+uuid: c918e1d2-2e6b-4313-8807-e59fedfb4327
+langcode: en
+status: true
+dependencies: {  }
+id: news_grouped
+label: 'News Grouped'
+locked: false
+pattern: 'M Y'

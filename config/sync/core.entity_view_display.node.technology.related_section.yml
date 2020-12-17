@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.technology.field_document
     - field.field.node.technology.field_document_link_title
     - field.field.node.technology.field_images
+    - field.field.node.technology.field_metatags
     - field.field.node.technology.field_sections
     - field.field.node.technology.field_subtitle
     - image.style.solution_related_section
@@ -39,6 +40,7 @@ hidden:
   field_categories: true
   field_document: true
   field_document_link_title: true
+  field_metatags: true
   field_sections: true
   field_subtitle: true
   langcode: true

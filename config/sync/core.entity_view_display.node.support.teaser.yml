@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.support.field_form
     - field.field.node.support.field_image_l_text_r_link
     - field.field.node.support.field_intro
+    - field.field.node.support.field_metatags
     - field.field.node.support.field_text_l_image_r
     - field.field.node.support.field_text_l_image_r_hotline_num
     - field.field.node.support.field_text_l_small_image_r
@@ -27,6 +28,7 @@ hidden:
   field_form: true
   field_image_l_text_r_link: true
   field_intro: true
+  field_metatags: true
   field_text_l_image_r: true
   field_text_l_image_r_hotline_num: true
   field_text_l_small_image_r: true

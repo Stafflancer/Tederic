@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.worldwide.field_intro
+    - field.field.node.worldwide.field_metatags
     - field.field.node.worldwide.field_sections
     - node.type.worldwide
   module:
     - entity_reference_revisions
+    - metatag
     - user
 id: node.worldwide.default
 targetEntityType: node
@@ -22,6 +24,13 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+    region: content
+  field_metatags:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_sections:
     weight: 103

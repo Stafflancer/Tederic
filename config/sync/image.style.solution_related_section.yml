@@ -13,3 +13,11 @@ effects:
       width: 460
       height: null
       upscale: false
+  7424deeb-a320-4865-897e-1192b45c0eec:
+    uuid: 7424deeb-a320-4865-897e-1192b45c0eec
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 460
+      height: 180
+      anchor: center-center

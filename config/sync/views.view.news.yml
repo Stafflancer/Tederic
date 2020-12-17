@@ -785,10 +785,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_custom
+          type: datetime_default
           settings:
             timezone_override: ''
-            date_format: 'M Y'
+            format_type: news_grouped
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -964,10 +964,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_custom
+          type: datetime_default
           settings:
             timezone_override: ''
-            date_format: 'd M, Y'
+            format_type: html_date
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1251,10 +1251,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_custom
+          type: datetime_default
           settings:
             timezone_override: ''
-            date_format: 'M Y'
+            format_type: news_grouped
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1430,10 +1430,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_custom
+          type: datetime_default
           settings:
             timezone_override: ''
-            date_format: 'd M, Y'
+            format_type: html_date
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2148,10 +2148,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_custom
+          type: datetime_default
           settings:
             timezone_override: ''
-            date_format: 'M Y'
+            format_type: news_grouped
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2327,10 +2327,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_custom
+          type: datetime_default
           settings:
             timezone_override: ''
-            date_format: 'd M, Y'
+            format_type: html_date
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2649,10 +2649,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_custom
+          type: datetime_default
           settings:
             timezone_override: ''
-            date_format: 'M Y'
+            format_type: news_grouped
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2828,10 +2828,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_custom
+          type: datetime_default
           settings:
             timezone_override: ''
-            date_format: 'd M, Y'
+            format_type: html_date
           group_column: value
           group_columns: {  }
           group_rows: true

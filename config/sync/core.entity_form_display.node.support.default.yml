@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.support.field_form
     - field.field.node.support.field_image_l_text_r_link
     - field.field.node.support.field_intro
+    - field.field.node.support.field_metatags
     - field.field.node.support.field_text_l_image_r
     - field.field.node.support.field_text_l_image_r_hotline_num
     - field.field.node.support.field_text_l_small_image_r
     - node.type.support
   module:
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
 id: node.support.default
@@ -59,6 +61,13 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     type: paragraphs_classic_asymmetric
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_text_l_image_r:
     type: paragraphs_classic_asymmetric

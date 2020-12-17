@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.support.field_form
     - field.field.node.support.field_image_l_text_r_link
     - field.field.node.support.field_intro
+    - field.field.node.support.field_metatags
     - field.field.node.support.field_text_l_image_r
     - field.field.node.support.field_text_l_image_r_hotline_num
     - field.field.node.support.field_text_l_small_image_r
     - node.type.support
   module:
     - entity_reference_revisions
+    - metatag
     - user
 id: node.support.default
 targetEntityType: node
@@ -44,6 +46,13 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+    region: content
+  field_metatags:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_text_l_image_r:
     type: entity_reference_revisions_entity_view

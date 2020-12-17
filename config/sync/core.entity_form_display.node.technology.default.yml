@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.technology.field_document
     - field.field.node.technology.field_document_link_title
     - field.field.node.technology.field_images
+    - field.field.node.technology.field_metatags
     - field.field.node.technology.field_sections
     - field.field.node.technology.field_subtitle
     - image.style.thumbnail
@@ -16,6 +17,7 @@ dependencies:
     - field_group
     - image_widget_crop
     - media_library
+    - metatag
     - paragraphs_asymmetric_translation_widgets
     - path
     - text
@@ -152,6 +154,13 @@ content:
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_sections:
     weight: 15
