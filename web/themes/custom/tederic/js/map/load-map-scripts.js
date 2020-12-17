@@ -1,8 +1,8 @@
 (function($, Drupal, drupalSettings) {
   
-  var added = false;
-  $(document).scroll(function() {
-    if (!added && $(document).scrollTop()) {
+  // var added = false;
+  // $(document).scroll(function() {
+  //   if (!added && $(document).scrollTop()) {
       
       $.getScript(location.origin + '/themes/custom/tederic/js/leaflet/leaflet.js')
       .done(function( script, textStatus ) {
@@ -27,8 +27,8 @@
         
       });
 
-      added = true;
-    }
-  });
+  //     added = true;
+  //   }
+  // });
 
 })(jQuery, Drupal, drupalSettings);

@@ -1,6 +1,12 @@
 (function($, Drupal) {
   $(document).ready(function() {
 
+    // Add trigger click to MailChimp form button by link
+    // because button can't be styled needed.
+    $('.newsletter-sign-up-block form .link a').unbind('click').bind('click', function() {
+      $('.newsletter-sign-up-block form .link input[name="subscribe"]').trigger('click');
+    });
+
     $('.field-machine-parts .machine-part > .field-title').click(function() {
       $(this).toggleClass('active');
       $(this).next().slideToggle();
@@ -162,7 +168,7 @@
     function menuLinkVoid() {
       $('#block-tederic-main-menu > ul > li > ul').each(function() {
         // $(this).prev('a').addClass('dropdown');
-        $(this).prev('a').attr('href', 'javascript:void(0);');
+        // $(this).prev('a').attr('href', 'javascript:void(0);');
       });
     }
 
@@ -364,10 +370,10 @@
         $(this).toggleClass('active');
         $('#block-tederic-main-menu').slideToggle();
       });
-      $('#block-tederic-main-menu .dropdown').unbind('click').bind('click', function() {
+      $('#block-tederic-main-menu span.more').unbind('click').bind('click', function() {
         console.log('11');
-        $(this).next('ul').slideToggle();
-        $(this).toggleClass('active');
+        $(this).closest('li').find('.menu-level-1').slideToggle();
+        $(this).next('a').toggleClass('active');
       });
 
     }

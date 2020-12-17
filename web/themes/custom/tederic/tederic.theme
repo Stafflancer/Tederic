@@ -49,6 +49,7 @@ function tederic_preprocess_views_view_field(&$variables) {
         $class = trim($parent_category_term->name->value);
         $class = strtolower($class);
         $class = str_replace(' ', '-', $class);
+        $class = preg_replace("/\p{Han}+/u", '', $class);
         $variables['output'] = [
           '#markup' => '<h3 class="pc-' . $class . '">' . $variables['output'] . '</h3>'
         ];

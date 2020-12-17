@@ -20,6 +20,10 @@
 
     <li{{ item.attributes.addClass(menu_item_classes) }}>
       
+      {% if item.is_expanded %}
+        <span class="more"></span>
+      {% endif %}
+
       {% if item.title != '<notitle>' %}
         {% if item.is_expanded %}
           {{ link(item.title, item.url, { 'class': ['dropdown']}) }}

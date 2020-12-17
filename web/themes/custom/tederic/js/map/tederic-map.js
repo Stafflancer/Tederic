@@ -142,6 +142,11 @@
         });
         // you can set .my-div-icon styles in CSS
         L.marker(this.relposToLatLng(0.5, 1), {icon: myIcon}).addTo(this.map);
+
+        $('.leaflet-marker-icon .marker-country').each(function() {
+          $(this).css('position', 'relative');
+          $(this).css('left', '-' + ($(this).width() + 40) + 'px');
+        });
       }
     });
   });
