@@ -136,7 +136,7 @@
         var myIcon = L.divIcon({
           className: 'desc-wrap',
           html: '<div><img src="/themes/custom/tederic/images/map/red-dot.svg"/>'+
-                '<span>' + Drupal.t('Headquartes') + '</span>'+
+                '<span>' + Drupal.t('Headquarters') + '</span>'+
                 '<img src="/themes/custom/tederic/images/map/blue-dot.svg"/>'+
                 '<span>' + Drupal.t('Subsidiaries') + '</span></div>'
         });

@@ -6801,6 +6801,11 @@ body {
       margin-top: 30px;
     }
   }
+
+  .field-text,
+  .field-text p {
+    max-width: unset;
+  }
 }
 
 .text-l-image-r {
