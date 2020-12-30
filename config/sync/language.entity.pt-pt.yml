@@ -1,9 +1,0 @@
-uuid: 898b6c06-67b8-40cc-af34-b886ea919a9d
-langcode: pt-pt
-status: true
-dependencies: {  }
-id: pt-pt
-label: Portuguesa
-direction: ltr
-weight: -8
-locked: false

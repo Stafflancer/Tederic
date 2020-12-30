@@ -4,7 +4,7 @@ url:
   source: path_prefix
   prefixes:
     en: ''
-    zh-hans: zh-hans
+    zh-hans: cn
   domains:
     en: ''
     zh-hans: ''
