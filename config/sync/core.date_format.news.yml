@@ -1,0 +1,8 @@
+uuid: 6cb87818-6ccf-400e-983e-46e43b6d1909
+langcode: en
+status: true
+dependencies: {  }
+id: news
+label: News
+locked: false
+pattern: Y.m.j

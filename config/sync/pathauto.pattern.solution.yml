@@ -3,20 +3,31 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: solution
 label: Solution
 type: 'canonical_entities:node'
-pattern: 'solutions/[node:title]'
+pattern: 'solutions-[node:title]'
 selection_criteria:
-  2752f285-9726-4866-8944-6096031e10d2:
+  ac5b36c3-faca-421c-869e-8e47208d8be4:
     id: node_type
     bundles:
       solution: solution
     negate: false
     context_mapping:
       node: node
-    uuid: 2752f285-9726-4866-8944-6096031e10d2
+    uuid: ac5b36c3-faca-421c-869e-8e47208d8be4
+  1ab7700b-826c-45ef-81e4-99b523c90f5e:
+    id: language
+    langcodes:
+      zh-hans: zh-hans
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 1ab7700b-826c-45ef-81e4-99b523c90f5e
 selection_logic: and
 weight: -8
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Language

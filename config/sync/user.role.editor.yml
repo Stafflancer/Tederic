@@ -31,7 +31,6 @@ permissions:
   - 'edit terms in tags'
   - 'edit terms in technology_category'
   - 'translate any entity'
-  - 'translate interface'
   - 'update content translations'
   - 'use text format full_html'
   - 'use text format image_map'

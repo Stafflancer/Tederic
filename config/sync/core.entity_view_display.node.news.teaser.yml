@@ -39,7 +39,7 @@ content:
     label: above
     settings:
       timezone_override: ''
-      format_type: html_date
+      format_type: news
     third_party_settings: {  }
   field_image_crop:
     type: image

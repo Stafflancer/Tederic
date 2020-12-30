@@ -3,7 +3,7 @@ langcode: zh-hans
 status: true
 dependencies: {  }
 id: zh-hans
-label: 普通话
+label: 中文
 direction: ltr
 weight: -9
 locked: false

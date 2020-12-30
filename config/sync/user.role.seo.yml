@@ -1,0 +1,9 @@
+uuid: 6c89e335-f1a8-499e-856f-9e862e667eb3
+langcode: en
+status: true
+dependencies: {  }
+id: seo
+label: SEO
+weight: 4
+is_admin: null
+permissions: {  }

@@ -244,7 +244,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: clervie@sekkeistudio.com
+      to_mail: 'clervie@sekkeistudio.com, info@tederic-cn.com'
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -256,6 +256,7 @@ handlers:
       subject: _default
       body: "You have been contacted via the Contact Us form on tedericglobal.com<br />\r\n<br />\r\nSubmitted on [webform_submission:created]<br />\r\nSubmitted values are:<br />\r\n<br />\r\n[webform_submission:values]"
       excluded_elements:
+        i_accept_the_processing_of_my_personal_data_provided_here_: i_accept_the_processing_of_my_personal_data_provided_here_
         captcha: captcha
       ignore_access: false
       exclude_empty: true

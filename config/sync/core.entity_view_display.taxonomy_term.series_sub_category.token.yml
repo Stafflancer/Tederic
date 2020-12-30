@@ -6,7 +6,9 @@ dependencies:
     - core.entity_view_mode.taxonomy_term.token
     - field.field.taxonomy_term.series_sub_category.field_background_color
     - field.field.taxonomy_term.series_sub_category.field_image
+    - field.field.taxonomy_term.series_sub_category.field_metatags
     - field.field.taxonomy_term.series_sub_category.field_parent_category
+    - field.field.taxonomy_term.series_sub_category.field_short_description
     - image.style.large
     - taxonomy.vocabulary.series_sub_category
   module:
@@ -48,5 +50,7 @@ content:
     type: image
     region: content
 hidden:
+  field_metatags: true
   field_parent_category: true
+  field_short_description: true
   langcode: true

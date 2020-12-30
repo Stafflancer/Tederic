@@ -202,7 +202,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: clervie@sekkeistudio.com
+      to_mail: 'clervie@sekkeistudio.com, tedericinfo@tederic-cn.com'
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
