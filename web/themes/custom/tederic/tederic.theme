@@ -69,8 +69,12 @@ function tederic_preprocess_views_view_field(&$variables) {
         // Add separator.
         $variables['output'] = str_replace(' ', '&nbsp;<span>-</span>&nbsp;', $variables['output']);
       }
+      $descriptionFields = [
+        'description__value',
+        'field_short_description'
+      ];
       // Description
-      if ($variables['field']->field == 'description__value') {
+      if (in_array($variables['field']->field, $descriptionFields)) {
         if (empty($variables['output'])) {
           return;
         }
@@ -188,4 +192,12 @@ function tederic_preprocess_paragraph(&$variables) {
       $variables['#attached']['drupalSettings']['map_block']['locations'] = $locations;
       break;
   }
+}
+
+/**
+ * Implements theme_preprocess_node().
+ */
+function tederic_preprocess_node(&$variables) {
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
 }

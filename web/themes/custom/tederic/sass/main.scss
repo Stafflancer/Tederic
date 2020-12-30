@@ -5157,6 +5157,7 @@ textarea[rows] {
         background-color: $white;
         border-radius: 8px;
         text-align: center;
+        height: 100%;
 
         &:hover {
           box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
@@ -7131,6 +7132,7 @@ body {
       display: block;
       border-radius: 8px;
       background-color: $white;
+      height: 100%;
 
       &:hover {
         box-shadow: 0 2px 7px 0 rgba(88, 98, 103, 0.4);
@@ -7159,7 +7161,8 @@ body {
         }
 
         .content {
-          padding: 20px 15px 20px;
+          // padding: 20px 15px 20px;
+          padding: 20px 15px 12px;
           display: flex;
           flex-flow: column;
           justify-content: space-between;
@@ -7548,6 +7551,8 @@ body {
             position: relative;
             height: 100%;
 
+            padding-bottom: 59px;
+
             &:after {
               content: '';
               background: url('../images/icons/arrow-right-gray.svg') no-repeat center/contain;
@@ -7609,6 +7614,9 @@ body {
             letter-spacing: 0;
             line-height: 29px;
             padding: 0 20px 30px;
+
+            position: absolute;
+            bottom: 0;
           }
         }
       }

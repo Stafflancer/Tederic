@@ -4,7 +4,10 @@
     <div class="wrapper">
       <div class="img">{{ content.field_image_crop }}</div>
       <div class="content">
-        {{ label }}
+        {# {{ label }} #}
+        {% set text = label|render|striptags %}
+        {% set sliceLength = (language == 'zh-hans') ? 50 : 90 %}
+        <span>{{ text|length > sliceLength ? text|slice(0, sliceLength) ~ '...' : text }}</span>
 
         <div class="content-bottom">
           {% if content.field_special_label.0 %}
