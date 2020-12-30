@@ -6,7 +6,7 @@
       <div class="content">
         {# {{ label }} #}
         {% set text = label|render|striptags %}
-        {% set sliceLength = (language == 'zh-hans') ? 50 : 90 %}
+        {% set sliceLength = (language == 'cn') ? 50 : 90 %}
         <span>{{ text|length > sliceLength ? text|slice(0, sliceLength) ~ '...' : text }}</span>
 
         <div class="content-bottom">

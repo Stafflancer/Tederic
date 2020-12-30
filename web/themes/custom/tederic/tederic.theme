@@ -15,7 +15,7 @@ function tederic_preprocess_html(&$variables) {
   $language_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
 
   $variables['language_id'] = $language_id;
-  if ($language_id == 'zh-hans') {
+  if ($language_id == 'cn') {
     $variables['#attached']['library'][] = 'tederic/font-zh';
   } else {
     $variables['#attached']['library'][] = 'tederic/font-en';
@@ -79,7 +79,7 @@ function tederic_preprocess_views_view_field(&$variables) {
           return;
         }
         $langcode = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT)->getId();
-        if ($langcode == 'zh-hans') {
+        if ($langcode == 'cn') {
           $variables['output'] = mb_substr($variables['output'], 0, 6);
         }
         else {
