@@ -83,7 +83,7 @@ function tederic_common_webform_element_alter(array &$element, FormStateInterfac
   // Captcha element type.
   if ($element['#type'] == 'captcha') {
     // Change captcha type to tencentcloud_captcha for Chinese language.
-    if (\Drupal::languageManager()->getCurrentLanguage()->getId() == 'zh-hans') {
+    if (\Drupal::languageManager()->getCurrentLanguage()->getId() == 'cn') {
       $element['#captcha_type'] = 'tencentcloud_captcha/tencentcloud_captcha';
     }
   }
@@ -145,7 +145,7 @@ function tederic_common_preprocess_links(&$variables) {
   $language_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
   
   switch ($language_id) {
-    case 'zh-hans':
+    case 'cn':
       $language_id = '中文';
       break;
     case 'pt-pt':
